@@ -1,0 +1,47 @@
+# Hallentabelle, siehe Abschnitt 8 der Spezifikation.
+#
+# Jede Halle hat eine Liste `search_terms`: normalisierte Suchbegriffe
+# (kleingeschrieben, Umlaute transliteriert ue/oe/ae/ss, ohne Sonderzeichen
+# und Leerzeichen). Das Skript normalisiert eingehende Ortszusaetze und
+# LOCATION-Strings auf die gleiche Weise und vergleicht dagegen.
+#
+# `address` steht ohne das abschliessende ", Deutschland" -- das haengt der
+# ICS-Writer beim Schreiben an. `geo` ist [lat, lon] oder null, wenn noch
+# nicht ermittelt (siehe Abschnitt 13, offene Punkte). Fehlt geo, werden GEO
+# und X-APPLE-STRUCTURED-LOCATION im Output einfach weggelassen.
+
+fliethe:
+  name: Sporthalle Fliethe
+  search_terms:
+    - fliethe
+    - mtc arena wülfrath
+  address: "Fortunastraße 30, 42489 Wülfrath"
+  # Koordinaten aus der Spezifikation, als "prüfen" markiert -- noch nicht
+  # verifiziert.
+  geo: [51.2820, 7.0398]
+
+flehenberg:
+  name: Sporthalle Flehenberg
+  search_terms:
+    - flehenberg
+  address: "Flehenberg 91, 42489 Wülfrath"
+  # noch ermitteln
+  geo: null
+
+frankys_gym:
+  name: "Franky's Gym"
+  search_terms:
+    - frankys gym
+    - franky's gym
+  # PLZ noch zu bestätigen, siehe Abschnitt 13
+  address: "Glockenstahlstraße 1, 42857 Remscheid"
+  # noch ermitteln
+  geo: null
+
+erbacher_berg:
+  name: "Sportplatz Erbacher Berg (1. FC)"
+  search_terms:
+    - erbacher berg
+  address: "Silberberger Weg 3, Innenstadt, 42489 Wülfrath"
+  # noch ermitteln
+  geo: null

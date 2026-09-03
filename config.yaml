@@ -1,0 +1,57 @@
+# Konfiguration für die Handball-Kalender-Feeds TB Wülfrath.
+# Siehe SPEC.md für die vollständige Spezifikation.
+
+timezone: Europe/Berlin
+feed_ttl: PT6H
+uid_prefix: tbw
+
+output_dir: docs
+archive_dir: data
+
+# SpielerPlus-URLs kommen ausschliesslich aus Umgebungsvariablen (GitHub
+# Secrets bzw. lokale .env), niemals aus dieser Datei. Hier steht nur, unter
+# welchem Variablennamen das Skript die URL je Team erwartet.
+#
+# MC fehlt noch (siehe Abschnitt 13 der Spezifikation). Solange
+# SPIELERPLUS_MC nicht gesetzt ist, wird mc-training.ics übersprungen, ohne
+# dass das Skript abbricht.
+teams:
+  m2:
+    anzeigename: "2. Herren"
+    handballnet_name: "TB Wülfrath II"
+    handballnet_team_id: 74503
+    spielerplus_env: SPIELERPLUS_M2
+    treffpunkt_spiel_minuten: 75
+    treffpunkt_training_minuten: 10
+    spieldauer_minuten: 90
+  m3:
+    anzeigename: "3. Herren"
+    handballnet_name: "TB Wülfrath III"
+    handballnet_team_id: 75902
+    spielerplus_env: SPIELERPLUS_M3
+    treffpunkt_spiel_minuten: 60
+    treffpunkt_training_minuten: null
+    spieldauer_minuten: 90
+  mc:
+    anzeigename: "C-Jugend"
+    handballnet_name: "TB Wülfrath"
+    handballnet_team_id: 95749
+    spielerplus_env: SPIELERPLUS_MC
+    treffpunkt_spiel_minuten: 60
+    treffpunkt_training_minuten: null
+    spieldauer_minuten: 75
+
+# Sechs Ausgabe-Feeds gemaess Abschnitt 3. calname wird zu
+# "TBW <Anzeigename> Training" bzw. "TBW <Anzeigename> Spiele" aufgeloest.
+feeds:
+  m2-training: {team: m2, type: training}
+  m2-spiele: {team: m2, type: spiele}
+  m3-training: {team: m3, type: training}
+  m3-spiele: {team: m3, type: spiele}
+  mc-training: {team: mc, type: training}
+  mc-spiele: {team: mc, type: spiele}
+
+# Handeinträge zur Korrektur einzelner Gegnernamen, siehe Abschnitt 6.
+# Wird vor allen Normalisierungsregeln geprueft. Schluessel = Rohname aus
+# handball.net (SUMMARY-Seite), Wert = gewuenschte Schreibweise.
+opponent_overrides: {}
