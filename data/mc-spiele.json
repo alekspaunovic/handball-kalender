@@ -1,0 +1,62 @@
+[
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "Treffpunkt: 10:40",
+    "dtend": "2026-09-19T12:55:00+02:00",
+    "dtstart": "2026-09-19T11:40:00+02:00",
+    "first_seen": "2026-09-03T19:51:25.211663+00:00",
+    "geo": null,
+    "last_seen": "2026-09-03T19:51:25.211663+00:00",
+    "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+    "source_uid": "spiel-677565@mmcc-news",
+    "summary": "C-Jugend Auswärts JSG Eller-gerresheim C1j",
+    "uid": "tbw-mc-spiel-677565",
+    "url": "https://www.handball.net/match/677565"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "Treffpunkt: 12:40",
+    "dtend": "2026-09-19T14:55:00+02:00",
+    "dtstart": "2026-09-19T13:40:00+02:00",
+    "first_seen": "2026-09-03T19:51:25.211663+00:00",
+    "geo": null,
+    "last_seen": "2026-09-03T19:51:25.211663+00:00",
+    "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+    "source_uid": "spiel-677568@mmcc-news",
+    "summary": "C-Jugend Auswärts MTG Horst Essen",
+    "uid": "tbw-mc-spiel-677568",
+    "url": "https://www.handball.net/match/677568"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "Treffpunkt: 14:40",
+    "dtend": "2026-09-19T16:55:00+02:00",
+    "dtstart": "2026-09-19T15:40:00+02:00",
+    "first_seen": "2026-09-03T19:51:25.211663+00:00",
+    "geo": null,
+    "last_seen": "2026-09-03T19:51:25.211663+00:00",
+    "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+    "source_uid": "spiel-677571@mmcc-news",
+    "summary": "C-Jugend Auswärts Handball Remscheid/Wermelskirchen",
+    "uid": "tbw-mc-spiel-677571",
+    "url": "https://www.handball.net/match/677571"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "Treffpunkt: 16:00",
+    "dtend": "2026-09-19T18:15:00+02:00",
+    "dtstart": "2026-09-19T17:00:00+02:00",
+    "first_seen": "2026-09-03T19:51:25.211663+00:00",
+    "geo": null,
+    "last_seen": "2026-09-03T19:51:25.211663+00:00",
+    "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+    "source_uid": "spiel-677573@mmcc-news",
+    "summary": "C-Jugend Auswärts SV Wipperfürth",
+    "uid": "tbw-mc-spiel-677573",
+    "url": "https://www.handball.net/match/677573"
+  }
+]
