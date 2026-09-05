@@ -58,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend Auswärts JSG Eller-gerresheim C1j
 DTSTART;TZID=Europe/Berlin:20260919T114000
 DTEND;TZID=Europe/Berlin:20260919T125500
-DTSTAMP:20260905T040608Z
+DTSTAMP:20260905T102522Z
 UID:tbw-mc-spiel-677565
 DESCRIPTION:Treffpunkt: 10:40
 LOCATION:Voss-Arena (wipperfürth.am Mühlenberg)\, Ostlandstrasse 17\, 51
@@ -69,7 +69,7 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend Auswärts MTG Horst Essen
 DTSTART;TZID=Europe/Berlin:20260919T134000
 DTEND;TZID=Europe/Berlin:20260919T145500
-DTSTAMP:20260905T040608Z
+DTSTAMP:20260905T102522Z
 UID:tbw-mc-spiel-677568
 DESCRIPTION:Treffpunkt: 12:40
 LOCATION:Voss-Arena (wipperfürth.am Mühlenberg)\, Ostlandstrasse 17\, 51
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend Auswärts Handball Remscheid/Wermelskirchen
 DTSTART;TZID=Europe/Berlin:20260919T154000
 DTEND;TZID=Europe/Berlin:20260919T165500
-DTSTAMP:20260905T040608Z
+DTSTAMP:20260905T102522Z
 UID:tbw-mc-spiel-677571
 DESCRIPTION:Treffpunkt: 14:40
 LOCATION:Voss-Arena (wipperfürth.am Mühlenberg)\, Ostlandstrasse 17\, 51
@@ -91,7 +91,7 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend Auswärts SV Wipperfürth
 DTSTART;TZID=Europe/Berlin:20260919T170000
 DTEND;TZID=Europe/Berlin:20260919T181500
-DTSTAMP:20260905T040608Z
+DTSTAMP:20260905T102522Z
 UID:tbw-mc-spiel-677573
 DESCRIPTION:Treffpunkt: 16:00
 LOCATION:Voss-Arena (wipperfürth.am Mühlenberg)\, Ostlandstrasse 17\, 51
