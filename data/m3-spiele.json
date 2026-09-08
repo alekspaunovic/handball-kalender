@@ -7,12 +7,12 @@
     "dtstart": "2026-08-23",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": null,
     "source_uid": "spiel-674195@mmcc-news",
     "summary": "3. Herren Auswärts TB Wülfrath IV",
     "uid": "tbw-m3-spiel-674195",
-    "url": "https://www.handball.net/match/674195"
+    "url": "https://handball.net/match/674195"
   },
   {
     "all_day": true,
@@ -22,12 +22,12 @@
     "dtstart": "2026-08-31",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": null,
     "source_uid": "spiel-680658@mmcc-news",
     "summary": "3. Herren Auswärts TB Wülfrath IV",
     "uid": "tbw-m3-spiel-680658",
-    "url": "https://www.handball.net/match/680658"
+    "url": "https://handball.net/match/680658"
   },
   {
     "all_day": false,
@@ -40,12 +40,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-677881@mmcc-news",
     "summary": "ABGESAGT 3. Herren Heim TB Wülfrath IV",
     "uid": "tbw-m3-spiel-677881",
-    "url": "https://www.handball.net/match/677881"
+    "url": "https://handball.net/match/677881"
   },
   {
     "all_day": false,
@@ -58,12 +58,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645391@mmcc-news",
     "summary": "3. Herren Heim TV Witzhelden II",
     "uid": "tbw-m3-spiel-645391",
-    "url": "https://www.handball.net/match/645391"
+    "url": "https://handball.net/match/645391"
   },
   {
     "all_day": false,
@@ -73,12 +73,12 @@
     "dtstart": "2026-09-20T16:30:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Bergeborbeck, Friedrich-Lange-Str.1b, 45356 Essen, Deutschland",
     "source_uid": "spiel-645397@mmcc-news",
     "summary": "3. Herren Auswärts DJK Grün Weiss Werden",
     "uid": "tbw-m3-spiel-645397",
-    "url": "https://www.handball.net/match/645397"
+    "url": "https://handball.net/match/645397"
   },
   {
     "all_day": false,
@@ -91,12 +91,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645404@mmcc-news",
     "summary": "3. Herren Heim DJK Winfried Huttrop",
     "uid": "tbw-m3-spiel-645404",
-    "url": "https://www.handball.net/match/645404"
+    "url": "https://handball.net/match/645404"
   },
   {
     "all_day": false,
@@ -106,12 +106,12 @@
     "dtstart": "2026-10-04T18:00:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Raumerstr., Raumerstr. 57, 45144 Essen, Deutschland",
     "source_uid": "spiel-645410@mmcc-news",
     "summary": "3. Herren Auswärts SG DJK A09/Phönix Essen",
     "uid": "tbw-m3-spiel-645410",
-    "url": "https://www.handball.net/match/645410"
+    "url": "https://handball.net/match/645410"
   },
   {
     "all_day": false,
@@ -121,12 +121,12 @@
     "dtstart": "2026-10-10T15:15:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Lichtenbroich, Franz-Rennefeld-Weg 15, 40472 Düsseldorf, Deutschland",
     "source_uid": "spiel-645414@mmcc-news",
     "summary": "3. Herren Auswärts SG Unterrath",
     "uid": "tbw-m3-spiel-645414",
-    "url": "https://www.handball.net/match/645414"
+    "url": "https://handball.net/match/645414"
   },
   {
     "all_day": false,
@@ -139,12 +139,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645422@mmcc-news",
     "summary": "3. Herren Heim Cronenberger TG II",
     "uid": "tbw-m3-spiel-645422",
-    "url": "https://www.handball.net/match/645422"
+    "url": "https://handball.net/match/645422"
   },
   {
     "all_day": false,
@@ -154,12 +154,12 @@
     "dtstart": "2026-11-08T15:30:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Freiherr-Vom-Stein-Realschule, Feuerbachstraße 65, 40223 Düsseldorf, Deutschland",
     "source_uid": "spiel-645428@mmcc-news",
     "summary": "3. Herren Auswärts Luchse Düsseldorf",
     "uid": "tbw-m3-spiel-645428",
-    "url": "https://www.handball.net/match/645428"
+    "url": "https://handball.net/match/645428"
   },
   {
     "all_day": false,
@@ -172,12 +172,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645429@mmcc-news",
     "summary": "3. Herren Heim HSG Velbert/Heiligenhaus",
     "uid": "tbw-m3-spiel-645429",
-    "url": "https://www.handball.net/match/645429"
+    "url": "https://handball.net/match/645429"
   },
   {
     "all_day": false,
@@ -187,12 +187,12 @@
     "dtstart": "2026-11-21T17:00:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Raumerstr., Raumerstr. 57, 45144 Essen, Deutschland",
     "source_uid": "spiel-645436@mmcc-news",
     "summary": "3. Herren Auswärts HC Essen West II",
     "uid": "tbw-m3-spiel-645436",
-    "url": "https://www.handball.net/match/645436"
+    "url": "https://handball.net/match/645436"
   },
   {
     "all_day": false,
@@ -205,12 +205,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645443@mmcc-news",
     "summary": "3. Herren Heim HSG Am Hallo Essen",
     "uid": "tbw-m3-spiel-645443",
-    "url": "https://www.handball.net/match/645443"
+    "url": "https://handball.net/match/645443"
   },
   {
     "all_day": false,
@@ -220,12 +220,12 @@
     "dtstart": "2026-12-05T19:15:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Langenberger Str. Velbert, Langenberger Str 125, 42551 Velbert, Deutschland",
     "source_uid": "spiel-645450@mmcc-news",
     "summary": "3. Herren Auswärts Niederbergischer HC",
     "uid": "tbw-m3-spiel-645450",
-    "url": "https://www.handball.net/match/645450"
+    "url": "https://handball.net/match/645450"
   },
   {
     "all_day": false,
@@ -235,12 +235,12 @@
     "dtstart": "2026-12-13T14:30:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Witzhelden.am Sportplatz, Am Sportplatz, 42799 Leichlingen, Deutschland",
     "source_uid": "spiel-645457@mmcc-news",
     "summary": "3. Herren Auswärts TV Witzhelden II",
     "uid": "tbw-m3-spiel-645457",
-    "url": "https://www.handball.net/match/645457"
+    "url": "https://handball.net/match/645457"
   },
   {
     "all_day": false,
@@ -253,12 +253,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645463@mmcc-news",
     "summary": "3. Herren Heim DJK Grün Weiss Werden",
     "uid": "tbw-m3-spiel-645463",
-    "url": "https://www.handball.net/match/645463"
+    "url": "https://handball.net/match/645463"
   },
   {
     "all_day": false,
@@ -268,12 +268,12 @@
     "dtstart": "2027-01-09T19:00:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Nord-Ost-Gymnasium, Katzenbruchstr. 79, 45141 Essen, Deutschland",
     "source_uid": "spiel-645470@mmcc-news",
     "summary": "3. Herren Auswärts DJK Winfried Huttrop",
     "uid": "tbw-m3-spiel-645470",
-    "url": "https://www.handball.net/match/645470"
+    "url": "https://handball.net/match/645470"
   },
   {
     "all_day": false,
@@ -286,12 +286,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645476@mmcc-news",
     "summary": "3. Herren Heim SG DJK A09/Phönix Essen",
     "uid": "tbw-m3-spiel-645476",
-    "url": "https://www.handball.net/match/645476"
+    "url": "https://handball.net/match/645476"
   },
   {
     "all_day": false,
@@ -304,12 +304,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645480@mmcc-news",
     "summary": "3. Herren Heim SG Unterrath",
     "uid": "tbw-m3-spiel-645480",
-    "url": "https://www.handball.net/match/645480"
+    "url": "https://handball.net/match/645480"
   },
   {
     "all_day": false,
@@ -319,12 +319,12 @@
     "dtstart": "2027-02-13T15:00:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Küllenhahn (a) Sportzentrum Süd Wuppertal, Küllenhahner Str.130, 42349 Wuppertal, Deutschland",
     "source_uid": "spiel-645488@mmcc-news",
     "summary": "3. Herren Auswärts Cronenberger TG II",
     "uid": "tbw-m3-spiel-645488",
-    "url": "https://www.handball.net/match/645488"
+    "url": "https://handball.net/match/645488"
   },
   {
     "all_day": false,
@@ -337,12 +337,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645494@mmcc-news",
     "summary": "3. Herren Heim Luchse Düsseldorf",
     "uid": "tbw-m3-spiel-645494",
-    "url": "https://www.handball.net/match/645494"
+    "url": "https://handball.net/match/645494"
   },
   {
     "all_day": false,
@@ -352,12 +352,12 @@
     "dtstart": "2027-02-28T16:00:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Emka Sportzentrum Velbert, Metallstr. ( Zubringer A 44 Kreisverkehr ), 42551 Velbert, Deutschland",
     "source_uid": "spiel-645495@mmcc-news",
     "summary": "3. Herren Auswärts HSG Velbert/Heiligenhaus",
     "uid": "tbw-m3-spiel-645495",
-    "url": "https://www.handball.net/match/645495"
+    "url": "https://handball.net/match/645495"
   },
   {
     "all_day": false,
@@ -370,12 +370,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645502@mmcc-news",
     "summary": "3. Herren Heim HC Essen West II",
     "uid": "tbw-m3-spiel-645502",
-    "url": "https://www.handball.net/match/645502"
+    "url": "https://handball.net/match/645502"
   },
   {
     "all_day": false,
@@ -385,12 +385,12 @@
     "dtstart": "2027-03-14T12:00:00+01:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Am Hallo, Ernestinenstr. 57, 45141 Essen, Deutschland",
     "source_uid": "spiel-645509@mmcc-news",
     "summary": "3. Herren Auswärts HSG Am Hallo Essen",
     "uid": "tbw-m3-spiel-645509",
-    "url": "https://www.handball.net/match/645509"
+    "url": "https://handball.net/match/645509"
   },
   {
     "all_day": false,
@@ -403,12 +403,12 @@
       51.282,
       7.0398
     ],
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "spiel-645516@mmcc-news",
     "summary": "3. Herren Heim Niederbergischer HC",
     "uid": "tbw-m3-spiel-645516",
-    "url": "https://www.handball.net/match/645516"
+    "url": "https://handball.net/match/645516"
   },
   {
     "all_day": true,
@@ -418,12 +418,12 @@
     "dtstart": "2026-09-04",
     "first_seen": "2026-09-04T16:11:45.256053+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": null,
     "source_uid": "spiel-682173@mmcc-news",
     "summary": "3. Herren Auswärts TB Wülfrath IV",
     "uid": "tbw-m3-spiel-682173",
-    "url": "https://www.handball.net/match/682173"
+    "url": "https://handball.net/match/682173"
   },
   {
     "all_day": true,
@@ -433,12 +433,12 @@
     "dtstart": "2026-09-05",
     "first_seen": "2026-09-05T14:59:30.973956+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": null,
     "source_uid": "spiel-683161@mmcc-news",
     "summary": "3. Herren Auswärts TB Wülfrath IV",
     "uid": "tbw-m3-spiel-683161",
-    "url": "https://www.handball.net/match/683161"
+    "url": "https://handball.net/match/683161"
   },
   {
     "all_day": true,
@@ -448,11 +448,11 @@
     "dtstart": "2026-09-07",
     "first_seen": "2026-09-07T21:24:48.420167+00:00",
     "geo": null,
-    "last_seen": "2026-09-08T11:03:38.984432+00:00",
+    "last_seen": "2026-09-08T16:29:03.902260+00:00",
     "location": null,
     "source_uid": "spiel-683304@mmcc-news",
     "summary": "3. Herren Auswärts TB Wülfrath IV",
     "uid": "tbw-m3-spiel-683304",
-    "url": "https://www.handball.net/match/683304"
+    "url": "https://handball.net/match/683304"
   }
 ]
