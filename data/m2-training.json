@@ -10,7 +10,7 @@
       51.279698,
       7.034318
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Goethestraße 23, 42489 Wülfrath, Deutschland",
     "source_uid": "training.75635936",
     "summary": "2. Herren: Auftakt zur Vorbereitung",
@@ -28,7 +28,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "event.2428839",
     "summary": "2. Herren: Teamevent",
@@ -46,7 +46,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020476",
     "summary": "Training 2. Herren",
@@ -64,7 +64,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020477",
     "summary": "Training 2. Herren",
@@ -82,7 +82,7 @@
       51.186895,
       7.063295
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Vogelsang 33, 42653 Solingen, Deutschland",
     "source_uid": "training.76114730",
     "summary": "Training 2. Herren",
@@ -100,30 +100,12 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020478",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-76020478",
     "url": "https://www.spielerplus.de/training/view?id=76020478"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-07-04T18:00:00+02:00",
-    "dtstart": "2026-07-04T15:00:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.241015,
-      6.691551
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Niederdonker Str. 36, 40667 Meerbusch, Deutschland",
-    "source_uid": "game.13373164",
-    "summary": "2. Herren: Spiel: Meerbuscher HV - TB Wülfrath M2",
-    "uid": "tbw-m2-event-13373164",
-    "url": "https://www.spielerplus.de/game/view?id=13373164"
   },
   {
     "all_day": false,
@@ -136,7 +118,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "event.2426785",
     "summary": "2. Herren: Mannschaftsabend",
@@ -154,7 +136,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020479",
     "summary": "Training 2. Herren",
@@ -172,7 +154,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020480",
     "summary": "Training 2. Herren",
@@ -190,30 +172,12 @@
       51.342143,
       7.059883
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "Am Sportzentrum 1, 42551 Velbert, Deutschland",
     "source_uid": "training.77639783",
     "summary": "2. Herren: Beachhandball",
     "uid": "tbw-m2-training-77639783",
     "url": "https://www.spielerplus.de/training/view?id=77639783"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-07-25T18:45:00+02:00",
-    "dtstart": "2026-07-25T15:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      50.82094,
-      6.279588
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Lessingstraße 14, 52249 Eschweiler, Deutschland",
-    "source_uid": "game.13438418",
-    "summary": "2. Herren: Spiel: Eschweiler SG - TB Wülfrath M2",
-    "uid": "tbw-m2-event-13438418",
-    "url": "https://www.spielerplus.de/game/view?id=13438418"
   },
   {
     "all_day": false,
@@ -226,7 +190,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "event.2482209",
     "summary": "2. Herren: Halle einräumen",
@@ -244,7 +208,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639903",
     "summary": "Training 2. Herren",
@@ -262,7 +226,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640009",
     "summary": "Training 2. Herren",
@@ -280,7 +244,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639904",
     "summary": "Training 2. Herren",
@@ -298,7 +262,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640010",
     "summary": "Training 2. Herren",
@@ -316,7 +280,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639905",
     "summary": "Training 2. Herren",
@@ -334,48 +298,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.79268506",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-79268506",
     "url": "https://www.spielerplus.de/training/view?id=79268506"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-08-29T15:40:00+02:00",
-    "dtstart": "2026-08-29T13:30:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.280284,
-      7.034961
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "42 Wülfrath, Deutschland",
-    "source_uid": "game.13939356",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Training",
-    "uid": "tbw-m2-event-13939356",
-    "url": "https://www.spielerplus.de/game/view?id=13939356"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-08-30T16:00:00+02:00",
-    "dtstart": "2026-08-30T13:30:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.280284,
-      7.034961
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "42 Wülfrath, Deutschland",
-    "source_uid": "game.13939447",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Training",
-    "uid": "tbw-m2-event-13939447",
-    "url": "https://www.spielerplus.de/game/view?id=13939447"
   },
   {
     "all_day": false,
@@ -388,7 +316,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639906",
     "summary": "Training 2. Herren",
@@ -406,7 +334,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.79268507",
     "summary": "Training 2. Herren",
@@ -424,48 +352,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "event.2489706",
     "summary": "2. Herren: Media-Day",
     "uid": "tbw-m2-event-2489706",
     "url": "https://www.spielerplus.de/event/view?id=2489706"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-09-05T19:45:00+02:00",
-    "dtstart": "2026-09-05T16:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.240863,
-      6.691396
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Niederdonker Str. 36, 40667 Meerbusch, Deutschland",
-    "source_uid": "tournament.2055844",
-    "summary": "2. Herren: Meerbuscher HV",
-    "uid": "tbw-m2-event-2055844",
-    "url": "https://www.spielerplus.de/tournament/view?id=2055844"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-09-08T22:45:00+02:00",
-    "dtstart": "2026-09-08T19:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.280284,
-      7.034961
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "42 Wülfrath, Deutschland",
-    "source_uid": "game.14326125",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Kettwiger SV",
-    "uid": "tbw-m2-event-14326125",
-    "url": "https://www.spielerplus.de/game/view?id=14326125"
   },
   {
     "all_day": false,
@@ -478,7 +370,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640013",
     "summary": "Training 2. Herren",
@@ -496,7 +388,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.79661105",
     "summary": "Training 2. Herren",
@@ -514,7 +406,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639908",
     "summary": "Training 2. Herren",
@@ -532,30 +424,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640014",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640014",
     "url": "https://www.spielerplus.de/training/view?id=77640014"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-09-19T17:35:00+02:00",
-    "dtstart": "2026-09-19T14:35:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988677",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Lüttringhauser TV",
-    "uid": "tbw-m2-event-12988677",
-    "url": "https://www.spielerplus.de/game/view?id=12988677"
   },
   {
     "all_day": false,
@@ -568,7 +442,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639909",
     "summary": "Training 2. Herren",
@@ -586,30 +460,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640015",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640015",
     "url": "https://www.spielerplus.de/training/view?id=77640015"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-09-26T21:45:00+02:00",
-    "dtstart": "2026-09-26T18:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.258174,
-      7.182452
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Rudolf-Steiner-Straße 2, 42285 Wuppertal, Deutschland",
-    "source_uid": "game.12988678",
-    "summary": "2. Herren: Spiel: HSV Wuppertal - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988678",
-    "url": "https://www.spielerplus.de/game/view?id=12988678"
   },
   {
     "all_day": false,
@@ -622,7 +478,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639910",
     "summary": "Training 2. Herren",
@@ -640,30 +496,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640016",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640016",
     "url": "https://www.spielerplus.de/training/view?id=77640016"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-10-03T17:30:00+02:00",
-    "dtstart": "2026-10-03T14:30:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988679",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - HG LTG/HTV Remscheid II",
-    "uid": "tbw-m2-event-12988679",
-    "url": "https://www.spielerplus.de/game/view?id=12988679"
   },
   {
     "all_day": false,
@@ -676,7 +514,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639911",
     "summary": "Training 2. Herren",
@@ -694,30 +532,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640017",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640017",
     "url": "https://www.spielerplus.de/training/view?id=77640017"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-10-11T15:15:00+02:00",
-    "dtstart": "2026-10-11T12:15:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.195202,
-      6.997562
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Adlerstraße 3, 42781 Haan, Deutschland",
-    "source_uid": "game.12988680",
-    "summary": "2. Herren: Spiel: DJK Unitas Haan e.V. II - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988680",
-    "url": "https://www.spielerplus.de/game/view?id=12988680"
   },
   {
     "all_day": false,
@@ -730,7 +550,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639912",
     "summary": "Training 2. Herren",
@@ -748,30 +568,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640018",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640018",
     "url": "https://www.spielerplus.de/training/view?id=77640018"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-10-17T17:15:00+02:00",
-    "dtstart": "2026-10-17T14:15:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988681",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - HSG VfL Solingen / Burg",
-    "uid": "tbw-m2-event-12988681",
-    "url": "https://www.spielerplus.de/game/view?id=12988681"
   },
   {
     "all_day": false,
@@ -784,7 +586,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639913",
     "summary": "Training 2. Herren",
@@ -802,7 +604,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640019",
     "summary": "Training 2. Herren",
@@ -820,7 +622,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639914",
     "summary": "Training 2. Herren",
@@ -838,7 +640,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640020",
     "summary": "Training 2. Herren",
@@ -856,7 +658,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639915",
     "summary": "Training 2. Herren",
@@ -874,30 +676,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640021",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640021",
     "url": "https://www.spielerplus.de/training/view?id=77640021"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-11-07T21:15:00+01:00",
-    "dtstart": "2026-11-07T18:15:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.265058,
-      7.147022
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Gathe 2, 42107 Wuppertal, Deutschland",
-    "source_uid": "game.12988682",
-    "summary": "2. Herren: Spiel: MTV 61 Elberfeld - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988682",
-    "url": "https://www.spielerplus.de/game/view?id=12988682"
   },
   {
     "all_day": false,
@@ -910,7 +694,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639916",
     "summary": "Training 2. Herren",
@@ -928,30 +712,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640022",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640022",
     "url": "https://www.spielerplus.de/training/view?id=77640022"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-11-15T17:45:00+01:00",
-    "dtstart": "2026-11-15T14:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.271209,
-      7.242026
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Dieckerhoffstraße 18, 42389 Wuppertal, Deutschland",
-    "source_uid": "game.12988683",
-    "summary": "2. Herren: Spiel: LTV Wuppertal II - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988683",
-    "url": "https://www.spielerplus.de/game/view?id=12988683"
   },
   {
     "all_day": false,
@@ -964,7 +730,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639917",
     "summary": "Training 2. Herren",
@@ -982,30 +748,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640024",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640024",
     "url": "https://www.spielerplus.de/training/view?id=77640024"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-11-21T17:45:00+01:00",
-    "dtstart": "2026-11-21T14:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988688",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Vohwinkeler STV",
-    "uid": "tbw-m2-event-12988688",
-    "url": "https://www.spielerplus.de/game/view?id=12988688"
   },
   {
     "all_day": false,
@@ -1018,7 +766,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639918",
     "summary": "Training 2. Herren",
@@ -1036,30 +784,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640026",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640026",
     "url": "https://www.spielerplus.de/training/view?id=77640026"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-11-28T21:45:00+01:00",
-    "dtstart": "2026-11-28T18:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988684",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Wermelskirchener TV",
-    "uid": "tbw-m2-event-12988684",
-    "url": "https://www.spielerplus.de/game/view?id=12988684"
   },
   {
     "all_day": false,
@@ -1072,7 +802,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639919",
     "summary": "Training 2. Herren",
@@ -1090,30 +820,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640027",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640027",
     "url": "https://www.spielerplus.de/training/view?id=77640027"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-12-06T15:15:00+01:00",
-    "dtstart": "2026-12-06T12:15:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.17788,
-      7.215077
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Neuenkamper Str. 55, 42855 Remscheid, Deutschland",
-    "source_uid": "game.12988685",
-    "summary": "2. Herren: Spiel: HC BSDL - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988685",
-    "url": "https://www.spielerplus.de/game/view?id=12988685"
   },
   {
     "all_day": false,
@@ -1126,7 +838,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639920",
     "summary": "Training 2. Herren",
@@ -1144,30 +856,12 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640028",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640028",
     "url": "https://www.spielerplus.de/training/view?id=77640028"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-12-12T17:35:00+01:00",
-    "dtstart": "2026-12-12T14:35:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988686",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Wald-Merscheider TV",
-    "uid": "tbw-m2-event-12988686",
-    "url": "https://www.spielerplus.de/game/view?id=12988686"
   },
   {
     "all_day": false,
@@ -1180,7 +874,7 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77639921",
     "summary": "Training 2. Herren",
@@ -1198,353 +892,11 @@
       51.280284,
       7.034961
     ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
+    "last_seen": "2026-09-09T13:31:12.728168+00:00",
     "location": "42 Wülfrath, Deutschland",
     "source_uid": "training.77640029",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640029",
     "url": "https://www.spielerplus.de/training/view?id=77640029"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-12-20T17:45:00+01:00",
-    "dtstart": "2026-12-20T14:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.165122,
-      7.093626
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Schützenstraße 44, 42659 Solingen, Deutschland",
-    "source_uid": "game.12988687",
-    "summary": "2. Herren: Spiel: Solinger TB - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988687",
-    "url": "https://www.spielerplus.de/game/view?id=12988687"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-01-23T20:45:00+01:00",
-    "dtstart": "2027-01-23T17:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.230069,
-      7.140179
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Küllenhahner Str. 130, 42349 Wuppertal-Cronenberg, Deutschland",
-    "source_uid": "game.12988689",
-    "summary": "2. Herren: Spiel: Cronenberger TG - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988689",
-    "url": "https://www.spielerplus.de/game/view?id=12988689"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-01-30T19:45:00+01:00",
-    "dtstart": "2027-01-30T16:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.211535,
-      7.230206
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Klausener Str. 50, 42899 Remscheid, Deutschland",
-    "source_uid": "game.12988690",
-    "summary": "2. Herren: Spiel: Lüttringhauser TV - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988690",
-    "url": "https://www.spielerplus.de/game/view?id=12988690"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-02-13T17:35:00+01:00",
-    "dtstart": "2027-02-13T14:35:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988691",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - HSV Wuppertal",
-    "uid": "tbw-m2-event-12988691",
-    "url": "https://www.spielerplus.de/game/view?id=12988691"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-02-20T18:15:00+01:00",
-    "dtstart": "2027-02-20T15:15:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988692",
-    "summary": "2. Herren: Spiel: HG LTG/HTV Remscheid II - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988692",
-    "url": "https://www.spielerplus.de/game/view?id=12988692"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-02-27T17:35:00+01:00",
-    "dtstart": "2027-02-27T14:35:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988693",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - DJK Unitas Haan e.V. II",
-    "uid": "tbw-m2-event-12988693",
-    "url": "https://www.spielerplus.de/game/view?id=12988693"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-03-06T20:45:00+01:00",
-    "dtstart": "2027-03-06T17:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.165122,
-      7.093626
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Schützenstraße 44, 42659 Solingen, Deutschland",
-    "source_uid": "game.12988694",
-    "summary": "2. Herren: Spiel: HSG VfL Solingen / Burg - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988694",
-    "url": "https://www.spielerplus.de/game/view?id=12988694"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-03-13T17:35:00+01:00",
-    "dtstart": "2027-03-13T14:35:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988695",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - MTV 61 Elberfeld",
-    "uid": "tbw-m2-event-12988695",
-    "url": "https://www.spielerplus.de/game/view?id=12988695"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-03-20T21:45:00+01:00",
-    "dtstart": "2027-03-20T18:45:00+01:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988696",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - LTV Wuppertal II",
-    "uid": "tbw-m2-event-12988696",
-    "url": "https://www.spielerplus.de/game/view?id=12988696"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-04-03T20:15:00+02:00",
-    "dtstart": "2027-04-03T17:15:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.134091,
-      7.21047
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Stettiner Str. 31, 42929 Wermelskirchen, Deutschland",
-    "source_uid": "game.12988697",
-    "summary": "2. Herren: Spiel: Wermelskirchener TV - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988697",
-    "url": "https://www.spielerplus.de/game/view?id=12988697"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-04-10T17:45:00+02:00",
-    "dtstart": "2027-04-10T14:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988698",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - HC BSDL",
-    "uid": "tbw-m2-event-12988698",
-    "url": "https://www.spielerplus.de/game/view?id=12988698"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-04-17T20:45:00+02:00",
-    "dtstart": "2027-04-17T17:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.186214,
-      7.062058
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Vogelsang 33, 42653 Solingen, Deutschland",
-    "source_uid": "game.12988699",
-    "summary": "2. Herren: Spiel: Wald-Merscheider TV - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988699",
-    "url": "https://www.spielerplus.de/game/view?id=12988699"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-04-24T17:45:00+02:00",
-    "dtstart": "2027-04-24T14:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988700",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Solinger TB",
-    "uid": "tbw-m2-event-12988700",
-    "url": "https://www.spielerplus.de/game/view?id=12988700"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-05-01T19:15:00+02:00",
-    "dtstart": "2027-05-01T16:15:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.22991,
-      7.079878
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Nocken 6, 42329 Wuppertal-Vohwinkel, Deutschland",
-    "source_uid": "game.12988701",
-    "summary": "2. Herren: Spiel: Vohwinkeler STV - TB Wülfrath M2",
-    "uid": "tbw-m2-event-12988701",
-    "url": "https://www.spielerplus.de/game/view?id=12988701"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2027-05-08T17:45:00+02:00",
-    "dtstart": "2027-05-08T14:45:00+02:00",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.275869,
-      7.016914
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Fortuna Str. 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "game.12988702",
-    "summary": "2. Herren: Spiel: TB Wülfrath M2 - Cronenberger TG",
-    "uid": "tbw-m2-event-12988702",
-    "url": "https://www.spielerplus.de/game/view?id=12988702"
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-06-29",
-    "dtstart": "2026-06-26",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.282,
-      7.0398
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "absence.8595485",
-    "summary": "2. Herren: Urlaub",
-    "uid": "tbw-m2-event-8595485",
-    "url": ""
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-08-10",
-    "dtstart": "2026-07-30",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.282,
-      7.0398
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "absence.8595488",
-    "summary": "2. Herren: Urlaub",
-    "uid": "tbw-m2-event-8595488",
-    "url": ""
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-08-17",
-    "dtstart": "2026-08-10",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.282,
-      7.0398
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "absence.9068580",
-    "summary": "2. Herren: Urlaub/Krank",
-    "uid": "tbw-m2-event-9068580",
-    "url": ""
-  },
-  {
-    "all_day": false,
-    "cancelled": false,
-    "description": "",
-    "dtend": "2026-09-14",
-    "dtstart": "2026-09-11",
-    "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": [
-      51.282,
-      7.0398
-    ],
-    "last_seen": "2026-09-09T12:04:49.772075+00:00",
-    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-    "source_uid": "absence.9193228",
-    "summary": "2. Herren: Urlaub",
-    "uid": "tbw-m2-event-9193228",
-    "url": ""
   }
 ]
