@@ -6,4 +6,1077 @@ X-WR-CALNAME:TBW 3. Herren Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+COMMENT:This timezone only works from 1970-01-01 to 2038-01-01.
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZNAME:CET
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19800406T030000
+RDATE:19810329T030000,19820328T030000,19830327T030000,19840325T030000,1985
+ 0331T030000,19860330T030000,19870329T030000,19880327T030000,19890326T03000
+ 0,19900325T030000,19910331T030000,19920329T030000,19930328T030000,19940327
+ T030000,19950326T030000,19960331T030000,19970330T030000,19980329T030000,19
+ 990328T030000,20000326T030000,20010325T030000,20020331T030000,20030330T030
+ 000,20040328T030000,20050327T030000,20060326T030000,20070325T030000,200803
+ 30T030000,20090329T030000,20100328T030000,20110327T030000,20120325T030000,
+ 20130331T030000,20140330T030000,20150329T030000,20160327T030000,20170326T0
+ 30000,20180325T030000,20190331T030000,20200329T030000,20210328T030000,2022
+ 0327T030000,20230326T030000,20240331T030000,20250330T030000,20260329T03000
+ 0,20270328T030000,20280326T030000,20290325T030000,20300331T030000,20310330
+ T030000,20320328T030000,20330327T030000,20340326T030000,20350325T030000,20
+ 360330T030000,20370329T030000
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19800928T030000
+RDATE:19810927T030000,19820926T030000,19830925T030000,19840930T030000,1985
+ 0929T030000,19860928T030000,19870927T030000,19880925T030000,19890924T03000
+ 0,19900930T030000,19910929T030000,19920927T030000,19930926T030000,19940925
+ T030000,19950924T030000,19961027T030000,19971026T030000,19981025T030000,19
+ 991031T030000,20001029T030000,20011028T030000,20021027T030000,20031026T030
+ 000,20041031T030000,20051030T030000,20061029T030000,20071028T030000,200810
+ 26T030000,20091025T030000,20101031T030000,20111030T030000,20121028T030000,
+ 20131027T030000,20141026T030000,20151025T030000,20161030T030000,20171029T0
+ 30000,20181028T030000,20191027T030000,20201025T030000,20211031T030000,2022
+ 1030T030000,20231029T030000,20241027T030000,20251026T030000,20261025T03000
+ 0,20271031T030000,20281029T030000,20291028T030000,20301027T030000,20311026
+ T030000,20321031T030000,20331030T030000,20341029T030000,20351028T030000,20
+ 361026T030000,20371025T030000
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20260629T190000
+DTEND;TZID=Europe/Berlin:20260629T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-76261594
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=76261594
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260629T190000
+DTEND;TZID=Europe/Berlin:20260629T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001955
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001955
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg Gruppe B
+DTSTART;TZID=Europe/Berlin:20260629T200000
+DTEND;TZID=Europe/Berlin:20260629T230000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77002277
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77002277
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Erbacher Berg
+DTSTART;TZID=Europe/Berlin:20260701T190000
+DTEND;TZID=Europe/Berlin:20260701T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001458
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
+URL:https://www.spielerplus.de/training/view?id=77001458
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260706T190000
+DTEND;TZID=Europe/Berlin:20260706T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001956
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001956
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Erbacher Berg
+DTSTART;TZID=Europe/Berlin:20260708T190000
+DTEND;TZID=Europe/Berlin:20260708T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001461
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
+URL:https://www.spielerplus.de/training/view?id=77001461
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Franky’s Gym
+DTSTART;TZID=Europe/Berlin:20260710T200000
+DTEND;TZID=Europe/Berlin:20260710T230000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001620
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+ and
+URL:https://www.spielerplus.de/training/view?id=77001620
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260713T190000
+DTEND;TZID=Europe/Berlin:20260713T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001957
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001957
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Erbacher Berg
+DTSTART;TZID=Europe/Berlin:20260715T190000
+DTEND;TZID=Europe/Berlin:20260715T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001463
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
+URL:https://www.spielerplus.de/training/view?id=77001463
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Franky’s Gym
+DTSTART;TZID=Europe/Berlin:20260717T200000
+DTEND;TZID=Europe/Berlin:20260717T230000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001621
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+ and
+URL:https://www.spielerplus.de/training/view?id=77001621
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260720T190000
+DTEND;TZID=Europe/Berlin:20260720T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001958
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001958
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Erbacher Berg
+DTSTART;TZID=Europe/Berlin:20260722T190000
+DTEND;TZID=Europe/Berlin:20260722T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001466
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
+URL:https://www.spielerplus.de/training/view?id=77001466
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Franky’s Gym
+DTSTART;TZID=Europe/Berlin:20260724T200000
+DTEND;TZID=Europe/Berlin:20260724T230000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001622
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+ and
+URL:https://www.spielerplus.de/training/view?id=77001622
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: Eschweiler - Adresse in WhatsApp - TB Wülfrath 
+ M3
+DTSTART;TZID=Europe/Berlin:20260725T133000
+DTEND;TZID=Europe/Berlin:20260725T163000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-13461326
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=13461326
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260727T190000
+DTEND;TZID=Europe/Berlin:20260727T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001959
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Urlaub
+DTSTART;TZID=Europe/Berlin:20260729T020000
+DTEND;TZID=Europe/Berlin:20260810T020000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-8987630
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260731T190000
+DTEND;TZID=Europe/Berlin:20260731T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001623
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001623
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260803T190000
+DTEND;TZID=Europe/Berlin:20260803T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001960
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001960
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Erbacher Berg
+DTSTART;TZID=Europe/Berlin:20260805T190000
+DTEND;TZID=Europe/Berlin:20260805T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77807264
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
+URL:https://www.spielerplus.de/training/view?id=77807264
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260807T190000
+DTEND;TZID=Europe/Berlin:20260807T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295939
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=78295939
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Urlaub/Krank
+DTSTART;TZID=Europe/Berlin:20260810T020000
+DTEND;TZID=Europe/Berlin:20260817T020000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-9068584
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260811T190000
+DTEND;TZID=Europe/Berlin:20260811T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506613
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506613
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260814T190000
+DTEND;TZID=Europe/Berlin:20260814T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295940
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78295940
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Handball gucken H1 vs Korea
+DTSTART;TZID=Europe/Berlin:20260817T190000
+DTEND;TZID=Europe/Berlin:20260817T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001962
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=77001962
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260818T190000
+DTEND;TZID=Europe/Berlin:20260818T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506614
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506614
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260821T190000
+DTEND;TZID=Europe/Berlin:20260821T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295941
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78295941
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - M4
+DTSTART;TZID=Europe/Berlin:20260823T120000
+DTEND;TZID=Europe/Berlin:20260823T150000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14178549
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14178549
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260824T190000
+DTEND;TZID=Europe/Berlin:20260824T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001963
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001963
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260825T203000
+DTEND;TZID=Europe/Berlin:20260825T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506615
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506615
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260828T190000
+DTEND;TZID=Europe/Berlin:20260828T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295942
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78295942
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260831T190000
+DTEND;TZID=Europe/Berlin:20260831T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001964
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001964
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260901T190000
+DTEND;TZID=Europe/Berlin:20260901T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506617
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506617
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260904T203000
+DTEND;TZID=Europe/Berlin:20260904T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295943
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78295943
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Flehenberg
+DTSTART;TZID=Europe/Berlin:20260907T190000
+DTEND;TZID=Europe/Berlin:20260907T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-77001966
+LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
+ land
+URL:https://www.spielerplus.de/training/view?id=77001966
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260908T190000
+DTEND;TZID=Europe/Berlin:20260908T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506618
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506618
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Urlaub
+DTSTART;TZID=Europe/Berlin:20260911T020000
+DTEND;TZID=Europe/Berlin:20260914T020000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-9193222
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260911T203000
+DTEND;TZID=Europe/Berlin:20260911T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78295944
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78295944
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - TV WITZHELDEN II
+DTSTART;TZID=Europe/Berlin:20260913T134500
+DTEND;TZID=Europe/Berlin:20260913T170000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278512
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278512
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260915T190000
+DTEND;TZID=Europe/Berlin:20260915T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506619
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506619
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20260918T203000
+DTEND;TZID=Europe/Berlin:20260918T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696952
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696952
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: DJK GRÜN WEISS WERDEN 2.M - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20260920T134500
+DTEND;TZID=Europe/Berlin:20260920T154500
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278513
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278513
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260922T190000
+DTEND;TZID=Europe/Berlin:20260922T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506620
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506620
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20260925T203000
+DTEND;TZID=Europe/Berlin:20260925T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696953
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696953
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - DJK WINFRIED HUTTROP
+DTSTART;TZID=Europe/Berlin:20260926T155000
+DTEND;TZID=Europe/Berlin:20260926T175000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278514
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278514
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20260929T190000
+DTEND;TZID=Europe/Berlin:20260929T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506621
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506621
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261002T203000
+DTEND;TZID=Europe/Berlin:20261002T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696954
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696954
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: SG DJK A09/Phönix Essen - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261004T180000
+DTEND;TZID=Europe/Berlin:20261004T200000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278515
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278515
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261006T190000
+DTEND;TZID=Europe/Berlin:20261006T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506622
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506622
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261009T203000
+DTEND;TZID=Europe/Berlin:20261009T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696955
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696955
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: SG UNTERRATH - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261010T151500
+DTEND;TZID=Europe/Berlin:20261010T171500
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278516
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278516
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261013T190000
+DTEND;TZID=Europe/Berlin:20261013T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506623
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506623
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261016T203000
+DTEND;TZID=Europe/Berlin:20261016T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696956
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696956
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - Cronenberger TG II
+DTSTART;TZID=Europe/Berlin:20261017T133000
+DTEND;TZID=Europe/Berlin:20261017T153000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278517
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278517
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261020T190000
+DTEND;TZID=Europe/Berlin:20261020T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506624
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506624
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261023T203000
+DTEND;TZID=Europe/Berlin:20261023T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696957
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696957
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261027T190000
+DTEND;TZID=Europe/Berlin:20261027T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506625
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506625
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261030T203000
+DTEND;TZID=Europe/Berlin:20261030T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696958
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696958
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261103T190000
+DTEND;TZID=Europe/Berlin:20261103T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506626
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506626
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261106T203000
+DTEND;TZID=Europe/Berlin:20261106T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696959
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696959
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: Luchse Düsseldorf - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261108T153000
+DTEND;TZID=Europe/Berlin:20261108T173000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278518
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278518
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261110T190000
+DTEND;TZID=Europe/Berlin:20261110T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506627
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506627
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261113T203000
+DTEND;TZID=Europe/Berlin:20261113T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696960
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696960
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - HSG VELBERT/HEILIGENHAUS
+DTSTART;TZID=Europe/Berlin:20261114T155000
+DTEND;TZID=Europe/Berlin:20261114T175000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278519
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278519
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261117T190000
+DTEND;TZID=Europe/Berlin:20261117T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506628
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506628
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261120T203000
+DTEND;TZID=Europe/Berlin:20261120T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696961
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696961
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: HC Essen West II - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261121T170000
+DTEND;TZID=Europe/Berlin:20261121T190000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278520
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278520
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261124T190000
+DTEND;TZID=Europe/Berlin:20261124T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506629
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506629
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261127T203000
+DTEND;TZID=Europe/Berlin:20261127T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696962
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696962
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - HSG AM HALLO ESSEN 2.M
+DTSTART;TZID=Europe/Berlin:20261129T140000
+DTEND;TZID=Europe/Berlin:20261129T160000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278521
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278521
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261201T190000
+DTEND;TZID=Europe/Berlin:20261201T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506630
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506630
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261204T203000
+DTEND;TZID=Europe/Berlin:20261204T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696963
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696963
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: NIEDERBERGISCHER HC - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261205T191500
+DTEND;TZID=Europe/Berlin:20261205T211500
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278522
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278522
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261208T190000
+DTEND;TZID=Europe/Berlin:20261208T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506631
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506631
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261211T203000
+DTEND;TZID=Europe/Berlin:20261211T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696964
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696964
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TV WITZHELDEN II - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20261213T143000
+DTEND;TZID=Europe/Berlin:20261213T163000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278523
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278523
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261215T190000
+DTEND;TZID=Europe/Berlin:20261215T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506632
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506632
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren
+DTSTART;TZID=Europe/Berlin:20261218T203000
+DTEND;TZID=Europe/Berlin:20261218T220000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-79696965
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/training/view?id=79696965
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - DJK GRÜN WEISS WERDEN 2.M
+DTSTART;TZID=Europe/Berlin:20261219T160000
+DTEND;TZID=Europe/Berlin:20261219T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278524
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278524
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Training 3. Herren - Halle
+DTSTART;TZID=Europe/Berlin:20261222T190000
+DTEND;TZID=Europe/Berlin:20261222T203000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-training-78506633
+LOCATION:Halle
+URL:https://www.spielerplus.de/training/view?id=78506633
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: DJK WINFRIED HUTTROP - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20270109T190000
+DTEND;TZID=Europe/Berlin:20270109T210000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278525
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278525
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - SG DJK A09/Phönix Essen
+DTSTART;TZID=Europe/Berlin:20270123T160000
+DTEND;TZID=Europe/Berlin:20270123T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278526
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278526
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - SG UNTERRATH
+DTSTART;TZID=Europe/Berlin:20270130T160000
+DTEND;TZID=Europe/Berlin:20270130T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278527
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278527
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: Cronenberger TG II - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20270213T150000
+DTEND;TZID=Europe/Berlin:20270213T170000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278528
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278528
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - Luchse Düsseldorf
+DTSTART;TZID=Europe/Berlin:20270220T160000
+DTEND;TZID=Europe/Berlin:20270220T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278529
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278529
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: HSG VELBERT/HEILIGENHAUS - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20270228T160000
+DTEND;TZID=Europe/Berlin:20270228T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278530
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278530
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - HC Essen West II
+DTSTART;TZID=Europe/Berlin:20270306T160000
+DTEND;TZID=Europe/Berlin:20270306T180000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278531
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278531
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: HSG AM HALLO ESSEN 2.M - TB Wülfrath M3
+DTSTART;TZID=Europe/Berlin:20270314T120000
+DTEND;TZID=Europe/Berlin:20270314T140000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278532
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278532
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3. Herren: Spiel: TB Wülfrath M3 - NIEDERBERGISCHER HC
+DTSTART;TZID=Europe/Berlin:20270320T140000
+DTEND;TZID=Europe/Berlin:20270320T160000
+DTSTAMP:20260909T120451Z
+UID:tbw-m3-event-14278533
+GEO:51.282;7.0398
+LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
+ hland
+URL:https://www.spielerplus.de/game/view?id=14278533
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
+ nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
+ eo:51.282,7.0398
+END:VEVENT
 END:VCALENDAR
