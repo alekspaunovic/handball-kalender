@@ -31,3 +31,16 @@ def test_find_hall_unknown_returns_none(halls):
 def test_hall_address_format(halls):
     fliethe = next(h for h in halls if h.key == "fliethe")
     assert hall_address(fliethe) == "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland"
+
+
+def test_find_hall_halle_exact_alias_for_fliethe(halls):
+    hall = find_hall(halls, "Halle")
+    assert hall is not None
+    assert hall.key == "fliethe"
+
+
+def test_find_hall_halle_does_not_match_as_substring(halls):
+    """'Halle' ist nur als exakter Treffer hinterlegt (exact_terms), nicht
+    als Teilstring -- sonst wuerde er in fremden Hallennamen wie
+    'Turnhalle Bonn' faelschlich anschlagen."""
+    assert find_hall(halls, "Turnhalle Bonn") is None

@@ -35,6 +35,7 @@ class Hall:
     search_terms: list[str]
     address: str
     geo: tuple[float, float] | None
+    exact_terms: list[str] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -47,6 +48,7 @@ class Config:
     teams: dict[str, TeamConfig]
     feeds: dict[str, FeedConfig]
     opponent_overrides: dict[str, str]
+    spielerplus_uid_prefixes: list[str] = field(default_factory=lambda: ["training", "event"])
     halls: list[Hall] = field(default_factory=list)
 
     def spielerplus_url(self, team_key: str) -> str | None:
@@ -65,6 +67,7 @@ def load_halls(path: str | Path) -> list[Hall]:
                 search_terms=list(entry["search_terms"]),
                 address=entry["address"],
                 geo=tuple(geo) if geo else None,
+                exact_terms=list(entry.get("exact_terms") or []),
             )
         )
     return halls
@@ -89,5 +92,6 @@ def load_config(config_path: str | Path, halls_path: str | Path) -> Config:
         teams=teams,
         feeds=feeds,
         opponent_overrides=dict(raw.get("opponent_overrides") or {}),
+        spielerplus_uid_prefixes=list(raw.get("spielerplus_uid_prefixes") or ["training", "event"]),
         halls=load_halls(halls_path),
     )

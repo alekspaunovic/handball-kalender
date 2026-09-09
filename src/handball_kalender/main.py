@@ -73,7 +73,9 @@ def run_feed(feed: FeedConfig, config: Config, local_fixtures_dir: Path | None, 
         events = []
         for vevent in ics_io.iter_vevents(cal):
             if feed.type == "training":
-                event = training.transform(vevent, team, config.halls, config.uid_prefix)
+                event = training.transform(
+                    vevent, team, config.halls, config.uid_prefix, config.spielerplus_uid_prefixes
+                )
                 if event is not None:
                     events.append(event)
             else:

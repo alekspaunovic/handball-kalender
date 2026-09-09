@@ -39,16 +39,22 @@ Diese URLs sind öffentlich und können in der Konfiguration stehen.
 
 ### Abgrenzung der Quellen
 
-Die SpielerPlus-Feeds enthalten auch Spiele. Diese werden ignoriert, weil die
-Spieldaten aus handball.net gezogen werden. Die Unterscheidung erfolgt über das
-UID-Präfix, das SpielerPlus vergibt:
+Die SpielerPlus-Feeds enthalten auch Spiele und weitere Termine, die nicht in
+den Kalender gehören. Die Unterscheidung erfolgt über das UID-Präfix, das
+SpielerPlus vergibt. Die echten Feeds enthalten vier Präfixe: `training.`,
+`event.`, `game.` und `absence.`
+
+Es gilt eine Positivliste, konfigurierbar über `spielerplus_uid_prefixes` in
+`config.yaml`:
 
 - `training.<id>` wird übernommen
 - `event.<id>` wird übernommen
-- alles andere (insbesondere Spiel-UIDs) wird verworfen
-
-Bei unbekannten Präfixen: übernehmen und im Log als Warnung ausgeben, damit
-nichts stillschweigend verlorengeht.
+- `game.<id>` wird verworfen (die Spieldaten kommen aus handball.net, sonst
+  landen Spiele doppelt im Kalender)
+- `absence.<id>` wird verworfen (Abwesenheiten sind für den Kalender
+  irrelevant)
+- alle anderen, unbekannten Präfixe werden ebenfalls verworfen und im Log als
+  Warnung ausgegeben, damit nichts stillschweigend verlorengeht
 
 ## 3. Ausgabe
 
@@ -129,6 +135,11 @@ ersetzt werden. Regel in dieser Reihenfolge:
 2. Keine LOCATION, aber ein Ortszusatz im Titel, der in der Hallentabelle
    bekannt ist: Adresse aus der Tabelle
 3. Keine LOCATION und kein Ortszusatz im Titel: Standardhalle Fliethe
+
+SpielerPlus gibt den Trainingsort teils explizit als Ortszusatz `Halle` an,
+gemeint ist die Standardhalle Fliethe. Das wird wie gar kein Ortszusatz
+behandelt: Ort ist Fliethe (Fall 3) und `Halle` taucht nicht im Titel auf,
+also `Training 3. Herren` statt `Training 3. Herren - Halle`.
 4. Keine LOCATION und ein unbekannter Ortszusatz im Titel: Ortszusatz als
    reinen Text setzen und im Log warnen
 
@@ -282,7 +293,7 @@ Bekannt:
 
 | Suchbegriff | Anzeigename | Adresse | Koordinaten |
 | --- | --- | --- | --- |
-| fliethe, mtc arena wülfrath | Sporthalle Fliethe | Fortunastraße 30, 42489 Wülfrath | 51.2820, 7.0398 (prüfen) |
+| fliethe, mtc arena wülfrath (Teilstring); Halle (nur exakt) | Sporthalle Fliethe | Fortunastraße 30, 42489 Wülfrath | 51.2820, 7.0398 (prüfen) |
 | flehenberg | Sporthalle Flehenberg | Flehenberg 91, 42489 Wülfrath | noch ermitteln |
 | frankys gym, franky's gym | Franky's Gym | Glockenstahlstraße 1, 42857 Remscheid (PLZ prüfen) | noch ermitteln |
 | erbacher berg | Sportplatz Erbacher Berg (1. FC) | Silberberger Weg 3, Innenstadt, 42489 Wülfrath | noch ermitteln |

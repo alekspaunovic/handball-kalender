@@ -10,27 +10,34 @@ from .config import Hall, TeamConfig
 from .halls import find_hall, hall_address
 from .ics_io import extract_geo, extract_location
 from .models import Event
+from .textnorm import normalize
 
 logger = logging.getLogger(__name__)
 
 _TRAINING_TITLE_RE = re.compile(r"^Training\s*-\s*(.+)$")
 
+# Bekannte, erwartete Praefixe, die trotz Positivliste stillschweigend
+# verworfen werden (SPEC.md Abschnitt 2): "game" sind Spiele (kommen aus
+# handball.net), "absence" sind Abwesenheiten -- beides fuer den Kalender
+# irrelevant, aber kein Hinweis auf ein unbekanntes/neues Praefix.
+_KNOWN_DISCARD_PREFIXES = ("game", "absence")
 
-def classify_uid(uid: str) -> str:
+
+def classify_uid(uid: str, allowed_prefixes: list[str]) -> str | None:
     """Ordnet eine SpielerPlus-UID einer Kategorie zu (SPEC.md Abschnitt 2).
 
-    "training" und "event" werden übernommen, "spiel" wird verworfen (die
-    Spieldaten kommen aus handball.net), unbekannte Präfixe werden wie
-    "event" behandelt und geloggt, damit nichts stillschweigend verloren
-    geht.
+    Positivliste: Nur Praefixe aus `allowed_prefixes` (per config.yaml,
+    typischerweise "training" und "event") werden übernommen. Alles andere
+    wird verworfen -- die bekannten Praefixe "game" und "absence" ohne
+    Log-Eintrag, unbekannte Praefixe mit einer Warnung, damit nichts
+    stillschweigend verlorengeht.
     """
     prefix = uid.split(".", 1)[0]
-    if prefix in ("training", "event"):
+    if prefix in allowed_prefixes:
         return prefix
-    if prefix == "spiel":
-        return "spiel"
-    logger.warning("Unbekanntes SpielerPlus-UID-Präfix %r, wird wie 'event' behandelt", uid)
-    return "event"
+    if prefix not in _KNOWN_DISCARD_PREFIXES:
+        logger.warning("Unbekanntes SpielerPlus-UID-Präfix %r, wird verworfen", uid)
+    return None
 
 
 def _source_id(uid: str) -> str:
@@ -39,13 +46,19 @@ def _source_id(uid: str) -> str:
 
 def build_title(anzeigename: str, raw_summary: str) -> tuple[str, str | None]:
     """Titel gemäß SPEC.md Abschnitt 5 sowie den erkannten Ortszusatz, falls
-    vorhanden."""
+    vorhanden.
+
+    "Halle" als Ortszusatz meint die Standardhalle Fliethe und wird wie gar
+    kein Ortszusatz behandelt -- taucht also nicht im Titel auf.
+    """
     if raw_summary == "Training":
         return f"Training {anzeigename}", None
 
     match = _TRAINING_TITLE_RE.match(raw_summary)
     if match:
         ortszusatz = match.group(1).strip()
+        if normalize(ortszusatz) == normalize("Halle"):
+            return f"Training {anzeigename}", None
         return f"Training {anzeigename} - {ortszusatz}", ortszusatz
 
     return f"{anzeigename}: {raw_summary}", None
@@ -96,12 +109,13 @@ def transform(
     team: TeamConfig,
     halls: list[Hall],
     uid_prefix: str,
+    allowed_uid_prefixes: list[str],
 ) -> Event | None:
-    """Wandelt ein SpielerPlus-VEVENT in ein Event um, oder None, wenn es
-    verworfen wird (Spiel-UID)."""
+    """Wandelt ein SpielerPlus-VEVENT in ein Event um, oder None, wenn das
+    UID-Präfix nicht in der Positivliste steht (SPEC.md Abschnitt 2)."""
     source_uid = str(vevent["UID"])
-    kind = classify_uid(source_uid)
-    if kind == "spiel":
+    kind = classify_uid(source_uid, allowed_uid_prefixes)
+    if kind is None:
         return None
 
     raw_summary = str(vevent["SUMMARY"])

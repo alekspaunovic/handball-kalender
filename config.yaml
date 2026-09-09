@@ -55,3 +55,12 @@ feeds:
 # Wird vor allen Normalisierungsregeln geprueft. Schluessel = Rohname aus
 # handball.net (SUMMARY-Seite), Wert = gewuenschte Schreibweise.
 opponent_overrides: {}
+
+# Positivliste der SpielerPlus-UID-Praefixe, die in die Training-Feeds
+# uebernommen werden (SPEC.md Abschnitt 2). Alles andere wird verworfen --
+# die bekannten Praefixe "game" (Spiele, kommen aus handball.net) und
+# "absence" (Abwesenheiten) stillschweigend, unbekannte Praefixe mit einer
+# Warnung im Log.
+spielerplus_uid_prefixes:
+  - training
+  - event

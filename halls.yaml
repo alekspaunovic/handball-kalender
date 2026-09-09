@@ -3,7 +3,13 @@
 # Jede Halle hat eine Liste `search_terms`: normalisierte Suchbegriffe
 # (kleingeschrieben, Umlaute transliteriert ue/oe/ae/ss, ohne Sonderzeichen
 # und Leerzeichen). Das Skript normalisiert eingehende Ortszusaetze und
-# LOCATION-Strings auf die gleiche Weise und vergleicht dagegen.
+# LOCATION-Strings auf die gleiche Weise und vergleicht dagegen. `search_terms`
+# duerfen auch als Teilstring vorkommen.
+#
+# `exact_terms` sind Suchbegriffe, die nur bei vollstaendiger Uebereinstimmung
+# zaehlen, nicht als Teilstring -- fuer generische Woerter, die sonst in
+# fremden Hallennamen (z.B. "Sporthalle", "Turnhalle") faelschlich anschlagen
+# wuerden.
 #
 # `address` steht ohne das abschliessende ", Deutschland" -- das haengt der
 # ICS-Writer beim Schreiben an. `geo` ist [lat, lon] oder null, wenn noch
@@ -15,6 +21,11 @@ fliethe:
   search_terms:
     - fliethe
     - mtc arena wülfrath
+  # SpielerPlus gibt den Trainingsort teils explizit als "Halle" an, gemeint
+  # ist die Standardhalle Fliethe. Nur als exakter Treffer, sonst wuerde
+  # "Halle" in vielen fremden Hallennamen (z.B. "Sporthalle Bonn") anschlagen.
+  exact_terms:
+    - Halle
   address: "Fortunastraße 30, 42489 Wülfrath"
   # Koordinaten aus der Spezifikation, als "prüfen" markiert -- noch nicht
   # verifiziert.
