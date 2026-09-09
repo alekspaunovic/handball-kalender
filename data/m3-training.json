@@ -7,10 +7,10 @@
     "dtstart": "2026-06-29T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.76261594",
     "summary": "Training 3. Herren",
@@ -24,8 +24,11 @@
     "dtend": "2026-06-29T22:00:00+02:00",
     "dtstart": "2026-06-29T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001955",
     "summary": "Training 3. Herren - Flehenberg",
@@ -39,8 +42,11 @@
     "dtend": "2026-06-29T23:00:00+02:00",
     "dtstart": "2026-06-29T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77002277",
     "summary": "Training 3. Herren - Flehenberg Gruppe B",
@@ -54,8 +60,11 @@
     "dtend": "2026-07-01T22:00:00+02:00",
     "dtstart": "2026-07-01T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2883843,
+      7.0312878
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001458",
     "summary": "Training 3. Herren - Erbacher Berg",
@@ -69,8 +78,11 @@
     "dtend": "2026-07-06T22:00:00+02:00",
     "dtstart": "2026-07-06T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001956",
     "summary": "Training 3. Herren - Flehenberg",
@@ -84,8 +96,11 @@
     "dtend": "2026-07-08T22:00:00+02:00",
     "dtstart": "2026-07-08T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2883843,
+      7.0312878
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001461",
     "summary": "Training 3. Herren - Erbacher Berg",
@@ -99,9 +114,12 @@
     "dtend": "2026-07-10T23:00:00+02:00",
     "dtstart": "2026-07-10T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "Franky's Gym, Glockenstahlstraße 1, 42857 Remscheid, Deutschland",
+    "geo": [
+      51.1910388,
+      7.1741024
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Franky's Gym, Glockenstahlstraße 1, 42855 Remscheid, Deutschland",
     "source_uid": "training.77001620",
     "summary": "Training 3. Herren - Franky’s Gym",
     "uid": "tbw-m3-training-77001620",
@@ -114,8 +132,11 @@
     "dtend": "2026-07-13T22:00:00+02:00",
     "dtstart": "2026-07-13T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001957",
     "summary": "Training 3. Herren - Flehenberg",
@@ -129,8 +150,11 @@
     "dtend": "2026-07-15T22:00:00+02:00",
     "dtstart": "2026-07-15T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2883843,
+      7.0312878
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001463",
     "summary": "Training 3. Herren - Erbacher Berg",
@@ -144,9 +168,12 @@
     "dtend": "2026-07-17T23:00:00+02:00",
     "dtstart": "2026-07-17T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "Franky's Gym, Glockenstahlstraße 1, 42857 Remscheid, Deutschland",
+    "geo": [
+      51.1910388,
+      7.1741024
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Franky's Gym, Glockenstahlstraße 1, 42855 Remscheid, Deutschland",
     "source_uid": "training.77001621",
     "summary": "Training 3. Herren - Franky’s Gym",
     "uid": "tbw-m3-training-77001621",
@@ -159,8 +186,11 @@
     "dtend": "2026-07-20T22:00:00+02:00",
     "dtstart": "2026-07-20T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001958",
     "summary": "Training 3. Herren - Flehenberg",
@@ -174,8 +204,11 @@
     "dtend": "2026-07-22T22:00:00+02:00",
     "dtstart": "2026-07-22T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2883843,
+      7.0312878
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001466",
     "summary": "Training 3. Herren - Erbacher Berg",
@@ -189,9 +222,12 @@
     "dtend": "2026-07-24T23:00:00+02:00",
     "dtstart": "2026-07-24T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "Franky's Gym, Glockenstahlstraße 1, 42857 Remscheid, Deutschland",
+    "geo": [
+      51.1910388,
+      7.1741024
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Franky's Gym, Glockenstahlstraße 1, 42855 Remscheid, Deutschland",
     "source_uid": "training.77001622",
     "summary": "Training 3. Herren - Franky’s Gym",
     "uid": "tbw-m3-training-77001622",
@@ -204,8 +240,11 @@
     "dtend": "2026-07-27T22:00:00+02:00",
     "dtstart": "2026-07-27T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001959",
     "summary": "Training 3. Herren - Flehenberg",
@@ -219,8 +258,11 @@
     "dtend": "2026-07-31T22:00:00+02:00",
     "dtstart": "2026-07-31T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001623",
     "summary": "Training 3. Herren - Flehenberg",
@@ -234,8 +276,11 @@
     "dtend": "2026-08-03T22:00:00+02:00",
     "dtstart": "2026-08-03T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001960",
     "summary": "Training 3. Herren - Flehenberg",
@@ -249,8 +294,11 @@
     "dtend": "2026-08-05T20:30:00+02:00",
     "dtstart": "2026-08-05T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2883843,
+      7.0312878
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77807264",
     "summary": "Training 3. Herren - Erbacher Berg",
@@ -264,8 +312,11 @@
     "dtend": "2026-08-07T20:30:00+02:00",
     "dtstart": "2026-08-07T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295939",
     "summary": "Training 3. Herren - Flehenberg",
@@ -280,10 +331,10 @@
     "dtstart": "2026-08-11T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506613",
     "summary": "Training 3. Herren",
@@ -298,10 +349,10 @@
     "dtstart": "2026-08-14T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295940",
     "summary": "Training 3. Herren",
@@ -316,10 +367,10 @@
     "dtstart": "2026-08-17T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001962",
     "summary": "3. Herren: Handball gucken H1 vs Korea",
@@ -334,10 +385,10 @@
     "dtstart": "2026-08-18T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506614",
     "summary": "Training 3. Herren",
@@ -352,10 +403,10 @@
     "dtstart": "2026-08-21T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295941",
     "summary": "Training 3. Herren",
@@ -369,8 +420,11 @@
     "dtend": "2026-08-24T22:00:00+02:00",
     "dtstart": "2026-08-24T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001963",
     "summary": "Training 3. Herren - Flehenberg",
@@ -385,10 +439,10 @@
     "dtstart": "2026-08-25T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506615",
     "summary": "Training 3. Herren",
@@ -403,10 +457,10 @@
     "dtstart": "2026-08-28T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295942",
     "summary": "Training 3. Herren",
@@ -420,8 +474,11 @@
     "dtend": "2026-08-31T22:00:00+02:00",
     "dtstart": "2026-08-31T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001964",
     "summary": "Training 3. Herren - Flehenberg",
@@ -436,10 +493,10 @@
     "dtstart": "2026-09-01T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506617",
     "summary": "Training 3. Herren",
@@ -454,10 +511,10 @@
     "dtstart": "2026-09-04T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295943",
     "summary": "Training 3. Herren",
@@ -471,8 +528,11 @@
     "dtend": "2026-09-07T22:00:00+02:00",
     "dtstart": "2026-09-07T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
-    "geo": null,
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "geo": [
+      51.2810503,
+      7.0508109
+    ],
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77001966",
     "summary": "Training 3. Herren - Flehenberg",
@@ -487,10 +547,10 @@
     "dtstart": "2026-09-08T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506618",
     "summary": "Training 3. Herren",
@@ -505,10 +565,10 @@
     "dtstart": "2026-09-11T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78295944",
     "summary": "Training 3. Herren",
@@ -523,10 +583,10 @@
     "dtstart": "2026-09-15T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506619",
     "summary": "Training 3. Herren",
@@ -541,10 +601,10 @@
     "dtstart": "2026-09-18T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696952",
     "summary": "Training 3. Herren",
@@ -559,10 +619,10 @@
     "dtstart": "2026-09-22T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506620",
     "summary": "Training 3. Herren",
@@ -577,10 +637,10 @@
     "dtstart": "2026-09-25T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696953",
     "summary": "Training 3. Herren",
@@ -595,10 +655,10 @@
     "dtstart": "2026-09-29T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506621",
     "summary": "Training 3. Herren",
@@ -613,10 +673,10 @@
     "dtstart": "2026-10-02T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696954",
     "summary": "Training 3. Herren",
@@ -631,10 +691,10 @@
     "dtstart": "2026-10-06T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506622",
     "summary": "Training 3. Herren",
@@ -649,10 +709,10 @@
     "dtstart": "2026-10-09T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696955",
     "summary": "Training 3. Herren",
@@ -667,10 +727,10 @@
     "dtstart": "2026-10-13T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506623",
     "summary": "Training 3. Herren",
@@ -685,10 +745,10 @@
     "dtstart": "2026-10-16T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696956",
     "summary": "Training 3. Herren",
@@ -703,10 +763,10 @@
     "dtstart": "2026-10-20T19:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506624",
     "summary": "Training 3. Herren",
@@ -721,10 +781,10 @@
     "dtstart": "2026-10-23T20:30:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696957",
     "summary": "Training 3. Herren",
@@ -739,10 +799,10 @@
     "dtstart": "2026-10-27T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506625",
     "summary": "Training 3. Herren",
@@ -757,10 +817,10 @@
     "dtstart": "2026-10-30T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696958",
     "summary": "Training 3. Herren",
@@ -775,10 +835,10 @@
     "dtstart": "2026-11-03T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506626",
     "summary": "Training 3. Herren",
@@ -793,10 +853,10 @@
     "dtstart": "2026-11-06T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696959",
     "summary": "Training 3. Herren",
@@ -811,10 +871,10 @@
     "dtstart": "2026-11-10T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506627",
     "summary": "Training 3. Herren",
@@ -829,10 +889,10 @@
     "dtstart": "2026-11-13T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696960",
     "summary": "Training 3. Herren",
@@ -847,10 +907,10 @@
     "dtstart": "2026-11-17T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506628",
     "summary": "Training 3. Herren",
@@ -865,10 +925,10 @@
     "dtstart": "2026-11-20T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696961",
     "summary": "Training 3. Herren",
@@ -883,10 +943,10 @@
     "dtstart": "2026-11-24T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506629",
     "summary": "Training 3. Herren",
@@ -901,10 +961,10 @@
     "dtstart": "2026-11-27T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696962",
     "summary": "Training 3. Herren",
@@ -919,10 +979,10 @@
     "dtstart": "2026-12-01T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506630",
     "summary": "Training 3. Herren",
@@ -937,10 +997,10 @@
     "dtstart": "2026-12-04T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696963",
     "summary": "Training 3. Herren",
@@ -955,10 +1015,10 @@
     "dtstart": "2026-12-08T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506631",
     "summary": "Training 3. Herren",
@@ -973,10 +1033,10 @@
     "dtstart": "2026-12-11T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696964",
     "summary": "Training 3. Herren",
@@ -991,10 +1051,10 @@
     "dtstart": "2026-12-15T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506632",
     "summary": "Training 3. Herren",
@@ -1009,10 +1069,10 @@
     "dtstart": "2026-12-18T20:30:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79696965",
     "summary": "Training 3. Herren",
@@ -1027,10 +1087,10 @@
     "dtstart": "2026-12-22T19:00:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.282,
-      7.0398
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.78506633",
     "summary": "Training 3. Herren",

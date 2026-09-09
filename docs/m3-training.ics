@@ -58,774 +58,854 @@ BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260629T190000
 DTEND;TZID=Europe/Berlin:20260629T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-76261594
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=76261594
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260629T190000
 DTEND;TZID=Europe/Berlin:20260629T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001955
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001955
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg Gruppe B
 DTSTART;TZID=Europe/Berlin:20260629T200000
 DTEND;TZID=Europe/Berlin:20260629T230000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77002277
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77002277
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260701T190000
 DTEND;TZID=Europe/Berlin:20260701T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001458
+GEO:51.2883843;7.0312878
 LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
  t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=77001458
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260706T190000
 DTEND;TZID=Europe/Berlin:20260706T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001956
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001956
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260708T190000
 DTEND;TZID=Europe/Berlin:20260708T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001461
+GEO:51.2883843;7.0312878
 LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
  t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=77001461
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Franky’s Gym
 DTSTART;TZID=Europe/Berlin:20260710T200000
 DTEND;TZID=Europe/Berlin:20260710T230000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001620
-LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+GEO:51.1910388;7.1741024
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42855 Remscheid\, Deutschl
  and
 URL:https://www.spielerplus.de/training/view?id=77001620
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Franky's Gym, Glockenstah
+ lstraße 1, 42855 Remscheid, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":geo
+ :51.1910388,7.1741024
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260713T190000
 DTEND;TZID=Europe/Berlin:20260713T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001957
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001957
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260715T190000
 DTEND;TZID=Europe/Berlin:20260715T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001463
+GEO:51.2883843;7.0312878
 LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
  t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=77001463
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Franky’s Gym
 DTSTART;TZID=Europe/Berlin:20260717T200000
 DTEND;TZID=Europe/Berlin:20260717T230000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001621
-LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+GEO:51.1910388;7.1741024
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42855 Remscheid\, Deutschl
  and
 URL:https://www.spielerplus.de/training/view?id=77001621
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Franky's Gym, Glockenstah
+ lstraße 1, 42855 Remscheid, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":geo
+ :51.1910388,7.1741024
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260720T190000
 DTEND;TZID=Europe/Berlin:20260720T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001958
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001958
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260722T190000
 DTEND;TZID=Europe/Berlin:20260722T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001466
+GEO:51.2883843;7.0312878
 LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
  t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=77001466
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Franky’s Gym
 DTSTART;TZID=Europe/Berlin:20260724T200000
 DTEND;TZID=Europe/Berlin:20260724T230000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001622
-LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42857 Remscheid\, Deutschl
+GEO:51.1910388;7.1741024
+LOCATION:Franky's Gym\, Glockenstahlstraße 1\, 42855 Remscheid\, Deutschl
  and
 URL:https://www.spielerplus.de/training/view?id=77001622
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Franky's Gym, Glockenstah
+ lstraße 1, 42855 Remscheid, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":geo
+ :51.1910388,7.1741024
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260727T190000
 DTEND;TZID=Europe/Berlin:20260727T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001959
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001959
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260731T190000
 DTEND;TZID=Europe/Berlin:20260731T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001623
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001623
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260803T190000
 DTEND;TZID=Europe/Berlin:20260803T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001960
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001960
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260805T190000
 DTEND;TZID=Europe/Berlin:20260805T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77807264
+GEO:51.2883843;7.0312878
 LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
  t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=77807264
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260807T190000
 DTEND;TZID=Europe/Berlin:20260807T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295939
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=78295939
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260811T190000
 DTEND;TZID=Europe/Berlin:20260811T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506613
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506613
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260814T190000
 DTEND;TZID=Europe/Berlin:20260814T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295940
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78295940
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:3. Herren: Handball gucken H1 vs Korea
 DTSTART;TZID=Europe/Berlin:20260817T190000
 DTEND;TZID=Europe/Berlin:20260817T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001962
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=77001962
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260818T190000
 DTEND;TZID=Europe/Berlin:20260818T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506614
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506614
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260821T190000
 DTEND;TZID=Europe/Berlin:20260821T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295941
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78295941
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260824T190000
 DTEND;TZID=Europe/Berlin:20260824T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001963
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001963
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260825T203000
 DTEND;TZID=Europe/Berlin:20260825T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506615
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506615
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260828T190000
 DTEND;TZID=Europe/Berlin:20260828T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295942
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78295942
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260831T190000
 DTEND;TZID=Europe/Berlin:20260831T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001964
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001964
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260901T190000
 DTEND;TZID=Europe/Berlin:20260901T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506617
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506617
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260904T203000
 DTEND;TZID=Europe/Berlin:20260904T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295943
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78295943
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren - Flehenberg
 DTSTART;TZID=Europe/Berlin:20260907T190000
 DTEND;TZID=Europe/Berlin:20260907T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-77001966
+GEO:51.2810503;7.0508109
 LOCATION:Sporthalle Flehenberg\, Flehenberg 91\, 42489 Wülfrath\, Deutsch
  land
 URL:https://www.spielerplus.de/training/view?id=77001966
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Flehenberg, Fl
+ ehenberg 91, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":ge
+ o:51.2810503,7.0508109
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260908T190000
 DTEND;TZID=Europe/Berlin:20260908T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506618
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506618
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260911T203000
 DTEND;TZID=Europe/Berlin:20260911T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78295944
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78295944
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260915T190000
 DTEND;TZID=Europe/Berlin:20260915T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506619
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506619
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260918T203000
 DTEND;TZID=Europe/Berlin:20260918T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696952
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696952
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260922T190000
 DTEND;TZID=Europe/Berlin:20260922T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506620
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506620
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260925T203000
 DTEND;TZID=Europe/Berlin:20260925T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696953
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696953
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20260929T190000
 DTEND;TZID=Europe/Berlin:20260929T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506621
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506621
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261002T203000
 DTEND;TZID=Europe/Berlin:20261002T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696954
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696954
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261006T190000
 DTEND;TZID=Europe/Berlin:20261006T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506622
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506622
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261009T203000
 DTEND;TZID=Europe/Berlin:20261009T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696955
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696955
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261013T190000
 DTEND;TZID=Europe/Berlin:20261013T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506623
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506623
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261016T203000
 DTEND;TZID=Europe/Berlin:20261016T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696956
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696956
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261020T190000
 DTEND;TZID=Europe/Berlin:20261020T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506624
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506624
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261023T203000
 DTEND;TZID=Europe/Berlin:20261023T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696957
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696957
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261027T190000
 DTEND;TZID=Europe/Berlin:20261027T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506625
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506625
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261030T203000
 DTEND;TZID=Europe/Berlin:20261030T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696958
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696958
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261103T190000
 DTEND;TZID=Europe/Berlin:20261103T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506626
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506626
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261106T203000
 DTEND;TZID=Europe/Berlin:20261106T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696959
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696959
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261110T190000
 DTEND;TZID=Europe/Berlin:20261110T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506627
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506627
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261113T203000
 DTEND;TZID=Europe/Berlin:20261113T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696960
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696960
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261117T190000
 DTEND;TZID=Europe/Berlin:20261117T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506628
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506628
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261120T203000
 DTEND;TZID=Europe/Berlin:20261120T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696961
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696961
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261124T190000
 DTEND;TZID=Europe/Berlin:20261124T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506629
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506629
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261127T203000
 DTEND;TZID=Europe/Berlin:20261127T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696962
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696962
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261201T190000
 DTEND;TZID=Europe/Berlin:20261201T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506630
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506630
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261204T203000
 DTEND;TZID=Europe/Berlin:20261204T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696963
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696963
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261208T190000
 DTEND;TZID=Europe/Berlin:20261208T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506631
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506631
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261211T203000
 DTEND;TZID=Europe/Berlin:20261211T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696964
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696964
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261215T190000
 DTEND;TZID=Europe/Berlin:20261215T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506632
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506632
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261218T203000
 DTEND;TZID=Europe/Berlin:20261218T220000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-79696965
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=79696965
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training 3. Herren
 DTSTART;TZID=Europe/Berlin:20261222T190000
 DTEND;TZID=Europe/Berlin:20261222T203000
-DTSTAMP:20260909T133121Z
+DTSTAMP:20260909T140421Z
 UID:tbw-m3-training-78506633
-GEO:51.282;7.0398
+GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
 URL:https://www.spielerplus.de/training/view?id=78506633
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
  nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.282,7.0398
+ eo:51.2759225,7.0168646
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@
       51.279698,
       7.034318
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Goethestraße 23, 42489 Wülfrath, Deutschland",
     "source_uid": "training.75635936",
     "summary": "2. Herren: Auftakt zur Vorbereitung",
@@ -25,11 +25,11 @@
     "dtstart": "2026-06-13T15:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "event.2428839",
     "summary": "2. Herren: Teamevent",
     "uid": "tbw-m2-event-2428839",
@@ -46,7 +46,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020476",
     "summary": "Training 2. Herren",
@@ -64,7 +64,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020477",
     "summary": "Training 2. Herren",
@@ -82,7 +82,7 @@
       51.186895,
       7.063295
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Vogelsang 33, 42653 Solingen, Deutschland",
     "source_uid": "training.76114730",
     "summary": "Training 2. Herren",
@@ -100,7 +100,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020478",
     "summary": "Training 2. Herren",
@@ -115,11 +115,11 @@
     "dtstart": "2026-07-04T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "event.2426785",
     "summary": "2. Herren: Mannschaftsabend",
     "uid": "tbw-m2-event-2426785",
@@ -136,7 +136,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020479",
     "summary": "Training 2. Herren",
@@ -154,7 +154,7 @@
       51.303683,
       7.079041
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
     "source_uid": "training.76020480",
     "summary": "Training 2. Herren",
@@ -172,7 +172,7 @@
       51.342143,
       7.059883
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
     "location": "Am Sportzentrum 1, 42551 Velbert, Deutschland",
     "source_uid": "training.77639783",
     "summary": "2. Herren: Beachhandball",
@@ -187,11 +187,11 @@
     "dtstart": "2026-08-06T18:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "event.2482209",
     "summary": "2. Herren: Halle einräumen",
     "uid": "tbw-m2-event-2482209",
@@ -205,11 +205,11 @@
     "dtstart": "2026-08-11T20:00:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639903",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639903",
@@ -223,11 +223,11 @@
     "dtstart": "2026-08-12T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640009",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640009",
@@ -241,11 +241,11 @@
     "dtstart": "2026-08-18T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639904",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639904",
@@ -259,11 +259,11 @@
     "dtstart": "2026-08-19T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640010",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640010",
@@ -277,11 +277,11 @@
     "dtstart": "2026-08-25T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639905",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639905",
@@ -295,11 +295,11 @@
     "dtstart": "2026-08-27T18:50:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79268506",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-79268506",
@@ -313,11 +313,11 @@
     "dtstart": "2026-09-01T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639906",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639906",
@@ -331,11 +331,11 @@
     "dtstart": "2026-09-03T18:50:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79268507",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-79268507",
@@ -349,11 +349,11 @@
     "dtstart": "2026-09-05T09:15:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "event.2489706",
     "summary": "2. Herren: Media-Day",
     "uid": "tbw-m2-event-2489706",
@@ -367,11 +367,11 @@
     "dtstart": "2026-09-09T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640013",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640013",
@@ -385,11 +385,11 @@
     "dtstart": "2026-09-13T09:45:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.79661105",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-79661105",
@@ -403,11 +403,11 @@
     "dtstart": "2026-09-15T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639908",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639908",
@@ -421,11 +421,11 @@
     "dtstart": "2026-09-16T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640014",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640014",
@@ -439,11 +439,11 @@
     "dtstart": "2026-09-22T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639909",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639909",
@@ -457,11 +457,11 @@
     "dtstart": "2026-09-23T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640015",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640015",
@@ -475,11 +475,11 @@
     "dtstart": "2026-09-29T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639910",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639910",
@@ -493,11 +493,11 @@
     "dtstart": "2026-09-30T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640016",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640016",
@@ -511,11 +511,11 @@
     "dtstart": "2026-10-06T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639911",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639911",
@@ -529,11 +529,11 @@
     "dtstart": "2026-10-07T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640017",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640017",
@@ -547,11 +547,11 @@
     "dtstart": "2026-10-13T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639912",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639912",
@@ -565,11 +565,11 @@
     "dtstart": "2026-10-14T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640018",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640018",
@@ -583,11 +583,11 @@
     "dtstart": "2026-10-20T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639913",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639913",
@@ -601,11 +601,11 @@
     "dtstart": "2026-10-21T20:20:00+02:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640019",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640019",
@@ -619,11 +619,11 @@
     "dtstart": "2026-10-27T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639914",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639914",
@@ -637,11 +637,11 @@
     "dtstart": "2026-10-28T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640020",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640020",
@@ -655,11 +655,11 @@
     "dtstart": "2026-11-03T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639915",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639915",
@@ -673,11 +673,11 @@
     "dtstart": "2026-11-04T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640021",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640021",
@@ -691,11 +691,11 @@
     "dtstart": "2026-11-10T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639916",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639916",
@@ -709,11 +709,11 @@
     "dtstart": "2026-11-11T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640022",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640022",
@@ -727,11 +727,11 @@
     "dtstart": "2026-11-17T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639917",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639917",
@@ -745,11 +745,11 @@
     "dtstart": "2026-11-18T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640024",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640024",
@@ -763,11 +763,11 @@
     "dtstart": "2026-11-24T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639918",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639918",
@@ -781,11 +781,11 @@
     "dtstart": "2026-11-25T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640026",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640026",
@@ -799,11 +799,11 @@
     "dtstart": "2026-12-01T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639919",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639919",
@@ -817,11 +817,11 @@
     "dtstart": "2026-12-02T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640027",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640027",
@@ -835,11 +835,11 @@
     "dtstart": "2026-12-08T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639920",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639920",
@@ -853,11 +853,11 @@
     "dtstart": "2026-12-09T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640028",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640028",
@@ -871,11 +871,11 @@
     "dtstart": "2026-12-15T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77639921",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77639921",
@@ -889,11 +889,11 @@
     "dtstart": "2026-12-16T20:20:00+01:00",
     "first_seen": "2026-09-09T12:04:49.772075+00:00",
     "geo": [
-      51.280284,
-      7.034961
+      51.2759225,
+      7.0168646
     ],
-    "last_seen": "2026-09-09T13:31:12.728168+00:00",
-    "location": "42 Wülfrath, Deutschland",
+    "last_seen": "2026-09-09T14:04:19.533056+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
     "source_uid": "training.77640029",
     "summary": "Training 2. Herren",
     "uid": "tbw-m2-training-77640029",
