@@ -296,10 +296,10 @@ Bekannt:
 
 | Suchbegriff | Anzeigename | Adresse | Koordinaten |
 | --- | --- | --- | --- |
-| fliethe, mtc arena wülfrath (Teilstring); Halle (nur exakt) | Sporthalle Fliethe | Fortunastraße 30, 42489 Wülfrath | 51.2820, 7.0398 (prüfen) |
-| flehenberg | Sporthalle Flehenberg | Flehenberg 91, 42489 Wülfrath | noch ermitteln |
-| frankys gym, franky's gym | Franky's Gym | Glockenstahlstraße 1, 42857 Remscheid (PLZ prüfen) | noch ermitteln |
-| erbacher berg | Sportplatz Erbacher Berg (1. FC) | Silberberger Weg 3, Innenstadt, 42489 Wülfrath | noch ermitteln |
+| fliethe, mtc arena wülfrath (Teilstring); Halle (nur exakt) | Sporthalle Fliethe | Fortunastraße 30, 42489 Wülfrath | 51.2759225, 7.0168646 |
+| flehenberg | Sporthalle Flehenberg | Flehenberg 91, 42489 Wülfrath | 51.2810503, 7.0508109 |
+| frankys gym, franky's gym | Franky's Gym | Glockenstahlstraße 1, 42855 Remscheid | 51.1910388, 7.1741024 |
+| erbacher berg | Sportplatz Erbacher Berg (1. FC) | Silberberger Weg 3, Innenstadt, 42489 Wülfrath | 51.2883843, 7.0312878 |
 
 Alle Adressen enden im ICS mit `, Deutschland`.
 
@@ -400,8 +400,5 @@ abzudecken:
 
 ## 13. Offene Punkte
 
-- Postleitzahl Franky's Gym Remscheid bestätigen
-- Koordinaten für alle vier Hallen ermitteln (kann das Skript beim ersten Lauf
-  einmalig per Geocoding tun, Ergebnis dann fest in halls.yaml eintragen)
 - SpielerPlus-Link der C-Jugend
 - Prüfen, ob die MC-Spiele in der Voss-Arena tatsächlich ein Turnier sind

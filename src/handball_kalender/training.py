@@ -16,6 +16,14 @@ logger = logging.getLogger(__name__)
 
 _TRAINING_TITLE_RE = re.compile(r"^Training\s*-\s*(.+)$")
 
+# Grobe Plausibilitaetspruefung fuer eine LOCATION, die zu keiner bekannten
+# Halle passt: SpielerPlus liefert teils nur ein unvollstaendiges Fragment
+# wie "42 Wülfrath, Deutschland" (Navigation landet in der Stadtmitte). Eine
+# echte Adresse hat eine Hausnummer direkt hinter einem Strassennamen und
+# eine fuenfstellige PLZ.
+_PLZ_RE = re.compile(r"\b\d{5}\b")
+_HAUSNUMMER_RE = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ]{2,}\.?\s+\d{1,4}\s*[a-zA-Z]?\b")
+
 # Bekannte, erwartete Praefixe, die trotz Positivliste stillschweigend
 # verworfen werden (SPEC.md Abschnitt 2): "game" sind Spiele (kommen aus
 # handball.net), "absence" sind Abwesenheiten -- beides fuer den Kalender
@@ -64,6 +72,15 @@ def build_title(anzeigename: str, raw_summary: str) -> tuple[str, str | None]:
     return f"{anzeigename}: {raw_summary}", None
 
 
+def _looks_like_plausible_address(text: str) -> bool:
+    """Eine LOCATION, die zu keiner bekannten Halle passt, ist nur dann
+    verlässlich genug, um unverändert übernommen zu werden, wenn sie eine
+    Hausnummer (Strassenname direkt gefolgt von einer Zahl) UND eine
+    fünfstellige PLZ enthält. Sonst ist es meist ein unbrauchbares
+    SpielerPlus-Fragment wie "42 Wülfrath, Deutschland"."""
+    return bool(_PLZ_RE.search(text)) and bool(_HAUSNUMMER_RE.search(text))
+
+
 def resolve_location(
     halls: list[Hall],
     location: str | None,
@@ -78,11 +95,13 @@ def resolve_location(
        Deutschland"), waehrend der Titelzusatz eindeutig ist.
     2. Kein (bekannter) Ortszusatz, aber LOCATION vorhanden: gegen
        halls.yaml prüfen -- bei Treffer den Hallentabellen-Eintrag nehmen
-       (einheitliche Schreibweise), sonst die Rohadresse unverändert
-       übernehmen (inkl. GEO).
-    3. Weder Ortszusatz noch LOCATION: Standardhalle Fliethe.
-    4. Unbekannter Ortszusatz und keine LOCATION: Ortszusatz als reinen
-       Text setzen, Warnung loggen.
+       (einheitliche Schreibweise). Kein Treffer, aber die LOCATION sieht
+       wie eine echte Adresse aus (Hausnummer + fünfstellige PLZ):
+       unverändert übernehmen (inkl. GEO). Sonst als nicht vorhanden
+       behandeln (Warnung loggen) und wie Fall 3/4 weiterverfahren.
+    3. Weder Ortszusatz noch (brauchbare) LOCATION: Standardhalle Fliethe.
+    4. Unbekannter Ortszusatz und keine (brauchbare) LOCATION: Ortszusatz
+       als reinen Text setzen, Warnung loggen.
     """
     if ortszusatz:
         hall = find_hall(halls, ortszusatz)
@@ -93,7 +112,14 @@ def resolve_location(
         hall = find_hall(halls, location)
         if hall:
             return hall_address(hall), hall.geo
-        return location, geo
+        if _looks_like_plausible_address(location):
+            return location, geo
+        logger.warning(
+            "LOCATION %r passt zu keiner Halle und wirkt unvollständig "
+            "(keine Hausnummer/PLZ), wird verworfen",
+            location,
+        )
+        location = None
 
     if ortszusatz:
         logger.warning("Unbekannter Ortszusatz %r, wird als reiner Text übernommen", ortszusatz)

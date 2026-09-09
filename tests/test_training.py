@@ -185,6 +185,58 @@ def test_unknown_ortszusatz_without_location_becomes_raw_text_and_warns(config, 
     assert any("Sonstwo" in record.message for record in caplog.records)
 
 
+def test_m2_training_with_unusable_fragment_location_falls_back_to_fliethe(config, halls, caplog):
+    """Echter Produktionsfall: SpielerPlus liefert fuer manche M2-Trainings
+    nur das unbrauchbare LOCATION-Fragment '42 Wülfrath, Deutschland' (siehe
+    auch event.2428839 in der Fixture) -- ohne Hausnummer und PLZ keine
+    verlaessliche Adresse, wird wie keine LOCATION behandelt und faellt auf
+    die Standardhalle Fliethe zurueck, mit Warnung im Log."""
+    from icalendar import Event as IEvent
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    vevent = IEvent()
+    vevent.add("UID", "training.88888888")
+    vevent.add("SUMMARY", "Training")
+    vevent.add("LOCATION", "42 Wülfrath, Deutschland")
+    vevent.add("GEO", (51.280284, 7.034961))
+    vevent.add("DTSTART", datetime(2026, 1, 1, 19, 0, tzinfo=ZoneInfo("Europe/Berlin")))
+    vevent.add("DTEND", datetime(2026, 1, 1, 20, 30, tzinfo=ZoneInfo("Europe/Berlin")))
+
+    with caplog.at_level("WARNING"):
+        event = training.transform(vevent, config.teams["m2"], halls, config.uid_prefix, config.spielerplus_uid_prefixes)
+    assert event.location == hall_address(_hall(halls, "fliethe"))
+    assert event.geo == _hall(halls, "fliethe").geo
+    assert any("42 Wülfrath" in record.message for record in caplog.records)
+
+
+def test_plausible_foreign_address_without_hall_match_is_kept(config, halls, spielerplus_m2):
+    """Eine LOCATION mit Hausnummer und fuenfstelliger PLZ, die zu keiner
+    Halle passt, ist eine echte Fremdadresse (Auswaertstraining) und wird
+    nicht durch Fliethe ersetzt."""
+    vevent = spielerplus_m2["training.76020476"]
+    event = training.transform(vevent, config.teams["m2"], halls, config.uid_prefix, config.spielerplus_uid_prefixes)
+    assert event.location == "Waldschlösschen 39, 42553 Velbert, Deutschland"
+    assert event.geo == (51.303683, 7.079041)
+
+
+def test_every_hall_matched_training_event_has_geo(config, halls, spielerplus_m3):
+    """Alle vier Hallen haben jetzt echte Koordinaten -- jedes VEVENT, dessen
+    Ort auf eine bekannte Halle aufgeloest wird, muss ein GEO-Feld bekommen
+    (Kartendarstellung im Apple-Kalender)."""
+    cases = {
+        "training.77001955": "flehenberg",
+        "training.77001458": "erbacher_berg",
+        "training.77001620": "frankys_gym",
+        "training.78506613": "fliethe",
+    }
+    for source_uid, hall_key in cases.items():
+        vevent = spielerplus_m3[source_uid]
+        event = training.transform(vevent, config.teams["m3"], halls, config.uid_prefix, config.spielerplus_uid_prefixes)
+        assert event.geo is not None, f"{source_uid} ({hall_key}) hat kein GEO"
+        assert event.geo == _hall(halls, hall_key).geo
+
+
 def test_filter_archive_entries_purges_stale_disallowed_prefixes(config):
     """Vor der Positivliste landeten game./absence./tournament.-Praefixe
     faelschlich als Kategorie 'event' im Archiv (siehe data/m2-training.json
