@@ -60,6 +60,8 @@ def run_feed(feed: FeedConfig, config: Config, local_fixtures_dir: Path | None, 
     archive_path = Path(config.archive_dir) / f"{feed.key}.json"
     output_path = Path(config.output_dir) / f"{feed.key}.ics"
     existing = archive.load(archive_path)
+    if feed.type == "training":
+        existing = training.filter_archive_entries(existing, config.spielerplus_uid_prefixes)
 
     try:
         raw = _load_source(feed, config, local_fixtures_dir)

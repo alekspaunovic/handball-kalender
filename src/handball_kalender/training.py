@@ -72,14 +72,23 @@ def resolve_location(
 ) -> tuple[str, tuple[float, float] | None]:
     """Ort-Regel gemäß der korrigierten SPEC.md Abschnitt 5.
 
-    1. Quelle liefert LOCATION: verwenden (inkl. GEO), außer die Adresse
-       entspricht einer bekannten Halle -- dann den Hallentabellen-Eintrag
-       nehmen (einheitliche Schreibweise).
-    2. Keine LOCATION, aber bekannter Ortszusatz: Halle aus der Tabelle.
-    3. Keine LOCATION und kein Ortszusatz: Standardhalle Fliethe.
-    4. Keine LOCATION und unbekannter Ortszusatz: Ortszusatz als reinen Text,
-       Warnung loggen.
+    1. Ortszusatz aus dem Titel bekannt (halls.yaml): Halle aus der Tabelle.
+       Geht vor einer evtl. vorhandenen LOCATION, weil SpielerPlus dort
+       teils nur eine unvollständige Rohadresse liefert (z.B. "42 Wülfrath,
+       Deutschland"), waehrend der Titelzusatz eindeutig ist.
+    2. Kein (bekannter) Ortszusatz, aber LOCATION vorhanden: gegen
+       halls.yaml prüfen -- bei Treffer den Hallentabellen-Eintrag nehmen
+       (einheitliche Schreibweise), sonst die Rohadresse unverändert
+       übernehmen (inkl. GEO).
+    3. Weder Ortszusatz noch LOCATION: Standardhalle Fliethe.
+    4. Unbekannter Ortszusatz und keine LOCATION: Ortszusatz als reinen
+       Text setzen, Warnung loggen.
     """
+    if ortszusatz:
+        hall = find_hall(halls, ortszusatz)
+        if hall:
+            return hall_address(hall), hall.geo
+
     if location:
         hall = find_hall(halls, location)
         if hall:
@@ -87,14 +96,34 @@ def resolve_location(
         return location, geo
 
     if ortszusatz:
-        hall = find_hall(halls, ortszusatz)
-        if hall:
-            return hall_address(hall), hall.geo
         logger.warning("Unbekannter Ortszusatz %r, wird als reiner Text übernommen", ortszusatz)
         return ortszusatz, None
 
     fliethe = next(h for h in halls if h.key == "fliethe")
     return hall_address(fliethe), fliethe.geo
+
+
+def filter_archive_entries(existing: list[dict], allowed_prefixes: list[str]) -> list[dict]:
+    """Wendet die Positivliste (SPEC.md Abschnitt 2) auch auf bereits im
+    Archiv stehende Einträge an.
+
+    Vor Einführung der Positivliste wurden SpielerPlus-Termine mit den
+    Präfixen "game", "absence" und unbekannten Präfixen (z.B. "tournament")
+    fälschlich übernommen und als Kategorie "event" im Archiv abgelegt. Da
+    `archive.merge` Einträge, die in der Quelle nicht mehr auftauchen, auf
+    unbestimmte Zeit stehen lässt, würden diese Alt-Einträge sonst nie
+    verschwinden. Wird bei jedem Lauf angewandt, bevor gemergt wird.
+    """
+    kept = []
+    for entry in existing:
+        source_uid = entry.get("source_uid", "")
+        if "." not in source_uid:
+            kept.append(entry)
+            continue
+        if classify_uid(source_uid, allowed_prefixes) is None:
+            continue
+        kept.append(entry)
+    return kept
 
 
 def build_notiz(kind: str, team: TeamConfig, dtstart) -> str:

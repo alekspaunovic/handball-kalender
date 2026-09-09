@@ -123,28 +123,31 @@ liefert als die tatsächliche Trainingszeit. Das ist so gewollt.
 ### Ort
 
 Die M3-Termine haben kein LOCATION-Feld, der Ort steckt nur im Titelzusatz.
-Die M2-Termine haben LOCATION plus GEO plus
-`X-APPLE-STRUCTURED-LOCATION`. Eine vorhandene LOCATION ist die
-verlässlichste Information und darf nicht durch die Standardhalle Fliethe
-ersetzt werden. Regel in dieser Reihenfolge:
+Die M2-Termine haben teils LOCATION plus GEO plus
+`X-APPLE-STRUCTURED-LOCATION` -- SpielerPlus liefert dort aber teils nur
+eine unvollständige Rohadresse (z.B. `42 Wülfrath, Deutschland`), die keine
+verlässliche Information ist. Ein Ortszusatz im Titel, der in der
+Hallentabelle bekannt ist, geht deshalb vor. Regel in dieser Reihenfolge:
 
-1. Quelle liefert LOCATION: diese verwenden, zusammen mit GEO und
-   `X-APPLE-STRUCTURED-LOCATION`, falls vorhanden. Entspricht die Adresse
-   einer Halle aus der Hallentabelle (Abschnitt 8), stattdessen den Eintrag
-   aus der Hallentabelle nehmen, damit die Schreibweise einheitlich bleibt.
-2. Keine LOCATION, aber ein Ortszusatz im Titel, der in der Hallentabelle
-   bekannt ist: Adresse aus der Tabelle
-3. Keine LOCATION und kein Ortszusatz im Titel: Standardhalle Fliethe
+1. Ortszusatz im Titel, der in der Hallentabelle (Abschnitt 8) bekannt ist:
+   Adresse aus der Tabelle, unabhängig davon, ob zusätzlich eine LOCATION
+   vorliegt.
+2. Kein bekannter Ortszusatz, aber Quelle liefert LOCATION: diese
+   verwenden, zusammen mit GEO und `X-APPLE-STRUCTURED-LOCATION`, falls
+   vorhanden. Entspricht die Adresse einer Halle aus der Hallentabelle,
+   stattdessen den Eintrag aus der Hallentabelle nehmen, damit die
+   Schreibweise einheitlich bleibt.
+3. Kein bekannter Ortszusatz und keine LOCATION: Standardhalle Fliethe
 
 SpielerPlus gibt den Trainingsort teils explizit als Ortszusatz `Halle` an,
 gemeint ist die Standardhalle Fliethe. Das wird wie gar kein Ortszusatz
 behandelt: Ort ist Fliethe (Fall 3) und `Halle` taucht nicht im Titel auf,
 also `Training 3. Herren` statt `Training 3. Herren - Halle`.
-4. Keine LOCATION und ein unbekannter Ortszusatz im Titel: Ortszusatz als
+4. Unbekannter Ortszusatz im Titel und keine LOCATION: Ortszusatz als
    reinen Text setzen und im Log warnen
 
-In den Fällen, in denen die Adresse aus der Hallentabelle kommt (Fall 1 bei
-Treffer, Fall 2, Fall 3), wird sie als vollständiger String geschrieben:
+In den Fällen, in denen die Adresse aus der Hallentabelle kommt (Fall 1,
+Fall 2 bei Treffer, Fall 3), wird sie als vollständiger String geschrieben:
 
 ```
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutschland
