@@ -202,11 +202,24 @@ Regeln:
 1. Mojibake reparieren, siehe Abschnitt 9
 2. Ist der Name bereits gemischt geschrieben, unverändert lassen
 3. Ist er komplett groß, in Title Case wandeln, dabei bekannte Abkürzungen
-   groß lassen: TV, TB, TSV, TuS, TUS, HV, HC, SV, SG, JSG, HSV, SSG, DJK,
-   MTG, MTV, VfL, VfB, HG, HSG, SC, FC, TG
-4. Angehängte Mannschaftskennungen wie `1M`, `2.M`, `2.Herren` entfernen
-5. Römische Zahlen am Ende (II, III, IV) beibehalten
-6. Mehrfache Leerzeichen zusammenfassen
+   groß lassen: TV, TB, TSV, TuS, TUS, HV, HC, EV, SV, SG, JSG, HSV, SSG, DJK,
+   MTG, MTV, VfL, VfB, HG, HSG, SC, FC, TG.
+   Die Wandlung greift auch hinter Bindestrich und Punkt innerhalb eines
+   Wortes: `WALD-MERSCHEIDER` wird `Wald-Merscheider`,
+   `INTERAKTIV.HANDBALL` wird `Interaktiv.Handball`.
+4. Angehängte Mannschaftskennungen entfernen. handball.net hängt sie je
+   Spielklasse unterschiedlich an, und weil die Feeds schon nach Team getrennt
+   sind, ist die Kennung des Gegners darin redundant:
+   - Herren und Damen: `1M`, `2.M`, `2.Herren`, `1F`, `1D`, `2.Damen`
+   - Jugend mit Ziffer: `C1J`, `B2`, `A1J`
+   - Jugend kurz: `mA`, `mC`, `wB`
+   - Jugend ausgeschrieben: `männl. C-Jugend`, `weibl. B-Jugend`
+5. Römische Zahlen am Ende (II, III, IV) beibehalten -- sie unterscheiden
+   echte Mannschaften und sind keine Spielklassenkennung
+6. Die Rechtsform `e.V.` entfernen, egal wo im Namen sie steht. Der Punkt
+   hinter dem `e` ist dafür Pflicht, damit das Vereinskürzel `EV` (etwa
+   `EV Duisburg`) unangetastet bleibt.
+7. Mehrfache Leerzeichen zusammenfassen
 
 Beispiele:
 
@@ -219,6 +232,13 @@ Beispiele:
 | `TB WÜLFRATH IV` | `TB Wülfrath IV` |
 | `TUS LINTFORT` | `TuS Lintfort` |
 | `MTG Horst Essen` | `MTG Horst Essen` |
+| `WALD-MERSCHEIDER TV` | `Wald-Merscheider TV` |
+| `JSG ELLER-GERRESHEIM C1J` | `JSG Eller-Gerresheim` |
+| `INTERAKTIV.HANDBALL DÜSSELDORF/RATINGEN 2M` | `Interaktiv.Handball Düsseldorf/Ratingen` |
+| `DJK UNITAS HAAN E.V. II` | `DJK Unitas Haan II` |
+| `FORTUNA DÜSSELDORF 1895 E.V. 1F` | `Fortuna Düsseldorf 1895` |
+| `Solinger TB mC` | `Solinger TB` |
+| `Kettwiger SV 70/86 männl. C-Jugend` | `Kettwiger SV 70/86` |
 
 Eine Override-Tabelle in der Konfiguration erlaubt es, Einzelfälle von Hand zu
 korrigieren. Sie wird vor allen Regeln geprüft.

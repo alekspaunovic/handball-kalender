@@ -93,7 +93,14 @@ feeds:
 # Handeinträge zur Korrektur einzelner Gegnernamen, siehe Abschnitt 6.
 # Wird vor allen Normalisierungsregeln geprueft. Schluessel = Rohname aus
 # handball.net (SUMMARY-Seite), Wert = gewuenschte Schreibweise.
-opponent_overrides: {}
+#
+# Hier gehoeren nur echte Einzelfaelle hin, die keine Regel herleiten kann.
+# Alles Systematische (Grossschreibung, Mannschaftskennungen, Rechtsform)
+# erledigen die Regeln in names.py.
+opponent_overrides:
+  # Derselbe Verein kommt in zwei Schreibweisen aus der Quelle. Ohne diesen
+  # Eintrag stehen beide Varianten im selben Kalender.
+  "Kettwiger Sportverein 70/86": "Kettwiger SV 70/86"
 
 # Positivliste der SpielerPlus-UID-Praefixe, die in die Training-Feeds
 # uebernommen werden (SPEC.md Abschnitt 2). Alles andere wird verworfen --
