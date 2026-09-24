@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<title>TBW Kalender verwalten</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400&display=swap">
+<style>
+/* ---------------------------------------------------------------------------
+   TBW Kalender verwalten -- SPEC-ADMIN.md Abschnitt 6.
+
+   Gestaltungsplan: fuenf UI-Token plus sechs Teamfarben. Kein Akzentfarbton --
+   die Teamfarben sind das einzige bunte Element, der Speichern-Knopf ist eine
+   massive Tinte-Flaeche. Keine Kacheln, keine Schatten, keine Verlaeufe: die
+   Liste traegt die Gestaltung ueber Rhythmus, Ausrichtung und Typografie.
+--------------------------------------------------------------------------- */
+
+:root {
+  --papier: #faf9f7;
+  --tinte: #16181a;
+  --tinte-leise: #6b6f75;
+  --linie: #e3e0dc;
+  --fehler: #a3331f;
+
+  /* Teamfarben: gleiche Helligkeit und Saettigung, damit keine laut wird.
+     Sie sitzen nur auf der Schiene links. */
+  --team-m2: #2b6cb0;
+  --team-m3: #2f855a;
+  --team-mc: #b7791f;
+  --team-a-jugend: #805ad5;
+  --team-1-herren: #0f7b8a;
+  --team-1-damen: #b83280;
+
+  --schrift-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --schrift-datum: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --spalte-zeit: 3.5rem;
+  --schiene: 3px;
+  --rand: 1.25rem;
+  --kopf-hoehe: 3.5rem;
+  --leiste-hoehe: 3.25rem;
+
+  --oben: env(safe-area-inset-top, 0px);
+  --unten: env(safe-area-inset-bottom, 0px);
+  --links: env(safe-area-inset-left, 0px);
+  --rechts: env(safe-area-inset-right, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papier: #141414;
+    --tinte: #f2f0ed;
+    --tinte-leise: #95999f;
+    --linie: #2b2b2b;
+    --fehler: #f08a78;
+
+    --team-m2: #6ba3e0;
+    --team-m3: #63b98a;
+    --team-mc: #d9a441;
+    --team-a-jugend: #b094ef;
+    --team-1-herren: #4fb3c0;
+    --team-1-damen: #e069ab;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--tinte);
+  font: 1rem/1.4 var(--schrift-text);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+[hidden] { display: none !important; }
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--tinte);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --- Kopf: schmal, beim Scrollen fixiert ---------------------------------- */
+
+.kopf {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Unter der Uhr des iPhones darf nichts liegen: der Einzug kommt zur Höhe
+     dazu, nicht davon ab. */
+  min-height: calc(var(--kopf-hoehe) + var(--oben));
+  padding: var(--oben) calc(var(--rand) + var(--rechts)) 0 calc(var(--rand) + var(--links));
+  background: var(--papier);
+  border-bottom: 1px solid var(--linie);
+}
+
+.kopf__titel {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-right: auto;
+}
+
+/* Das Auswahlfeld sieht wie Text aus, nicht wie ein Formularkasten. */
+.zeitraum {
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  background: none;
+  border: 0;
+  padding: 0.5rem 0;
+  min-height: 2.75rem;
+  cursor: pointer;
+  max-width: 9rem;
+}
+
+.speichern {
+  flex: none;
+  background: var(--tinte);
+  color: var(--papier);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.625rem 0.875rem;
+  min-height: 2.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.speichern:disabled { opacity: 0.45; cursor: default; }
+
+/* --- Statusstreifen unter dem Kopf --------------------------------------- */
+
+.status {
+  padding: 0.875rem calc(var(--rand) + var(--rechts)) 0.875rem calc(var(--rand) + var(--links));
+  border-bottom: 1px solid var(--linie);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.status--fehler { color: var(--fehler); }
+.status p { margin: 0; }
+.status p + p { margin-top: 0.375rem; }
+.status__hinweis { color: var(--tinte-leise); }
+
+.status__knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+.textknopf {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.textknopf--leise { font-weight: 400; color: var(--tinte-leise); }
+
+/* --- Rumpf ---------------------------------------------------------------- */
+
+.rumpf {
+  display: block;
+  padding-left: var(--links);
+  padding-right: var(--rechts);
+  /* Platz fuer die Reiterleiste am unteren Rand. */
+  padding-bottom: calc(var(--leiste-hoehe) + var(--unten) + 1rem);
+}
+
+.inhalt { max-width: 46rem; }
+
+/* --- Bereichsnavigation: Handy unten, Desktop an der Seite --------------- */
+
+.navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  background: var(--papier);
+  border-top: 1px solid var(--linie);
+  padding: 0 var(--rechts) var(--unten) var(--links);
+}
+
+.navigation button {
+  flex: 1;
+  min-height: var(--leiste-hoehe);
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  border-top: 2px solid transparent;
+  margin-top: -1px;
+}
+
+.navigation button[aria-current="true"] {
+  color: var(--tinte);
+  font-weight: 600;
+  border-top-color: var(--tinte);
+}
+
+/* --- Filterzeile (nur Andere Teams) -------------------------------------- */
+
+.filter {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 var(--rand);
+  border-bottom: 1px solid var(--linie);
+}
+
+.filter::-webkit-scrollbar { display: none; }
+
+.filter button {
+  flex: none;
+  min-height: 2.75rem;
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.filter button[aria-pressed="true"] {
+  color: var(--tinte);
+  font-weight: 600;
+  border-bottom-color: var(--tinte);
+}
+
+/* --- Datumsgruppe: Serif-Ueberschrift, Haarlinie, sonst nichts ----------- */
+
+.datum {
+  font-family: var(--schrift-datum);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--tinte-leise);
+  margin: 1.75rem 0 0.5rem;
+  padding: 0 var(--rand) 0.5rem;
+  border-bottom: 1px solid var(--linie);
+}
+
+.gruppe:first-of-type .datum { margin-top: 1.25rem; }
+
+.liste { list-style: none; margin: 0; padding: 0; }
+
+/* --- Die Terminzeile -----------------------------------------------------
+   Raster: Schiene | Uhrzeit | Titel und Ort | Schalter.
+   Die ganze Zeile ist das Ziel, mindestens 44 Punkt hoch.              --- */
+
+.zeile {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--spalte-zeit) 1fr auto;
+  align-items: start;
+  gap: 0 0.75rem;
+  width: 100%;
+  text-align: left;
+  min-height: 3.5rem;
+  padding: 0.75rem var(--rand) 0.75rem calc(var(--rand) + var(--schiene) + 0.6875rem);
+}
+
+/* Die Schiene traegt zwei Angaben ohne ein einziges Etikett: der Farbton sagt,
+   welches Team, die Fuellung, ob der Termin im Kalender liegt. */
+.zeile::before {
+  content: "";
+  position: absolute;
+  left: var(--rand);
+  top: 0.8125rem;
+  bottom: 0.8125rem;
+  width: var(--schiene);
+  background: var(--farbe, var(--tinte-leise));
+  border-radius: 1px;
+  transition: opacity 180ms ease, background-color 180ms ease;
+}
+
+/* Trainings: gleiche Kante, geringeres Gewicht. */
+.zeile[data-typ="training"]::before { opacity: 0.3; }
+
+/* Aus: hohle Schiene. "Andere Teams" liest sich damit als eine Seite
+   ungefuellter Schienen -- nichts davon liegt im Kalender. */
+.zeile[data-an="false"][data-fremd="true"]::before {
+  background: none;
+  box-shadow: inset 0 0 0 1px var(--farbe, var(--tinte-leise));
+  opacity: 0.55;
+}
+
+/* Ausgeblendet: durchgestrichen, zurueckgenommen, Schiene entsaettigt --
+   und die Zeile bleibt an ihrer Stelle stehen. */
+.zeile[data-an="false"][data-fremd="false"] { opacity: 0.55; }
+.zeile[data-an="false"][data-fremd="false"]::before {
+  background: var(--tinte-leise);
+  opacity: 0.4;
+}
+.zeile[data-an="false"][data-fremd="false"] .zeile__titel,
+.zeile[data-an="false"][data-fremd="false"] .zeile__ort {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.zeile__zeit {
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  color: var(--tinte-leise);
+  padding-top: 0.0625rem;
+  white-space: nowrap;
+}
+
+.zeile__text { min-width: 0; }
+
+.zeile__titel {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  transition: text-decoration-color 180ms ease, opacity 180ms ease;
+}
+
+.zeile__ort {
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  margin-top: 0.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zeile__abgesagt { color: var(--fehler); font-weight: 600; }
+
+/* Der Ring ist die Anzeige, nicht das Ziel -- getroffen wird die ganze Zeile. */
+.zeile__ring {
+  flex: none;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-top: 0.0625rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1.5px var(--tinte-leise);
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.zeile[data-an="true"] .zeile__ring {
+  background: var(--tinte);
+  box-shadow: inset 0 0 0 1.5px var(--tinte);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zeile::before,
+  .zeile__titel,
+  .zeile__ring { transition: none; }
+}
+
+/* --- Ladezustand: das Geruest steht schon, waehrend die Daten kommen ----- */
+
+.platzhalter { pointer-events: none; }
+.platzhalter .balken {
+  display: block;
+  height: 0.6875rem;
+  border-radius: 2px;
+  background: var(--linie);
+}
+.platzhalter .balken--titel { width: 62%; }
+.platzhalter .balken--ort { width: 40%; margin-top: 0.5rem; }
+.platzhalter .zeile__zeit .balken { width: 2.5rem; }
+
+/* --- Leere Liste und Fehler: ganze Saetze -------------------------------- */
+
+.hinweis {
+  padding: 1.75rem var(--rand) 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--tinte-leise);
+  max-width: 34rem;
+}
+
+.hinweis--fehler { color: var(--fehler); }
+
+/* --- Anmeldung ----------------------------------------------------------- */
+
+.anmeldung { padding: 2rem var(--rand) 0; max-width: 34rem; }
+
+.anmeldung h2 {
+  font-family: var(--schrift-datum);
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin: 0 0 0.75rem;
+}
+
+.anmeldung p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--tinte-leise);
+  margin: 0 0 1rem;
+}
+
+/* --- Formular (Eigener Termin) ------------------------------------------- */
+
+.formular { padding: 1.25rem var(--rand) 0; }
+
+.feld { margin-bottom: 1.25rem; }
+
+.feld > label,
+.feld > .feld__beschriftung {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+
+/* Eingaben als beschriftete Linien, nicht als Kaesten. */
+.feld input[type="text"],
+.feld input[type="date"],
+.feld input[type="time"],
+.feld select,
+.feld textarea {
+  font: inherit;
+  font-size: 1rem;
+  width: 100%;
+  color: var(--tinte);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--linie);
+  border-radius: 0;
+  padding: 0.625rem 0;
+  min-height: 2.75rem;
+  appearance: none;
+}
+
+.feld textarea { resize: vertical; min-height: 4.5rem; }
+
+.feld input:focus-visible,
+.feld select:focus-visible,
+.feld textarea:focus-visible {
+  outline: 0;
+  border-bottom-color: var(--tinte);
+  box-shadow: 0 1px 0 0 var(--tinte);
+}
+
+.feld__paar { display: flex; gap: 1.25rem; }
+.feld__paar > * { flex: 1; min-width: 0; }
+
+.feld__fehler {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--fehler);
+  margin-top: 0.375rem;
+}
+
+/* Ganztags als Schalter in derselben Sprache wie die Listenringe. */
+.schalter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.schalter__ring {
+  flex: none;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1.5px var(--tinte-leise);
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.schalter[aria-pressed="true"] .schalter__ring {
+  background: var(--tinte);
+  box-shadow: inset 0 0 0 1.5px var(--tinte);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .schalter__ring { transition: none; }
+}
+
+.formular__aktionen {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.formular__aktionen .speichern { border-radius: 6px; }
+
+.eigene__ueberschrift {
+  font-family: var(--schrift-datum);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--tinte-leise);
+  margin: 0 0 0.5rem;
+  padding: 0 var(--rand) 0.5rem;
+  border-bottom: 1px solid var(--linie);
+}
+
+.eigene .zeile { cursor: default; }
+
+.eigene__aktionen {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 var(--rand) 0.5rem calc(var(--rand) + var(--schiene) + 0.6875rem);
+  margin-top: -0.625rem;
+}
+
+/* Bleibt bei 44 Punkt -- eng wird es über den negativen Außenabstand oben,
+   nicht über ein kleineres Ziel. */
+.eigene__aktionen .textknopf { font-weight: 400; }
+
+/* --- Fussnote ------------------------------------------------------------ */
+
+.fuss {
+  margin-top: 2.5rem;
+  padding: 1rem var(--rand) 0;
+  border-top: 1px solid var(--linie);
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  line-height: 1.5;
+}
+
+.fuss p { margin: 0 0 0.5rem; }
+
+/* --- Desktop: Navigation an die Seite ----------------------------------- */
+
+@media (min-width: 45rem) {
+  :root { --rand: 1.5rem; }
+
+  .rumpf {
+    display: grid;
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 0 2.5rem;
+    padding-bottom: 3rem;
+    align-items: start;
+  }
+
+  .navigation {
+    position: sticky;
+    top: calc(var(--kopf-hoehe) + var(--oben) + 1.25rem);
+    display: block;
+    border-top: 0;
+    padding: 1.25rem 0 0 var(--rand);
+    background: none;
+  }
+
+  .navigation button {
+    display: block;
+    width: 100%;
+    min-height: 2.75rem;
+    text-align: left;
+    border-top: 0;
+    border-left: 2px solid var(--linie);
+    padding: 0.5rem 0 0.5rem 0.875rem;
+    margin-top: 0;
+  }
+
+  .navigation button[aria-current="true"] {
+    border-top-color: transparent;
+    border-left-color: var(--tinte);
+  }
+
+  .inhalt { padding-top: 0.25rem; }
+  .datum, .filter, .zeile, .hinweis, .formular,
+  .anmeldung, .fuss, .eigene__ueberschrift { padding-left: 0; }
+  .zeile { padding-left: calc(var(--schiene) + 0.6875rem); }
+  .eigene__aktionen { padding-left: calc(var(--schiene) + 0.6875rem); }
+  .zeile::before { left: 0; }
+  .gruppe:first-of-type .datum { margin-top: 0.5rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <span class="kopf__titel">Kalender verwalten</span>
+
+  <select class="zeitraum" id="zeitraum" aria-label="Zeitraum">
+    <option value="ab-heute">Ab heute</option>
+    <option value="30-tage">Letzte 30 Tage</option>
+    <option value="12-monate">Letzte 12 Monate</option>
+    <option value="alle">Alle</option>
+  </select>
+
+  <!-- Erscheint nur, wenn es etwas zu speichern gibt. Sein Dasein ist die
+       Markierung der ungespeicherten Änderungen. -->
+  <button class="speichern" id="speichern" hidden>Speichern und aktualisieren</button>
+</header>
+
+<div class="status" id="status" hidden></div>
+
+<div class="rumpf">
+  <nav class="navigation" id="navigation" aria-label="Bereiche" hidden>
+    <button type="button" data-bereich="meine" aria-current="true">Meine Termine</button>
+    <button type="button" data-bereich="andere" aria-current="false">Andere Teams</button>
+    <button type="button" data-bereich="eigener" aria-current="false">Eigener Termin</button>
+  </nav>
+
+  <main class="inhalt" id="inhalt"></main>
+</div>
+
+<script>
+"use strict";
+
+/* ---------------------------------------------------------------------------
+   TBW Kalender verwalten (SPEC-ADMIN.md Abschnitt 6)
+
+   Der Zugangsschlüssel liegt im lokalen Speicher des Browsers, gebunden an die
+   Adresse dieser Seite. Er wird nie in eine Datei geschrieben und an niemanden
+   außer api.github.com übertragen, dort ausschließlich im Kopf der Anfrage.
+--------------------------------------------------------------------------- */
+
+const REPO = { owner: "alekspaunovic", name: "handball-kalender" };
+const WORKFLOW = "feeds.yml";
+const BRANCH = "main";
+const OVERRIDES_PFAD = "overrides.json";
+const SCHLUESSEL_ORT = "tbw-admin-token:" + location.origin + location.pathname;
+
+const TEAM_REIHENFOLGE = ["m2", "m3", "mc", "a-jugend", "1-herren", "1-damen"];
+
+const zustand = {
+  pool: null,
+  hidden: new Set(),
+  included: new Set(),
+  custom: [],
+  sha: null,
+  geladenRaw: null,
+  dirty: false,
+  bereich: "meine",
+  zeitraum: "ab-heute",
+  teamFilter: "alle",
+  bearbeitet: null,
+  laedt: true,
+  ladefehler: null,
+  formularFehler: {},
+  ganztags: false,
+  speichert: false,
+};
+
+/* --- Werkzeug ----------------------------------------------------------- */
+
+const el = document.getElementById.bind(document);
+const inhalt = el("inhalt");
+
+function h(tag, attrs, ...kinder) {
+  const knoten = document.createElement(tag);
+  for (const [name, wert] of Object.entries(attrs || {})) {
+    if (wert === null || wert === undefined || wert === false) continue;
+    if (name === "class") knoten.className = wert;
+    else if (name === "text") knoten.textContent = wert;
+    else if (name === "style") knoten.setAttribute("style", wert);
+    else if (name.startsWith("on")) knoten.addEventListener(name.slice(2), wert);
+    else knoten.setAttribute(name, wert === true ? "" : String(wert));
+  }
+  for (const kind of kinder.flat()) {
+    if (kind === null || kind === undefined || kind === false) continue;
+    knoten.append(typeof kind === "string" ? document.createTextNode(kind) : kind);
+  }
+  return knoten;
+}
+
+const WOCHENTAGE = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+const MONATE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
+                "August", "September", "Oktober", "November", "Dezember"];
+
+/** Tagesschlüssel eines ISO-Zeitstempels, ohne ihn in eine Zeitzone zu
+ *  übersetzen: die Feeds stehen schon in Ortszeit. */
+function tagVon(iso) { return String(iso).slice(0, 10); }
+
+function datumUeberschrift(tag) {
+  const [jahr, monat, tagZahl] = tag.split("-").map(Number);
+  const d = new Date(Date.UTC(jahr, monat - 1, tagZahl));
+  const heute = tagVon(new Date().toLocaleDateString("sv-SE"));
+  const praefix = tag === heute ? "Heute, " : "";
+  return praefix + WOCHENTAGE[d.getUTCDay()] + ", " + tagZahl + ". " + MONATE[monat - 1] + " " + jahr;
+}
+
+function uhrzeit(event) {
+  if (event.all_day) return "";
+  return String(event.dtstart).slice(11, 16);
+}
+
+function kurzerOrt(ort) {
+  if (!ort) return "";
+  // "Sporthalle Fliethe, Fortunastraße 30, …" -> "Sporthalle Fliethe"
+  return String(ort).split(",")[0].trim();
+}
+
+function neueUid() {
+  const bytes = new Uint8Array(4);
+  crypto.getRandomValues(bytes);
+  return "tbw-custom-" + Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+/* --- Zugangsschlüssel --------------------------------------------------- */
+
+function schluessel() {
+  try { return localStorage.getItem(SCHLUESSEL_ORT); } catch { return null; }
+}
+
+function schluesselSetzen(wert) {
+  try {
+    if (wert) localStorage.setItem(SCHLUESSEL_ORT, wert);
+    else localStorage.removeItem(SCHLUESSEL_ORT);
+  } catch {
+    meldung("fehler", "Der Browser lässt keinen lokalen Speicher zu.",
+            "Im privaten Modus kann der Schlüssel nicht behalten werden. Nutze ein normales Fenster.");
+  }
+}
+
+/* --- GitHub-Schnittstelle ----------------------------------------------- */
+
+class SchluesselFehler extends Error {}
+
+async function github(pfad, optionen = {}) {
+  const antwort = await fetch("https://api.github.com" + pfad, {
+    ...optionen,
+    headers: {
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+      Authorization: "Bearer " + schluessel(),
+      ...(optionen.body ? { "Content-Type": "application/json" } : {}),
+      ...optionen.headers,
+    },
+  });
+
+  if (antwort.status === 401 || antwort.status === 403) {
+    throw new SchluesselFehler(
+      antwort.status === 401
+        ? "Der Zugangsschlüssel ist ungültig oder abgelaufen."
+        : "Der Zugangsschlüssel reicht für diese Aktion nicht aus oder ist abgelaufen."
+    );
+  }
+  if (antwort.status === 404 && optionen.method !== "PUT") return null;
+  if (!antwort.ok) {
+    let text = "";
+    try { text = (await antwort.json()).message || ""; } catch { /* kein JSON */ }
+    throw new Error("GitHub antwortete mit " + antwort.status + (text ? ": " + text : ""));
+  }
+  return antwort.status === 204 ? null : antwort.json();
+}
+
+function repoPfad(rest) {
+  return "/repos/" + REPO.owner + "/" + REPO.name + rest;
+}
+
+/** UTF-8-sicheres Base64, weil Titel und Orte Umlaute enthalten. */
+function nachBase64(text) {
+  const bytes = new TextEncoder().encode(text);
+  let roh = "";
+  for (const b of bytes) roh += String.fromCharCode(b);
+  return btoa(roh);
+}
+
+function ausBase64(base64) {
+  const roh = atob(base64.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(roh, (z) => z.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+async function overridesLaden() {
+  const antwort = await github(repoPfad("/contents/" + OVERRIDES_PFAD + "?ref=" + BRANCH), {
+    headers: { "Cache-Control": "no-cache" },
+  });
+  if (!antwort) return { sha: null, roh: null, daten: { version: 1 } };
+  const roh = ausBase64(antwort.content);
+  let daten;
+  try {
+    daten = JSON.parse(roh);
+  } catch {
+    // Kaputte Datei nicht stillschweigend überschreiben.
+    throw new Error(
+      "overrides.json im Repository ist kein gültiges JSON. Repariere die Datei auf github.com, " +
+      "bevor du hier weiterarbeitest -- sonst gehen die bisherigen Eingriffe verloren."
+    );
+  }
+  return { sha: antwort.sha, roh, daten };
+}
+
+async function overridesSchreiben(inhaltText, sha) {
+  return github(repoPfad("/contents/" + OVERRIDES_PFAD), {
+    method: "PUT",
+    body: JSON.stringify({
+      message: "Termine von Hand angepasst",
+      content: nachBase64(inhaltText),
+      branch: BRANCH,
+      ...(sha ? { sha } : {}),
+    }),
+  });
+}
+
+async function workflowAusloesen() {
+  return github(repoPfad("/actions/workflows/" + WORKFLOW + "/dispatches"), {
+    method: "POST",
+    body: JSON.stringify({ ref: BRANCH }),
+  });
+}
+
+async function letzterLauf(nachZeit) {
+  const antwort = await github(
+    repoPfad("/actions/workflows/" + WORKFLOW + "/runs?event=workflow_dispatch&per_page=5")
+  );
+  if (!antwort || !antwort.workflow_runs) return null;
+  return antwort.workflow_runs.find((lauf) => new Date(lauf.created_at) >= nachZeit) || null;
+}
+
+/* --- Daten laden -------------------------------------------------------- */
+
+async function poolLaden() {
+  const antwort = await fetch("../pool.json?t=" + Date.now(), { cache: "no-store" });
+  if (!antwort.ok) {
+    throw new Error(
+      "pool.json ist nicht erreichbar. Sie entsteht beim Workflow-Lauf -- " +
+      "starte „Feeds aktualisieren“ einmal auf github.com."
+    );
+  }
+  return antwort.json();
+}
+
+function overridesUebernehmen(daten) {
+  zustand.hidden = new Set(Array.isArray(daten.hidden) ? daten.hidden : []);
+  zustand.included = new Set(Array.isArray(daten.included) ? daten.included : []);
+  zustand.custom = Array.isArray(daten.custom) ? daten.custom.map((e) => ({ ...e })) : [];
+}
+
+async function allesLaden() {
+  zustand.laedt = true;
+  zustand.ladefehler = null;
+  zeichnen();
+
+  try {
+    const [pool, overrides] = await Promise.all([poolLaden(), overridesLaden()]);
+    zustand.pool = pool;
+    zustand.sha = overrides.sha;
+    zustand.geladenRaw = overrides.roh;
+    overridesUebernehmen(overrides.daten);
+    zustand.dirty = false;
+    statusLeeren();
+  } catch (fehler) {
+    zustand.ladefehler = fehler;
+    if (fehler instanceof SchluesselFehler) {
+      schluesselSetzen(null);
+      meldung("fehler", fehler.message, "Trage unten einen neuen Schlüssel ein.");
+    }
+  } finally {
+    zustand.laedt = false;
+    zeichnen();
+  }
+}
+
+/* --- Statusstreifen ----------------------------------------------------- */
+
+function statusLeeren() {
+  const streifen = el("status");
+  streifen.hidden = true;
+  streifen.textContent = "";
+  streifen.className = "status";
+}
+
+function meldung(art, ...zeilen) {
+  const streifen = el("status");
+  streifen.className = "status" + (art === "fehler" ? " status--fehler" : "");
+  streifen.replaceChildren(
+    ...zeilen.map((zeile, i) =>
+      h("p", { class: i > 0 ? "status__hinweis" : null, text: zeile })
+    )
+  );
+  streifen.hidden = false;
+  return streifen;
+}
+
+/* --- Zeichnen: Kopf, Navigation, Bereiche ------------------------------- */
+
+function zeichnen() {
+  const angemeldet = Boolean(schluessel());
+
+  el("speichern").hidden = !angemeldet || !zustand.dirty;
+  el("speichern").disabled = zustand.speichert;
+  el("zeitraum").hidden = !angemeldet || zustand.bereich === "eigener";
+  el("navigation").hidden = !angemeldet;
+
+  for (const knopf of el("navigation").querySelectorAll("button")) {
+    knopf.setAttribute("aria-current", String(knopf.dataset.bereich === zustand.bereich));
+  }
+
+  if (!angemeldet) { inhalt.replaceChildren(anmeldung()); return; }
+  if (zustand.ladefehler) { inhalt.replaceChildren(ladefehler(), fussnote()); return; }
+  if (zustand.laedt) { inhalt.replaceChildren(geruest()); return; }
+
+  if (zustand.bereich === "meine") inhalt.replaceChildren(meineTermine(), fussnote());
+  else if (zustand.bereich === "andere") inhalt.replaceChildren(andereTeams(), fussnote());
+  else inhalt.replaceChildren(eigenerTermin(), fussnote());
+}
+
+/* --- Anmeldung ---------------------------------------------------------- */
+
+function anmeldung() {
+  const eingabe = h("input", {
+    type: "password",
+    id: "schluessel-feld",
+    autocomplete: "current-password",
+    spellcheck: "false",
+    placeholder: "github_pat_…",
+  });
+
+  function anmelden() {
+    const wert = eingabe.value.trim();
+    if (!wert) {
+      meldung("fehler", "Ohne Schlüssel geht es nicht weiter.", "Trage den Token aus GitHub ein.");
+      eingabe.focus();
+      return;
+    }
+    schluesselSetzen(wert);
+    statusLeeren();
+    allesLaden();
+  }
+
+  return h("div", { class: "anmeldung" },
+    h("h2", { text: "Anmelden" }),
+    h("p", { text:
+      "Diese Seite ändert Termine in deinem Repository. Dafür braucht sie einen " +
+      "Fine-grained Token mit Contents und Actions auf Read and write. Er bleibt " +
+      "im Speicher dieses Browsers und wird nur an api.github.com geschickt." }),
+    h("div", { class: "feld" },
+      h("label", { for: "schluessel-feld", text: "Zugangsschlüssel" }),
+      eingabe
+    ),
+    h("button", {
+      class: "speichern",
+      type: "button",
+      onclick: anmelden,
+    }, "Anmelden"),
+    h("p", { style: "margin-top:1.5rem", text:
+      "Ohne Anmeldung bleiben die Listen leer. Lesen kann diese Seite jeder, " +
+      "ändern kann ohne Schlüssel niemand." })
+  );
+}
+
+function abmelden() {
+  if (zustand.dirty && !confirm("Es gibt ungespeicherte Änderungen. Schlüssel trotzdem entfernen?")) return;
+  schluesselSetzen(null);
+  zustand.pool = null;
+  zustand.dirty = false;
+  zustand.laedt = false;
+  zustand.ladefehler = null;
+  statusLeeren();
+  zeichnen();
+}
+
+/* --- Lade- und Fehlerzustand ------------------------------------------- */
+
+function geruest() {
+  // Die Struktur der Liste steht schon, während die Daten kommen.
+  return h("div", { class: "gruppe", "aria-hidden": "true" },
+    h("h2", { class: "datum", text: " " }),
+    h("ul", { class: "liste" },
+      [0, 1, 2, 3, 4].map(() =>
+        h("li", {},
+          h("div", { class: "zeile platzhalter", "data-typ": "training" },
+            h("span", { class: "zeile__zeit" }, h("span", { class: "balken" })),
+            h("span", { class: "zeile__text" },
+              h("span", { class: "balken balken--titel" }),
+              h("span", { class: "balken balken--ort" })
+            ),
+            h("span", { class: "zeile__ring" })
+          )
+        )
+      )
+    )
+  );
+}
+
+function ladefehler() {
+  const fehler = zustand.ladefehler;
+  const knoepfe = h("div", { class: "status__knoepfe" },
+    h("button", { class: "textknopf", type: "button", onclick: allesLaden }, "Erneut versuchen")
+  );
+  if (fehler instanceof SchluesselFehler) {
+    knoepfe.append(h("button", { class: "textknopf", type: "button", onclick: abmelden }, "Schlüssel eingeben"));
+  }
+  return h("div", { class: "hinweis hinweis--fehler" },
+    h("p", { text: fehler.message }), knoepfe
+  );
+}
+
+/* --- Zeitraum ----------------------------------------------------------- */
+
+function grenzeVon(zeitraum) {
+  const jetzt = new Date();
+  if (zeitraum === "alle") return "0000-00-00";
+  if (zeitraum === "ab-heute") return new Date(jetzt).toLocaleDateString("sv-SE");
+  const tage = zeitraum === "30-tage" ? 30 : 365;
+  const grenze = new Date(jetzt.getTime() - tage * 86400000);
+  return grenze.toLocaleDateString("sv-SE");
+}
+
+function termine(eigene) {
+  if (!zustand.pool) return [];
+  const grenze = grenzeVon(zustand.zeitraum);
+  return zustand.pool.events
+    .filter((e) => e.own_team === eigene && tagVon(e.dtstart) >= grenze)
+    .sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart)));
+}
+
+/* --- Die Terminzeile ---------------------------------------------------- */
+
+function zeile(event, { an, fremd, umschalten }) {
+  const abgesagt = event.cancelled;
+  const titel = abgesagt
+    ? String(event.summary).replace(/^ABGESAGT\s+/, "")
+    : event.summary;
+
+  const inneres = [
+    h("span", { class: "zeile__zeit", text: event.all_day ? "ganztags" : uhrzeit(event) }),
+    h("span", { class: "zeile__text" },
+      h("span", { class: "zeile__titel" },
+        abgesagt ? h("span", { class: "zeile__abgesagt", text: "Abgesagt " }) : null,
+        titel
+      ),
+      event.location ? h("span", { class: "zeile__ort", text: kurzerOrt(event.location) }) : null
+    ),
+    // Ohne Schalter kein Ring: er wäre eine Anzeige für einen Zustand, den
+    // hier niemand ändern kann.
+    umschalten ? h("span", { class: "zeile__ring" }) : null,
+  ];
+
+  const attrs = {
+    class: "zeile",
+    "data-typ": event.type === "training" ? "training" : "spiel",
+    "data-an": String(an),
+    "data-fremd": String(fremd),
+    // Eigene Termine gehören zu keinem Team und bleiben auf der neutralen
+    // Schiene.
+    style: event.team_key ? "--farbe: var(--team-" + event.team_key + ")" : null,
+  };
+
+  if (!umschalten) return h("div", attrs, inneres);
+
+  // Die Ringe sagen in beiden Bereichen dasselbe: liegt das im Kalender?
+  const beschriftung = fremd
+    ? (an ? "In den Kalender geholt" : "Nicht im Kalender")
+    : (an ? "Im Kalender" : "Ausgeblendet");
+
+  return h("button", {
+    ...attrs,
+    type: "button",
+    "aria-pressed": String(an),
+    "aria-label": titel + " -- " + beschriftung,
+    onclick: umschalten,
+  }, inneres);
+}
+
+function gruppiert(liste, zeileBauen) {
+  const gruppen = new Map();
+  for (const event of liste) {
+    const tag = tagVon(event.dtstart);
+    if (!gruppen.has(tag)) gruppen.set(tag, []);
+    gruppen.get(tag).push(event);
+  }
+  return Array.from(gruppen, ([tag, events]) =>
+    h("section", { class: "gruppe" },
+      h("h2", { class: "datum", text: datumUeberschrift(tag) }),
+      h("ul", { class: "liste" }, events.map((e) => h("li", {}, zeileBauen(e))))
+    )
+  );
+}
+
+function aendern(arbeit) {
+  arbeit();
+  zustand.dirty = true;
+  statusLeeren();
+  zeichnen();
+}
+
+/* --- Bereich: Meine Termine -------------------------------------------- */
+
+function meineTermine() {
+  const liste = termine(true);
+  if (!liste.length) {
+    return h("div", { class: "hinweis" },
+      "Für den gewählten Zeitraum stehen keine Termine der 2. Herren, 3. Herren " +
+      "oder C-Jugend im Pool. Wähle oben einen größeren Zeitraum, oder warte den " +
+      "nächsten Workflow-Lauf ab."
+    );
+  }
+  return h("div", {}, gruppiert(liste, (event) =>
+    zeile(event, {
+      an: !zustand.hidden.has(event.uid),
+      fremd: false,
+      umschalten: () => aendern(() => {
+        if (zustand.hidden.has(event.uid)) zustand.hidden.delete(event.uid);
+        else zustand.hidden.add(event.uid);
+      }),
+    })
+  ));
+}
+
+/* --- Bereich: Andere Teams -------------------------------------------- */
+
+function andereTeams() {
+  const alle = termine(false);
+  const teams = TEAM_REIHENFOLGE
+    .map((key) => alle.find((e) => e.team_key === key))
+    .filter(Boolean)
+    .map((e) => ({ key: e.team_key, name: e.team }));
+
+  const filter = h("div", { class: "filter", role: "group", "aria-label": "Team" },
+    [{ key: "alle", name: "Alle" }, ...teams].map((team) =>
+      h("button", {
+        type: "button",
+        "aria-pressed": String(zustand.teamFilter === team.key),
+        onclick: () => { zustand.teamFilter = team.key; zeichnen(); },
+        text: team.name,
+      })
+    )
+  );
+
+  const liste = zustand.teamFilter === "alle"
+    ? alle
+    : alle.filter((e) => e.team_key === zustand.teamFilter);
+
+  if (!liste.length) {
+    return h("div", {}, filter,
+      h("div", { class: "hinweis" },
+        "Hier stehen die Spiele der A-Jugend, der 1. Herren und der 1. Damen. " +
+        "Jedes einzelne lässt sich anschalten und wandert dann in den Extra-Feed, " +
+        "ohne dass du den ganzen Spielplan abonnieren musst. Für den gewählten " +
+        "Zeitraum ist gerade keins dabei -- wähle oben einen größeren Zeitraum."
+      )
+    );
+  }
+
+  return h("div", {}, filter, gruppiert(liste, (event) =>
+    zeile(event, {
+      an: zustand.included.has(event.uid),
+      fremd: true,
+      umschalten: () => aendern(() => {
+        if (zustand.included.has(event.uid)) zustand.included.delete(event.uid);
+        else zustand.included.add(event.uid);
+      }),
+    })
+  ));
+}
+
+/* --- Bereich: Eigener Termin ------------------------------------------ */
+
+const FORMULAR_LEER = {
+  uid: null, summary: "", datum: "", von: "", bis: "",
+  all_day: false, location: "", ortFrei: false, description: "",
+};
+
+let formular = { ...FORMULAR_LEER };
+
+function formularFuellen(eintrag) {
+  const hallen = (zustand.pool && zustand.pool.halls) || [];
+  const ort = eintrag.location || "";
+  formular = {
+    uid: eintrag.uid,
+    summary: eintrag.summary || "",
+    datum: tagVon(eintrag.dtstart),
+    von: eintrag.all_day ? "" : String(eintrag.dtstart).slice(11, 16),
+    bis: eintrag.all_day ? "" : String(eintrag.dtend).slice(11, 16),
+    all_day: Boolean(eintrag.all_day),
+    location: ort,
+    // Ein Ort, der in keiner Halle steht, war freie Eingabe.
+    ortFrei: Boolean(ort) && !hallen.some((halle) => halle.address === ort),
+    description: eintrag.description || "",
+  };
+  zustand.bearbeitet = eintrag.uid;
+  zustand.formularFehler = {};
+  zeichnen();
+  requestAnimationFrame(() => {
+    const feld = el("feld-titel");
+    if (feld) feld.focus();
+  });
+}
+
+function formularLeeren() {
+  formular = { ...FORMULAR_LEER };
+  zustand.bearbeitet = null;
+  zustand.formularFehler = {};
+}
+
+function formularPruefen() {
+  const fehler = {};
+  if (!formular.summary.trim()) fehler.summary = "Ohne Titel weiß der Kalender nicht, was er anzeigen soll.";
+  if (!formular.datum) fehler.datum = "Ein Datum braucht der Termin.";
+  if (!formular.all_day) {
+    if (!formular.von) fehler.von = "Startzeit fehlt.";
+    if (!formular.bis) fehler.bis = "Endzeit fehlt.";
+    if (formular.von && formular.bis && formular.bis <= formular.von) {
+      fehler.bis = "Das Ende liegt vor dem Anfang.";
+    }
+  }
+  return fehler;
+}
+
+function naechsterTag(datum) {
+  const d = new Date(datum + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
+}
+
+function formularSpeichern() {
+  const fehler = formularPruefen();
+  zustand.formularFehler = fehler;
+  if (Object.keys(fehler).length) { zeichnen(); return; }
+
+  const eintrag = {
+    uid: formular.uid || neueUid(),
+    summary: formular.summary.trim(),
+    all_day: formular.all_day,
+    dtstart: formular.all_day ? formular.datum : formular.datum + "T" + formular.von + ":00",
+    dtend: formular.all_day ? naechsterTag(formular.datum) : formular.datum + "T" + formular.bis + ":00",
+    location: formular.location.trim(),
+    description: formular.description.trim(),
+    created: new Date().toISOString(),
+  };
+
+  aendern(() => {
+    const vorhanden = zustand.custom.findIndex((e) => e.uid === eintrag.uid);
+    if (vorhanden >= 0) {
+      // created des ursprünglichen Eintrags behalten.
+      eintrag.created = zustand.custom[vorhanden].created || eintrag.created;
+      zustand.custom[vorhanden] = eintrag;
+    } else {
+      zustand.custom.push(eintrag);
+    }
+    formularLeeren();
+  });
+}
+
+function eigenenLoeschen(uid) {
+  const eintrag = zustand.custom.find((e) => e.uid === uid);
+  if (!confirm("„" + eintrag.summary + "“ wirklich löschen?")) return;
+  aendern(() => {
+    zustand.custom = zustand.custom.filter((e) => e.uid !== uid);
+    if (zustand.bearbeitet === uid) formularLeeren();
+  });
+}
+
+function textfeld(id, beschriftung, schluesselName, extra = {}) {
+  const fehler = zustand.formularFehler[schluesselName];
+  return h("div", { class: "feld" },
+    h("label", { for: id, text: beschriftung }),
+    h("input", {
+      id,
+      type: extra.type || "text",
+      value: formular[schluesselName],
+      "aria-invalid": fehler ? "true" : null,
+      oninput: (ereignis) => { formular[schluesselName] = ereignis.target.value; },
+      ...extra.attrs,
+    }),
+    fehler ? h("span", { class: "feld__fehler", text: fehler }) : null
+  );
+}
+
+function ortsfeld() {
+  const hallen = (zustand.pool && zustand.pool.halls) || [];
+
+  const auswahl = h("select", {
+    id: "feld-ort",
+    onchange: (ereignis) => {
+      if (ereignis.target.value === "__frei") {
+        formular.ortFrei = true;
+        formular.location = "";
+      } else {
+        formular.ortFrei = false;
+        formular.location = ereignis.target.value;
+      }
+      zeichnen();
+      if (formular.ortFrei) {
+        requestAnimationFrame(() => {
+          const feld = el("feld-ort-frei");
+          if (feld) feld.focus();
+        });
+      }
+    },
+  },
+    h("option", { value: "", selected: !formular.ortFrei && !formular.location }, "Kein Ort"),
+    hallen.map((halle) =>
+      h("option", {
+        value: halle.address,
+        selected: !formular.ortFrei && halle.address === formular.location,
+      }, halle.name)
+    ),
+    h("option", { value: "__frei", selected: formular.ortFrei }, "Anderer Ort …")
+  );
+
+  return h("div", { class: "feld" },
+    h("label", { for: "feld-ort", text: "Ort" }),
+    auswahl,
+    formular.ortFrei
+      ? h("input", {
+          id: "feld-ort-frei",
+          type: "text",
+          value: formular.location,
+          placeholder: "Straße, PLZ Ort",
+          "aria-label": "Anderer Ort",
+          style: "margin-top:0.75rem",
+          oninput: (ereignis) => { formular.location = ereignis.target.value; },
+        })
+      : null
+  );
+}
+
+function eigenerTermin() {
+  const zeitFelder = formular.all_day ? null : h("div", { class: "feld__paar" },
+    textfeld("feld-von", "Beginn", "von", { type: "time" }),
+    textfeld("feld-bis", "Ende", "bis", { type: "time" })
+  );
+
+  const eigene = [...zustand.custom].sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart)));
+
+  return h("div", {},
+    h("form", {
+      class: "formular",
+      onsubmit: (ereignis) => { ereignis.preventDefault(); formularSpeichern(); },
+    },
+      textfeld("feld-titel", "Titel", "summary", { attrs: { placeholder: "Mannschaftsabend" } }),
+      textfeld("feld-datum", "Datum", "datum", { type: "date" }),
+      h("div", { class: "feld" },
+        h("button", {
+          class: "schalter",
+          type: "button",
+          "aria-pressed": String(formular.all_day),
+          onclick: () => { formular.all_day = !formular.all_day; zustand.formularFehler = {}; zeichnen(); },
+        },
+          h("span", { class: "schalter__ring" }),
+          "Ganztags"
+        )
+      ),
+      zeitFelder,
+      ortsfeld(),
+      h("div", { class: "feld" },
+        h("label", { for: "feld-notiz", text: "Notiz" }),
+        h("textarea", {
+          id: "feld-notiz",
+          rows: "2",
+          oninput: (ereignis) => { formular.description = ereignis.target.value; },
+        }, formular.description)
+      ),
+      h("div", { class: "formular__aktionen" },
+        h("button", { class: "speichern", type: "submit" },
+          zustand.bearbeitet ? "Änderung übernehmen" : "Termin anlegen"),
+        zustand.bearbeitet
+          ? h("button", {
+              class: "textknopf textknopf--leise",
+              type: "button",
+              onclick: () => { formularLeeren(); zeichnen(); },
+            }, "Abbrechen")
+          : null
+      )
+    ),
+
+    h("div", { class: "eigene" },
+      h("h2", { class: "eigene__ueberschrift", text: "Angelegte Termine" }),
+      eigene.length
+        ? h("ul", { class: "liste" }, eigene.map((eintrag) =>
+            h("li", {},
+              zeile({
+                uid: eintrag.uid,
+                team_key: null,
+                type: "spiel",
+                summary: eintrag.summary,
+                dtstart: eintrag.dtstart,
+                all_day: eintrag.all_day,
+                location: eintrag.location,
+                cancelled: false,
+              }, { an: true, fremd: false, umschalten: null }),
+              h("div", { class: "eigene__aktionen" },
+                h("button", {
+                  class: "textknopf", type: "button",
+                  onclick: () => formularFuellen(eintrag),
+                }, "Bearbeiten"),
+                h("button", {
+                  class: "textknopf", type: "button",
+                  onclick: () => eigenenLoeschen(eintrag.uid),
+                }, "Löschen")
+              )
+            )
+          ))
+        : h("div", { class: "hinweis" },
+            "Noch keine eigenen Termine. Was du hier anlegst, steht in keiner " +
+            "Quelle und landet über den Extra-Feed im Kalender -- ein " +
+            "Mannschaftsabend zum Beispiel, oder eine Hallenreinigung."
+          )
+    )
+  );
+}
+
+/* --- Fussnote ---------------------------------------------------------- */
+
+function fussnote() {
+  return h("div", { class: "fuss" },
+    h("p", { text: "Der Zugangsschlüssel liegt nur in diesem Browser." }),
+    h("button", { class: "textknopf textknopf--leise", type: "button", onclick: abmelden },
+      "Schlüssel entfernen")
+  );
+}
+
+/* --- Speichern und Workflow ------------------------------------------- */
+
+function overridesText() {
+  return JSON.stringify({
+    version: 1,
+    hidden: [...zustand.hidden].sort(),
+    custom: [...zustand.custom].sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart))),
+    included: [...zustand.included].sort(),
+  }, null, 2) + "\n";
+}
+
+async function speichern({ erzwingen = false } = {}) {
+  if (zustand.speichert) return;
+  zustand.speichert = true;
+  zeichnen();
+
+  try {
+    // Konflikt: hat sich overrides.json seit dem Laden geändert? Das passiert,
+    // wenn die App auf zwei Geräten offen ist.
+    if (!erzwingen) {
+      const aktuell = await overridesLaden();
+      if (aktuell.sha !== zustand.sha) {
+        konfliktFragen(aktuell);
+        return;
+      }
+    }
+
+    const gestartet = new Date(Date.now() - 5000);
+    const antwort = await overridesSchreiben(overridesText(), zustand.sha);
+    zustand.sha = antwort.content.sha;
+    zustand.geladenRaw = overridesText();
+    zustand.dirty = false;
+    zeichnen();
+
+    meldung("info", "Änderungen gespeichert. Der Workflow wird gestartet …");
+    await workflowAusloesen();
+    laufVerfolgen(gestartet);
+  } catch (fehler) {
+    if (fehler instanceof SchluesselFehler) {
+      meldung("fehler", fehler.message, "Melde dich mit einem neuen Schlüssel an. Die Änderungen bleiben erhalten.")
+        .append(h("div", { class: "status__knoepfe" },
+          h("button", { class: "textknopf", type: "button", onclick: () => { schluesselSetzen(null); zeichnen(); } },
+            "Schlüssel eingeben")
+        ));
+    } else {
+      meldung("fehler", "Das Speichern hat nicht geklappt: " + fehler.message,
+              "Deine Änderungen stehen noch hier. Versuch es gleich noch einmal.");
+    }
+  } finally {
+    zustand.speichert = false;
+    zeichnen();
+  }
+}
+
+function konfliktFragen(aktuell) {
+  const streifen = meldung("info",
+    "overrides.json wurde inzwischen anderswo geändert -- vermutlich ist diese Seite auf einem zweiten Gerät offen.",
+    "Neu laden verwirft deine Änderungen hier. Überschreiben verwirft die des anderen Geräts."
+  );
+  streifen.append(h("div", { class: "status__knoepfe" },
+    h("button", {
+      class: "textknopf", type: "button",
+      onclick: () => { statusLeeren(); allesLaden(); },
+    }, "Neu laden"),
+    h("button", {
+      class: "textknopf", type: "button",
+      onclick: () => { zustand.sha = aktuell.sha; speichern({ erzwingen: true }); },
+    }, "Überschreiben")
+  ));
+}
+
+async function laufVerfolgen(gestartet) {
+  const bis = Date.now() + 5 * 60 * 1000;
+  const hinweis =
+    "Die Feeds stehen etwa eine Minute nach dem Lauf. Kalender-Apps holen sie " +
+    "je nach Einstellung erst später nach.";
+
+  while (Date.now() < bis) {
+    await new Promise((weiter) => setTimeout(weiter, 4000));
+
+    let lauf;
+    try {
+      lauf = await letzterLauf(gestartet);
+    } catch {
+      meldung("info", "Gespeichert. Der Status des Laufs ist gerade nicht abrufbar.", hinweis);
+      return;
+    }
+
+    if (!lauf) continue;
+
+    if (lauf.status !== "completed") {
+      meldung("info", "Gespeichert. Der Workflow läuft …", hinweis);
+      continue;
+    }
+
+    if (lauf.conclusion === "success") {
+      meldung("info", "Fertig. Die Feeds sind neu geschrieben.", hinweis);
+    } else {
+      meldung("fehler",
+        "Gespeichert, aber der Workflow endete mit „" + lauf.conclusion + "“.",
+        "Deine Änderungen stehen in overrides.json. Schau in die Actions-Seite auf github.com, was schiefging."
+      );
+    }
+    return;
+  }
+
+  meldung("info", "Gespeichert. Der Lauf braucht länger als üblich.", hinweis);
+}
+
+/* --- Verdrahtung ------------------------------------------------------- */
+
+el("speichern").addEventListener("click", () => speichern());
+
+el("zeitraum").addEventListener("change", (ereignis) => {
+  zustand.zeitraum = ereignis.target.value;
+  zeichnen();
+});
+
+for (const knopf of el("navigation").querySelectorAll("button")) {
+  knopf.addEventListener("click", () => {
+    zustand.bereich = knopf.dataset.bereich;
+    zeichnen();
+    window.scrollTo({ top: 0 });
+  });
+}
+
+window.addEventListener("beforeunload", (ereignis) => {
+  if (!zustand.dirty) return;
+  ereignis.preventDefault();
+  ereignis.returnValue = "";
+});
+
+if (schluessel()) allesLaden();
+else { zustand.laedt = false; zeichnen(); }
+</script>
+
+</body>
+</html>
