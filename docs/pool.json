@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T17:38:40.749943+00:00",
+  "generated": "2026-09-24T17:44:58.723396+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -2448,6 +2448,19 @@
       "dtend": "2026-12-13T16:00:00+01:00",
       "all_day": false,
       "location": "Witzhelden.Am Sportplatz, Am Sportplatz, 42799 Leichlingen, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-watch-spiel-622804",
+      "team": "Gemerktes Spiel",
+      "team_key": "watch",
+      "own_team": false,
+      "type": "spiele",
+      "summary": "HSG Velbert/Heiligenhaus - LTV Wuppertal",
+      "dtstart": "2026-12-13T16:00:00+01:00",
+      "dtend": "2026-12-13T17:30:00+01:00",
+      "all_day": false,
+      "location": "Emka Sportzentrum Velbert, Metallstr. ( Zubringer A 44 Kreisverkehr ), 42551 Velbert, Deutschland",
       "cancelled": false
     },
     {
