@@ -731,18 +731,34 @@ function schluesselSetzen(wert) {
 /* --- GitHub-Schnittstelle ----------------------------------------------- */
 
 class SchluesselFehler extends Error {}
+class NetzFehler extends Error {}
 
+/* Nur Header, die api.github.com im CORS-Preflight zulässt. "Cache-Control"
+   gehört ausdrücklich nicht dazu: der Browser blockt die Anfrage dann
+   komplett, ohne dass sie je rausgeht. Der Cache wird stattdessen über einen
+   Query-Parameter umgangen -- nötig, weil GitHub die Antwort mit
+   "max-age=60" ausliefert und die Konfliktprüfung sonst auf einem bis zu
+   eine Minute alten Stand arbeitet. */
 async function github(pfad, optionen = {}) {
-  const antwort = await fetch("https://api.github.com" + pfad, {
-    ...optionen,
-    headers: {
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2022-11-28",
-      Authorization: "Bearer " + schluessel(),
-      ...(optionen.body ? { "Content-Type": "application/json" } : {}),
-      ...optionen.headers,
-    },
-  });
+  let antwort;
+  try {
+    antwort = await fetch("https://api.github.com" + pfad, {
+      ...optionen,
+      headers: {
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        Authorization: "Bearer " + schluessel(),
+        ...(optionen.body ? { "Content-Type": "application/json" } : {}),
+        ...optionen.headers,
+      },
+    });
+  } catch {
+    throw new NetzFehler(
+      "api.github.com war nicht erreichbar. Prüfe die Internetverbindung. " +
+      "Blockt ein Inhaltsblocker oder eine Browser-Erweiterung die Anfrage, " +
+      "schalte sie für diese Seite ab."
+    );
+  }
 
   if (antwort.status === 401 || antwort.status === 403) {
     throw new SchluesselFehler(
@@ -779,9 +795,9 @@ function ausBase64(base64) {
 }
 
 async function overridesLaden() {
-  const antwort = await github(repoPfad("/contents/" + OVERRIDES_PFAD + "?ref=" + BRANCH), {
-    headers: { "Cache-Control": "no-cache" },
-  });
+  const antwort = await github(
+    repoPfad("/contents/" + OVERRIDES_PFAD + "?ref=" + BRANCH + "&t=" + Date.now())
+  );
   if (!antwort) return { sha: null, roh: null, daten: { version: 1 } };
   const roh = ausBase64(antwort.content);
   let daten;
@@ -827,7 +843,15 @@ async function letzterLauf(nachZeit) {
 /* --- Daten laden -------------------------------------------------------- */
 
 async function poolLaden() {
-  const antwort = await fetch("../pool.json?t=" + Date.now(), { cache: "no-store" });
+  let antwort;
+  try {
+    antwort = await fetch("../pool.json?t=" + Date.now(), { cache: "no-store" });
+  } catch {
+    throw new NetzFehler(
+      "pool.json war nicht erreichbar. Prüfe die Internetverbindung. " +
+      "Blockt ein Inhaltsblocker die Anfrage, schalte ihn für diese Seite ab."
+    );
+  }
   if (!antwort.ok) {
     throw new Error(
       "pool.json ist nicht erreichbar. Sie entsteht beim Workflow-Lauf -- " +
