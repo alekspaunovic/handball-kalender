@@ -1,6 +1,15 @@
 {
   "version": 1,
-  "hidden": [],
+  "hidden": [
+    "tbw-m3-spiel-674195",
+    "tbw-m3-spiel-677881",
+    "tbw-m3-spiel-680658",
+    "tbw-m3-spiel-682173",
+    "tbw-m3-spiel-683161",
+    "tbw-m3-spiel-683304",
+    "tbw-m3-spiel-686483",
+    "tbw-m3-training-77001962"
+  ],
   "custom": [],
   "included": [
     "tbw-a-jugend-spiel-563610"
