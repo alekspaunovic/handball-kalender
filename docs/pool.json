@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T16:58:42.527305+00:00",
+  "generated": "2026-09-24T17:35:37.599311+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -991,7 +991,7 @@
       "dtstart": "2026-09-19T11:40:00+02:00",
       "dtend": "2026-09-19T12:55:00+02:00",
       "all_day": false,
-      "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+      "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
       "cancelled": false
     },
     {
@@ -1004,7 +1004,7 @@
       "dtstart": "2026-09-19T13:40:00+02:00",
       "dtend": "2026-09-19T14:55:00+02:00",
       "all_day": false,
-      "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+      "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
       "cancelled": false
     },
     {
@@ -1017,7 +1017,7 @@
       "dtstart": "2026-09-19T15:40:00+02:00",
       "dtend": "2026-09-19T16:55:00+02:00",
       "all_day": false,
-      "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+      "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
       "cancelled": false
     },
     {
@@ -1043,7 +1043,7 @@
       "dtstart": "2026-09-19T17:00:00+02:00",
       "dtend": "2026-09-19T18:15:00+02:00",
       "all_day": false,
-      "location": "Voss-Arena (wipperfürth.am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
+      "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
       "cancelled": false
     },
     {
@@ -1433,7 +1433,7 @@
       "dtstart": "2026-10-11T13:30:00+02:00",
       "dtend": "2026-10-11T15:00:00+02:00",
       "all_day": false,
-      "location": "Haan.adlerstrasse, Adlerstrasse 3, 42781 Haan, Deutschland",
+      "location": "Haan.Adlerstrasse, Adlerstrasse 3, 42781 Haan, Deutschland",
       "cancelled": false
     },
     {
@@ -1459,7 +1459,7 @@
       "dtstart": "2026-10-11T17:00:00+02:00",
       "dtend": "2026-10-11T18:30:00+02:00",
       "all_day": false,
-      "location": "Sg.klingenhalle, Kotter Str. 9, 42655 Solingen, Deutschland",
+      "location": "Sg.Klingenhalle, Kotter Str. 9, 42655 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -1771,7 +1771,7 @@
       "dtstart": "2026-11-07T17:00:00+01:00",
       "dtend": "2026-11-07T18:15:00+01:00",
       "all_day": false,
-      "location": "Langenfeld.hinter Den Gärten, Hinter Den Gärten, 40764 Langenfeld, Deutschland",
+      "location": "Langenfeld.Hinter Den Gärten, Hinter Den Gärten, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -2057,7 +2057,7 @@
       "dtstart": "2026-11-21T18:30:00+01:00",
       "dtend": "2026-11-21T19:45:00+01:00",
       "all_day": false,
-      "location": "Wermelskirchen.schwanen, Stettiner Str. / Am Schwanen, 42929 Wermelskirchen, Deutschland",
+      "location": "Wermelskirchen.Schwanen, Stettiner Str. / Am Schwanen, 42929 Wermelskirchen, Deutschland",
       "cancelled": false
     },
     {
@@ -2252,7 +2252,7 @@
       "dtstart": "2026-12-05T17:00:00+01:00",
       "dtend": "2026-12-05T18:15:00+01:00",
       "all_day": false,
-      "location": "Langenfeld.konrad-Adenauer-Gymnasium Neu, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Langenfeld.Konrad-Adenauer-Gymnasium Neu, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -2291,7 +2291,7 @@
       "dtstart": "2026-12-06T13:30:00+01:00",
       "dtend": "2026-12-06T15:00:00+01:00",
       "all_day": false,
-      "location": "Rs.neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
+      "location": "Rs.Neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
       "cancelled": false
     },
     {
@@ -2304,7 +2304,7 @@
       "dtstart": "2026-12-06T16:00:00+01:00",
       "dtend": "2026-12-06T17:15:00+01:00",
       "all_day": false,
-      "location": "Sg.august-Dicke-Schule, Schützenstrasse 44, 42659 Solingen, Deutschland",
+      "location": "Sg.August-Dicke-Schule, Schützenstrasse 44, 42659 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -2317,7 +2317,7 @@
       "dtstart": "2026-12-06T18:00:00+01:00",
       "dtend": "2026-12-06T19:30:00+01:00",
       "all_day": false,
-      "location": "Sg.otv-Sporthalle, Hubertusstrasse 12, 42697 Solingen, Deutschland",
+      "location": "Sg.Otv-Sporthalle, Hubertusstrasse 12, 42697 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -2447,7 +2447,7 @@
       "dtstart": "2026-12-13T14:30:00+01:00",
       "dtend": "2026-12-13T16:00:00+01:00",
       "all_day": false,
-      "location": "Witzhelden.am Sportplatz, Am Sportplatz, 42799 Leichlingen, Deutschland",
+      "location": "Witzhelden.Am Sportplatz, Am Sportplatz, 42799 Leichlingen, Deutschland",
       "cancelled": false
     },
     {
@@ -2551,7 +2551,7 @@
       "dtstart": "2026-12-19T17:00:00+01:00",
       "dtend": "2026-12-19T18:30:00+01:00",
       "all_day": false,
-      "location": "Langenfeld.konrad-Adenauer-Gymnasium Alt, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Langenfeld.Konrad-Adenauer-Gymnasium Alt, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -2564,7 +2564,7 @@
       "dtstart": "2026-12-20T16:00:00+01:00",
       "dtend": "2026-12-20T17:30:00+01:00",
       "all_day": false,
-      "location": "Sg.sporthalle Wittkulle Alt, Wittkuller Strasse, 42719 Solingen, Deutschland",
+      "location": "Sg.Sporthalle Wittkulle Alt, Wittkuller Strasse, 42719 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -2694,7 +2694,7 @@
       "dtstart": "2027-01-23T19:00:00+01:00",
       "dtend": "2027-01-23T20:30:00+01:00",
       "all_day": false,
-      "location": "Sg.börkhaus-Siebels, Uhlandstrasse 52, 42699 Solingen, Deutschland",
+      "location": "Sg.Börkhaus-Siebels, Uhlandstrasse 52, 42699 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -2707,7 +2707,7 @@
       "dtstart": "2027-01-23T19:00:00+01:00",
       "dtend": "2027-01-23T20:30:00+01:00",
       "all_day": false,
-      "location": "Küllenhahn (a) Sportzentrum Süd Wuppertal, Küllenhahner Str.130, 42349 Wuppertal, Deutschland",
+      "location": "Küllenhahn (A) Sportzentrum Süd Wuppertal, Küllenhahner Str.130, 42349 Wuppertal, Deutschland",
       "cancelled": false
     },
     {
@@ -2759,7 +2759,7 @@
       "dtstart": "2027-01-30T18:00:00+01:00",
       "dtend": "2027-01-30T19:30:00+01:00",
       "all_day": false,
-      "location": "Rs.lüttringhausen, Klausener Strasse 50, 42899 Remscheid, Deutschland",
+      "location": "Rs.Lüttringhausen, Klausener Strasse 50, 42899 Remscheid, Deutschland",
       "cancelled": false
     },
     {
@@ -2837,7 +2837,7 @@
       "dtstart": "2027-02-13T15:00:00+01:00",
       "dtend": "2027-02-13T16:30:00+01:00",
       "all_day": false,
-      "location": "Küllenhahn (a) Sportzentrum Süd Wuppertal, Küllenhahner Str.130, 42349 Wuppertal, Deutschland",
+      "location": "Küllenhahn (A) Sportzentrum Süd Wuppertal, Küllenhahner Str.130, 42349 Wuppertal, Deutschland",
       "cancelled": false
     },
     {
@@ -2928,7 +2928,7 @@
       "dtstart": "2027-02-20T16:30:00+01:00",
       "dtend": "2027-02-20T18:00:00+01:00",
       "all_day": false,
-      "location": "Rs.neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
+      "location": "Rs.Neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
       "cancelled": false
     },
     {
@@ -2954,7 +2954,7 @@
       "dtstart": "2027-02-20T18:30:00+01:00",
       "dtend": "2027-02-20T20:00:00+01:00",
       "all_day": false,
-      "location": "Rs.neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
+      "location": "Rs.Neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
       "cancelled": false
     },
     {
@@ -3110,7 +3110,7 @@
       "dtstart": "2027-03-06T19:00:00+01:00",
       "dtend": "2027-03-06T20:30:00+01:00",
       "all_day": false,
-      "location": "Sg.august-Dicke-Schule, Schützenstrasse 44, 42659 Solingen, Deutschland",
+      "location": "Sg.August-Dicke-Schule, Schützenstrasse 44, 42659 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -3279,7 +3279,7 @@
       "dtstart": "2027-04-03T18:30:00+02:00",
       "dtend": "2027-04-03T20:00:00+02:00",
       "all_day": false,
-      "location": "Wermelskirchen.schwanen, Stettiner Str. / Am Schwanen, 42929 Wermelskirchen, Deutschland",
+      "location": "Wermelskirchen.Schwanen, Stettiner Str. / Am Schwanen, 42929 Wermelskirchen, Deutschland",
       "cancelled": false
     },
     {
@@ -3331,7 +3331,7 @@
       "dtstart": "2027-04-17T19:00:00+02:00",
       "dtend": "2027-04-17T20:30:00+02:00",
       "all_day": false,
-      "location": "Sg.schulzentrum Vogelsang, Vogelsang 33, 42653 Solingen, Deutschland",
+      "location": "Sg.Schulzentrum Vogelsang, Vogelsang 33, 42653 Solingen, Deutschland",
       "cancelled": false
     },
     {
@@ -3383,7 +3383,7 @@
       "dtstart": "2027-05-01T17:00:00+02:00",
       "dtend": "2027-05-01T18:30:00+02:00",
       "all_day": false,
-      "location": "Hilgen.max-Siebold-Halle, Schulstrasse 22, 51399 Burscheid, Deutschland",
+      "location": "Hilgen.Max-Siebold-Halle, Schulstrasse 22, 51399 Burscheid, Deutschland",
       "cancelled": false
     },
     {
