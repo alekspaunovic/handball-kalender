@@ -34,6 +34,11 @@
   --team-a-jugend: #805ad5;
   --team-1-herren: #0f7b8a;
   --team-1-damen: #b83280;
+  /* Siebter Farbton, nur für die Übersicht: dort fragt die Linie "in welchem
+     Kalender", nicht "welches Team". Alles, was im Extra-Feed landet, trägt
+     ihn -- egal aus welchem Team es stammt. */
+  --team-extra: #5a6270;
+  --team-watch: #5a6270;
 
   --schrift-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --schrift-datum: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -64,6 +69,8 @@
     --team-a-jugend: #b094ef;
     --team-1-herren: #4fb3c0;
     --team-1-damen: #e069ab;
+    --team-extra: #9aa3b0;
+    --team-watch: #9aa3b0;
   }
 }
 
@@ -210,12 +217,17 @@ button {
 .navigation button {
   flex: 1;
   min-height: var(--leiste-hoehe);
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0.125rem;
   font-size: 0.9375rem;
   color: var(--tinte-leise);
   border-top: 2px solid transparent;
   margin-top: -1px;
+  white-space: nowrap;
 }
+
+/* Fünf Reiter passen auf 390 Punkt nur mit kurzen Namen. Am Desktop, wo der
+   Platz da ist, stehen die vollen. */
+.nav-lang { display: none; }
 
 .navigation button[aria-current="true"] {
   color: var(--tinte);
@@ -249,6 +261,57 @@ button {
   color: var(--tinte);
   font-weight: 600;
   border-bottom-color: var(--tinte);
+}
+
+/* --- Bilanz: Anzahl je Feed (Übersicht) ---------------------------------
+   Keine Kacheln, keine Kästen: eine Zeile aus Zahl und Name, getrennt durch
+   Zwischenraum, mit der Feedfarbe als kurzer Linie darüber.               --- */
+
+.bilanz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+  padding: 1rem var(--rand) 0.875rem;
+  border-bottom: 1px solid var(--linie);
+}
+
+.bilanz__posten { padding-top: 0.4375rem; border-top: 2px solid var(--farbe, var(--tinte-leise)); }
+.bilanz__zahl { font-size: 1rem; font-variant-numeric: tabular-nums; font-weight: 600; }
+.bilanz__name { font-size: 0.9375rem; color: var(--tinte-leise); margin-left: 0.375rem; }
+.bilanz__summe { margin-left: auto; padding-top: 0.4375rem; font-size: 0.9375rem; color: var(--tinte-leise); }
+
+/* --- Gemerkte Spiele: Eingabe und Vorschau ------------------------------ */
+
+.merken { padding: 1.25rem var(--rand) 0; }
+
+.merken__zeile { display: flex; gap: 0.875rem; align-items: flex-end; }
+.merken__zeile .feld { flex: 1; margin-bottom: 0; min-width: 0; }
+
+.merken__hinweis {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--tinte-leise);
+  margin: 0.625rem 0 0;
+}
+
+/* Die Vorschau ist eine eingerückte Liste aus Beschriftung und Wert, keine
+   Karte -- sie soll wie ein Auszug aus dem Terminplan wirken. */
+.vorschau {
+  margin: 1.25rem 0 0;
+  padding-left: calc(var(--schiene) + 0.6875rem);
+  border-left: var(--schiene) solid var(--team-watch);
+}
+
+.vorschau dl { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.3125rem 0.75rem; margin: 0; }
+.vorschau dt { font-size: 0.9375rem; color: var(--tinte-leise); }
+.vorschau dd { font-size: 0.9375rem; margin: 0; }
+.vorschau dd strong { font-weight: 600; }
+.vorschau__aktionen { display: flex; align-items: center; gap: 1.5rem; margin-top: 1rem; }
+
+.merken__ausstehend {
+  font-size: 0.9375rem;
+  color: var(--tinte-leise);
+  font-style: italic;
 }
 
 /* --- Datumsgruppe: Serif-Ueberschrift, Haarlinie, sonst nichts ----------- */
@@ -580,6 +643,9 @@ button {
     border-left-color: var(--tinte);
   }
 
+  .nav-kurz { display: none; }
+  .nav-lang { display: inline; }
+
   .inhalt { padding-top: 0.25rem; }
   .datum, .filter, .zeile, .hinweis, .formular,
   .anmeldung, .fuss, .eigene__ueberschrift { padding-left: 0; }
@@ -611,9 +677,21 @@ button {
 
 <div class="rumpf">
   <nav class="navigation" id="navigation" aria-label="Bereiche" hidden>
-    <button type="button" data-bereich="meine" aria-current="true">Meine Termine</button>
-    <button type="button" data-bereich="andere" aria-current="false">Andere Teams</button>
-    <button type="button" data-bereich="eigener" aria-current="false">Eigener Termin</button>
+    <button type="button" data-bereich="uebersicht" aria-current="true">
+      <span class="nav-kurz">Übersicht</span><span class="nav-lang">Übersicht</span>
+    </button>
+    <button type="button" data-bereich="meine" aria-current="false">
+      <span class="nav-kurz">Meine</span><span class="nav-lang">Meine Termine</span>
+    </button>
+    <button type="button" data-bereich="andere" aria-current="false">
+      <span class="nav-kurz">Andere</span><span class="nav-lang">Andere Teams</span>
+    </button>
+    <button type="button" data-bereich="gemerkt" aria-current="false">
+      <span class="nav-kurz">Gemerkt</span><span class="nav-lang">Gemerkte Spiele</span>
+    </button>
+    <button type="button" data-bereich="eigener" aria-current="false">
+      <span class="nav-kurz">Neu</span><span class="nav-lang">Eigener Termin</span>
+    </button>
   </nav>
 
   <main class="inhalt" id="inhalt"></main>
@@ -638,23 +716,61 @@ const SCHLUESSEL_ORT = "tbw-admin-token:" + location.origin + location.pathname;
 
 const TEAM_REIHENFOLGE = ["m2", "m3", "mc", "a-jugend", "1-herren", "1-damen"];
 
+/* Reihenfolge der Feeds in der Bilanz und in der Filterzeile der Übersicht.
+   Der Extra-Feed steht zuletzt, weil er alles Hinzugefügte sammelt. */
+const FEED_REIHENFOLGE = [
+  "m2-training", "m2-spiele", "m3-training", "m3-spiele",
+  "mc-training", "mc-spiele", "extra",
+];
+
+const FEED_NAMEN = {
+  "m2-training": "2. Herren Training",
+  "m2-spiele": "2. Herren Spiele",
+  "m3-training": "3. Herren Training",
+  "m3-spiele": "3. Herren Spiele",
+  "mc-training": "C-Jugend Training",
+  "mc-spiele": "C-Jugend Spiele",
+  "extra": "Extra",
+};
+
+const FEED_KURZ = {
+  "m2-training": "M2 Training",
+  "m2-spiele": "M2 Spiele",
+  "m3-training": "M3 Training",
+  "m3-spiele": "M3 Spiele",
+  "mc-training": "MC Training",
+  "mc-spiele": "MC Spiele",
+  "extra": "Extra",
+};
+
 const zustand = {
   pool: null,
   hidden: new Set(),
   included: new Set(),
   custom: [],
+  watch: new Set(),
   sha: null,
   geladenRaw: null,
   dirty: false,
-  bereich: "meine",
+  // Die Übersicht ist die Startansicht: sie beantwortet die Frage, mit der
+  // die App meistens geöffnet wird.
+  bereich: "uebersicht",
   zeitraum: "ab-heute",
   teamFilter: "alle",
+  feedFilter: "alle",
   bearbeitet: null,
   laedt: true,
   ladefehler: null,
   formularFehler: {},
-  ganztags: false,
   speichert: false,
+  // Gemerkte Spiele: Eingabe, Vorschau und ein Zwischenspeicher, damit ein
+  // gerade bestätigtes Spiel sofort mit Namen in der Liste steht, obwohl es
+  // noch in keinem Archiv liegt.
+  merkenEingabe: "",
+  merkenFehler: null,
+  merkenLaedt: false,
+  vorschau: null,
+  vorschauCache: {},
 };
 
 /* --- Werkzeug ----------------------------------------------------------- */
@@ -710,6 +826,89 @@ function neueUid() {
   const bytes = new Uint8Array(4);
   crypto.getRandomValues(bytes);
   return "tbw-custom-" + Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+/* --- Gemerkte Spiele: Eingabe erkennen und Quelle lesen ---------------- */
+
+/* Dieselben drei Formen wie in overrides.py. Gemeint ist immer die Zahl aus
+   der Adresse, nicht die Spielnummer des Verbands (2627NROLAJMA0102). */
+const SPIELNUMMER_MUSTER = [
+  /handball\.net\/kalender\/spiel\/(\d+)\.ics/i,
+  /handball\.net\/match\/(\d+)/i,
+  /^(\d+)$/,
+];
+
+function spielnummer(text) {
+  const eingabe = String(text || "").trim();
+  for (const muster of SPIELNUMMER_MUSTER) {
+    const treffer = eingabe.match(muster);
+    if (treffer) return treffer[1];
+  }
+  return null;
+}
+
+/** Entfaltet die Zeilenumbrüche nach RFC 5545 und löst die Maskierungen. */
+function icsLesen(text) {
+  const felder = {};
+  for (const zeile of String(text).replace(/\r?\n[ \t]/g, "").split(/\r?\n/)) {
+    const doppelpunkt = zeile.indexOf(":");
+    if (doppelpunkt < 0) continue;
+    const name = zeile.slice(0, doppelpunkt).split(";")[0].toUpperCase();
+    const wert = zeile.slice(doppelpunkt + 1)
+      .replace(/\\n/gi, "\n").replace(/\\,/g, ",")
+      .replace(/\\;/g, ";").replace(/\\\\/g, "\\");
+    if (!(name in felder)) felder[name] = wert;
+  }
+  return felder;
+}
+
+/** "20260913T150000" oder "20260913" -> lesbares Datum und Uhrzeit. */
+function icsZeit(roh) {
+  const treffer = String(roh || "").match(/^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2}))?/);
+  if (!treffer) return null;
+  const [, jahr, monat, tag, stunde, minute] = treffer;
+  return {
+    tag: `${jahr}-${monat}-${tag}`,
+    uhrzeit: stunde ? `${stunde}:${minute}` : null,
+  };
+}
+
+async function spielAbrufen(mid) {
+  // handball.net liefert seine Kalender-Endpunkte mit
+  // access-control-allow-origin: *, deshalb geht das direkt aus der Seite.
+  let antwort;
+  try {
+    antwort = await fetch(
+      "https://www.handball.net/kalender/spiel/" + mid + ".ics?t=" + Date.now()
+    );
+  } catch {
+    throw new NetzFehler(
+      "handball.net war nicht erreichbar. Prüfe die Internetverbindung. " +
+      "Blockt ein Inhaltsblocker die Anfrage, schalte ihn für diese Seite ab."
+    );
+  }
+  if (antwort.status === 404) {
+    throw new Error("handball.net kennt die Spielnummer " + mid + " nicht.");
+  }
+  if (!antwort.ok) {
+    throw new Error("handball.net antwortete mit " + antwort.status + ".");
+  }
+
+  const felder = icsLesen(await antwort.text());
+  const zeit = icsZeit(felder.DTSTART);
+  if (!felder.SUMMARY || !zeit) {
+    throw new Error(
+      "Zur Spielnummer " + mid + " liefert handball.net keine brauchbaren Spieldaten."
+    );
+  }
+  return {
+    mid,
+    begegnung: felder.SUMMARY.replace(/\s*\(\d+:\d+\)\s*$/, "").trim(),
+    tag: zeit.tag,
+    uhrzeit: zeit.uhrzeit,
+    halle: kurzerOrt(felder.LOCATION),
+    liga: (felder.DESCRIPTION || "").split("\n")[0].trim(),
+  };
 }
 
 /* --- Zugangsschlüssel --------------------------------------------------- */
@@ -865,6 +1064,11 @@ function overridesUebernehmen(daten) {
   zustand.hidden = new Set(Array.isArray(daten.hidden) ? daten.hidden : []);
   zustand.included = new Set(Array.isArray(daten.included) ? daten.included : []);
   zustand.custom = Array.isArray(daten.custom) ? daten.custom.map((e) => ({ ...e })) : [];
+  zustand.watch = new Set(
+    (Array.isArray(daten.watch) ? daten.watch : [])
+      .map(spielnummer)
+      .filter(Boolean)
+  );
 }
 
 async function allesLaden() {
@@ -920,6 +1124,7 @@ function zeichnen() {
 
   el("speichern").hidden = !angemeldet || !zustand.dirty;
   el("speichern").disabled = zustand.speichert;
+  // Der Zeitraum gilt für alle vier Listenbereiche, nur nicht fürs Formular.
   el("zeitraum").hidden = !angemeldet || zustand.bereich === "eigener";
   el("navigation").hidden = !angemeldet;
 
@@ -931,9 +1136,14 @@ function zeichnen() {
   if (zustand.ladefehler) { inhalt.replaceChildren(ladefehler(), fussnote()); return; }
   if (zustand.laedt) { inhalt.replaceChildren(geruest()); return; }
 
-  if (zustand.bereich === "meine") inhalt.replaceChildren(meineTermine(), fussnote());
-  else if (zustand.bereich === "andere") inhalt.replaceChildren(andereTeams(), fussnote());
-  else inhalt.replaceChildren(eigenerTermin(), fussnote());
+  const bereiche = {
+    uebersicht,
+    meine: meineTermine,
+    andere: andereTeams,
+    gemerkt: gemerkteSpiele,
+    eigener: eigenerTermin,
+  };
+  inhalt.replaceChildren((bereiche[zustand.bereich] || uebersicht)(), fussnote());
 }
 
 /* --- Anmeldung ---------------------------------------------------------- */
@@ -1046,9 +1256,53 @@ function termine(eigene) {
     .sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart)));
 }
 
+/* --- Feed-Zuordnung: was landet wo? -------------------------------------
+   Beantwortet für jeden Termin, in welchem Kalender er steht. Das ist die
+   Frage der Übersicht, und sie hängt an allen vier Eingriffen zusammen. --- */
+
+/** Der Feed, in dem ein Termin landet -- oder null, wenn er nirgends landet. */
+function feedVon(event) {
+  if (event.team_key === "watch" || event.team_key === "custom") return "extra";
+  if (!event.own_team) return zustand.included.has(event.uid) ? "extra" : null;
+  return event.team_key + "-" + event.type;
+}
+
+function farbeVon(event, feed) {
+  // In der Übersicht trägt die Linie den Feed, nicht das Team.
+  if (feed === "extra") return "--team-extra";
+  return "--team-" + event.team_key;
+}
+
+/** Eigene Termine aus overrides.json, in der Form der Pool-Einträge. */
+function eigeneAlsPoolEintraege() {
+  return zustand.custom.map((eintrag) => ({
+    uid: eintrag.uid,
+    team: "Eigener Termin",
+    team_key: "custom",
+    own_team: true,
+    type: "spiele",
+    summary: eintrag.summary,
+    dtstart: eintrag.dtstart,
+    dtend: eintrag.dtend,
+    all_day: Boolean(eintrag.all_day),
+    location: eintrag.location || null,
+    cancelled: false,
+  }));
+}
+
+/** Alle Termine, die in einem Kalender stehen könnten -- Pool plus eigene. */
+function alleTermine() {
+  if (!zustand.pool) return [];
+  const grenze = grenzeVon(zustand.zeitraum);
+  return [...zustand.pool.events, ...eigeneAlsPoolEintraege()]
+    .filter((e) => tagVon(e.dtstart) >= grenze)
+    .filter((e) => feedVon(e) !== null)
+    .sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart)));
+}
+
 /* --- Die Terminzeile ---------------------------------------------------- */
 
-function zeile(event, { an, fremd, umschalten }) {
+function zeile(event, { an, fremd, umschalten, farbe, zusatz }) {
   const abgesagt = event.cancelled;
   const titel = abgesagt
     ? String(event.summary).replace(/^ABGESAGT\s+/, "")
@@ -1061,21 +1315,24 @@ function zeile(event, { an, fremd, umschalten }) {
         abgesagt ? h("span", { class: "zeile__abgesagt", text: "Abgesagt " }) : null,
         titel
       ),
-      event.location ? h("span", { class: "zeile__ort", text: kurzerOrt(event.location) }) : null
+      event.location || zusatz
+        ? h("span", { class: "zeile__ort", text: zusatz || kurzerOrt(event.location) })
+        : null
     ),
     // Ohne Schalter kein Ring: er wäre eine Anzeige für einen Zustand, den
     // hier niemand ändern kann.
     umschalten ? h("span", { class: "zeile__ring" }) : null,
   ];
 
+  // In der Übersicht trägt die Linie den Feed statt des Teams. Eigene Termine
+  // gehören zu keinem Team und bleiben sonst auf der neutralen Schiene.
+  const token = farbe || (event.team_key ? "--team-" + event.team_key : null);
   const attrs = {
     class: "zeile",
     "data-typ": event.type === "training" ? "training" : "spiel",
     "data-an": String(an),
     "data-fremd": String(fremd),
-    // Eigene Termine gehören zu keinem Team und bleiben auf der neutralen
-    // Schiene.
-    style: event.team_key ? "--farbe: var(--team-" + event.team_key + ")" : null,
+    style: token ? "--farbe: var(" + token + ")" : null,
   };
 
   if (!umschalten) return h("div", attrs, inneres);
@@ -1114,6 +1371,96 @@ function aendern(arbeit) {
   zustand.dirty = true;
   statusLeeren();
   zeichnen();
+}
+
+/* --- Bereich: Übersicht (Startansicht) ---------------------------------
+   Zeigt, was nach allen Sperren und Freischaltungen tatsächlich in den
+   Kalendern steht. Ausgeblendetes bleibt durchgestrichen stehen, sonst wäre
+   der Schalter nicht umkehrbar.                                        --- */
+
+/** Schaltet einen Termin aus oder wieder an -- in jedem Bereich dieselbe
+ *  Frage: liegt das in meinem Kalender? */
+function umschaltenFuer(event) {
+  if (!event.own_team && event.team_key !== "watch" && event.team_key !== "custom") {
+    return () => aendern(() => {
+      if (zustand.included.has(event.uid)) zustand.included.delete(event.uid);
+      else zustand.included.add(event.uid);
+    });
+  }
+  return () => aendern(() => {
+    if (zustand.hidden.has(event.uid)) zustand.hidden.delete(event.uid);
+    else zustand.hidden.add(event.uid);
+  });
+}
+
+function istAn(event) {
+  if (!event.own_team && event.team_key !== "watch" && event.team_key !== "custom") {
+    return zustand.included.has(event.uid) && !zustand.hidden.has(event.uid);
+  }
+  return !zustand.hidden.has(event.uid);
+}
+
+function uebersicht() {
+  const liste = alleTermine();
+
+  // Gezählt wird, was wirklich im Kalender landet -- Ausgeblendetes nicht.
+  const anzahl = {};
+  for (const event of liste) {
+    if (zustand.hidden.has(event.uid)) continue;
+    const feed = feedVon(event);
+    anzahl[feed] = (anzahl[feed] || 0) + 1;
+  }
+  const feeds = FEED_REIHENFOLGE.filter((feed) => anzahl[feed]);
+  const summe = Object.values(anzahl).reduce((a, b) => a + b, 0);
+
+  const bilanz = h("div", { class: "bilanz" },
+    feeds.map((feed) =>
+      h("div", {
+        class: "bilanz__posten",
+        style: "--farbe: var(" + (feed === "extra" ? "--team-extra" : "--team-" + feed.replace(/-(training|spiele)$/, "")) + ")",
+      },
+        h("span", { class: "bilanz__zahl", text: String(anzahl[feed]) }),
+        h("span", { class: "bilanz__name", text: FEED_KURZ[feed] || feed })
+      )
+    ),
+    h("span", { class: "bilanz__summe", text: summe + " im Kalender" })
+  );
+
+  const filter = h("div", { class: "filter", role: "group", "aria-label": "Feed" },
+    [{ key: "alle", name: "Alle" }, ...feeds.map((f) => ({ key: f, name: FEED_NAMEN[f] || f }))]
+      .map((eintrag) =>
+        h("button", {
+          type: "button",
+          "aria-pressed": String(zustand.feedFilter === eintrag.key),
+          onclick: () => { zustand.feedFilter = eintrag.key; zeichnen(); },
+          text: eintrag.name,
+        })
+      )
+  );
+
+  const gezeigt = zustand.feedFilter === "alle"
+    ? liste
+    : liste.filter((e) => feedVon(e) === zustand.feedFilter);
+
+  if (!gezeigt.length) {
+    return h("div", {}, bilanz, filter,
+      h("div", { class: "hinweis" },
+        "Für den gewählten Zeitraum steht hier nichts in den Kalendern. " +
+        "Wähle oben einen größeren Zeitraum, oder hole dir unter " +
+        "„Andere Teams“ und „Gemerkte Spiele“ etwas dazu."
+      )
+    );
+  }
+
+  return h("div", {}, bilanz, filter, gruppiert(gezeigt, (event) => {
+    const feed = feedVon(event);
+    return zeile(event, {
+      an: !zustand.hidden.has(event.uid),
+      fremd: false,
+      farbe: farbeVon(event, feed),
+      umschalten: umschaltenFuer(event),
+    });
+  }));
 }
 
 /* --- Bereich: Meine Termine -------------------------------------------- */
@@ -1184,6 +1531,181 @@ function andereTeams() {
       }),
     })
   ));
+}
+
+/* --- Bereich: Gemerkte Spiele ------------------------------------------
+   Bewusst nicht mit "Andere Teams" vermischt: dort die drei
+   Vereinsmannschaften, hier beliebige Spiele beliebiger Vereine.      --- */
+
+const MERKEN_FORMEN =
+  "Es geht die Spiel-Adresse (handball.net/match/563599), der ICS-Link des " +
+  "Spiels, oder die nackte Spielnummer (563599).";
+
+async function vorschauHolen() {
+  const mid = spielnummer(zustand.merkenEingabe);
+  if (!mid) {
+    zustand.merkenFehler = "Daraus kann ich keine Spielnummer lesen. " + MERKEN_FORMEN;
+    zustand.vorschau = null;
+    zeichnen();
+    return;
+  }
+  if (zustand.watch.has(mid)) {
+    zustand.merkenFehler = "Spiel " + mid + " steht schon in der Liste.";
+    zustand.vorschau = null;
+    zeichnen();
+    return;
+  }
+
+  zustand.merkenLaedt = true;
+  zustand.merkenFehler = null;
+  zustand.vorschau = null;
+  zeichnen();
+
+  try {
+    zustand.vorschau = await spielAbrufen(mid);
+  } catch (fehler) {
+    zustand.merkenFehler = fehler.message;
+  } finally {
+    zustand.merkenLaedt = false;
+    zeichnen();
+  }
+}
+
+function vorschauBestaetigen() {
+  const daten = zustand.vorschau;
+  if (!daten) return;
+  aendern(() => {
+    zustand.watch.add(daten.mid);
+    // Damit die Zeile sofort mit Namen dasteht, obwohl sie noch in keinem
+    // Archiv liegt. Nur für diese Sitzung.
+    zustand.vorschauCache[daten.mid] = daten;
+    zustand.vorschau = null;
+    zustand.merkenEingabe = "";
+    zustand.merkenFehler = null;
+  });
+}
+
+function vorschauZeigen() {
+  const v = zustand.vorschau;
+  const zeitText = v.uhrzeit
+    ? datumUeberschrift(v.tag) + ", " + v.uhrzeit
+    : datumUeberschrift(v.tag) + ", Uhrzeit noch offen";
+
+  return h("div", { class: "vorschau" },
+    h("dl", {},
+      h("dt", { text: "Wann" }), h("dd", { text: zeitText }),
+      h("dt", { text: "Begegnung" }), h("dd", {}, h("strong", { text: v.begegnung })),
+      h("dt", { text: "Halle" }), h("dd", { text: v.halle || "nicht angegeben" }),
+      h("dt", { text: "Liga" }), h("dd", { text: v.liga || "nicht angegeben" }),
+      h("dt", { text: "Nummer" }), h("dd", { text: v.mid })
+    ),
+    h("p", { class: "merken__hinweis", text:
+      "handball.net liefert die Vereine in Großbuchstaben. Im Kalender steht " +
+      "später die bereinigte Schreibweise." }),
+    h("div", { class: "vorschau__aktionen" },
+      h("button", { class: "speichern", type: "button", onclick: vorschauBestaetigen }, "Merken"),
+      h("button", {
+        class: "textknopf textknopf--leise", type: "button",
+        onclick: () => { zustand.vorschau = null; zeichnen(); },
+      }, "Verwerfen")
+    )
+  );
+}
+
+function gemerkteSpiele() {
+  const eingabe = h("input", {
+    id: "feld-spiel",
+    type: "text",
+    value: zustand.merkenEingabe,
+    inputmode: "url",
+    autocapitalize: "off",
+    autocomplete: "off",
+    spellcheck: "false",
+    placeholder: "handball.net/match/563599",
+    oninput: (ereignis) => { zustand.merkenEingabe = ereignis.target.value; },
+    onkeydown: (ereignis) => {
+      if (ereignis.key === "Enter") { ereignis.preventDefault(); vorschauHolen(); }
+    },
+  });
+
+  const grenze = grenzeVon(zustand.zeitraum);
+  const bekannt = (zustand.pool ? zustand.pool.events : [])
+    .filter((e) => e.team_key === "watch")
+    .filter((e) => tagVon(e.dtstart) >= grenze)
+    .sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart)));
+
+  const bekanntNummern = new Set(
+    bekannt.map((e) => String(e.uid).replace(/^.*-watch-spiel-/, ""))
+  );
+  const ausstehend = [...zustand.watch].filter((mid) => !bekanntNummern.has(mid)).sort();
+
+  const kopf = h("div", { class: "merken" },
+    h("div", { class: "merken__zeile" },
+      h("div", { class: "feld" },
+        h("label", { for: "feld-spiel", text: "Spiel von handball.net" }),
+        eingabe
+      ),
+      h("button", {
+        class: "speichern", type: "button",
+        disabled: zustand.merkenLaedt,
+        onclick: vorschauHolen,
+      }, zustand.merkenLaedt ? "Suche …" : "Prüfen")
+    ),
+    zustand.merkenFehler
+      ? h("p", { class: "merken__hinweis", style: "color: var(--fehler)", text: zustand.merkenFehler })
+      : h("p", { class: "merken__hinweis", text: MERKEN_FORMEN }),
+    zustand.vorschau ? vorschauZeigen() : null
+  );
+
+  const ausstehendZeilen = ausstehend.map((mid) => {
+    const zwischen = zustand.vorschauCache[mid];
+    return h("li", {},
+      zeile({
+        uid: "tbw-watch-spiel-" + mid,
+        team_key: "watch",
+        type: "spiele",
+        summary: zwischen ? zwischen.begegnung : "Spiel " + mid,
+        dtstart: zwischen ? zwischen.tag + "T00:00:00" : "",
+        all_day: true,
+        location: null,
+        cancelled: false,
+      }, {
+        an: !zustand.hidden.has("tbw-watch-spiel-" + mid),
+        fremd: false,
+        zusatz: "wird beim nächsten Lauf geholt",
+        umschalten: umschaltenFuer({
+          uid: "tbw-watch-spiel-" + mid, own_team: false, team_key: "watch",
+        }),
+      })
+    );
+  });
+
+  if (!bekannt.length && !ausstehend.length) {
+    return h("div", {}, kopf,
+      h("div", { class: "hinweis" },
+        "Hier stehen einzelne Spiele fremder Vereine, etwa wenn zwei " +
+        "Nachbarvereine gegeneinander spielen. Trag oben die Adresse oder die " +
+        "Spielnummer ein; nach einer Vorschau wandert das Spiel in den " +
+        "Extra-Feed. Einmal Gemerktes lässt sich abschalten, aber nicht löschen."
+      )
+    );
+  }
+
+  return h("div", {}, kopf,
+    ausstehendZeilen.length
+      ? h("section", { class: "gruppe" },
+          h("h2", { class: "datum", text: "Noch nicht geholt" }),
+          h("ul", { class: "liste" }, ausstehendZeilen)
+        )
+      : null,
+    gruppiert(bekannt, (event) =>
+      zeile(event, {
+        an: !zustand.hidden.has(event.uid),
+        fremd: false,
+        umschalten: umschaltenFuer(event),
+      })
+    )
+  );
 }
 
 /* --- Bereich: Eigener Termin ------------------------------------------ */
@@ -1451,6 +1973,7 @@ function overridesText() {
     hidden: [...zustand.hidden].sort(),
     custom: [...zustand.custom].sort((a, b) => String(a.dtstart).localeCompare(String(b.dtstart))),
     included: [...zustand.included].sort(),
+    watch: [...zustand.watch].sort(),
   }, null, 2) + "\n";
 }
 
