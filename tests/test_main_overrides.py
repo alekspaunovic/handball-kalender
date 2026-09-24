@@ -190,3 +190,99 @@ def test_included_game_disappears_from_extra_feed_when_switched_off(workspace):
 
     _run(workspace, {"version": 1, "included": []})
     assert uid not in _feed(tmp_path, "extra")
+
+
+# --- Gemerkte Spiele (SPEC-ADMIN.md Abschnitt 3 und 9) -------------------
+
+WATCH_ID = "563599"
+WATCH_UID = "tbw-watch-spiel-563599"
+
+
+def test_watched_match_lands_in_the_extra_feed(workspace):
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID]})
+
+    extra = _feed(tmp_path, "extra")
+    assert WATCH_UID in extra
+    assert "SUMMARY:TV Aldekerk II - SG Langenfeld" in extra
+    # Eigenes Archiv, aber kein eigener Feed.
+    assert (tmp_path / "data" / "watch-spiele.json").exists()
+    assert not (tmp_path / "docs" / "watch-spiele.ics").exists()
+
+
+def test_watched_match_appears_in_the_pool_as_its_own_feed(workspace):
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID]})
+
+    eintrag = next(e for e in _pool(tmp_path)["events"] if e["uid"] == WATCH_UID)
+    assert eintrag["team_key"] == "watch"
+    assert eintrag["own_team"] is False
+
+
+def test_watched_match_keeps_roman_numerals_and_team_suffixes(workspace):
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID, "563602"]})
+
+    titel = {
+        e["summary"] for e in _pool(tmp_path)["events"] if e["team_key"] == "watch"
+    }
+    assert "TV Aldekerk II - SG Langenfeld" in titel
+    assert "HBD Löwen Oberberg - Solinger TB mA" in titel
+
+
+def test_watched_match_can_be_switched_off_via_hidden(workspace):
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID]})
+    assert WATCH_UID in _feed(tmp_path, "extra")
+
+    _run(workspace, {"version": 1, "watch": [WATCH_ID], "hidden": [WATCH_UID]})
+
+    # Aus dem Feed verschwunden, aber in Archiv und Pool erhalten -- damit
+    # umkehrbar.
+    assert WATCH_UID not in _feed(tmp_path, "extra")
+    assert WATCH_UID in {e["uid"] for e in _archive(tmp_path, "watch-spiele")}
+    assert WATCH_UID in {e["uid"] for e in _pool(tmp_path)["events"]}
+
+    _run(workspace, {"version": 1, "watch": [WATCH_ID]})
+    assert WATCH_UID in _feed(tmp_path, "extra")
+
+
+def test_hidden_now_also_applies_to_custom_and_included(workspace):
+    """hidden gilt für alle Feeds, nicht nur die Team-Feeds."""
+    tmp_path = _run(workspace, {"version": 1})
+    fremd_uid, _ = _first_uid(tmp_path, own_team=False)
+
+    basis = {
+        "version": 1,
+        "custom": [{
+            "uid": "tbw-custom-a1b2c3", "summary": "Mannschaftsabend",
+            "dtstart": "2026-11-14T19:00:00", "dtend": "2026-11-14T23:00:00",
+            "all_day": False, "location": "", "description": "",
+        }],
+        "included": [fremd_uid],
+    }
+    _run(workspace, basis)
+    assert "tbw-custom-a1b2c3" in _feed(tmp_path, "extra")
+    assert fremd_uid in _feed(tmp_path, "extra")
+
+    _run(workspace, dict(basis, hidden=["tbw-custom-a1b2c3", fremd_uid]))
+    assert "tbw-custom-a1b2c3" not in _feed(tmp_path, "extra")
+    assert fremd_uid not in _feed(tmp_path, "extra")
+
+
+def test_unknown_match_number_does_not_break_the_run(workspace):
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID, "999999999"]})
+
+    # Das bekannte Spiel ist da, der Lauf ist durchgelaufen.
+    assert WATCH_UID in _feed(tmp_path, "extra")
+    assert (tmp_path / "docs" / "pool.json").exists()
+    assert "tbw-watch-spiel-999999999" not in _feed(tmp_path, "extra")
+
+
+def test_removing_a_number_from_watch_keeps_the_event_in_the_archive(workspace):
+    """Termine bleiben dauerhaft erhalten und werden nicht nachträglich als
+    abgesagt markiert, nur weil sie nicht mehr gemerkt sind."""
+    tmp_path = _run(workspace, {"version": 1, "watch": [WATCH_ID]})
+    assert WATCH_UID in {e["uid"] for e in _archive(tmp_path, "watch-spiele")}
+
+    _run(workspace, {"version": 1, "watch": []})
+
+    eintrag = next(e for e in _archive(tmp_path, "watch-spiele") if e["uid"] == WATCH_UID)
+    assert eintrag["cancelled"] is False
+    assert not eintrag["summary"].startswith("ABGESAGT ")

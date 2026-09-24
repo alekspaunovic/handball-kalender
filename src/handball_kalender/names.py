@@ -127,19 +127,32 @@ def _strip_team_suffix(name: str) -> str:
         name = gekuerzt
 
 
-def normalize_opponent(raw: str, overrides: dict[str, str] | None = None) -> str:
+def normalize_opponent(
+    raw: str,
+    overrides: dict[str, str] | None = None,
+    *,
+    strip_team_suffix: bool = True,
+) -> str:
     """Wandelt einen rohen Gegnernamen von handball.net in die
     Wunsch-Schreibweise um. Die Override-Tabelle wird vor allen Regeln
-    geprüft."""
+    geprüft.
+
+    `strip_team_suffix=False` behält Mannschaftskennungen wie `mA` oder `C1J`.
+    Das brauchen die gemerkten Spiele (SPEC-ADMIN.md Abschnitt 3): dort steht
+    kein eigenes Team im Titel, also ist die Kennung die einzige
+    Unterscheidung zwischen "HBD Löwen Oberberg - Solinger TB mA" und dem
+    Spiel der ersten Mannschaft.
+    """
     overrides = overrides or {}
     if raw in overrides:
         return overrides[raw]
 
     # Reihenfolge: erst die Kennung am Ende, dann die Rechtsform -- sonst steht
     # die Rechtsform bei "… E.V. 1F" der Kennung im Weg.
-    name = _strip_team_suffix(raw)
+    name = _strip_team_suffix(raw) if strip_team_suffix else raw
     name = _RECHTSFORM_RE.sub("", name)
-    name = _strip_team_suffix(name)
+    if strip_team_suffix:
+        name = _strip_team_suffix(name)
     name = _WHITESPACE_RE.sub(" ", name).strip()
 
     if not _is_all_caps(name):

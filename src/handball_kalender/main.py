@@ -8,9 +8,22 @@ import logging
 from datetime import datetime, timezone as dt_timezone
 from pathlib import Path
 
-from . import archive, extra, ics_io, overrides as overrides_mod, pool, spiele, training
+import requests
+
+from . import (
+    archive,
+    extra,
+    ics_io,
+    overrides as overrides_mod,
+    pool,
+    spiele,
+    training,
+    watch,
+)
 from .config import Config, FeedConfig, load_config
 from .fetch import fetch_ics
+from .models import Event
+from .overrides import Overrides
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +67,91 @@ def _calname(feed: FeedConfig, config: Config) -> str:
     team = config.teams[feed.team]
     suffix = "Training" if feed.type == "training" else "Spiele"
     return f"TBW {team.anzeigename} {suffix}"
+
+
+def _load_watch_source(mid: str, local_fixtures_dir: Path | None) -> bytes | None:
+    """Ein gemerktes Spiel abrufen. None heisst "handball.net kennt diese
+    Spielnummer nicht" -- eine Aussage, die in die Verschwinden-Logik gehoert.
+    Jeder andere Fehler wird durchgeworfen, damit der Archiveintrag unberuehrt
+    bleibt (SPEC-ADMIN.md Abschnitt 3)."""
+    if local_fixtures_dir is not None:
+        pfad = local_fixtures_dir / f"handballnet-spiel-{mid}.ics"
+        if not pfad.exists():
+            logger.warning("Keine lokale Fixture für Spiel %s (%s)", mid, pfad)
+            return None
+        return pfad.read_bytes()
+
+    try:
+        return fetch_ics(watch.match_url(mid))
+    except requests.HTTPError as fehler:
+        if fehler.response is not None and fehler.response.status_code == 404:
+            logger.warning("handball.net kennt die Spielnummer %s nicht", mid)
+            return None
+        raise
+
+
+def run_watch(
+    config: Config,
+    manual: Overrides,
+    local_fixtures_dir: Path | None,
+    now: datetime,
+) -> list[dict]:
+    """Ruft jede gemerkte Spielnummer einzeln ab und mergt sie gegen
+    data/watch-spiele.json (SPEC-ADMIN.md Abschnitt 3 und 5)."""
+    feed = config.feeds[config.watch_feed_key]
+    team = config.teams[feed.team]
+    archive_path = Path(config.archive_dir) / f"{config.watch_feed_key}.json"
+    existing = archive.load(archive_path)
+
+    events: list[Event] = []
+    # UIDs, über die wir nichts wissen, weil ihr Abruf scheiterte. Sie dürfen
+    # nicht als abgesagt markiert werden.
+    protect: set[str] = set()
+
+    for mid in sorted(manual.watch):
+        uid = f"{config.uid_prefix}-watch-spiel-{mid}"
+        try:
+            raw = _load_watch_source(mid, local_fixtures_dir)
+            if raw is None:
+                # 404 oder fehlende Fixture: keine Aussage über das Spiel
+                # selbst, wenn es lokal fehlt -- aber ein echtes 404 schon.
+                # Beides führt hier zum selben Weg, weil eine fehlende Fixture
+                # nur im lokalen Lauf vorkommt.
+                continue
+            cal = ics_io.parse_calendar(raw)
+            vevent = next(iter(ics_io.iter_vevents(cal)), None)
+            if vevent is None:
+                logger.warning("Spiel %s enthält kein VEVENT, wird übersprungen", mid)
+                protect.add(uid)
+                continue
+            events.append(
+                watch.transform(
+                    vevent,
+                    mid,
+                    config.halls,
+                    config.opponent_overrides,
+                    config.uid_prefix,
+                    config.timezone,
+                    team.spieldauer_minuten,
+                )
+            )
+        except Exception:
+            logger.exception(
+                "Abruf des gemerkten Spiels %s fehlgeschlagen, Archiveintrag "
+                "bleibt unverändert",
+                mid,
+            )
+            protect.add(uid)
+
+    # Eine Spielnummer, die nicht mehr in `watch` steht, bleibt im Archiv
+    # stehen (Termine bleiben dauerhaft erhalten) und darf nicht nachträglich
+    # als abgesagt gelten.
+    gemerkt = {f"{config.uid_prefix}-watch-spiel-{mid}" for mid in manual.watch}
+    protect |= {e["uid"] for e in existing if e["uid"] not in gemerkt}
+
+    merged = archive.merge(existing, events, now, protect=protect)
+    archive.save(archive_path, merged)
+    return merged
 
 
 def run_feed(
@@ -152,13 +250,21 @@ def main(argv: list[str] | None = None) -> None:
     archives = {
         feed.key: run_feed(feed, config, local_fixtures_dir, now, manual.hidden)
         for feed in config.feeds.values()
+        if feed.source == "team"
     }
+    archives[config.watch_feed_key] = run_watch(config, manual, local_fixtures_dir, now)
 
     output_dir = Path(config.output_dir)
     pool.save(output_dir / config.pool_file, pool.build(archives, config, now))
     ics_io.write_feed(
         output_dir / f"{config.extra_feed_key}.ics",
-        extra.build_entries(manual, archives, config.halls, config.timezone),
+        [
+            entry
+            for entry in extra.build_entries(
+                manual, archives, config.halls, config.timezone, config.watch_feed_key
+            )
+            if entry["uid"] not in manual.hidden
+        ],
         config.extra_calname,
         config.timezone,
         config.feed_ttl,

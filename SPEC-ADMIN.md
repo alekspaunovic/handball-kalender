@@ -10,12 +10,17 @@ Manuelle Eingriffe müssen deshalb als eigene Datenschicht existieren, die bei
 jedem Lauf mitgelesen wird. Ein im Kalender gelöschter Termin wäre sonst beim
 nächsten Lauf wieder da.
 
-Drei Eingriffe sollen möglich sein:
+Vier Eingriffe sollen möglich sein:
 
 - einzelne Termine aus den eigenen Feeds ausblenden
 - eigene Termine anlegen, die in keiner Quelle stehen
 - einzelne Spiele fremder Mannschaften (A-Jugend, 1. Herren, 1. Damen)
   freischalten
+- einzelne Spiele beliebiger Vereine merken, auch solche ohne TBW-Beteiligung
+
+Dazu eine Übersicht, die zeigt, was nach allen Eingriffen tatsächlich in den
+Kalendern steht. Das ist die Frage, mit der die App meistens geöffnet wird, und
+deshalb ihre Startansicht.
 
 Bedient wird das über eine Weboberfläche, die neben den Feeds auf GitHub Pages
 liegt. Kein Server, keine Datenbank.
@@ -24,7 +29,7 @@ liegt. Kein Server, keine Datenbank.
 
 | Datei | Zweck | Wer schreibt |
 | --- | --- | --- |
-| `overrides.json` | Sperrliste, eigene Termine, freigeschaltete Fremdspiele | die App |
+| `overrides.json` | Sperrliste, eigene Termine, freigeschaltete Fremdspiele, gemerkte Spiele | die App |
 | `docs/pool.json` | alle bekannten Termine als Auswahlgrundlage | der Workflow |
 | `docs/admin/index.html` | die Oberfläche | einmalig beim Bau |
 
@@ -46,16 +51,28 @@ liegt. Kein Server, keine Datenbank.
       "created": "2026-09-24T18:00:00Z"
     }
   ],
-  "included": ["tbw-a-jugend-spiel-661234"]
+  "included": ["tbw-a-jugend-spiel-661234"],
+  "watch": ["563599"]
 }
 ```
 
-- `hidden`: UIDs, die nicht in den Feed geschrieben werden
+- `hidden`: UIDs, die in keinen Feed geschrieben werden -- auch nicht in den
+  Extra-Feed
 - `custom`: eigene Termine, landen im Extra-Feed
 - `included`: UIDs aus dem Pool fremder Teams, landen im Extra-Feed
+- `watch`: Spielnummern von handball.net, landen im Extra-Feed
 
 Die UIDs eigener Termine bekommen das Präfix `tbw-custom-` und eine zufällige
 Kennung. Sie bleiben stabil, damit der Kalender bearbeitet statt dupliziert.
+
+`watch` enthält bewusst nur die Spielnummern, nicht die Spieldaten. Titel, Ort
+und Liga entstehen bei jedem Lauf neu aus der Quelle -- nur so verschiebt sich
+ein verlegtes Spiel mit. Die UID wird daraus gebildet:
+`tbw-watch-spiel-563599`.
+
+Ein gemerktes Spiel wird nie aus `watch` entfernt. Abgeschaltet wird es, indem
+seine UID in `hidden` landet -- derselbe Weg wie beim Ausblenden eigener
+Termine, und damit umkehrbar.
 
 ### docs/pool.json
 
@@ -89,6 +106,11 @@ Skript gesehen hat, auch die der Fremdteams:
 }
 ```
 
+Gemerkte Spiele stehen als eigener Pseudo-Feed im Pool, mit
+`team_key: "watch"`, `type: "spiele"` und `own_team: false`. So kann die
+Oberfläche sie mit ihrem endgültigen Titel anzeigen, ohne die
+Umwandlungsregeln ein zweites Mal in JavaScript nachzubauen.
+
 `team_key` und `type` stehen dort, weil die Oberfläche die Teamfarbe und die
 Unterscheidung Spiel/Training an der linken Kante der Zeile zeigt (Abschnitt 6)
 und beides nicht aus dem Titel geraten soll. `dtend` und `all_day` braucht sie,
@@ -102,9 +124,16 @@ zurücknehmen.
 liegt im Wurzelverzeichnis und ist über GitHub Pages nicht erreichbar -- also
 dieselbe Begründung, aus der der Pool überhaupt existiert.
 
-Das ist nötig, weil ein Browser die Spielpläne von handball.net nicht direkt
-abrufen darf. Die Sicherheitsregeln fremder Webseiten verhindern das. Der
-Workflow bereitet die Liste deshalb vor.
+Der Pool ist nötig, weil die Oberfläche die fertig umgewandelten Termine
+braucht: Titel nach Wunschformat, Adressen aus der Hallentabelle, bereinigte
+Gegnernamen. Das alles entsteht im Skript. Dazu reichen die Quellen nicht --
+sie liefern nur ein rollierendes Fenster, während der Pool aus den Archiven
+kommt und damit auch ältere und ausgeblendete Termine enthält.
+
+Nicht der Grund ist Cross-Origin: handball.net liefert seine Kalender-Endpunkte
+mit `access-control-allow-origin: *` aus, ein Browser darf sie also direkt
+abrufen. Davon macht nur die Vorschau der gemerkten Spiele Gebrauch
+(Abschnitt 3).
 
 ## 3. Neue Quellen
 
@@ -130,17 +159,86 @@ dagegen wie bei den eigenen Teams, damit Titel und Navigation stimmen.
 Eigenname für die Gegnererkennung: aus dem `X-WR-CALNAME` des jeweiligen Feeds
 lesen, wie bei den eigenen Teams auch.
 
+### Gemerkte Spiele
+
+Ein paar Mal pro Saison soll ein einzelnes Spiel beliebiger Vereine in den
+Kalender, etwa wenn zwei Nachbarvereine gegeneinander spielen. Diese Spiele
+haben mit den eigenen Teams nichts zu tun, deshalb gibt es dafür keine
+Team-Quelle, sondern einen Abruf pro Spiel:
+
+```
+https://www.handball.net/kalender/spiel/<spielnummer>.ics
+```
+
+Der Endpunkt liefert genau ein `VEVENT` mit allem Nötigen und antwortet mit
+`access-control-allow-origin: *` und `cache-control: public, max-age=900`. Eine
+unbekannte Spielnummer ergibt `404` mit `text/plain`, eine nicht-numerische
+Eingabe die HTML-Fehlerseite. Validierung ist damit ein Abruf, keine Heuristik.
+
+Beispiel `563599`, ein Spiel ohne TBW-Beteiligung:
+
+```
+SUMMARY:TV ALDEKERK II - SG LANGENFELD (41:31)
+DTSTART:20260913T150000
+DESCRIPTION:Oberliga männliche Jugend A\nSpieltag 1\nSpielnummer …\nFinalizado\n…
+LOCATION:SPORTZENTRUM ALDEKERK\, RAHMER KIRCHWEG 19A\, 47647 KERKEN\, 47647 KERKEN
+```
+
+Weil der Endpunkt Cross-Origin offen ist, holt die Oberfläche die Vorschau
+selbst. Geschrieben wird nur die Spielnummer; die maßgebliche Umwandlung macht
+der Workflow. Sonst müssten Hallentabelle, Adressbereinigung und Namensregeln
+ein zweites Mal in JavaScript entstehen, mit sicherer Abweichung.
+
+#### Transformation
+
+Abweichend von Abschnitt 6 der SPEC.md, weil hier kein eigenes Team beteiligt
+ist und es deshalb kein Heim und kein Auswärts gibt:
+
+| | |
+| --- | --- |
+| Titel | `<Heim> - <Gast>`, also `TV Aldekerk II - SG Langenfeld` |
+| Vorsatz | keiner. Keine Altersklasse, kein Anzeigename, kein Heim/Auswärts |
+| Vereinsnamen | nach den Regeln aus SPEC.md Abschnitt 6, **aber** römische Ziffern **und** Mannschaftskennungen bleiben stehen |
+| Dauer | 1:30 h ab Anwurf. Die Endzeit der Quelle wird verworfen |
+| Notiz | ausschließlich die Liga, also die erste Zeile der `DESCRIPTION`. Kein Treffpunkt |
+| Ort | nach den bestehenden Regeln: Hallentabelle, sonst generische Bereinigung |
+| UID | `tbw-watch-spiel-<spielnummer>` |
+| Ziel | `docs/extra.ics` |
+
+Die Mannschaftskennungen müssen hier bleiben, weil sie die einzige
+Unterscheidung sind. `HBD Löwen Oberberg - Solinger TB mA` wäre ohne sie nicht
+mehr von einem Spiel der ersten Mannschaft zu unterscheiden -- bei den eigenen
+Teams verrät der Feed die Altersklasse, hier gibt es keinen.
+
+Spiele ohne Anwurfzeit werden Ganztagestermine und bekommen statt der Liga
+allein die Zeile `Uhrzeit noch offen`, gefolgt von der Liga.
+
+#### Verhalten
+
+- eigenes Archiv unter `data/watch-spiele.json`, wie bei den anderen Feeds
+- Verlegung verschiebt den Termin, die UID bleibt stabil
+- Rückzug (`Retirado`) erzeugt das `ABGESAGT`-Präfix
+- Termine bleiben nach dem Spiel dauerhaft erhalten
+- fällt ein Spiel aus der Quelle, greift die Verschwinden-Logik aus SPEC.md
+  Abschnitt 7
+- schlägt der Abruf einer einzelnen Spielnummer fehl, bleibt ihr Archiveintrag
+  unverändert und die übrigen laufen weiter
+
 ## 4. Neuer Feed
 
 `docs/extra.ics`, Kalendername `TBW Extra`.
 
-Inhalt: alle Einträge aus `custom` und alle über `included` freigeschalteten
-Fremdspiele. Wird wie die anderen Feeds abonniert.
+Inhalt, drei Sorten:
 
-Es bleibt bei einem einzelnen Feed für beides. Zwei getrennte Feeds wären nur
-dann im Vorteil, wenn die Zuschauertermine regelmäßig am Stück ausgeblendet
-werden sollen; das ist nicht der Fall, und der Preis wäre ein zweites Abonnement
-auf jedem Gerät.
+- alle Einträge aus `custom`
+- alle über `included` freigeschalteten Fremdspiele
+- alle über `watch` gemerkten Spiele
+
+Wird wie die anderen Feeds abonniert.
+
+Es bleibt bei einem einzelnen Feed für alles. Getrennte Feeds wären nur dann im
+Vorteil, wenn eine der Sorten regelmäßig am Stück ausgeblendet werden soll; das
+ist nicht der Fall, und der Preis wäre ein weiteres Abonnement auf jedem Gerät.
 
 Freigeschaltete Fremdspiele bleiben an ihre Quelle gekoppelt. Verlegt der
 Verband ein Spiel, verschiebt sich der Termin mit. Wird es zurückgezogen,
@@ -154,15 +252,22 @@ der Feeds:
 1. `overrides.json` laden. Fehlt die Datei oder ist sie fehlerhaft, mit leeren
    Listen weiterarbeiten und eine Warnung loggen. Die Feeds müssen auch dann
    entstehen.
-2. Alle Termine aus `hidden` aus den Team-Feeds entfernen.
-3. Pool aus allen bekannten Terminen bilden und nach `docs/pool.json`
-   schreiben.
-4. Extra-Feed bauen aus `custom` plus den über `included` ausgewählten
-   Pool-Einträgen.
-5. Alle Feeds schreiben.
+2. Jede Spielnummer aus `watch` einzeln abrufen, umwandeln und gegen
+   `data/watch-spiele.json` mergen.
+3. Pool aus allen bekannten Terminen bilden, die gemerkten Spiele als eigenen
+   Pseudo-Feed, und nach `docs/pool.json` schreiben.
+4. Extra-Feed bauen aus `custom`, den über `included` ausgewählten
+   Pool-Einträgen und den gemerkten Spielen.
+5. Alle Termine aus `hidden` aus **allen** Feeds entfernen, den Extra-Feed
+   eingeschlossen.
+6. Alle Feeds schreiben.
 
 Das Archiv bleibt unberührt. Ein ausgeblendeter Termin wird nicht gelöscht,
 nur nicht ausgegeben. Deshalb ist jedes Ausblenden umkehrbar.
+
+`hidden` gilt für jeden Feed, nicht nur für die Team-Feeds. Nur so lässt sich
+ein gemerktes Spiel abschalten, ohne es zu löschen -- und es ist die
+verständlichere Regel: was in `hidden` steht, steht in keinem Kalender.
 
 ## 6. Die Oberfläche
 
@@ -192,6 +297,9 @@ Leitgedanken:
 - Der Zustand ist das Wichtigste auf dem Bildschirm. Ein ausgeblendeter Termin
   muss durchgestrichen und deutlich zurückgenommen wirken, ein
   freigeschalteter Fremdtermin sichtbar aktiv.
+- Der Schalter bedeutet in jedem Bereich dasselbe: liegt das in meinem
+  Kalender? Ein Denkmodell für alle vier Listen, egal ob technisch `hidden`,
+  `included` oder `watch` dahintersteht.
 - Sparsam mit Farbe. Die Teamfarben sind das einzige bunte Element, alles
   andere ist ruhig.
 
@@ -208,9 +316,15 @@ Kopfbereich, beim Scrollen fixiert und schmal:
 - rechts der Speichern-Knopf, der nur erscheint, wenn es etwas zu speichern
   gibt
 
-Darunter die drei Bereiche. Auf dem Handy als Reiterleiste am unteren
+Darunter die fünf Bereiche. Auf dem Handy als Reiterleiste am unteren
 Bildschirmrand, damit sie mit dem Daumen erreichbar ist. Am Desktop als
 Navigation an der Seite.
+
+Fünf Reiter auf 390 Punkt Bildschirmbreite gehen nur mit kurzen Beschriftungen.
+Auf dem Handy heißen sie deshalb `Übersicht`, `Meine`, `Andere`, `Gemerkt`,
+`Neu`; am Desktop, wo der Platz da ist, stehen die vollen Namen.
+
+Die Übersicht ist die Startansicht.
 
 Die Liste ist nach Datum gruppiert. Das Datum steht als Zwischenüberschrift,
 nicht in jeder Zeile. Eine Terminzeile enthält:
@@ -277,7 +391,28 @@ Ein Knopf "Schlüssel entfernen" löscht ihn aus dem Browser.
 Antwortet GitHub mit 401 oder 403, erklärt die App, dass der Schlüssel
 abgelaufen oder ungültig ist, und fragt erneut danach.
 
-### Die drei Bereiche
+### Die fünf Bereiche
+
+**Übersicht**
+
+Startansicht. Zeigt alle Termine, die nach Anwendung aller Sperren und
+Freischaltungen tatsächlich in den Kalendern stehen -- also genau das, was ein
+Blick in die Kalender-App zeigen würde. Chronologisch, nach Datum gruppiert,
+gleiche Zeilendarstellung wie überall.
+
+Die Farblinie links trägt hier die Feed-Zugehörigkeit, nicht das Team. Für die
+sechs Team-Feeds ist das dasselbe, weil Farbton und Gewicht bereits Team und
+Typ unterscheiden. Alles, was im Extra-Feed landet, bekommt einen eigenen
+siebten Farbton -- unabhängig davon, aus welchem Team es stammt, denn die Frage
+in diesem Bereich ist, in welchem Kalender es steht.
+
+Oben eine Kopfzeile mit der Anzahl je Feed, darunter eine Filterzeile nach
+Feed. Der Zeitraumfilter aus dem Kopfbereich gilt hier ebenfalls.
+
+Termine lassen sich auch von hier aus ausblenden, mit demselben Schalter wie
+überall. Ein ausgeblendeter Termin verschwindet aus diesem Bereich nicht,
+sondern bleibt durchgestrichen an seiner Stelle -- sonst wäre der Schalter
+nicht umkehrbar.
 
 **Meine Termine**
 
@@ -289,6 +424,46 @@ gruppiert. Jede Zeile mit Schalter zum Ausblenden.
 Dieselbe Darstellung für A-Jugend, 1. Herren und 1. Damen. Standardmäßig alles
 aus. Einschalten übernimmt den Termin in den Extra-Feed. Oben eine Filterzeile
 zum Eingrenzen auf ein Team.
+
+**Gemerkte Spiele**
+
+Bewusst nicht mit „Andere Teams" vermischt: dort geht es um die drei
+Vereinsmannschaften, hier um beliebige Spiele beliebiger Vereine.
+
+Oben das Eingabefeld. Es nimmt drei Formen an und erkennt selbst, welche
+gemeint ist:
+
+| Eingabe | Beispiel |
+| --- | --- |
+| Spiel-Adresse | `https://www.handball.net/match/563599` |
+| ICS-Link des Spiels | `https://www.handball.net/kalender/spiel/563599.ics` |
+| nackte Spielnummer | `563599` |
+
+Aus allen drei wird dieselbe Spielnummer gezogen. Gemeint ist die Zahl aus der
+Adresse, nicht die Spielnummer des Verbands (`2627NROLAJMA0102`) -- die steht
+nur in der Beschreibung und lässt sich über diesen Endpunkt nicht auflösen.
+
+Eine unbrauchbare Eingabe wird abgelehnt, mit dem Hinweis, welche drei Formen
+funktionieren. Eine Spielnummer, die handball.net nicht kennt, wird ebenso
+abgelehnt, aber mit der Auskunft, dass die Nummer selbst unbekannt ist -- das
+sind zwei verschiedene Fehler und sie werden verschieden benannt.
+
+Nach der Eingabe erscheint eine Vorschau mit Datum, Uhrzeit, Begegnung, Halle
+und Liga. Sie wird bestätigt oder verworfen. Erst das Bestätigen trägt die
+Spielnummer in `watch` ein.
+
+Die Vorschau zeigt die Begegnung so, wie handball.net sie liefert, also in
+Großbuchstaben. Ein Hinweis erklärt, dass der Kalendertitel die bereinigte
+Schreibweise bekommt. Die Vorschau dient dem Erkennen des richtigen Spiels,
+nicht der Typografie -- und die Namensregeln in JavaScript nachzubauen hieße,
+sie zweimal zu pflegen.
+
+Darunter die Liste der gemerkten Spiele mit Schaltern. Ausgeschaltete bleiben
+durchgestrichen an ihrer Stelle stehen. Ganz entfernen ist nicht vorgesehen.
+
+Ein gerade bestätigtes Spiel steht noch in keinem Archiv. Bis zum nächsten
+Workflow-Lauf erscheint es als Zeile mit dem Hinweis, dass es beim nächsten Lauf
+geholt wird.
 
 **Eigener Termin**
 
@@ -302,7 +477,8 @@ Löschen.
 ### Zeitraum
 
 Standardmäßig nur Termine ab heute. Im Auswahlfeld zusätzlich: Letzte 30 Tage,
-Letzte 12 Monate, Alle. Die Auswahl gilt für beide Listenbereiche.
+Letzte 12 Monate, Alle. Die Auswahl gilt für alle Listenbereiche, also
+Übersicht, Meine Termine, Andere Teams und Gemerkte Spiele.
 
 ### Speichern
 
@@ -328,8 +504,12 @@ soll. Das kann passieren, wenn die App auf zwei Geräten offen ist.
 
 - `workflow_dispatch` muss aktiv sein, damit die App den Lauf auslösen kann
 - der Lauf schreibt zusätzlich `docs/pool.json` und `docs/extra.ics`
+- der Lauf schreibt zusätzlich `data/watch-spiele.json`
 - `overrides.json` wird gelesen, aber vom Workflow nie verändert
 - schlägt das Lesen von `overrides.json` fehl, läuft der Rest trotzdem durch
+- `fetch-depth: 0` beim Checkout, weil der Commit-Schritt ein `git pull
+  --rebase` macht: die App schreibt `overrides.json`, während der Lauf läuft,
+  und auf einem flachen Klon schlüge das fehl
 
 ## 8. Zugangsschlüssel
 
@@ -363,6 +543,31 @@ Aufforderung zur Anmeldung. Schreiben kann ohne ihn niemand.
 - Freigeschaltetes Fremdspiel wird zurückgezogen: ABGESAGT-Präfix
 - `pool.json` enthält eigene und fremde Termine, korrekt über `own_team`
   unterschieden
+
+Für die gemerkten Spiele:
+
+- Spielnummer in `watch`: Spiel landet im Extra-Feed, UID
+  `tbw-watch-spiel-<nummer>`
+- Titel ist genau `<Heim> - <Gast>`, ohne Vorsatz und ohne Altersklasse
+- römische Ziffern und Mannschaftskennungen bleiben im Titel stehen
+  (`TV Aldekerk II - SG Langenfeld`, `HBD Löwen Oberberg - Solinger TB mA`)
+- Endzeit ist Anwurf plus 1:30 h, nicht die der Quelle
+- Notiz enthält nur die Liga, keinen Treffpunkt
+- Ort kommt aus der Hallentabelle, sonst generisch bereinigt
+- gemerktes Spiel wird verlegt: Termin verschiebt sich, UID bleibt gleich
+- gemerktes Spiel wird zurückgezogen: ABGESAGT-Präfix
+- UID eines gemerkten Spiels in `hidden`: fehlt im Extra-Feed, bleibt im Archiv
+  und im Pool
+- Abruf einer Spielnummer schlägt fehl: die übrigen gemerkten Spiele entstehen
+  trotzdem, der Archiveintrag der fehlgeschlagenen bleibt unverändert
+- Spiel ohne Anwurfzeit wird Ganztagestermin mit `Uhrzeit noch offen`
+- gemerkte Spiele stehen im Pool mit `team_key: "watch"` und `own_team: false`
+
+Für die Eingabe in der Oberfläche:
+
+- alle drei Eingabeformen ergeben dieselbe Spielnummer
+- unbrauchbare Eingabe und unbekannte Spielnummer erzeugen verschiedene
+  Meldungen
 
 ## 10. Offene Punkte
 

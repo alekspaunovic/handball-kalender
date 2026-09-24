@@ -12,6 +12,8 @@ import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from . import watch as watch_mod
+
 logger = logging.getLogger(__name__)
 
 # Pflichtfelder eines eigenen Termins. created wird von der Oberflaeche
@@ -24,6 +26,7 @@ class Overrides:
     hidden: set[str] = field(default_factory=set)
     custom: list[dict] = field(default_factory=list)
     included: set[str] = field(default_factory=set)
+    watch: set[str] = field(default_factory=set)
 
 
 def _string_set(raw, name: str) -> set[str]:
@@ -57,6 +60,24 @@ def _custom_list(raw) -> list[dict]:
     return entries
 
 
+def _watch_set(raw) -> set[str]:
+    """Spielnummern gemerkter Spiele. Die App schreibt nur die nackte Zahl,
+    aber eine von Hand eingetragene Spiel-Adresse oder ein ICS-Link werden
+    genauso akzeptiert -- dieselben drei Formen wie in der Oberfläche."""
+    nummern = set()
+    for eintrag in _string_set(raw, "watch"):
+        mid = watch_mod.match_id(eintrag)
+        if mid is None:
+            logger.warning(
+                "overrides.json: %r in 'watch' ist keine Spielnummer und keine "
+                "handball.net-Adresse, wird übersprungen",
+                eintrag,
+            )
+            continue
+        nummern.add(mid)
+    return nummern
+
+
 def parse(raw: object) -> Overrides:
     if not isinstance(raw, dict):
         logger.warning("overrides.json enthält kein Objekt, wird ignoriert")
@@ -66,6 +87,7 @@ def parse(raw: object) -> Overrides:
         hidden=_string_set(raw.get("hidden"), "hidden"),
         custom=_custom_list(raw.get("custom")),
         included=_string_set(raw.get("included"), "included"),
+        watch=_watch_set(raw.get("watch")),
     )
 
 

@@ -89,3 +89,18 @@ def test_halls_travel_with_the_pool_for_the_location_picker(config):
     assert fliethe["address"] == (
         "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland"
     )
+
+
+def test_watched_matches_are_their_own_pseudo_feed(config):
+    archives = {
+        "watch-spiele": [_entry("tbw-watch-spiel-563599", "2026-09-13T15:00:00+02:00",
+                                "TV Aldekerk II - SG Langenfeld")],
+    }
+
+    event = pool.build(archives, config, NOW)["events"][0]
+
+    assert event["team_key"] == "watch"
+    assert event["own_team"] is False
+    assert event["type"] == "spiele"
+    assert event["team"] == "Gemerktes Spiel"
+    assert event["summary"] == "TV Aldekerk II - SG Langenfeld"

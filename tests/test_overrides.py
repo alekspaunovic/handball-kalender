@@ -78,3 +78,24 @@ def test_full_example_from_the_spec_parses():
     assert result.hidden == {"tbw-m2-spiel-380455"}
     assert result.included == {"tbw-a-jugend-spiel-661234"}
     assert result.custom[0]["summary"] == "Mannschaftsabend"
+
+
+def test_watch_accepts_all_three_input_forms():
+    result = overrides.parse({"watch": [
+        "563599",
+        "https://www.handball.net/match/563600",
+        "https://www.handball.net/kalender/spiel/563601.ics",
+    ]})
+    assert result.watch == {"563599", "563600", "563601"}
+
+
+def test_watch_drops_unusable_entries_with_a_warning(caplog):
+    with caplog.at_level(logging.WARNING):
+        result = overrides.parse({"watch": ["563599", "2627NROLAJMA0102", ""]})
+
+    assert result.watch == {"563599"}
+    assert "2627NROLAJMA0102" in caplog.text
+
+
+def test_watch_missing_gives_empty_set():
+    assert overrides.parse({"version": 1}).watch == set()

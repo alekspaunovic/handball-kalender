@@ -80,8 +80,14 @@ def build_entries(
     archives: dict[str, list[dict]],
     halls: list[Hall],
     tz_name: str,
+    watch_feed_key: str = "watch-spiele",
 ) -> list[dict]:
-    """`archives` bildet feed_key auf die gemergten Archiveintraege ab."""
+    """`archives` bildet feed_key auf die gemergten Archiveintraege ab.
+
+    Drei Sorten (SPEC-ADMIN.md Abschnitt 4): eigene Termine, freigeschaltete
+    Fremdspiele und gemerkte Spiele. Die `hidden`-Filterung passiert nicht
+    hier, sondern beim Schreiben -- einheitlich fuer alle Feeds.
+    """
     entries = []
 
     for item in overrides.custom:
@@ -104,5 +110,10 @@ def build_entries(
             )
             continue
         entries.append(entry)
+
+    # Gemerkte Spiele kommen vollstaendig aus ihrem Archiv -- jedes, das dort
+    # steht, war einmal gemerkt und bleibt dauerhaft erhalten. Abgeschaltet
+    # wird ueber `hidden`, nicht durch Entfernen.
+    entries.extend(archives.get(watch_feed_key, []))
 
     return entries

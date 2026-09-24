@@ -41,7 +41,12 @@ def _is_past(dtstart: datetime | date, now: datetime) -> bool:
     return dtstart < now.date()
 
 
-def merge(existing: list[dict], new_events: list[Event], now: datetime) -> list[dict]:
+def merge(
+    existing: list[dict],
+    new_events: list[Event],
+    now: datetime,
+    protect: set[str] | None = None,
+) -> list[dict]:
     """Aktualisiert das Archiv mit den aktuell aus der Quelle gelesenen
     Events. Bekannte UIDs werden aktualisiert (Zeit/Ort können sich ändern,
     die UID bleibt stabil), neue UIDs werden ergänzt. Termine, die im Archiv
@@ -49,7 +54,14 @@ def merge(existing: list[dict], new_events: list[Event], now: datetime) -> list[
     ihr Termin noch nicht vorbei ist. Ist ihr Termin vorbei, bekommen sie das
     ABGESAGT-Präfix (Verschwinden-Logik) -- gelöscht wird nie, damit Termine
     dauerhaft im Kalender bleiben.
+
+    `protect` nimmt UIDs von der Verschwinden-Logik aus. Das brauchen die
+    gemerkten Spiele (SPEC-ADMIN.md Abschnitt 3): schlägt der Abruf einer
+    einzelnen Spielnummer fehl, wissen wir nichts über das Spiel und dürfen es
+    deshalb nicht als abgesagt markieren. Ein echtes 404 von handball.net ist
+    dagegen eine Aussage und gehört nicht in `protect`.
     """
+    protect = protect or set()
     now_iso = now.isoformat()
     by_uid: dict[str, dict] = {e["uid"]: dict(e) for e in existing}
     seen_uids: set[str] = set()
@@ -68,7 +80,7 @@ def merge(existing: list[dict], new_events: list[Event], now: datetime) -> list[
             by_uid[event.uid] = entry
 
     for uid, entry in by_uid.items():
-        if uid in seen_uids or entry["cancelled"]:
+        if uid in seen_uids or uid in protect or entry["cancelled"]:
             continue
         if _is_past(_parse_dtstart(entry), now):
             entry["cancelled"] = True
