@@ -124,7 +124,43 @@ def test_normalize_opponent_override_wins_before_rules():
             "MATARé-GYMNASIUM, NIEDERDONKER STR. 34, 40667 MEERBUSCH, 40667 MEERBUSCH",
             "Mataré-Gymnasium, Niederdonker Str. 34, 40667 Meerbusch, Deutschland",
         ),
+        # Umbruch auch am Punkt innerhalb eines Wortes, wie bei den Namen.
+        (
+            "RS.NEUENKAMP, NEUENKAMPER STRASSE 55, 42855 REMSCHEID, 42855 REMSCHEID",
+            "Rs.Neuenkamp, Neuenkamper Strasse 55, 42855 Remscheid, Deutschland",
+        ),
     ],
 )
 def test_clean_handballnet_address_examples(raw, expected):
     assert clean_handballnet_address(raw) == expected
+
+
+def test_address_cleanup_capitalizes_after_a_bracket():
+    """str.capitalize schreibt nur das erste Zeichen groß -- steht dort eine
+    Klammer, bliebe der Rest klein."""
+    assert clean_handballnet_address(
+        "VOSS-ARENA (WIPPERFÜRTH.AM MÜHLENBERG), OSTLANDSTRASSE 17, 51688 WIPPERFÜRTH"
+    ) == (
+        "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, "
+        "51688 Wipperfürth, Deutschland"
+    )
+
+
+def test_address_cleanup_keeps_house_number_suffixes_lowercase():
+    assert clean_handballnet_address("RAHMER KIRCHWEG 19A, 47647 KERKEN") == (
+        "Rahmer Kirchweg 19a, 47647 Kerken, Deutschland"
+    )
+    assert clean_handballnet_address("MUSTERWEG 7B, 12345 ORT") == (
+        "Musterweg 7b, 12345 Ort, Deutschland"
+    )
+
+
+def test_address_cleanup_keeps_street_abbreviations_lowercase_after_the_dot():
+    """STR. muss Str. bleiben -- die Konsonantenregel aus dem Namenspfad darf
+    hier nicht greifen, sonst entstünde STR."""
+    assert clean_handballnet_address("MERCATORSTR., 45143 ESSEN") == (
+        "Mercatorstr., 45143 Essen, Deutschland"
+    )
+    assert clean_handballnet_address("INDUSTRIESTR. 7, 47447 MOERS") == (
+        "Industriestr. 7, 47447 Moers, Deutschland"
+    )

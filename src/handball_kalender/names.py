@@ -85,6 +85,9 @@ _RECHTSFORM_RE = re.compile(r"\s+e\.\s?v\.?(?=\s|$)", re.IGNORECASE)
 # und "INTERAKTIV.HANDBALL" ist "Interaktiv.Handball".
 _TRENNER_RE = re.compile(r"([-./])")
 
+# Bei Adressen ohne den Schrägstrich: "70/86" soll nicht umgebrochen werden.
+_ADRESS_TRENNER_RE = re.compile(r"([-.])")
+
 _WHITESPACE_RE = re.compile(r"\s+")
 
 
@@ -146,10 +149,33 @@ def normalize_opponent(raw: str, overrides: dict[str, str] | None = None) -> str
     return " ".join(tokens)
 
 
+def _capitalize_first_letter(teil: str) -> str:
+    """`str.capitalize` schreibt nur das erste *Zeichen* groß. Steht dort eine
+    Klammer, bleibt der ganze Rest klein: aus `(WIPPERFÜRTH` würde
+    `(wipperfürth`. Gesucht ist der erste *Buchstabe*.
+
+    Folgt der Buchstabe aber auf eine Ziffer, ist er ein Hausnummernzusatz und
+    bleibt klein -- `19A` ist `19a`, nicht `19A`.
+    """
+    klein = teil.lower()
+    for i, zeichen in enumerate(klein):
+        if zeichen.isdigit():
+            return klein
+        if zeichen.isalpha():
+            return klein[:i] + zeichen.upper() + klein[i + 1 :]
+    return klein
+
+
 def _title_case_address_token(token: str) -> str:
-    if "-" in token:
-        return "-".join(part.capitalize() for part in token.split("-"))
-    return token.capitalize()
+    """Wie `_title_case_compound`, aber ohne Abkürzungstabelle und ohne die
+    Konsonantenregel: bei Adressen muss `STR.` zu `Str.` werden, nicht zu
+    `STR.`. Umgebrochen wird an Bindestrich und Punkt, damit aus
+    `RS.NEUENKAMP` nicht `Rs.neuenkamp` wird -- handball.net benennt Hallen
+    nach dem Schema `Ort.Hallenname`."""
+    return "".join(
+        teil if _ADRESS_TRENNER_RE.fullmatch(teil) else _capitalize_first_letter(teil)
+        for teil in _ADRESS_TRENNER_RE.split(token)
+    )
 
 
 def clean_handballnet_address(raw: str) -> str:
