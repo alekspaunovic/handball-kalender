@@ -13,12 +13,18 @@ import yaml
 class TeamConfig:
     key: str
     anzeigename: str
-    handballnet_name: str
     handballnet_team_id: int
-    spielerplus_env: str
-    treffpunkt_spiel_minuten: int
-    treffpunkt_training_minuten: int | None
     spieldauer_minuten: int
+    # Eigenname bei handball.net fuer die Gegnererkennung. Fehlt er, wird er
+    # aus dem X-WR-CALNAME des Quell-Feeds gelesen (SPEC.md Abschnitt 4).
+    handballnet_name: str | None = None
+    spielerplus_env: str | None = None
+    # None heisst "keine Treffpunkt-Notiz" -- so sind die Fremdteams als reine
+    # Zuschauertermine konfiguriert (SPEC-ADMIN.md Abschnitt 3).
+    treffpunkt_spiel_minuten: int | None = None
+    treffpunkt_training_minuten: int | None = None
+    # False = Fremdteam, liefert nur den Pool (own_team in pool.json).
+    own: bool = True
 
 
 @dataclass(frozen=True)
@@ -26,6 +32,8 @@ class FeedConfig:
     key: str
     team: str
     type: str  # "training" oder "spiele"
+    # Fuellt Archiv und Pool, schreibt aber keine eigene .ics-Datei.
+    pool_only: bool = False
 
 
 @dataclass(frozen=True)
@@ -48,11 +56,18 @@ class Config:
     teams: dict[str, TeamConfig]
     feeds: dict[str, FeedConfig]
     opponent_overrides: dict[str, str]
+    overrides_path: str = "overrides.json"
+    pool_file: str = "pool.json"
+    extra_feed_key: str = "extra"
+    extra_calname: str = "TBW Extra"
     spielerplus_uid_prefixes: list[str] = field(default_factory=lambda: ["training", "event"])
     halls: list[Hall] = field(default_factory=list)
 
     def spielerplus_url(self, team_key: str) -> str | None:
-        return os.environ.get(self.teams[team_key].spielerplus_env)
+        env_name = self.teams[team_key].spielerplus_env
+        if not env_name:
+            return None
+        return os.environ.get(env_name)
 
 
 def load_halls(path: str | Path) -> list[Hall]:
@@ -92,6 +107,10 @@ def load_config(config_path: str | Path, halls_path: str | Path) -> Config:
         teams=teams,
         feeds=feeds,
         opponent_overrides=dict(raw.get("opponent_overrides") or {}),
+        overrides_path=raw.get("overrides_path", "overrides.json"),
+        pool_file=raw.get("pool_file", "pool.json"),
+        extra_feed_key=raw.get("extra_feed_key", "extra"),
+        extra_calname=raw.get("extra_calname", "TBW Extra"),
         spielerplus_uid_prefixes=list(raw.get("spielerplus_uid_prefixes") or ["training", "event"]),
         halls=load_halls(halls_path),
     )

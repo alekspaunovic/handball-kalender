@@ -1,5 +1,5 @@
-"""Orchestrierung: fetch -> transform -> Archiv-Merge -> Feeds schreiben
-(SPEC.md Abschnitt 11)."""
+"""Orchestrierung: fetch -> transform -> Archiv-Merge -> manuelle Eingriffe
+-> Feeds schreiben (SPEC.md Abschnitt 11, SPEC-ADMIN.md Abschnitt 5)."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ import logging
 from datetime import datetime, timezone as dt_timezone
 from pathlib import Path
 
-from . import archive, ics_io, spiele, training
+from . import archive, extra, ics_io, overrides as overrides_mod, pool, spiele, training
 from .config import Config, FeedConfig, load_config
 from .fetch import fetch_ics
 
@@ -56,22 +56,47 @@ def _calname(feed: FeedConfig, config: Config) -> str:
     return f"TBW {team.anzeigename} {suffix}"
 
 
-def run_feed(feed: FeedConfig, config: Config, local_fixtures_dir: Path | None, now: datetime) -> None:
+def run_feed(
+    feed: FeedConfig,
+    config: Config,
+    local_fixtures_dir: Path | None,
+    now: datetime,
+    hidden: set[str],
+) -> list[dict]:
+    """Verarbeitet eine Quelle und gibt ihr gemergtes Archiv zurueck.
+
+    Der Feed wird um die in `hidden` aufgefuehrten UIDs gekuerzt, das Archiv
+    nicht -- deshalb ist jedes Ausblenden umkehrbar (SPEC-ADMIN.md Abschnitt 5).
+    Pool-Quellen schreiben gar keine .ics-Datei.
+    """
     archive_path = Path(config.archive_dir) / f"{feed.key}.json"
     output_path = Path(config.output_dir) / f"{feed.key}.ics"
     existing = archive.load(archive_path)
     if feed.type == "training":
         existing = training.filter_archive_entries(existing, config.spielerplus_uid_prefixes)
 
+    def write(entries: list[dict]) -> None:
+        if feed.pool_only:
+            return
+        ics_io.write_feed(
+            output_path,
+            [entry for entry in entries if entry["uid"] not in hidden],
+            _calname(feed, config),
+            config.timezone,
+            config.feed_ttl,
+        )
+
     try:
         raw = _load_source(feed, config, local_fixtures_dir)
         if raw is None:
             if existing:
-                ics_io.write_feed(output_path, existing, _calname(feed, config), config.timezone, config.feed_ttl)
-            return
+                write(existing)
+            return existing
 
-        team = config.teams[feed.team]
         cal = ics_io.parse_calendar(raw)
+        team = config.teams[feed.team]
+        if feed.type == "spiele":
+            team = spiele.resolve_own_name(team, cal)
         events = []
         for vevent in ics_io.iter_vevents(cal):
             if feed.type == "training":
@@ -98,7 +123,8 @@ def run_feed(feed: FeedConfig, config: Config, local_fixtures_dir: Path | None, 
         merged = existing
 
     archive.save(archive_path, merged)
-    ics_io.write_feed(output_path, merged, _calname(feed, config), config.timezone, config.feed_ttl)
+    write(merged)
+    return merged
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -121,8 +147,22 @@ def main(argv: list[str] | None = None) -> None:
     local_fixtures_dir = Path(args.local) if args.local else None
     now = datetime.now(dt_timezone.utc)
 
-    for feed in config.feeds.values():
-        run_feed(feed, config, local_fixtures_dir, now)
+    manual = overrides_mod.load(config.overrides_path)
+
+    archives = {
+        feed.key: run_feed(feed, config, local_fixtures_dir, now, manual.hidden)
+        for feed in config.feeds.values()
+    }
+
+    output_dir = Path(config.output_dir)
+    pool.save(output_dir / config.pool_file, pool.build(archives, config, now))
+    ics_io.write_feed(
+        output_dir / f"{config.extra_feed_key}.ics",
+        extra.build_entries(manual, archives, config.halls, config.timezone),
+        config.extra_calname,
+        config.timezone,
+        config.feed_ttl,
+    )
 
 
 if __name__ == "__main__":

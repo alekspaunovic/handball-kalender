@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import dataclasses
 import logging
 import re
 from datetime import date, datetime, timedelta
 
 from .config import Hall, TeamConfig
 from .halls import find_hall, hall_address
-from .ics_io import extract_geo, extract_location, localize_naive
+from .ics_io import calendar_name, extract_geo, extract_location, localize_naive
 from .models import Event
 from .names import clean_handballnet_address, normalize_opponent
 
@@ -52,7 +53,23 @@ def split_summary(raw_summary: str) -> tuple[str, str, str | None]:
     return heim_seite.strip(), gast_seite.strip(), ergebnis
 
 
+def resolve_own_name(team: TeamConfig, cal) -> TeamConfig:
+    """Eigenname fuer die Gegnererkennung. Steht er nicht in config.yaml -- so
+    bei den Fremdteams, SPEC-ADMIN.md Abschnitt 3 -- kommt er aus dem
+    X-WR-CALNAME der Quelle (SPEC.md Abschnitt 4)."""
+    if team.handballnet_name:
+        return team
+    return dataclasses.replace(team, handballnet_name=calendar_name(cal))
+
+
 def resolve_opponent(heim_seite: str, gast_seite: str, team: TeamConfig) -> str:
+    if not team.handballnet_name:
+        logger.warning(
+            "Kein Eigenname für %s (weder in config.yaml noch als X-WR-CALNAME "
+            "der Quelle), Gegner kann nicht bestimmt werden",
+            team.key,
+        )
+        return heim_seite
     own = _normalize_for_compare(team.handballnet_name)
     if _normalize_for_compare(heim_seite) == own:
         return gast_seite
@@ -117,7 +134,10 @@ def transform(
     notiz_lines = []
     if all_day:
         notiz_lines.append("Uhrzeit noch offen")
-    else:
+    elif team.treffpunkt_spiel_minuten is not None:
+        # Fremdteams haben keinen Vorlauf konfiguriert -- fuer reine
+        # Zuschauertermine gibt es keinen Treffpunkt (SPEC-ADMIN.md
+        # Abschnitt 3).
         treffpunkt = dtstart - timedelta(minutes=team.treffpunkt_spiel_minuten)
         notiz_lines.append(f"Treffpunkt: {treffpunkt.strftime('%H:%M')}")
     if ergebnis:

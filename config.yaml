@@ -8,6 +8,15 @@ uid_prefix: tbw
 output_dir: docs
 archive_dir: data
 
+# Manuelle Eingriffe (SPEC-ADMIN.md). overrides_path wird nur gelesen, nie
+# vom Skript geschrieben -- geschrieben wird sie ausschliesslich von der
+# Admin-Oberflaeche. Fehlt sie oder ist sie fehlerhaft, laufen alle Feeds
+# trotzdem durch.
+overrides_path: overrides.json
+pool_file: pool.json
+extra_feed_key: extra
+extra_calname: TBW Extra
+
 # SpielerPlus-URLs kommen ausschliesslich aus Umgebungsvariablen (GitHub
 # Secrets bzw. lokale .env), niemals aus dieser Datei. Hier steht nur, unter
 # welchem Variablennamen das Skript die URL je Team erwartet.
@@ -41,8 +50,35 @@ teams:
     treffpunkt_training_minuten: null
     spieldauer_minuten: 75
 
+  # Fremdteams (SPEC-ADMIN.md Abschnitt 3): reine Pool-Quellen. Sie landen
+  # nie automatisch in einem Feed, sondern nur in docs/pool.json, aus dem
+  # einzelne Spiele von Hand freigeschaltet werden. own: false steuert
+  # beides -- own_team im Pool und den Wegfall der Treffpunkt-Notiz, denn das
+  # sind Zuschauertermine.
+  #
+  # handballnet_name fehlt hier absichtlich: der Eigenname fuer die
+  # Gegnererkennung wird aus dem X-WR-CALNAME des jeweiligen Feeds gelesen.
+  # Das Kuerzel steckt dauerhaft in der UID und darf sich nie aendern.
+  a-jugend:
+    anzeigename: "A-Jugend"
+    handballnet_team_id: 94756
+    spieldauer_minuten: 75
+    own: false
+  "1-herren":
+    anzeigename: "1. Herren"
+    handballnet_team_id: 75787
+    spieldauer_minuten: 90
+    own: false
+  "1-damen":
+    anzeigename: "1. Damen"
+    handballnet_team_id: 76182
+    spieldauer_minuten: 90
+    own: false
+
 # Sechs Ausgabe-Feeds gemaess Abschnitt 3. calname wird zu
 # "TBW <Anzeigename> Training" bzw. "TBW <Anzeigename> Spiele" aufgeloest.
+# Dazu die drei Pool-Quellen mit pool_only: true -- sie fuellen Archiv und
+# Pool, schreiben aber keine eigene .ics-Datei.
 feeds:
   m2-training: {team: m2, type: training}
   m2-spiele: {team: m2, type: spiele}
@@ -50,6 +86,9 @@ feeds:
   m3-spiele: {team: m3, type: spiele}
   mc-training: {team: mc, type: training}
   mc-spiele: {team: mc, type: spiele}
+  a-jugend-spiele: {team: a-jugend, type: spiele, pool_only: true}
+  1-herren-spiele: {team: "1-herren", type: spiele, pool_only: true}
+  1-damen-spiele: {team: "1-damen", type: spiele, pool_only: true}
 
 # Handeinträge zur Korrektur einzelner Gegnernamen, siehe Abschnitt 6.
 # Wird vor allen Normalisierungsregeln geprueft. Schluessel = Rohname aus

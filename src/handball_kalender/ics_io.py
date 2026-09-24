@@ -28,6 +28,15 @@ def iter_vevents(cal: Calendar):
     return cal.walk("VEVENT")
 
 
+def calendar_name(cal: Calendar) -> str | None:
+    """X-WR-CALNAME der Quelle. Bei handball.net steht dort der Eigenname des
+    Teams (SPEC.md Abschnitt 4), den die Gegnererkennung braucht."""
+    value = cal.get("X-WR-CALNAME")
+    if value is None:
+        return None
+    return str(value) or None
+
+
 def extract_geo(vevent) -> tuple[float, float] | None:
     geo = vevent.get("GEO")
     if geo is None:
