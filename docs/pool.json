@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T11:38:30.147066+00:00",
+  "generated": "2026-09-25T17:00:51.472444+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -1268,19 +1268,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687035",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts Niederbergischer HC",
-      "dtstart": "2026-10-03",
-      "dtend": "2026-10-04",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-m2-spiel-380470",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1315,6 +1302,19 @@
       "summary": "1. Damen Heim TuS Königsdorf",
       "dtstart": "2026-10-03T20:00:00+02:00",
       "dtend": "2026-10-03T21:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687035",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim Niederbergischer HC",
+      "dtstart": "2026-10-04T15:30:00+02:00",
+      "dtend": "2026-10-04T16:45:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1749,19 +1749,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687044",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts SG Unterrath",
-      "dtstart": "2026-11-07",
-      "dtend": "2026-11-08",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563629",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -1811,6 +1798,19 @@
       "dtend": "2026-11-07T21:00:00+01:00",
       "all_day": false,
       "location": "Gathe Wuppertal, Gathe 2, 42107 Wuppertal, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687044",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim SG Unterrath",
+      "dtstart": "2026-11-08T12:15:00+01:00",
+      "dtend": "2026-11-08T13:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2113,19 +2113,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687056",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts TV Ratingen",
-      "dtstart": "2026-11-28",
-      "dtend": "2026-11-29",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563649",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -2160,6 +2147,19 @@
       "summary": "2. Herren Heim Wermelskirchener TV",
       "dtstart": "2026-11-28T20:00:00+01:00",
       "dtend": "2026-11-28T21:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687056",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim TV Ratingen",
+      "dtstart": "2026-11-29T13:00:00+01:00",
+      "dtend": "2026-11-29T14:15:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2373,19 +2373,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687062",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts DJK Unitas Haan",
-      "dtstart": "2026-12-12",
-      "dtend": "2026-12-13",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-m2-spiel-380514",
       "team": "2. Herren",
       "team_key": "m2",
@@ -2448,6 +2435,19 @@
       "dtend": "2026-12-13T16:00:00+01:00",
       "all_day": false,
       "location": "Witzhelden.Am Sportplatz, Am Sportplatz, 42799 Leichlingen, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687062",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim DJK Unitas Haan",
+      "dtstart": "2026-12-13T14:45:00+01:00",
+      "dtend": "2026-12-13T16:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2659,19 +2659,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687075",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts SG Unterrath",
-      "dtstart": "2027-01-23",
-      "dtend": "2027-01-24",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563682",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -2734,6 +2721,19 @@
       "dtend": "2027-01-24T16:30:00+01:00",
       "all_day": false,
       "location": "Gymnasium Mz-Oberstadt, Hechtsheimer Straße 29, 55131 Mainz, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687075",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim SG Unterrath",
+      "dtstart": "2027-01-24T15:30:00+01:00",
+      "dtend": "2027-01-24T16:45:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2821,9 +2821,9 @@
       "own_team": true,
       "type": "spiele",
       "summary": "C-Jugend Auswärts Solinger TB",
-      "dtstart": "2027-02-06",
-      "dtend": "2027-02-07",
-      "all_day": true,
+      "dtstart": "2027-02-06T10:30:00+01:00",
+      "dtend": "2027-02-06T11:45:00+01:00",
+      "all_day": false,
       "location": null,
       "cancelled": false
     },
@@ -2984,19 +2984,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687093",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts SG Langenfeld",
-      "dtstart": "2027-02-27",
-      "dtend": "2027-02-28",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-m2-spiel-380568",
       "team": "2. Herren",
       "team_key": "m2",
@@ -3031,6 +3018,19 @@
       "summary": "1. Damen Heim TV Aldekerk",
       "dtstart": "2027-02-27T20:00:00+01:00",
       "dtend": "2027-02-27T21:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687093",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim SG Langenfeld",
+      "dtstart": "2027-02-28T12:15:00+01:00",
+      "dtend": "2027-02-28T13:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -3127,19 +3127,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687102",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Auswärts Kettwiger SV 70/86",
-      "dtstart": "2027-03-13",
-      "dtend": "2027-03-14",
-      "all_day": true,
-      "location": null,
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563722",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -3187,6 +3174,19 @@
       "summary": "1. Damen Heim TSG MZ-Bretzenheim",
       "dtstart": "2027-03-13T20:00:00+01:00",
       "dtend": "2027-03-13T21:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687102",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim Kettwiger SV 70/86",
+      "dtstart": "2027-03-14T11:45:00+01:00",
+      "dtend": "2027-03-14T13:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
