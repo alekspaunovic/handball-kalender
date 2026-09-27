@@ -22,7 +22,7 @@ erzeugt ausschließlich Dateien. Der Nutzer abonniert die URLs.
 | --- | --- |
 | M2 | aus GitHub Secret SPIELERPLUS_M2 |
 | M3 | aus GitHub Secret SPIELERPLUS_M3 |
-| MC | noch nicht vorhanden, wird nachgereicht |
+| MC | aus GitHub Secret SPIELERPLUS_MC |
 
 Diese URLs sind personalisierte Geheim-Links. Sie gehören in GitHub Secrets,
 nicht ins Repository.
@@ -69,8 +69,10 @@ Sechs Feeds, getrennt nach Team und Typ:
 | `mc-training.ics` | Trainings und sonstige Termine C-Jugend | SpielerPlus MC |
 | `mc-spiele.ics` | Spiele C-Jugend | handball.net 95749 |
 
-Solange der MC-SpielerPlus-Link fehlt, wird `mc-training.ics` nicht erzeugt.
-Das Skript darf deswegen nicht abbrechen.
+`mc-training.ics` ist wieder aktiv, seit der SpielerPlus-Feed der C-Jugend
+verfügbar ist (vorher fehlte der Premium-Zugang). Fehlt eine
+SpielerPlus-URL, wird der zugehörige Training-Feed nicht erzeugt. Das Skript
+darf deswegen nicht abbrechen.
 
 Kalender-Header je Datei:
 
@@ -420,5 +422,4 @@ abzudecken:
 
 ## 13. Offene Punkte
 
-- SpielerPlus-Link der C-Jugend
 - Prüfen, ob die MC-Spiele in der Voss-Arena tatsächlich ein Turnier sind
