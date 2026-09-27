@@ -1,1 +1,2252 @@
-[]
+[
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-06-29T20:30:00+02:00",
+    "dtstart": "2026-06-29T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624159",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624159",
+    "url": "https://www.spielerplus.de/training/view?id=75624159"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-07-03T20:30:00+02:00",
+    "dtstart": "2026-07-03T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.289115,
+      7.031447
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624357",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624357",
+    "url": "https://www.spielerplus.de/training/view?id=75624357"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-07-06T20:30:00+02:00",
+    "dtstart": "2026-07-06T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624160",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624160",
+    "url": "https://www.spielerplus.de/training/view?id=75624160"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-07-10T20:30:00+02:00",
+    "dtstart": "2026-07-10T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.289115,
+      7.031447
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624358",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624358",
+    "url": "https://www.spielerplus.de/training/view?id=75624358"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-07-13T20:30:00+02:00",
+    "dtstart": "2026-07-13T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624161",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624161",
+    "url": "https://www.spielerplus.de/training/view?id=75624161"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-07-17T20:30:00+02:00",
+    "dtstart": "2026-07-17T17:30:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.289115,
+      7.031447
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.75624359",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-75624359",
+    "url": "https://www.spielerplus.de/training/view?id=75624359"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-09-23T19:00:00+02:00",
+    "dtstart": "2026-09-23T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326307",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326307",
+    "url": "https://www.spielerplus.de/training/view?id=80326307"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-09-25T20:30:00+02:00",
+    "dtstart": "2026-09-25T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326366",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326366",
+    "url": "https://www.spielerplus.de/training/view?id=80326366"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-09-28T19:00:00+02:00",
+    "dtstart": "2026-09-28T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326679",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326679",
+    "url": "https://www.spielerplus.de/training/view?id=80326679"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-09-30T19:00:00+02:00",
+    "dtstart": "2026-09-30T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326308",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326308",
+    "url": "https://www.spielerplus.de/training/view?id=80326308"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-02T20:30:00+02:00",
+    "dtstart": "2026-10-02T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326367",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326367",
+    "url": "https://www.spielerplus.de/training/view?id=80326367"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-05T19:00:00+02:00",
+    "dtstart": "2026-10-05T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326680",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326680",
+    "url": "https://www.spielerplus.de/training/view?id=80326680"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-07T19:00:00+02:00",
+    "dtstart": "2026-10-07T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326309",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326309",
+    "url": "https://www.spielerplus.de/training/view?id=80326309"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-09T20:30:00+02:00",
+    "dtstart": "2026-10-09T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326368",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326368",
+    "url": "https://www.spielerplus.de/training/view?id=80326368"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-12T19:00:00+02:00",
+    "dtstart": "2026-10-12T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326681",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326681",
+    "url": "https://www.spielerplus.de/training/view?id=80326681"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-14T19:00:00+02:00",
+    "dtstart": "2026-10-14T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326310",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326310",
+    "url": "https://www.spielerplus.de/training/view?id=80326310"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-16T20:30:00+02:00",
+    "dtstart": "2026-10-16T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326369",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326369",
+    "url": "https://www.spielerplus.de/training/view?id=80326369"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-19T19:00:00+02:00",
+    "dtstart": "2026-10-19T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326682",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326682",
+    "url": "https://www.spielerplus.de/training/view?id=80326682"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-21T19:00:00+02:00",
+    "dtstart": "2026-10-21T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326311",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326311",
+    "url": "https://www.spielerplus.de/training/view?id=80326311"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-23T20:30:00+02:00",
+    "dtstart": "2026-10-23T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326370",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326370",
+    "url": "https://www.spielerplus.de/training/view?id=80326370"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-26T19:00:00+01:00",
+    "dtstart": "2026-10-26T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326683",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326683",
+    "url": "https://www.spielerplus.de/training/view?id=80326683"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-28T19:00:00+01:00",
+    "dtstart": "2026-10-28T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326312",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326312",
+    "url": "https://www.spielerplus.de/training/view?id=80326312"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-10-30T20:30:00+01:00",
+    "dtstart": "2026-10-30T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326371",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326371",
+    "url": "https://www.spielerplus.de/training/view?id=80326371"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-02T19:00:00+01:00",
+    "dtstart": "2026-11-02T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326684",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326684",
+    "url": "https://www.spielerplus.de/training/view?id=80326684"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-04T19:00:00+01:00",
+    "dtstart": "2026-11-04T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326313",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326313",
+    "url": "https://www.spielerplus.de/training/view?id=80326313"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-06T20:30:00+01:00",
+    "dtstart": "2026-11-06T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326372",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326372",
+    "url": "https://www.spielerplus.de/training/view?id=80326372"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-09T19:00:00+01:00",
+    "dtstart": "2026-11-09T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326685",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326685",
+    "url": "https://www.spielerplus.de/training/view?id=80326685"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-11T19:00:00+01:00",
+    "dtstart": "2026-11-11T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326314",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326314",
+    "url": "https://www.spielerplus.de/training/view?id=80326314"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-13T20:30:00+01:00",
+    "dtstart": "2026-11-13T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326373",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326373",
+    "url": "https://www.spielerplus.de/training/view?id=80326373"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-16T19:00:00+01:00",
+    "dtstart": "2026-11-16T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326686",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326686",
+    "url": "https://www.spielerplus.de/training/view?id=80326686"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-18T19:00:00+01:00",
+    "dtstart": "2026-11-18T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326315",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326315",
+    "url": "https://www.spielerplus.de/training/view?id=80326315"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-20T20:30:00+01:00",
+    "dtstart": "2026-11-20T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326374",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326374",
+    "url": "https://www.spielerplus.de/training/view?id=80326374"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-23T19:00:00+01:00",
+    "dtstart": "2026-11-23T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326687",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326687",
+    "url": "https://www.spielerplus.de/training/view?id=80326687"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-25T19:00:00+01:00",
+    "dtstart": "2026-11-25T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326316",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326316",
+    "url": "https://www.spielerplus.de/training/view?id=80326316"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-27T20:30:00+01:00",
+    "dtstart": "2026-11-27T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326375",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326375",
+    "url": "https://www.spielerplus.de/training/view?id=80326375"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-11-30T19:00:00+01:00",
+    "dtstart": "2026-11-30T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326688",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326688",
+    "url": "https://www.spielerplus.de/training/view?id=80326688"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-02T19:00:00+01:00",
+    "dtstart": "2026-12-02T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326317",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326317",
+    "url": "https://www.spielerplus.de/training/view?id=80326317"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-04T20:30:00+01:00",
+    "dtstart": "2026-12-04T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326376",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326376",
+    "url": "https://www.spielerplus.de/training/view?id=80326376"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-07T19:00:00+01:00",
+    "dtstart": "2026-12-07T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326689",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326689",
+    "url": "https://www.spielerplus.de/training/view?id=80326689"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-09T19:00:00+01:00",
+    "dtstart": "2026-12-09T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326318",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326318",
+    "url": "https://www.spielerplus.de/training/view?id=80326318"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-11T20:30:00+01:00",
+    "dtstart": "2026-12-11T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326377",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326377",
+    "url": "https://www.spielerplus.de/training/view?id=80326377"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-14T19:00:00+01:00",
+    "dtstart": "2026-12-14T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326690",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326690",
+    "url": "https://www.spielerplus.de/training/view?id=80326690"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-16T19:00:00+01:00",
+    "dtstart": "2026-12-16T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326319",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326319",
+    "url": "https://www.spielerplus.de/training/view?id=80326319"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-18T20:30:00+01:00",
+    "dtstart": "2026-12-18T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326378",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326378",
+    "url": "https://www.spielerplus.de/training/view?id=80326378"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-21T19:00:00+01:00",
+    "dtstart": "2026-12-21T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326691",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326691",
+    "url": "https://www.spielerplus.de/training/view?id=80326691"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-23T19:00:00+01:00",
+    "dtstart": "2026-12-23T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326320",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326320",
+    "url": "https://www.spielerplus.de/training/view?id=80326320"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-25T20:30:00+01:00",
+    "dtstart": "2026-12-25T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326379",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326379",
+    "url": "https://www.spielerplus.de/training/view?id=80326379"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-28T19:00:00+01:00",
+    "dtstart": "2026-12-28T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326692",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326692",
+    "url": "https://www.spielerplus.de/training/view?id=80326692"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2026-12-30T19:00:00+01:00",
+    "dtstart": "2026-12-30T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326321",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326321",
+    "url": "https://www.spielerplus.de/training/view?id=80326321"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-01T20:30:00+01:00",
+    "dtstart": "2027-01-01T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326380",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326380",
+    "url": "https://www.spielerplus.de/training/view?id=80326380"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-04T19:00:00+01:00",
+    "dtstart": "2027-01-04T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326693",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326693",
+    "url": "https://www.spielerplus.de/training/view?id=80326693"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-06T19:00:00+01:00",
+    "dtstart": "2027-01-06T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326322",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326322",
+    "url": "https://www.spielerplus.de/training/view?id=80326322"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-08T20:30:00+01:00",
+    "dtstart": "2027-01-08T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326381",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326381",
+    "url": "https://www.spielerplus.de/training/view?id=80326381"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-11T19:00:00+01:00",
+    "dtstart": "2027-01-11T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326694",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326694",
+    "url": "https://www.spielerplus.de/training/view?id=80326694"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-13T19:00:00+01:00",
+    "dtstart": "2027-01-13T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326323",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326323",
+    "url": "https://www.spielerplus.de/training/view?id=80326323"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-15T20:30:00+01:00",
+    "dtstart": "2027-01-15T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326382",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326382",
+    "url": "https://www.spielerplus.de/training/view?id=80326382"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-18T19:00:00+01:00",
+    "dtstart": "2027-01-18T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326695",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326695",
+    "url": "https://www.spielerplus.de/training/view?id=80326695"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-20T19:00:00+01:00",
+    "dtstart": "2027-01-20T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326324",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326324",
+    "url": "https://www.spielerplus.de/training/view?id=80326324"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-22T20:30:00+01:00",
+    "dtstart": "2027-01-22T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326383",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326383",
+    "url": "https://www.spielerplus.de/training/view?id=80326383"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-25T19:00:00+01:00",
+    "dtstart": "2027-01-25T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326696",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326696",
+    "url": "https://www.spielerplus.de/training/view?id=80326696"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-27T19:00:00+01:00",
+    "dtstart": "2027-01-27T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326325",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326325",
+    "url": "https://www.spielerplus.de/training/view?id=80326325"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-01-29T20:30:00+01:00",
+    "dtstart": "2027-01-29T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326384",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326384",
+    "url": "https://www.spielerplus.de/training/view?id=80326384"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-01T19:00:00+01:00",
+    "dtstart": "2027-02-01T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326697",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326697",
+    "url": "https://www.spielerplus.de/training/view?id=80326697"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-03T19:00:00+01:00",
+    "dtstart": "2027-02-03T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326326",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326326",
+    "url": "https://www.spielerplus.de/training/view?id=80326326"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-05T20:30:00+01:00",
+    "dtstart": "2027-02-05T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326385",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326385",
+    "url": "https://www.spielerplus.de/training/view?id=80326385"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-08T19:00:00+01:00",
+    "dtstart": "2027-02-08T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326698",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326698",
+    "url": "https://www.spielerplus.de/training/view?id=80326698"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-10T19:00:00+01:00",
+    "dtstart": "2027-02-10T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326327",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326327",
+    "url": "https://www.spielerplus.de/training/view?id=80326327"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-12T20:30:00+01:00",
+    "dtstart": "2027-02-12T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326386",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326386",
+    "url": "https://www.spielerplus.de/training/view?id=80326386"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-15T19:00:00+01:00",
+    "dtstart": "2027-02-15T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326699",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326699",
+    "url": "https://www.spielerplus.de/training/view?id=80326699"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-17T19:00:00+01:00",
+    "dtstart": "2027-02-17T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326328",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326328",
+    "url": "https://www.spielerplus.de/training/view?id=80326328"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-19T20:30:00+01:00",
+    "dtstart": "2027-02-19T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326387",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326387",
+    "url": "https://www.spielerplus.de/training/view?id=80326387"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-22T19:00:00+01:00",
+    "dtstart": "2027-02-22T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326700",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326700",
+    "url": "https://www.spielerplus.de/training/view?id=80326700"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-24T19:00:00+01:00",
+    "dtstart": "2027-02-24T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326329",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326329",
+    "url": "https://www.spielerplus.de/training/view?id=80326329"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-02-26T20:30:00+01:00",
+    "dtstart": "2027-02-26T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326388",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326388",
+    "url": "https://www.spielerplus.de/training/view?id=80326388"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-01T19:00:00+01:00",
+    "dtstart": "2027-03-01T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326701",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326701",
+    "url": "https://www.spielerplus.de/training/view?id=80326701"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-03T19:00:00+01:00",
+    "dtstart": "2027-03-03T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326330",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326330",
+    "url": "https://www.spielerplus.de/training/view?id=80326330"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-05T20:30:00+01:00",
+    "dtstart": "2027-03-05T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326389",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326389",
+    "url": "https://www.spielerplus.de/training/view?id=80326389"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-08T19:00:00+01:00",
+    "dtstart": "2027-03-08T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326702",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326702",
+    "url": "https://www.spielerplus.de/training/view?id=80326702"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-10T19:00:00+01:00",
+    "dtstart": "2027-03-10T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326331",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326331",
+    "url": "https://www.spielerplus.de/training/view?id=80326331"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-12T20:30:00+01:00",
+    "dtstart": "2027-03-12T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326390",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326390",
+    "url": "https://www.spielerplus.de/training/view?id=80326390"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-15T19:00:00+01:00",
+    "dtstart": "2027-03-15T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326703",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326703",
+    "url": "https://www.spielerplus.de/training/view?id=80326703"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-17T19:00:00+01:00",
+    "dtstart": "2027-03-17T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326332",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326332",
+    "url": "https://www.spielerplus.de/training/view?id=80326332"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-19T20:30:00+01:00",
+    "dtstart": "2027-03-19T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326391",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326391",
+    "url": "https://www.spielerplus.de/training/view?id=80326391"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-22T19:00:00+01:00",
+    "dtstart": "2027-03-22T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326704",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326704",
+    "url": "https://www.spielerplus.de/training/view?id=80326704"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-24T19:00:00+01:00",
+    "dtstart": "2027-03-24T17:45:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326333",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326333",
+    "url": "https://www.spielerplus.de/training/view?id=80326333"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-26T20:30:00+01:00",
+    "dtstart": "2027-03-26T19:00:00+01:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326392",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326392",
+    "url": "https://www.spielerplus.de/training/view?id=80326392"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-29T19:00:00+02:00",
+    "dtstart": "2027-03-29T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326705",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326705",
+    "url": "https://www.spielerplus.de/training/view?id=80326705"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-03-31T19:00:00+02:00",
+    "dtstart": "2027-03-31T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326334",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326334",
+    "url": "https://www.spielerplus.de/training/view?id=80326334"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-02T20:30:00+02:00",
+    "dtstart": "2027-04-02T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326393",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326393",
+    "url": "https://www.spielerplus.de/training/view?id=80326393"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-05T19:00:00+02:00",
+    "dtstart": "2027-04-05T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326706",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326706",
+    "url": "https://www.spielerplus.de/training/view?id=80326706"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-07T19:00:00+02:00",
+    "dtstart": "2027-04-07T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326335",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326335",
+    "url": "https://www.spielerplus.de/training/view?id=80326335"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-09T20:30:00+02:00",
+    "dtstart": "2027-04-09T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326394",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326394",
+    "url": "https://www.spielerplus.de/training/view?id=80326394"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-12T19:00:00+02:00",
+    "dtstart": "2027-04-12T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326707",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326707",
+    "url": "https://www.spielerplus.de/training/view?id=80326707"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-14T19:00:00+02:00",
+    "dtstart": "2027-04-14T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326336",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326336",
+    "url": "https://www.spielerplus.de/training/view?id=80326336"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-16T20:30:00+02:00",
+    "dtstart": "2027-04-16T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326395",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326395",
+    "url": "https://www.spielerplus.de/training/view?id=80326395"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-19T19:00:00+02:00",
+    "dtstart": "2027-04-19T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326708",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326708",
+    "url": "https://www.spielerplus.de/training/view?id=80326708"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-21T19:00:00+02:00",
+    "dtstart": "2027-04-21T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326337",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326337",
+    "url": "https://www.spielerplus.de/training/view?id=80326337"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-23T20:30:00+02:00",
+    "dtstart": "2027-04-23T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326396",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326396",
+    "url": "https://www.spielerplus.de/training/view?id=80326396"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-26T19:00:00+02:00",
+    "dtstart": "2027-04-26T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326709",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326709",
+    "url": "https://www.spielerplus.de/training/view?id=80326709"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-28T19:00:00+02:00",
+    "dtstart": "2027-04-28T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326338",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326338",
+    "url": "https://www.spielerplus.de/training/view?id=80326338"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-04-30T20:30:00+02:00",
+    "dtstart": "2027-04-30T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326397",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326397",
+    "url": "https://www.spielerplus.de/training/view?id=80326397"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-03T19:00:00+02:00",
+    "dtstart": "2027-05-03T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326710",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326710",
+    "url": "https://www.spielerplus.de/training/view?id=80326710"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-05T19:00:00+02:00",
+    "dtstart": "2027-05-05T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326339",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326339",
+    "url": "https://www.spielerplus.de/training/view?id=80326339"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-07T20:30:00+02:00",
+    "dtstart": "2027-05-07T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326398",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326398",
+    "url": "https://www.spielerplus.de/training/view?id=80326398"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-10T19:00:00+02:00",
+    "dtstart": "2027-05-10T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326711",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326711",
+    "url": "https://www.spielerplus.de/training/view?id=80326711"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-12T19:00:00+02:00",
+    "dtstart": "2027-05-12T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326340",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326340",
+    "url": "https://www.spielerplus.de/training/view?id=80326340"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-14T20:30:00+02:00",
+    "dtstart": "2027-05-14T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326399",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326399",
+    "url": "https://www.spielerplus.de/training/view?id=80326399"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-17T19:00:00+02:00",
+    "dtstart": "2027-05-17T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326712",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326712",
+    "url": "https://www.spielerplus.de/training/view?id=80326712"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-19T19:00:00+02:00",
+    "dtstart": "2027-05-19T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326341",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326341",
+    "url": "https://www.spielerplus.de/training/view?id=80326341"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-21T20:30:00+02:00",
+    "dtstart": "2027-05-21T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326400",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326400",
+    "url": "https://www.spielerplus.de/training/view?id=80326400"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-24T19:00:00+02:00",
+    "dtstart": "2027-05-24T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326713",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326713",
+    "url": "https://www.spielerplus.de/training/view?id=80326713"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-26T19:00:00+02:00",
+    "dtstart": "2027-05-26T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326342",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326342",
+    "url": "https://www.spielerplus.de/training/view?id=80326342"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-28T20:30:00+02:00",
+    "dtstart": "2027-05-28T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326401",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326401",
+    "url": "https://www.spielerplus.de/training/view?id=80326401"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-05-31T19:00:00+02:00",
+    "dtstart": "2027-05-31T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326714",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326714",
+    "url": "https://www.spielerplus.de/training/view?id=80326714"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-02T19:00:00+02:00",
+    "dtstart": "2027-06-02T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326343",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326343",
+    "url": "https://www.spielerplus.de/training/view?id=80326343"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-04T20:30:00+02:00",
+    "dtstart": "2027-06-04T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326402",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326402",
+    "url": "https://www.spielerplus.de/training/view?id=80326402"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-07T19:00:00+02:00",
+    "dtstart": "2027-06-07T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326715",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326715",
+    "url": "https://www.spielerplus.de/training/view?id=80326715"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-09T19:00:00+02:00",
+    "dtstart": "2027-06-09T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326344",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326344",
+    "url": "https://www.spielerplus.de/training/view?id=80326344"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-11T20:30:00+02:00",
+    "dtstart": "2027-06-11T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326403",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326403",
+    "url": "https://www.spielerplus.de/training/view?id=80326403"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-14T19:00:00+02:00",
+    "dtstart": "2027-06-14T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326716",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326716",
+    "url": "https://www.spielerplus.de/training/view?id=80326716"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-16T19:00:00+02:00",
+    "dtstart": "2027-06-16T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326345",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326345",
+    "url": "https://www.spielerplus.de/training/view?id=80326345"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-18T20:30:00+02:00",
+    "dtstart": "2027-06-18T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326404",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326404",
+    "url": "https://www.spielerplus.de/training/view?id=80326404"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-21T19:00:00+02:00",
+    "dtstart": "2027-06-21T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326717",
+    "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+    "uid": "tbw-mc-training-80326717",
+    "url": "https://www.spielerplus.de/training/view?id=80326717"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-23T19:00:00+02:00",
+    "dtstart": "2027-06-23T17:45:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326346",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326346",
+    "url": "https://www.spielerplus.de/training/view?id=80326346"
+  },
+  {
+    "all_day": false,
+    "cancelled": false,
+    "description": "",
+    "dtend": "2027-06-25T20:30:00+02:00",
+    "dtstart": "2027-06-25T19:00:00+02:00",
+    "first_seen": "2026-09-27T18:58:26.073166+00:00",
+    "geo": [
+      51.2759225,
+      7.0168646
+    ],
+    "last_seen": "2026-09-27T18:58:26.073166+00:00",
+    "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+    "source_uid": "training.80326405",
+    "summary": "Training C-Jugend",
+    "uid": "tbw-mc-training-80326405",
+    "url": "https://www.spielerplus.de/training/view?id=80326405"
+  }
+]

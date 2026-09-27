@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T18:50:03.929225+00:00",
+  "generated": "2026-09-27T18:58:26.073166+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -85,6 +85,19 @@
       "cancelled": true
     },
     {
+      "uid": "tbw-mc-training-75624159",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-06-29T17:30:00+02:00",
+      "dtend": "2026-06-29T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-76261594",
       "team": "3. Herren",
       "team_key": "m3",
@@ -150,6 +163,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-75624357",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-07-03T17:30:00+02:00",
+      "dtend": "2026-07-03T20:30:00+02:00",
+      "all_day": false,
+      "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-event-2426785",
       "team": "2. Herren",
       "team_key": "m2",
@@ -158,6 +184,19 @@
       "summary": "2. Herren: Mannschaftsabend",
       "dtstart": "2026-07-04T20:00:00+02:00",
       "dtend": "2026-07-04T23:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-75624160",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-07-06T17:30:00+02:00",
+      "dtend": "2026-07-06T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -202,6 +241,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-75624358",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-07-10T17:30:00+02:00",
+      "dtend": "2026-07-10T20:30:00+02:00",
+      "all_day": false,
+      "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-77001620",
       "team": "3. Herren",
       "team_key": "m3",
@@ -212,6 +264,19 @@
       "dtend": "2026-07-10T23:00:00+02:00",
       "all_day": false,
       "location": "Franky's Gym, Glockenstahlstraße 1, 42855 Remscheid, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-75624161",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-07-13T17:30:00+02:00",
+      "dtend": "2026-07-13T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -251,6 +316,19 @@
       "dtend": "2026-07-15T22:00:00+02:00",
       "all_day": false,
       "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-75624359",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-07-17T17:30:00+02:00",
+      "dtend": "2026-07-17T20:30:00+02:00",
+      "all_day": false,
+      "location": "Silberberger Weg 3, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -1125,6 +1203,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326307",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-09-23T17:45:00+02:00",
+      "dtend": "2026-09-23T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640015",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1133,6 +1224,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-09-23T20:20:00+02:00",
       "dtend": "2026-09-23T22:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326366",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-09-25T19:00:00+02:00",
+      "dtend": "2026-09-25T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1216,6 +1320,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326679",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-09-28T17:45:00+02:00",
+      "dtend": "2026-09-28T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506621",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1242,6 +1359,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326308",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-09-30T17:45:00+02:00",
+      "dtend": "2026-09-30T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640016",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1263,6 +1393,19 @@
       "summary": "Training 3. Herren",
       "dtstart": "2026-10-02T19:00:00+02:00",
       "dtend": "2026-10-02T22:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326367",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-02T19:00:00+02:00",
+      "dtend": "2026-10-02T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1346,6 +1489,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326680",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-10-05T17:45:00+02:00",
+      "dtend": "2026-10-05T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506622",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1372,6 +1528,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326309",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-07T17:45:00+02:00",
+      "dtend": "2026-10-07T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640017",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1380,6 +1549,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-10-07T20:20:00+02:00",
       "dtend": "2026-10-07T22:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326368",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-09T19:00:00+02:00",
+      "dtend": "2026-10-09T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1476,6 +1658,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326681",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-10-12T17:45:00+02:00",
+      "dtend": "2026-10-12T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506623",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1502,6 +1697,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326310",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-14T17:45:00+02:00",
+      "dtend": "2026-10-14T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640018",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1510,6 +1718,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-10-14T20:20:00+02:00",
       "dtend": "2026-10-14T22:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326369",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-16T19:00:00+02:00",
+      "dtend": "2026-10-16T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1580,6 +1801,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326682",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-10-19T17:45:00+02:00",
+      "dtend": "2026-10-19T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506624",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1606,6 +1840,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326311",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-21T17:45:00+02:00",
+      "dtend": "2026-10-21T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640019",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1619,6 +1866,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326370",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-23T19:00:00+02:00",
+      "dtend": "2026-10-23T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-79696957",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1627,6 +1887,19 @@
       "summary": "Training 3. Herren",
       "dtstart": "2026-10-23T20:30:00+02:00",
       "dtend": "2026-10-23T22:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326683",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-10-26T17:45:00+01:00",
+      "dtend": "2026-10-26T19:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1658,6 +1931,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326312",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-28T17:45:00+01:00",
+      "dtend": "2026-10-28T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640020",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1666,6 +1952,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-10-28T20:20:00+01:00",
       "dtend": "2026-10-28T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326371",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-10-30T19:00:00+01:00",
+      "dtend": "2026-10-30T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1697,6 +1996,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326684",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-11-02T17:45:00+01:00",
+      "dtend": "2026-11-02T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506626",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1723,6 +2035,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326313",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-04T17:45:00+01:00",
+      "dtend": "2026-11-04T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640021",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1731,6 +2056,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-11-04T20:20:00+01:00",
       "dtend": "2026-11-04T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326372",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-06T19:00:00+01:00",
+      "dtend": "2026-11-06T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1827,6 +2165,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326685",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-11-09T17:45:00+01:00",
+      "dtend": "2026-11-09T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506627",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1853,6 +2204,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326314",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-11T17:45:00+01:00",
+      "dtend": "2026-11-11T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640022",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1861,6 +2225,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-11-11T20:20:00+01:00",
       "dtend": "2026-11-11T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326373",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-13T19:00:00+01:00",
+      "dtend": "2026-11-13T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -1957,6 +2334,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326686",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-11-16T17:45:00+01:00",
+      "dtend": "2026-11-16T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506628",
       "team": "3. Herren",
       "team_key": "m3",
@@ -1983,6 +2373,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326315",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-18T17:45:00+01:00",
+      "dtend": "2026-11-18T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640024",
       "team": "2. Herren",
       "team_key": "m2",
@@ -1991,6 +2394,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-11-18T20:20:00+01:00",
       "dtend": "2026-11-18T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326374",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-20T19:00:00+01:00",
+      "dtend": "2026-11-20T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2061,6 +2477,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326687",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-11-23T17:45:00+01:00",
+      "dtend": "2026-11-23T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506629",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2087,6 +2516,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326316",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-25T17:45:00+01:00",
+      "dtend": "2026-11-25T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640026",
       "team": "2. Herren",
       "team_key": "m2",
@@ -2095,6 +2537,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-11-25T20:20:00+01:00",
       "dtend": "2026-11-25T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326375",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-11-27T19:00:00+01:00",
+      "dtend": "2026-11-27T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2191,6 +2646,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326688",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-11-30T17:45:00+01:00",
+      "dtend": "2026-11-30T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506630",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2217,6 +2685,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326317",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-02T17:45:00+01:00",
+      "dtend": "2026-12-02T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640027",
       "team": "2. Herren",
       "team_key": "m2",
@@ -2225,6 +2706,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-12-02T20:20:00+01:00",
       "dtend": "2026-12-02T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326376",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-04T19:00:00+01:00",
+      "dtend": "2026-12-04T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2321,6 +2815,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326689",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-12-07T17:45:00+01:00",
+      "dtend": "2026-12-07T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506631",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2347,6 +2854,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326318",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-09T17:45:00+01:00",
+      "dtend": "2026-12-09T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640028",
       "team": "2. Herren",
       "team_key": "m2",
@@ -2355,6 +2875,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-12-09T20:20:00+01:00",
       "dtend": "2026-12-09T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326377",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-11T19:00:00+01:00",
+      "dtend": "2026-12-11T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2464,6 +2997,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326690",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-12-14T17:45:00+01:00",
+      "dtend": "2026-12-14T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506632",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2490,6 +3036,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326319",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-16T17:45:00+01:00",
+      "dtend": "2026-12-16T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-training-77640029",
       "team": "2. Herren",
       "team_key": "m2",
@@ -2498,6 +3057,19 @@
       "summary": "Training 2. Herren",
       "dtstart": "2026-12-16T20:20:00+01:00",
       "dtend": "2026-12-16T22:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326378",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-18T19:00:00+01:00",
+      "dtend": "2026-12-18T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2594,6 +3166,19 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326691",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-12-21T17:45:00+01:00",
+      "dtend": "2026-12-21T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-training-78506633",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2602,6 +3187,110 @@
       "summary": "Training 3. Herren",
       "dtstart": "2026-12-22T19:00:00+01:00",
       "dtend": "2026-12-22T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326320",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-23T17:45:00+01:00",
+      "dtend": "2026-12-23T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326379",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-25T19:00:00+01:00",
+      "dtend": "2026-12-25T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326692",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2026-12-28T17:45:00+01:00",
+      "dtend": "2026-12-28T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326321",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2026-12-30T17:45:00+01:00",
+      "dtend": "2026-12-30T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326380",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-01T19:00:00+01:00",
+      "dtend": "2027-01-01T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326693",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-01-04T17:45:00+01:00",
+      "dtend": "2027-01-04T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326322",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-06T17:45:00+01:00",
+      "dtend": "2027-01-06T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326381",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-08T19:00:00+01:00",
+      "dtend": "2027-01-08T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2656,6 +3345,84 @@
       "dtend": "2027-01-09T20:30:00+01:00",
       "all_day": false,
       "location": "Nord-Ost-Gymnasium, Katzenbruchstr. 79, 45141 Essen, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326694",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-01-11T17:45:00+01:00",
+      "dtend": "2027-01-11T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326323",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-13T17:45:00+01:00",
+      "dtend": "2027-01-13T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326382",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-15T19:00:00+01:00",
+      "dtend": "2027-01-15T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326695",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-01-18T17:45:00+01:00",
+      "dtend": "2027-01-18T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326324",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-20T17:45:00+01:00",
+      "dtend": "2027-01-20T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326383",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-22T19:00:00+01:00",
+      "dtend": "2027-01-22T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2732,6 +3499,45 @@
       "summary": "C-Jugend Heim SG Unterrath",
       "dtstart": "2027-01-24T15:30:00+01:00",
       "dtend": "2027-01-24T16:45:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326696",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-01-25T17:45:00+01:00",
+      "dtend": "2027-01-25T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326325",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-27T17:45:00+01:00",
+      "dtend": "2027-01-27T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326384",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-01-29T19:00:00+01:00",
+      "dtend": "2027-01-29T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2815,6 +3621,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326697",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-02-01T17:45:00+01:00",
+      "dtend": "2027-02-01T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326326",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-03T17:45:00+01:00",
+      "dtend": "2027-02-03T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326385",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-05T19:00:00+01:00",
+      "dtend": "2027-02-05T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-mc-spiel-687084",
       "team": "C-Jugend",
       "team_key": "mc",
@@ -2825,6 +3670,45 @@
       "dtend": "2027-02-06T11:45:00+01:00",
       "all_day": false,
       "location": null,
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326698",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-02-08T17:45:00+01:00",
+      "dtend": "2027-02-08T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326327",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-10T17:45:00+01:00",
+      "dtend": "2027-02-10T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326386",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-12T19:00:00+01:00",
+      "dtend": "2027-02-12T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2906,6 +3790,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326699",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-02-15T17:45:00+01:00",
+      "dtend": "2027-02-15T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326328",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-17T17:45:00+01:00",
+      "dtend": "2027-02-17T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326387",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-19T19:00:00+01:00",
+      "dtend": "2027-02-19T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-a-jugend-spiel-563708",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -2981,6 +3904,45 @@
       "dtend": "2027-02-21T16:45:00+01:00",
       "all_day": false,
       "location": "Europaring, Schützenstrasse 19 A, 40878 Ratingen, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326700",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-02-22T17:45:00+01:00",
+      "dtend": "2027-02-22T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326329",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-24T17:45:00+01:00",
+      "dtend": "2027-02-24T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326388",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-02-26T19:00:00+01:00",
+      "dtend": "2027-02-26T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3062,6 +4024,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326701",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-03-01T17:45:00+01:00",
+      "dtend": "2027-03-01T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326330",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-03T17:45:00+01:00",
+      "dtend": "2027-03-03T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326389",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-05T19:00:00+01:00",
+      "dtend": "2027-03-05T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-spiel-645502",
       "team": "3. Herren",
       "team_key": "m3",
@@ -3124,6 +4125,45 @@
       "dtend": "2027-03-06T20:30:00+01:00",
       "all_day": false,
       "location": "Sg.August-Dicke-Schule, Schützenstrasse 44, 42659 Solingen, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326702",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-03-08T17:45:00+01:00",
+      "dtend": "2027-03-08T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326331",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-10T17:45:00+01:00",
+      "dtend": "2027-03-10T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326390",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-12T19:00:00+01:00",
+      "dtend": "2027-03-12T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3205,6 +4245,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326703",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-03-15T17:45:00+01:00",
+      "dtend": "2027-03-15T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326332",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-17T17:45:00+01:00",
+      "dtend": "2027-03-17T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326391",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-19T19:00:00+01:00",
+      "dtend": "2027-03-19T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m3-spiel-645516",
       "team": "3. Herren",
       "team_key": "m3",
@@ -3257,6 +4336,84 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326704",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-03-22T17:45:00+01:00",
+      "dtend": "2027-03-22T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326333",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-24T17:45:00+01:00",
+      "dtend": "2027-03-24T19:00:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326392",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-26T19:00:00+01:00",
+      "dtend": "2027-03-26T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326705",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-03-29T17:45:00+02:00",
+      "dtend": "2027-03-29T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326334",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-03-31T17:45:00+02:00",
+      "dtend": "2027-03-31T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326393",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-02T19:00:00+02:00",
+      "dtend": "2027-04-02T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-1-herren-spiel-544868",
       "team": "1. Herren",
       "team_key": "1-herren",
@@ -3296,6 +4453,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326706",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-04-05T17:45:00+02:00",
+      "dtend": "2027-04-05T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326335",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-07T17:45:00+02:00",
+      "dtend": "2027-04-07T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326394",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-09T19:00:00+02:00",
+      "dtend": "2027-04-09T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-spiel-380604",
       "team": "2. Herren",
       "team_key": "m2",
@@ -3317,6 +4513,45 @@
       "summary": "1. Herren Heim Ohligser TV",
       "dtstart": "2027-04-10T18:00:00+02:00",
       "dtend": "2027-04-10T19:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326707",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-04-12T17:45:00+02:00",
+      "dtend": "2027-04-12T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326336",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-14T17:45:00+02:00",
+      "dtend": "2027-04-14T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326395",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-16T19:00:00+02:00",
+      "dtend": "2027-04-16T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -3361,6 +4596,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326708",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-04-19T17:45:00+02:00",
+      "dtend": "2027-04-19T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326337",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-21T17:45:00+02:00",
+      "dtend": "2027-04-21T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326396",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-23T19:00:00+02:00",
+      "dtend": "2027-04-23T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-spiel-380613",
       "team": "2. Herren",
       "team_key": "m2",
@@ -3382,6 +4656,45 @@
       "summary": "1. Herren Heim SG Langenfeld II",
       "dtstart": "2027-04-24T18:00:00+02:00",
       "dtend": "2027-04-24T19:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326709",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-04-26T17:45:00+02:00",
+      "dtend": "2027-04-26T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326338",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-28T17:45:00+02:00",
+      "dtend": "2027-04-28T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326397",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-04-30T19:00:00+02:00",
+      "dtend": "2027-04-30T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -3413,6 +4726,45 @@
       "cancelled": false
     },
     {
+      "uid": "tbw-mc-training-80326710",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-05-03T17:45:00+02:00",
+      "dtend": "2027-05-03T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326339",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-05T17:45:00+02:00",
+      "dtend": "2027-05-05T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326398",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-07T19:00:00+02:00",
+      "dtend": "2027-05-07T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
       "uid": "tbw-m2-spiel-380629",
       "team": "2. Herren",
       "team_key": "m2",
@@ -3434,6 +4786,279 @@
       "summary": "1. Herren Heim TSV Aufderhöhe",
       "dtstart": "2027-05-08T18:00:00+02:00",
       "dtend": "2027-05-08T19:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326711",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-05-10T17:45:00+02:00",
+      "dtend": "2027-05-10T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326340",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-12T17:45:00+02:00",
+      "dtend": "2027-05-12T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326399",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-14T19:00:00+02:00",
+      "dtend": "2027-05-14T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326712",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-05-17T17:45:00+02:00",
+      "dtend": "2027-05-17T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326341",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-19T17:45:00+02:00",
+      "dtend": "2027-05-19T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326400",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-21T19:00:00+02:00",
+      "dtend": "2027-05-21T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326713",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-05-24T17:45:00+02:00",
+      "dtend": "2027-05-24T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326342",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-26T17:45:00+02:00",
+      "dtend": "2027-05-26T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326401",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-05-28T19:00:00+02:00",
+      "dtend": "2027-05-28T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326714",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-05-31T17:45:00+02:00",
+      "dtend": "2027-05-31T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326343",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-02T17:45:00+02:00",
+      "dtend": "2027-06-02T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326402",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-04T19:00:00+02:00",
+      "dtend": "2027-06-04T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326715",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-06-07T17:45:00+02:00",
+      "dtend": "2027-06-07T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326344",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-09T17:45:00+02:00",
+      "dtend": "2027-06-09T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326403",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-11T19:00:00+02:00",
+      "dtend": "2027-06-11T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326716",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-06-14T17:45:00+02:00",
+      "dtend": "2027-06-14T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326345",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-16T17:45:00+02:00",
+      "dtend": "2027-06-16T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326404",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-18T19:00:00+02:00",
+      "dtend": "2027-06-18T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326717",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-06-21T17:45:00+02:00",
+      "dtend": "2027-06-21T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326346",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-23T17:45:00+02:00",
+      "dtend": "2027-06-23T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326405",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-25T19:00:00+02:00",
+      "dtend": "2027-06-25T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
