@@ -47,6 +47,7 @@ jobs:
         env:
           SPIELERPLUS_M2: ${{ secrets.SPIELERPLUS_M2 }}
           SPIELERPLUS_M3: ${{ secrets.SPIELERPLUS_M3 }}
+          SPIELERPLUS_MC: ${{ secrets.SPIELERPLUS_MC }}
         run: python -m handball_kalender.main
 
       - name: docs/ und data/ committen

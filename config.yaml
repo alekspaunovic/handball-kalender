@@ -21,9 +21,8 @@ extra_calname: TBW Extra
 # Secrets bzw. lokale .env), niemals aus dieser Datei. Hier steht nur, unter
 # welchem Variablennamen das Skript die URL je Team erwartet.
 #
-# MC fehlt noch (siehe Abschnitt 13 der Spezifikation). Solange
-# SPIELERPLUS_MC nicht gesetzt ist, wird mc-training.ics übersprungen, ohne
-# dass das Skript abbricht.
+# Fehlt eine dieser Variablen, wird der zugehörige Training-Feed
+# übersprungen, ohne dass das Skript abbricht.
 teams:
   m2:
     anzeigename: "2. Herren"
