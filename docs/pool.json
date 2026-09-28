@@ -1,5 +1,102 @@
 {
-  "generated": "2026-09-28T13:35:49.166000+00:00",
+  "generated": "2026-09-28T13:56:39.837743+00:00",
+  "teams": [
+    {
+      "key": "m2",
+      "name": "2. Herren",
+      "own_team": true,
+      "color": "#2b6cb0",
+      "color_dark": "#6ba3e0"
+    },
+    {
+      "key": "m3",
+      "name": "3. Herren",
+      "own_team": true,
+      "color": "#2f855a",
+      "color_dark": "#63b98a"
+    },
+    {
+      "key": "mc",
+      "name": "C-Jugend",
+      "own_team": true,
+      "color": "#b7791f",
+      "color_dark": "#d9a441"
+    },
+    {
+      "key": "a-jugend",
+      "name": "A-Jugend",
+      "own_team": false,
+      "color": "#805ad5",
+      "color_dark": "#b094ef"
+    },
+    {
+      "key": "1-herren",
+      "name": "1. Herren",
+      "own_team": false,
+      "color": "#0f7b8a",
+      "color_dark": "#4fb3c0"
+    },
+    {
+      "key": "1-damen",
+      "name": "1. Damen",
+      "own_team": false,
+      "color": "#b83280",
+      "color_dark": "#e069ab"
+    },
+    {
+      "key": "watch",
+      "name": "Gemerktes Spiel",
+      "own_team": false,
+      "color": "#5a6270",
+      "color_dark": "#9aa3b0"
+    }
+  ],
+  "feeds": [
+    {
+      "key": "m2-training",
+      "team_key": "m2",
+      "name": "2. Herren Training",
+      "short_name": "M2 Training"
+    },
+    {
+      "key": "m2-spiele",
+      "team_key": "m2",
+      "name": "2. Herren Spiele",
+      "short_name": "M2 Spiele"
+    },
+    {
+      "key": "m3-training",
+      "team_key": "m3",
+      "name": "3. Herren Training",
+      "short_name": "M3 Training"
+    },
+    {
+      "key": "m3-spiele",
+      "team_key": "m3",
+      "name": "3. Herren Spiele",
+      "short_name": "M3 Spiele"
+    },
+    {
+      "key": "mc-training",
+      "team_key": "mc",
+      "name": "C-Jugend Training",
+      "short_name": "MC Training"
+    },
+    {
+      "key": "mc-spiele",
+      "team_key": "mc",
+      "name": "C-Jugend Spiele",
+      "short_name": "MC Spiele"
+    },
+    {
+      "key": "extra",
+      "team_key": null,
+      "name": "Extra",
+      "short_name": "Extra",
+      "color": "#5a6270",
+      "color_dark": "#9aa3b0"
+    }
+  ],
   "halls": [
     {
       "name": "Franky's Gym",
