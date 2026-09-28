@@ -27,6 +27,13 @@ class TeamConfig:
     treffpunkt_training_minuten: int | None = None
     # False = Fremdteam, liefert nur den Pool (own_team in pool.json).
     own: bool = True
+    # Nur fuer die Admin-Oberflaeche, sie bekommt beides ueber pool.json
+    # (SPEC-ADMIN.md Abschnitt 2). kurzname steht in der Bilanz der Uebersicht
+    # ("M2 Training"); fehlt er, gilt der Anzeigename. Die Farben tragen die
+    # Schiene links an jeder Terminzeile, hell und dunkel getrennt.
+    kurzname: str | None = None
+    farbe: str | None = None
+    farbe_dunkel: str | None = None
 
 
 @dataclass(frozen=True)
@@ -65,6 +72,10 @@ class Config:
     pool_file: str = "pool.json"
     extra_feed_key: str = "extra"
     extra_calname: str = "TBW Extra"
+    # Name und Farbe des Extra-Feeds in der Admin-Oberflaeche.
+    extra_anzeigename: str = "Extra"
+    extra_farbe: str | None = None
+    extra_farbe_dunkel: str | None = None
     watch_feed_key: str = "watch-spiele"
     spielerplus_uid_prefixes: list[str] = field(default_factory=lambda: ["training", "event"])
     halls: list[Hall] = field(default_factory=list)
@@ -117,6 +128,9 @@ def load_config(config_path: str | Path, halls_path: str | Path) -> Config:
         pool_file=raw.get("pool_file", "pool.json"),
         extra_feed_key=raw.get("extra_feed_key", "extra"),
         extra_calname=raw.get("extra_calname", "TBW Extra"),
+        extra_anzeigename=raw.get("extra_anzeigename", "Extra"),
+        extra_farbe=raw.get("extra_farbe"),
+        extra_farbe_dunkel=raw.get("extra_farbe_dunkel"),
         watch_feed_key=raw.get("watch_feed_key", "watch-spiele"),
         spielerplus_uid_prefixes=list(raw.get("spielerplus_uid_prefixes") or ["training", "event"]),
         halls=load_halls(halls_path),

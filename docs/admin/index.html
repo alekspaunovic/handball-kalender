@@ -13,9 +13,9 @@
 /* ---------------------------------------------------------------------------
    TBW Kalender verwalten -- SPEC-ADMIN.md Abschnitt 6.
 
-   Gestaltungsplan: fuenf UI-Token plus sechs Teamfarben. Kein Akzentfarbton --
-   die Teamfarben sind das einzige bunte Element, der Speichern-Knopf ist eine
-   massive Tinte-Flaeche. Keine Kacheln, keine Schatten, keine Verlaeufe: die
+   Gestaltungsplan: fuenf UI-Token plus die Teamfarben aus config.yaml. Kein
+   Akzentfarbton -- die Teamfarben sind das einzige bunte Element, der
+   Speichern-Knopf ist eine massive Tinte-Flaeche. Keine Kacheln, keine Schatten, keine Verlaeufe: die
    Liste traegt die Gestaltung ueber Rhythmus, Ausrichtung und Typografie.
 --------------------------------------------------------------------------- */
 
@@ -26,19 +26,11 @@
   --linie: #e3e0dc;
   --fehler: #a3331f;
 
-  /* Teamfarben: gleiche Helligkeit und Saettigung, damit keine laut wird.
-     Sie sitzen nur auf der Schiene links. */
-  --team-m2: #2b6cb0;
-  --team-m3: #2f855a;
-  --team-mc: #b7791f;
-  --team-a-jugend: #805ad5;
-  --team-1-herren: #0f7b8a;
-  --team-1-damen: #b83280;
-  /* Siebter Farbton, nur für die Übersicht: dort fragt die Linie "in welchem
-     Kalender", nicht "welches Team". Alles, was im Extra-Feed landet, trägt
-     ihn -- egal aus welchem Team es stammt. */
-  --team-extra: #5a6270;
-  --team-watch: #5a6270;
+  /* Teamfarben: --team-<kürzel> je Team und --feed-extra für den Extra-Feed.
+     Sie stehen nicht hier, sondern in config.yaml, und kommen über pool.json
+     in den Stilblock #teamfarben (farbenSetzen). Sie sitzen nur auf der
+     Schiene links. --feed-extra gilt nur in der Übersicht: dort fragt die
+     Linie "in welchem Kalender", nicht "welches Team". */
 
   --schrift-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --schrift-datum: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -62,15 +54,6 @@
     --tinte-leise: #95999f;
     --linie: #2b2b2b;
     --fehler: #f08a78;
-
-    --team-m2: #6ba3e0;
-    --team-m3: #63b98a;
-    --team-mc: #d9a441;
-    --team-a-jugend: #b094ef;
-    --team-1-herren: #4fb3c0;
-    --team-1-damen: #e069ab;
-    --team-extra: #9aa3b0;
-    --team-watch: #9aa3b0;
   }
 }
 
@@ -299,7 +282,7 @@ button {
 .vorschau {
   margin: 1.25rem 0 0;
   padding-left: calc(var(--schiene) + 0.6875rem);
-  border-left: var(--schiene) solid var(--team-watch);
+  border-left: var(--schiene) solid var(--team-watch, var(--tinte-leise));
 }
 
 .vorschau dl { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.3125rem 0.75rem; margin: 0; }
@@ -655,6 +638,8 @@ button {
   .gruppe:first-of-type .datum { margin-top: 0.5rem; }
 }
 </style>
+<!-- Teamfarben aus pool.json, gesetzt von farbenSetzen(). -->
+<style id="teamfarben"></style>
 </head>
 <body>
 
@@ -708,40 +693,25 @@ button {
    außer api.github.com übertragen, dort ausschließlich im Kopf der Anfrage.
 --------------------------------------------------------------------------- */
 
-const REPO = { owner: "alekspaunovic", name: "handball-kalender" };
+/* Teams, Feed-Namen und Teamfarben stehen nicht hier, sondern in config.yaml
+   und kommen über pool.json. Das Repository ergibt sich aus der Adresse der
+   Seite. So läuft dieselbe Datei in jeder Kopie des Repositorys. */
+
+/** GitHub Pages veröffentlicht ein Repository unter
+ *  <besitzer>.github.io/<repository>/ -- beides steht also in der Adresse.
+ *  null, wenn die Seite woanders liegt. */
+function repoAusAdresse() {
+  const besitzer = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
+  const name = location.pathname.split("/").filter(Boolean)[0];
+  if (!besitzer || !name) return null;
+  return { owner: besitzer[1], name: decodeURIComponent(name) };
+}
+
+const REPO = repoAusAdresse();
 const WORKFLOW = "feeds.yml";
 const BRANCH = "main";
 const OVERRIDES_PFAD = "overrides.json";
 const SCHLUESSEL_ORT = "tbw-admin-token:" + location.origin + location.pathname;
-
-const TEAM_REIHENFOLGE = ["m2", "m3", "mc", "a-jugend", "1-herren", "1-damen"];
-
-/* Reihenfolge der Feeds in der Bilanz und in der Filterzeile der Übersicht.
-   Der Extra-Feed steht zuletzt, weil er alles Hinzugefügte sammelt. */
-const FEED_REIHENFOLGE = [
-  "m2-training", "m2-spiele", "m3-training", "m3-spiele",
-  "mc-training", "mc-spiele", "extra",
-];
-
-const FEED_NAMEN = {
-  "m2-training": "2. Herren Training",
-  "m2-spiele": "2. Herren Spiele",
-  "m3-training": "3. Herren Training",
-  "m3-spiele": "3. Herren Spiele",
-  "mc-training": "C-Jugend Training",
-  "mc-spiele": "C-Jugend Spiele",
-  "extra": "Extra",
-};
-
-const FEED_KURZ = {
-  "m2-training": "M2 Training",
-  "m2-spiele": "M2 Spiele",
-  "m3-training": "M3 Training",
-  "m3-spiele": "M3 Spiele",
-  "mc-training": "MC Training",
-  "mc-spiele": "MC Spiele",
-  "extra": "Extra",
-};
 
 const zustand = {
   pool: null,
@@ -976,6 +946,12 @@ async function github(pfad, optionen = {}) {
 }
 
 function repoPfad(rest) {
+  if (!REPO) {
+    throw new Error(
+      "Diese Seite erkennt ihr Repository an ihrer Adresse bei GitHub Pages " +
+      "(<name>.github.io/<repository>/admin/). Öffne sie unter dieser Adresse."
+    );
+  }
   return "/repos/" + REPO.owner + "/" + REPO.name + rest;
 }
 
@@ -1057,7 +1033,47 @@ async function poolLaden() {
       "starte „Feeds aktualisieren“ einmal auf github.com."
     );
   }
-  return antwort.json();
+  const pool = await antwort.json();
+  if (!Array.isArray(pool.teams) || !Array.isArray(pool.feeds)) {
+    throw new Error(
+      "pool.json stammt noch aus einer älteren Version und bringt weder Teams " +
+      "noch Farben mit. Starte „Feeds aktualisieren“ einmal auf github.com, " +
+      "danach lädt die Seite wieder."
+    );
+  }
+  return pool;
+}
+
+/* --- Teamfarben ---------------------------------------------------------
+   Kommen aus config.yaml über pool.json. Sie werden als dieselben Tokens
+   gesetzt, die sonst in :root stünden, hell und dunkel getrennt. Kürzel und
+   Farbwerte werden geprüft, bevor sie in den Stilblock gehen.          --- */
+
+const KUERZEL_MUSTER = /^[a-z0-9_-]+$/i;
+const FARB_MUSTER = /^#[0-9a-f]{3,8}$/i;
+
+function farbenSetzen(pool) {
+  const hell = [];
+  const dunkel = [];
+  function eintragen(token, quelle) {
+    if (FARB_MUSTER.test(quelle.color || "")) hell.push("  " + token + ": " + quelle.color + ";");
+    if (FARB_MUSTER.test(quelle.color_dark || "")) dunkel.push("    " + token + ": " + quelle.color_dark + ";");
+  }
+  for (const team of pool.teams) {
+    if (KUERZEL_MUSTER.test(team.key)) eintragen("--team-" + team.key, team);
+  }
+  // Nur Feeds ohne Team bringen eine eigene Farbe mit, also der Extra-Feed.
+  for (const feed of pool.feeds) {
+    if (KUERZEL_MUSTER.test(feed.key)) eintragen("--feed-" + feed.key, feed);
+  }
+  el("teamfarben").textContent =
+    ":root {\n" + hell.join("\n") + "\n}\n" +
+    "@media (prefers-color-scheme: dark) {\n  :root {\n" + dunkel.join("\n") + "\n  }\n}\n";
+}
+
+/** Das Farbtoken eines Feeds: die Teamfarbe, beim Extra-Feed seine eigene. */
+function feedFarbe(feed) {
+  return feed.team_key ? "--team-" + feed.team_key : "--feed-" + feed.key;
 }
 
 function overridesUebernehmen(daten) {
@@ -1079,6 +1095,7 @@ async function allesLaden() {
   try {
     const [pool, overrides] = await Promise.all([poolLaden(), overridesLaden()]);
     zustand.pool = pool;
+    farbenSetzen(pool);
     zustand.sha = overrides.sha;
     zustand.geladenRaw = overrides.roh;
     overridesUebernehmen(overrides.daten);
@@ -1269,7 +1286,7 @@ function feedVon(event) {
 
 function farbeVon(event, feed) {
   // In der Übersicht trägt die Linie den Feed, nicht das Team.
-  if (feed === "extra") return "--team-extra";
+  if (feed === "extra") return "--feed-extra";
   return "--team-" + event.team_key;
 }
 
@@ -1410,24 +1427,25 @@ function uebersicht() {
     const feed = feedVon(event);
     anzahl[feed] = (anzahl[feed] || 0) + 1;
   }
-  const feeds = FEED_REIHENFOLGE.filter((feed) => anzahl[feed]);
+  // Reihenfolge wie in config.yaml, der Extra-Feed zuletzt (pool.json).
+  const feeds = zustand.pool.feeds.filter((feed) => anzahl[feed.key]);
   const summe = Object.values(anzahl).reduce((a, b) => a + b, 0);
 
   const bilanz = h("div", { class: "bilanz" },
     feeds.map((feed) =>
       h("div", {
         class: "bilanz__posten",
-        style: "--farbe: var(" + (feed === "extra" ? "--team-extra" : "--team-" + feed.replace(/-(training|spiele)$/, "")) + ")",
+        style: "--farbe: var(" + feedFarbe(feed) + ")",
       },
-        h("span", { class: "bilanz__zahl", text: String(anzahl[feed]) }),
-        h("span", { class: "bilanz__name", text: FEED_KURZ[feed] || feed })
+        h("span", { class: "bilanz__zahl", text: String(anzahl[feed.key]) }),
+        h("span", { class: "bilanz__name", text: feed.short_name || feed.key })
       )
     ),
     h("span", { class: "bilanz__summe", text: summe + " im Kalender" })
   );
 
   const filter = h("div", { class: "filter", role: "group", "aria-label": "Feed" },
-    [{ key: "alle", name: "Alle" }, ...feeds.map((f) => ({ key: f, name: FEED_NAMEN[f] || f }))]
+    [{ key: "alle", name: "Alle" }, ...feeds.map((f) => ({ key: f.key, name: f.name || f.key }))]
       .map((eintrag) =>
         h("button", {
           type: "button",
@@ -1469,9 +1487,9 @@ function meineTermine() {
   const liste = termine(true);
   if (!liste.length) {
     return h("div", { class: "hinweis" },
-      "Für den gewählten Zeitraum stehen keine Termine der 2. Herren, 3. Herren " +
-      "oder C-Jugend im Pool. Wähle oben einen größeren Zeitraum, oder warte den " +
-      "nächsten Workflow-Lauf ab."
+      "Für den gewählten Zeitraum stehen keine Termine deiner Teams im Pool. " +
+      "Wähle oben einen größeren Zeitraum, oder warte den nächsten " +
+      "Workflow-Lauf ab."
     );
   }
   return h("div", {}, gruppiert(liste, (event) =>
@@ -1490,8 +1508,11 @@ function meineTermine() {
 
 function andereTeams() {
   const alle = termine(false);
-  const teams = TEAM_REIHENFOLGE
-    .map((key) => alle.find((e) => e.team_key === key))
+  // Reihenfolge wie in config.yaml. Gemerkte Spiele haben ihren eigenen
+  // Bereich und deshalb hier keinen Filter.
+  const teams = zustand.pool.teams
+    .filter((team) => team.key !== "watch")
+    .map((team) => alle.find((e) => e.team_key === team.key))
     .filter(Boolean)
     .map((e) => ({ key: e.team_key, name: e.team }));
 
@@ -1513,7 +1534,7 @@ function andereTeams() {
   if (!liste.length) {
     return h("div", {}, filter,
       h("div", { class: "hinweis" },
-        "Hier stehen die Spiele der A-Jugend, der 1. Herren und der 1. Damen. " +
+        "Hier stehen die Spiele der anderen Mannschaften des Vereins. " +
         "Jedes einzelne lässt sich anschalten und wandert dann in den Extra-Feed, " +
         "ohne dass du den ganzen Spielplan abonnieren musst. Für den gewählten " +
         "Zeitraum ist gerade keins dabei -- wähle oben einen größeren Zeitraum."
@@ -1534,7 +1555,7 @@ function andereTeams() {
 }
 
 /* --- Bereich: Gemerkte Spiele ------------------------------------------
-   Bewusst nicht mit "Andere Teams" vermischt: dort die drei
+   Bewusst nicht mit "Andere Teams" vermischt: dort die anderen
    Vereinsmannschaften, hier beliebige Spiele beliebiger Vereine.      --- */
 
 const MERKEN_FORMEN =
