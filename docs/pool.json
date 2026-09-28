@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T05:01:40.244888+00:00",
+  "generated": "2026-09-28T13:35:49.166000+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -1065,12 +1065,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "spiele",
-      "summary": "C-Jugend Auswärts JSG Eller-Gerresheim",
+      "summary": "ABGESAGT C-Jugend Auswärts JSG Eller-Gerresheim",
       "dtstart": "2026-09-19T11:40:00+02:00",
       "dtend": "2026-09-19T12:55:00+02:00",
       "all_day": false,
       "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-mc-spiel-677568",
@@ -1078,12 +1078,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "spiele",
-      "summary": "C-Jugend Auswärts MTG Horst Essen",
+      "summary": "ABGESAGT C-Jugend Auswärts MTG Horst Essen",
       "dtstart": "2026-09-19T13:40:00+02:00",
       "dtend": "2026-09-19T14:55:00+02:00",
       "all_day": false,
       "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-mc-spiel-677571",
@@ -1091,12 +1091,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "spiele",
-      "summary": "C-Jugend Auswärts Handball Remscheid/Wermelskirchen",
+      "summary": "ABGESAGT C-Jugend Auswärts Handball Remscheid/Wermelskirchen",
       "dtstart": "2026-09-19T15:40:00+02:00",
       "dtend": "2026-09-19T16:55:00+02:00",
       "all_day": false,
       "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m2-spiel-380455",
@@ -1117,12 +1117,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "spiele",
-      "summary": "C-Jugend Auswärts SV Wipperfürth",
+      "summary": "ABGESAGT C-Jugend Auswärts SV Wipperfürth",
       "dtstart": "2026-09-19T17:00:00+02:00",
       "dtend": "2026-09-19T18:15:00+02:00",
       "all_day": false,
       "location": "Voss-Arena (Wipperfürth.Am Mühlenberg), Ostlandstrasse 17, 51688 Wipperfürth, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-1-herren-spiel-544726",
