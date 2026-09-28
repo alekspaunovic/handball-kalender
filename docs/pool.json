@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T21:13:49.324653+00:00",
+  "generated": "2026-09-28T05:01:40.244888+00:00",
   "halls": [
     {
       "name": "Franky's Gym",
@@ -5059,6 +5059,19 @@
       "summary": "Training C-Jugend",
       "dtstart": "2027-06-25T19:00:00+02:00",
       "dtend": "2027-06-25T20:30:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326718",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-06-28T17:45:00+02:00",
+      "dtend": "2027-06-28T19:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
