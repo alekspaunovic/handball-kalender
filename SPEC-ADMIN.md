@@ -82,6 +82,31 @@ Skript gesehen hat, auch die der Fremdteams:
 ```json
 {
   "generated": "2026-09-24T06:00:00Z",
+  "teams": [
+    {
+      "key": "m2",
+      "name": "2. Herren",
+      "own_team": true,
+      "color": "#2b6cb0",
+      "color_dark": "#6ba3e0"
+    }
+  ],
+  "feeds": [
+    {
+      "key": "m2-training",
+      "team_key": "m2",
+      "name": "2. Herren Training",
+      "short_name": "M2 Training"
+    },
+    {
+      "key": "extra",
+      "team_key": null,
+      "name": "Extra",
+      "short_name": "Extra",
+      "color": "#5a6270",
+      "color_dark": "#9aa3b0"
+    }
+  ],
   "halls": [
     {
       "name": "Sporthalle Fliethe",
@@ -119,6 +144,21 @@ um Ganztagestermine ohne Uhrzeitspalte darzustellen.
 Der Pool entsteht aus den Archiven, nicht aus den Quellen. Er enthält deshalb
 auch ausgeblendete Termine -- sonst ließe sich ein Ausblenden nicht wieder
 zurücknehmen.
+
+`teams` und `feeds` tragen alles mit, was die Oberfläche über die Teams
+wissen muss, damit sie nichts davon fest eingebaut hat und in jeder Kopie des
+Repositorys unverändert läuft. Beides kommt aus `config.yaml`, in derselben
+Reihenfolge:
+
+- `teams`: alle Teams mit Anzeigename, `own_team` und Teamfarbe (`farbe` und
+  `farbe_dunkel` in `config.yaml`). Die Reihenfolge ordnet die Filterzeile
+  unter „Andere Teams“.
+- `feeds`: die abonnierbaren Kalender, also ohne die Pool-Quellen, mit dem
+  Extra-Feed zuletzt. `name` steht in der Filterzeile der Übersicht
+  (`<Anzeigename> Training|Spiele`), `short_name` in ihrer Kopfzeile
+  (`<kurzname> Training|Spiele`, ohne `kurzname` der Anzeigename). Der
+  Extra-Feed gehört zu keinem Team und bringt Name und Farbe selbst mit
+  (`extra_anzeigename`, `extra_farbe`, `extra_farbe_dunkel`).
 
 `halls` trägt die Hallenliste für die Ortsauswahl im Formular mit. `halls.yaml`
 liegt im Wurzelverzeichnis und ist über GitHub Pages nicht erreichbar -- also
@@ -346,8 +386,9 @@ links entsättigt. Sie bleiben an ihrer Stelle in der Liste stehen.
 
 Leere Liste: eine Zeile in ganzen Sätzen, die sagt, was zu tun ist. Also bei
 den Fremdteams nicht "Keine Daten", sondern der Hinweis, dass hier Spiele der
-A-Jugend, 1. Herren und 1. Damen stehen und jedes einzeln in den Kalender
-geholt werden kann.
+anderen Mannschaften des Vereins stehen und jedes einzeln in den Kalender
+geholt werden kann. Die Texte nennen keine Teams beim Namen -- welche Teams es
+gibt, steht allein in `config.yaml`.
 
 Ladezustand: Die Struktur der Liste ist bereits sichtbar, während die Daten
 kommen. Kein Ladekreisel über der ganzen Seite.
@@ -526,6 +567,12 @@ Die Adresse der Oberfläche ist
 `https://alekspaunovic.github.io/handball-kalender/admin/`. Damit sie erreichbar
 ist, muss GitHub Pages auf den Ordner `docs/` des Branches `main` zeigen.
 
+Die Oberfläche liest ihr Repository aus dieser Adresse: der Name vor
+`.github.io` ist der Besitzer, der erste Pfadteil das Repository. Fest
+eingebaut ist es nicht, damit dieselbe Datei in jeder Kopie läuft. Unter einer
+anderen Adresse (etwa lokal geöffnet) kann sie deshalb nichts laden und sagt
+das.
+
 Die Seite selbst ist öffentlich erreichbar, das lässt sich bei GitHub Pages
 nicht verhindern. Ohne Schlüssel zeigt sie nur eine leere Liste und die
 Aufforderung zur Anmeldung. Schreiben kann ohne ihn niemand.
@@ -543,6 +590,8 @@ Aufforderung zur Anmeldung. Schreiben kann ohne ihn niemand.
 - Freigeschaltetes Fremdspiel wird zurückgezogen: ABGESAGT-Präfix
 - `pool.json` enthält eigene und fremde Termine, korrekt über `own_team`
   unterschieden
+- `pool.json` enthält Teams, Feed-Namen und Farben aus `config.yaml` in deren
+  Reihenfolge, die Feeds ohne Pool-Quellen und mit dem Extra-Feed zuletzt
 
 Für die gemerkten Spiele:
 

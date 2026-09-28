@@ -1,5 +1,6 @@
 """SPEC-ADMIN.md Abschnitt 2 und 9: der Pool als Auswahlgrundlage."""
 
+import dataclasses
 from datetime import datetime, timezone as dt_timezone
 
 from handball_kalender import pool
@@ -89,6 +90,61 @@ def test_halls_travel_with_the_pool_for_the_location_picker(config):
     assert fliethe["address"] == (
         "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland"
     )
+
+
+def test_teams_travel_with_the_pool_in_config_order(config):
+    teams = pool.build({}, config, NOW)["teams"]
+
+    assert [team["key"] for team in teams] == list(config.teams)
+    assert teams[0] == {
+        "key": "m2",
+        "name": "2. Herren",
+        "own_team": True,
+        "color": "#2b6cb0",
+        "color_dark": "#6ba3e0",
+    }
+    a_jugend = next(team for team in teams if team["key"] == "a-jugend")
+    assert a_jugend["own_team"] is False
+
+
+def test_feeds_are_the_subscribable_calendars_with_extra_last(config):
+    feeds = pool.build({}, config, NOW)["feeds"]
+
+    # Pool-Quellen schreiben keinen Kalender und fehlen deshalb.
+    assert [feed["key"] for feed in feeds] == [
+        "m2-training", "m2-spiele", "m3-training", "m3-spiele",
+        "mc-training", "mc-spiele", "extra",
+    ]
+    assert feeds[1] == {
+        "key": "m2-spiele",
+        "team_key": "m2",
+        "name": "2. Herren Spiele",
+        "short_name": "M2 Spiele",
+    }
+
+
+def test_extra_feed_brings_its_own_name_and_color(config):
+    extra = pool.build({}, config, NOW)["feeds"][-1]
+
+    assert extra == {
+        "key": "extra",
+        "team_key": None,
+        "name": "Extra",
+        "short_name": "Extra",
+        "color": "#5a6270",
+        "color_dark": "#9aa3b0",
+    }
+
+
+def test_short_name_falls_back_to_display_name(config):
+    ohne_kurzname = dataclasses.replace(
+        config,
+        teams={**config.teams, "m2": dataclasses.replace(config.teams["m2"], kurzname=None)},
+    )
+
+    feeds = {feed["key"]: feed for feed in pool.build({}, ohne_kurzname, NOW)["feeds"]}
+
+    assert feeds["m2-training"]["short_name"] == "2. Herren Training"
 
 
 def test_watched_matches_are_their_own_pseudo_feed(config):
