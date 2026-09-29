@@ -14,10 +14,14 @@
    Gestaltung nach dem Vorbild der Apple-Apps: auf dem iPhone wie eine
    iOS-App (großer Titel, durchscheinende Leisten, Reiterleiste mit Symbolen,
    gruppierte Listen, Schalter), am Mac wie eine macOS-App (Seitenleiste,
-   Werkzeugleiste, etwas kleinere Schrift und Schalter). Farben sind die
+   Werkzeugleiste, etwas kleinere Schrift). Flächen, Text und Linien in den
    Systemfarben von iOS und macOS, die Schrift ist die Systemschrift
-   (SF Pro auf Apple-Geräten). Bunt sind nur die Teamfarben aus config.yaml
-   und der Akzent für Bedienelemente.
+   (SF Pro auf Apple-Geräten).
+
+   Farbgebung „Graphit“: Bedienelemente in Schwarz (im Dunkelmodus Weiß)
+   statt Blau, die Teamfarben aus config.yaml nur leicht getönte Grautöne.
+   Was im Kalender liegt, zeigt ein Häkchen am Zeilenende. Rot bleibt für
+   Absagen, Fehler und Löschen.
 --------------------------------------------------------------------------- */
 
 :root {
@@ -30,9 +34,11 @@
   --fuellung: rgba(118, 118, 128, 0.12);
   --gedrueckt: #d1d1d6;
   --schwebe: rgba(0, 0, 0, 0.03);
-  --akzent: #007aff;
+  --akzent: #1c1c1e;
+  --auf-akzent: #ffffff;
   --rot: #ff3b30;
-  --gruen: #34c759;
+  --an: #1c1c1e;
+  --knopf: #ffffff;
   --schalter-aus: #e9e9eb;
   --reiter-aus: #8e8e93;
   --leiste: rgba(249, 249, 249, 0.94);
@@ -78,9 +84,11 @@
     --fuellung: rgba(118, 118, 128, 0.24);
     --gedrueckt: #2c2c2e;
     --schwebe: rgba(255, 255, 255, 0.04);
-    --akzent: #0a84ff;
+    --akzent: #f2f2f7;
+    --auf-akzent: #000000;
     --rot: #ff453a;
-    --gruen: #30d158;
+    --an: #d1d1d6;
+    --knopf: #1c1c1e;
     --schalter-aus: #39393d;
     --reiter-aus: #98989d;
     --leiste: rgba(22, 22, 23, 0.92);
@@ -222,7 +230,7 @@ button {
   padding: 0 20px;
   border-radius: 14px;
   background: var(--akzent);
-  color: #fff;
+  color: var(--auf-akzent);
   font-size: 17px;
   font-weight: 600;
   white-space: nowrap;
@@ -269,6 +277,7 @@ button {
   min-height: 44px;
   color: var(--akzent);
   font-size: var(--text);
+  font-weight: 600;
 }
 
 .textknopf--rot { color: var(--rot); }
@@ -384,9 +393,9 @@ body.hat-aenderungen .haupt {
   font-variant-numeric: tabular-nums;
 }
 
-.chip[aria-pressed="true"] { background: var(--akzent); color: #fff; }
-.chip[aria-pressed="true"] .chip__zahl { color: rgba(255, 255, 255, 0.8); }
-.chip[aria-pressed="true"] .chip__punkt { box-shadow: 0 0 0 1.5px #fff; opacity: 1; }
+.chip[aria-pressed="true"] { background: var(--akzent); color: var(--auf-akzent); }
+.chip[aria-pressed="true"] .chip__zahl { color: inherit; opacity: 0.75; }
+.chip[aria-pressed="true"] .chip__punkt { box-shadow: 0 0 0 1.5px var(--auf-akzent); opacity: 1; }
 
 .chip-kurz { display: inline; }
 .chip-lang { display: none; }
@@ -404,8 +413,8 @@ body.hat-aenderungen .haupt {
   color: var(--tinte-2);
 }
 
-/* Wie im Kalender von Apple: der heutige Tag in Rot. */
-.datum--heute { color: var(--rot); }
+/* Der heutige Tag in voller Schriftfarbe, die übrigen grau. */
+.datum--heute { color: var(--tinte); }
 
 .liste {
   list-style: none;
@@ -531,8 +540,21 @@ button.zeile:focus-visible { outline-offset: -3px; border-radius: 0; }
 
 .zeile__abgesagt { color: var(--rot); font-weight: 600; }
 
-/* Der Schalter von iOS. Er ist die Anzeige, getroffen wird die ganze
-   Zeile. Grün heißt: liegt im Kalender. */
+/* Das Häkchen am Zeilenende, wie in den Einstellungen von iOS: da heißt
+   „liegt im Kalender“, fehlt heißt „nicht im Kalender“. Es ist die Anzeige,
+   getroffen wird die ganze Zeile. */
+.haken {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: var(--akzent);
+}
+
+.haken svg { width: 18px; height: 18px; opacity: 0; transition: opacity 150ms ease; }
+[data-an="true"] > .haken svg { opacity: 1; }
+
+/* Der Schalter von iOS, nur noch für „Ganztägig“ im Formular. */
 .schalter-knopf {
   position: relative;
   flex: none;
@@ -552,22 +574,20 @@ button.zeile:focus-visible { outline-offset: -3px; border-radius: 0; }
   width: calc(var(--schalter-h) - 4px);
   height: calc(var(--schalter-h) - 4px);
   border-radius: 50%;
-  background: #fff;
+  background: var(--knopf);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.16);
   transition: transform 200ms ease;
 }
 
-[data-an="true"] > .schalter-knopf,
-[aria-pressed="true"] > .schalter-knopf { background: var(--gruen); }
+[aria-pressed="true"] > .schalter-knopf { background: var(--an); }
 
-[data-an="true"] > .schalter-knopf::after,
 [aria-pressed="true"] > .schalter-knopf::after {
   transform: translateX(calc(var(--schalter-b) - var(--schalter-h)));
 }
 
 @media (prefers-reduced-motion: reduce) {
   .zeile, .zeile::before, .zeile__titel,
-  .schalter-knopf, .schalter-knopf::after,
+  .schalter-knopf, .schalter-knopf::after, .haken svg,
   .leiste::before, .leiste__titel { transition: none; }
 }
 
@@ -583,7 +603,6 @@ button.zeile:focus-visible { outline-offset: -3px; border-radius: 0; }
 .platzhalter .balken--titel { width: 62%; }
 .platzhalter .balken--ort { width: 40%; margin-top: 8px; }
 .platzhalter .zeile__zeit .balken { width: 2.5rem; }
-.platzhalter .schalter-knopf { opacity: 0.5; }
 
 /* --- Hinweise und Fehler ------------------------------------------------ */
 
@@ -785,7 +804,7 @@ button.feld:active { background: var(--gedrueckt); }
   padding: 0 14px;
   border-radius: 16px;
   background: var(--akzent);
-  color: #fff;
+  color: var(--auf-akzent);
   font-size: var(--text-klein);
   font-weight: 600;
 }
@@ -941,6 +960,7 @@ button.feld:active { background: var(--gedrueckt); }
   .speichern { min-height: 36px; border-radius: 8px; font-size: 14px; }
   .aktionen .speichern { flex: 0 0 auto; }
   .kapsel { min-height: 26px; border-radius: 13px; font-size: 13px; }
+  .haken svg { width: 16px; height: 16px; }
   .textknopf { min-height: 32px; }
 
   .grosstitel + * { margin-top: 0; }
@@ -1594,7 +1614,7 @@ function geruest() {
               h("span", { class: "balken balken--titel" }),
               h("span", { class: "balken balken--ort" })
             ),
-            h("span", { class: "schalter-knopf" })
+            h("span", { class: "haken" })
           )
         )
       )
@@ -1706,9 +1726,9 @@ function zeile(event, { an, fremd, umschalten, farbe, zusatz }) {
         ? h("span", { class: "zeile__ort", text: zusatz || kurzerOrt(event.location) })
         : null
     ),
-    // Ohne Umschalten kein Schalter: er wäre eine Anzeige für einen Zustand,
+    // Ohne Umschalten kein Häkchen: es wäre eine Anzeige für einen Zustand,
     // den hier niemand ändern kann.
-    umschalten ? h("span", { class: "schalter-knopf" }) : null,
+    umschalten ? haken() : null,
   ];
 
   // In der Übersicht trägt die Linie den Feed statt des Teams. Eigene Termine
@@ -1724,7 +1744,7 @@ function zeile(event, { an, fremd, umschalten, farbe, zusatz }) {
 
   if (!umschalten) return h("div", attrs, inneres);
 
-  // Die Schalter sagen in allen Bereichen dasselbe: liegt das im Kalender?
+  // Die Häkchen sagen in allen Bereichen dasselbe: liegt das im Kalender?
   const beschriftung = fremd
     ? (an ? "In den Kalender geholt" : "Nicht im Kalender")
     : (an ? "Im Kalender" : "Ausgeblendet");
@@ -1757,6 +1777,16 @@ function chip({ gewaehlt, onclick, kurz, lang, zahl, farbe, training }) {
     h("span", { class: "chip-lang", text: lang || kurz }),
     zahl === undefined ? null : h("span", { class: "chip__zahl", text: String(zahl) })
   );
+}
+
+/** Das Häkchen am Zeilenende. Sichtbar macht es das CSS, wenn die Zeile
+ *  data-an="true" trägt. */
+function haken() {
+  const knoten = h("span", { class: "haken", "aria-hidden": "true" });
+  knoten.innerHTML =
+    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" ' +
+    'stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.4l3 3 6-6.8"/></svg>';
+  return knoten;
 }
 
 function gruppiert(liste, zeileBauen) {
