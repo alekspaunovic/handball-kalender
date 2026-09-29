@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T12:36:44.327388+00:00",
+  "generated": "2026-09-29T22:08:07.714438+00:00",
   "teams": [
     {
       "key": "m2",
@@ -187,12 +187,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "training",
-      "summary": "Training C-Jugend",
+      "summary": "ABGESAGT Training C-Jugend",
       "dtstart": "2026-06-29T17:30:00+02:00",
       "dtend": "2026-06-29T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m3-training-76261594",
@@ -200,12 +200,12 @@
       "team_key": "m3",
       "own_team": true,
       "type": "training",
-      "summary": "Training 3. Herren",
+      "summary": "ABGESAGT Training 3. Herren",
       "dtstart": "2026-06-29T19:00:00+02:00",
       "dtend": "2026-06-29T22:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m3-training-77001955",
@@ -213,12 +213,12 @@
       "team_key": "m3",
       "own_team": true,
       "type": "training",
-      "summary": "Training 3. Herren - Flehenberg",
+      "summary": "ABGESAGT Training 3. Herren - Flehenberg",
       "dtstart": "2026-06-29T19:00:00+02:00",
       "dtend": "2026-06-29T22:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m3-training-77002277",
@@ -226,12 +226,12 @@
       "team_key": "m3",
       "own_team": true,
       "type": "training",
-      "summary": "Training 3. Herren - Flehenberg Gruppe B",
+      "summary": "ABGESAGT Training 3. Herren - Flehenberg Gruppe B",
       "dtstart": "2026-06-29T20:00:00+02:00",
       "dtend": "2026-06-29T23:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Flehenberg, Flehenberg 91, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m2-training-76020478",
@@ -239,12 +239,12 @@
       "team_key": "m2",
       "own_team": true,
       "type": "training",
-      "summary": "Training 2. Herren",
+      "summary": "ABGESAGT Training 2. Herren",
       "dtstart": "2026-06-29T20:15:00+02:00",
       "dtend": "2026-06-29T22:00:00+02:00",
       "all_day": false,
       "location": "Waldschlösschen 39, 42553 Velbert, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m3-training-77001458",
@@ -5169,6 +5169,19 @@
       "summary": "C-Jugend: Lauftraining - Erbacher Berg",
       "dtstart": "2027-06-28T17:45:00+02:00",
       "dtend": "2027-06-28T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326347",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-06-30T17:45:00+02:00",
+      "dtend": "2027-06-30T19:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
