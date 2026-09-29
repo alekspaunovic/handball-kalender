@@ -100,8 +100,8 @@ def test_teams_travel_with_the_pool_in_config_order(config):
         "key": "m2",
         "name": "2. Herren",
         "own_team": True,
-        "color": "#007aff",
-        "color_dark": "#0a84ff",
+        "color": "#7087a3",
+        "color_dark": "#8fa3bb",
     }
     a_jugend = next(team for team in teams if team["key"] == "a-jugend")
     assert a_jugend["own_team"] is False
@@ -131,8 +131,8 @@ def test_extra_feed_brings_its_own_name_and_color(config):
         "team_key": None,
         "name": "Extra",
         "short_name": "Extra",
-        "color": "#8e8e93",
-        "color_dark": "#98989d",
+        "color": "#a1a1a6",
+        "color_dark": "#8e8e93",
     }
 
 

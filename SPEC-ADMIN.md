@@ -331,22 +331,22 @@ Leitgedanken:
 
 - Die Bausteine von iOS und macOS statt eigener Erfindungen: großer Titel,
   durchscheinende Leisten, Reiterleiste mit Symbolen, gruppierte Listen mit
-  abgerundeten Ecken, Schalter, Chips, Formulare aus beschrifteten Zeilen.
+  abgerundeten Ecken, Häkchen, Chips, Formulare aus beschrifteten Zeilen.
 - Farben und Maße nach den Human Interface Guidelines: Systemfarben für
-  Hintergrund, Flächen, Text und Trennlinien, Blau als Akzent für
-  Bedienelemente, Grün für eingeschaltete Schalter, Rot für Absagen, Fehler
-  und Löschen.
+  Hintergrund, Flächen, Text und Trennlinien.
+- Farbgebung „Graphit“: Bedienelemente in Schwarz, im Dunkelmodus in Weiß,
+  statt in Blau. Rot nur für Absagen, Fehler und Löschen.
 - Ein Blick soll reichen, um Spiel von Training und eigenes Team von fremdem
   Team zu unterscheiden. Dafür ist die farbige Leiste links in der Zeile
   zuständig, wie im Kalender von Apple, nicht ein Etikett im Text.
 - Der Zustand ist das Wichtigste auf dem Bildschirm. Ein ausgeblendeter Termin
   muss durchgestrichen und deutlich zurückgenommen wirken, ein
   freigeschalteter Fremdtermin sichtbar aktiv.
-- Der Schalter bedeutet in jedem Bereich dasselbe: liegt das in meinem
-  Kalender? Ein Denkmodell für alle vier Listen, egal ob technisch `hidden`,
-  `included` oder `watch` dahintersteht.
-- Bunt sind nur die Teamfarben (die Systemfarben von iOS, aus `config.yaml`)
-  und der Akzent. Alles andere ist ruhig.
+- Das Häkchen am Zeilenende bedeutet in jedem Bereich dasselbe: das liegt in
+  meinem Kalender. Ein Denkmodell für alle vier Listen, egal ob technisch
+  `hidden`, `included` oder `watch` dahintersteht.
+- Farbig sind nur die Teamfarben aus `config.yaml`, und auch die nur als
+  leicht getönte Grautöne. Alles andere ist Schwarz, Weiß und Grau.
 
 Bewusst nicht erwünscht: Verlaufsflächen als Dekoration, Schatten auf jeder
 Fläche, Einblendanimationen bei jedem Abschnitt, eigene Bedienelemente, wo
@@ -369,23 +369,25 @@ das System schon eines hat.
 
 - links eine Seitenleiste mit den fünf Bereichen und ihren vollen Namen
 - oben eine Werkzeugleiste mit Titel, Zeitraum und Speichern-Knopf
-- Schrift, Zeilen und Schalter in den etwas kleineren macOS-Größen
+- Schrift und Zeilen in den etwas kleineren macOS-Größen
 
 Die Übersicht ist die Startansicht.
 
 Die Liste ist nach Datum gruppiert, jeder Tag eine abgerundete Gruppe. Das
-Datum steht als Überschrift darüber, der heutige Tag in Rot. Eine
+Datum steht als Überschrift darüber, grau, der heutige Tag in voller
+Schriftfarbe. Eine
 Terminzeile enthält:
 
 ```
-▌ 19:00   Training 3. Herren                     (  ●)
+▌ 19:00   Training 3. Herren                        ✓
 ▌ 20:30   Sporthalle Fliethe
 ```
 
 Die farbige Leiste links trägt die Teamfarbe und ist bei Spielen kräftiger
 als bei Trainings. Beginn und darunter Ende stehen in einer eigenen Spalte,
-damit die Zeiten untereinander eine lesbare Kante bilden. Der Schalter sitzt
-rechts, getroffen wird die ganze Zeile.
+damit die Zeiten untereinander eine lesbare Kante bilden. Rechts steht ein
+Häkchen, wenn der Termin im Kalender liegt, sonst nichts. Getroffen wird die
+ganze Zeile.
 
 Ausgeblendete Termine: Text durchgestrichen und grau, Leiste grau. Sie
 bleiben an ihrer Stelle in der Liste stehen. Nicht freigeschaltete Spiele
@@ -407,7 +409,7 @@ Entschuldigungen, keine Fehlercodes ohne Erklärung.
 
 ### Bewegung
 
-Nur als Antwort auf eine Handlung: der Schalter gleitet um, ein Termin wird
+Nur als Antwort auf eine Handlung: das Häkchen blendet ein, ein Termin wird
 durchgestrichen, die Leiste wird beim Scrollen durchscheinend. Sonst nichts.
 `prefers-reduced-motion` wird respektiert.
 
@@ -454,15 +456,15 @@ Oben eine Reihe Chips, einer je Feed mit Farbpunkt und Anzahl, davor „Alle“
 mit der Summe. Jeder Chip zählt und filtert zugleich. Der Zeitraumfilter aus
 der Leiste gilt hier ebenfalls.
 
-Termine lassen sich auch von hier aus ausblenden, mit demselben Schalter wie
-überall. Ein ausgeblendeter Termin verschwindet aus diesem Bereich nicht,
-sondern bleibt durchgestrichen an seiner Stelle -- sonst wäre der Schalter
-nicht umkehrbar.
+Termine lassen sich auch von hier aus ausblenden, mit einem Tipp auf die
+Zeile wie überall. Ein ausgeblendeter Termin verschwindet aus diesem Bereich
+nicht, sondern bleibt durchgestrichen an seiner Stelle -- sonst wäre das
+Ausblenden nicht umkehrbar.
 
 **Meine Termine**
 
 Alle Termine der eigenen Teams aus `pool.json`, chronologisch, nach Datum
-gruppiert. Jede Zeile mit Schalter zum Ausblenden.
+gruppiert. Ein Tipp auf die Zeile blendet sie aus oder wieder ein.
 
 **Andere Teams**
 
@@ -503,7 +505,7 @@ Schreibweise bekommt. Die Vorschau dient dem Erkennen des richtigen Spiels,
 nicht der Typografie -- und die Namensregeln in JavaScript nachzubauen hieße,
 sie zweimal zu pflegen.
 
-Darunter die Liste der gemerkten Spiele mit Schaltern. Ausgeschaltete bleiben
+Darunter die Liste der gemerkten Spiele mit Häkchen. Ausgeschaltete bleiben
 durchgestrichen an ihrer Stelle stehen. Ganz entfernen ist nicht vorgesehen.
 
 Ein gerade bestätigtes Spiel steht noch in keinem Archiv. Bis zum nächsten
