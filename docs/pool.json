@@ -1,54 +1,54 @@
 {
-  "generated": "2026-09-29T10:48:19.141034+00:00",
+  "generated": "2026-09-29T11:17:49.833084+00:00",
   "teams": [
     {
       "key": "m2",
       "name": "2. Herren",
       "own_team": true,
-      "color": "#7087a3",
-      "color_dark": "#8fa3bb"
+      "color": "#007aff",
+      "color_dark": "#0a84ff"
     },
     {
       "key": "m3",
       "name": "3. Herren",
       "own_team": true,
-      "color": "#74907c",
-      "color_dark": "#92ab99"
+      "color": "#34c759",
+      "color_dark": "#30d158"
     },
     {
       "key": "mc",
       "name": "C-Jugend",
       "own_team": true,
-      "color": "#a8916b",
-      "color_dark": "#bfa985"
+      "color": "#ff9500",
+      "color_dark": "#ff9f0a"
     },
     {
       "key": "a-jugend",
       "name": "A-Jugend",
       "own_team": false,
-      "color": "#8c82a0",
-      "color_dark": "#a79fba"
+      "color": "#af52de",
+      "color_dark": "#bf5af2"
     },
     {
       "key": "1-herren",
       "name": "1. Herren",
       "own_team": false,
-      "color": "#6f969b",
-      "color_dark": "#8db0b4"
+      "color": "#30b0c7",
+      "color_dark": "#40c8e0"
     },
     {
       "key": "1-damen",
       "name": "1. Damen",
       "own_team": false,
-      "color": "#a07d8a",
-      "color_dark": "#bb9aa6"
+      "color": "#ff2d55",
+      "color_dark": "#ff375f"
     },
     {
       "key": "watch",
       "name": "Gemerktes Spiel",
       "own_team": false,
-      "color": "#a1a1a6",
-      "color_dark": "#8e8e93"
+      "color": "#8e8e93",
+      "color_dark": "#98989d"
     }
   ],
   "feeds": [
@@ -93,8 +93,8 @@
       "team_key": null,
       "name": "Extra",
       "short_name": "Extra",
-      "color": "#a1a1a6",
-      "color_dark": "#8e8e93"
+      "color": "#8e8e93",
+      "color_dark": "#98989d"
     }
   ],
   "halls": [
