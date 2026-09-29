@@ -20,8 +20,8 @@ extra_calname: TBW Extra
 # Farbe steht fuer "liegt im Extra-Feed", egal aus welchem Team der Termin
 # stammt.
 extra_anzeigename: Extra
-extra_farbe: "#a1a1a6"
-extra_farbe_dunkel: "#8e8e93"
+extra_farbe: "#8e8e93"
+extra_farbe_dunkel: "#98989d"
 
 # SpielerPlus-URLs kommen ausschliesslich aus Umgebungsvariablen (GitHub
 # Secrets bzw. lokale .env), niemals aus dieser Datei. Hier steht nur, unter
@@ -32,14 +32,15 @@ extra_farbe_dunkel: "#8e8e93"
 #
 # kurzname, farbe und farbe_dunkel braucht nur die Admin-Oberflaeche; sie
 # bekommt sie ueber docs/pool.json. farbe gilt im hellen, farbe_dunkel im
-# dunklen Modus. Farbgebung "Graphit": nur leicht getoente Grautoene, damit
-# die Teams unterscheidbar bleiben, ohne zu leuchten.
+# dunklen Modus. Es sind die vollen Grundfarben (die Systemfarben von iOS);
+# wie kraeftig sie in der Oberflaeche erscheinen, stellt man dort unter
+# Darstellung -> Farbstaerke ein (darstellung.json).
 teams:
   m2:
     anzeigename: "2. Herren"
     kurzname: "M2"
-    farbe: "#7087a3"
-    farbe_dunkel: "#8fa3bb"
+    farbe: "#007aff"
+    farbe_dunkel: "#0a84ff"
     handballnet_name: "TB Wülfrath II"
     handballnet_team_id: 74503
     spielerplus_env: SPIELERPLUS_M2
@@ -49,8 +50,8 @@ teams:
   m3:
     anzeigename: "3. Herren"
     kurzname: "M3"
-    farbe: "#74907c"
-    farbe_dunkel: "#92ab99"
+    farbe: "#34c759"
+    farbe_dunkel: "#30d158"
     handballnet_name: "TB Wülfrath III"
     handballnet_team_id: 75902
     spielerplus_env: SPIELERPLUS_M3
@@ -60,8 +61,8 @@ teams:
   mc:
     anzeigename: "C-Jugend"
     kurzname: "MC"
-    farbe: "#a8916b"
-    farbe_dunkel: "#bfa985"
+    farbe: "#ff9500"
+    farbe_dunkel: "#ff9f0a"
     handballnet_name: "TB Wülfrath"
     handballnet_team_id: 95749
     spielerplus_env: SPIELERPLUS_MC
@@ -80,22 +81,22 @@ teams:
   # Das Kuerzel steckt dauerhaft in der UID und darf sich nie aendern.
   a-jugend:
     anzeigename: "A-Jugend"
-    farbe: "#8c82a0"
-    farbe_dunkel: "#a79fba"
+    farbe: "#af52de"
+    farbe_dunkel: "#bf5af2"
     handballnet_team_id: 94756
     spieldauer_minuten: 75
     own: false
   "1-herren":
     anzeigename: "1. Herren"
-    farbe: "#6f969b"
-    farbe_dunkel: "#8db0b4"
+    farbe: "#30b0c7"
+    farbe_dunkel: "#40c8e0"
     handballnet_team_id: 75787
     spieldauer_minuten: 90
     own: false
   "1-damen":
     anzeigename: "1. Damen"
-    farbe: "#a07d8a"
-    farbe_dunkel: "#bb9aa6"
+    farbe: "#ff2d55"
+    farbe_dunkel: "#ff375f"
     handballnet_team_id: 76182
     spieldauer_minuten: 90
     own: false
@@ -107,8 +108,8 @@ teams:
   # behandeln koennen.
   watch:
     anzeigename: "Gemerktes Spiel"
-    farbe: "#a1a1a6"
-    farbe_dunkel: "#8e8e93"
+    farbe: "#8e8e93"
+    farbe_dunkel: "#98989d"
     spieldauer_minuten: 90
     own: false
 
