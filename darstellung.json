@@ -5,5 +5,7 @@
   "anzeige": "haken",
   "aufbau": "gruppen",
   "modus": "auto",
-  "teamfarben": {}
+  "teamfarben": {
+    "mc": "#fffb00"
+  }
 }
