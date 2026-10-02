@@ -25,6 +25,9 @@ class TeamConfig:
     # Zuschauertermine konfiguriert (SPEC-ADMIN.md Abschnitt 3).
     treffpunkt_spiel_minuten: int | None = None
     treffpunkt_training_minuten: int | None = None
+    # Feste Notiz je Wochentag für Trainings, etwa welcher Hallenteil
+    # (SPEC.md Abschnitt 5). Schlüssel: montag ... sonntag.
+    training_notizen: dict[str, str] | None = None
     # False = Fremdteam, liefert nur den Pool (own_team in pool.json).
     own: bool = True
     # Nur fuer die Admin-Oberflaeche, sie bekommt beides ueber pool.json

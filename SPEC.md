@@ -161,8 +161,14 @@ setzen, damit Apple die Navigation direkt anbietet.
 ### Notizen
 
 - M2-Training: `Treffpunkt: HH:MM` mit Beginn minus 10 Minuten
-- M3 und MC: keine Notiz
+- MC-Training: mittwochs `Obere Halle (Hälfte)`, freitags `Obere Halle (ganz)`
+- M3 und MC an anderen Tagen: keine Notiz
 - sonstige Termine (Teamevent etc.): keine Notiz
+
+Die feste Notiz je Wochentag steht in `config.yaml` unter
+`training_notizen` des Teams (`montag` bis `sonntag`). Sie gilt für jeden
+Termin mit UID-Präfix `training` an diesem Tag und steht unter einem
+eventuellen Treffpunkt.
 
 Die Quell-DESCRIPTION enthält nur den SpielerPlus-Link und wird verworfen.
 

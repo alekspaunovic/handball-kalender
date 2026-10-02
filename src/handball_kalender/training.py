@@ -152,11 +152,25 @@ def filter_archive_entries(existing: list[dict], allowed_prefixes: list[str]) ->
     return kept
 
 
+WOCHENTAGE = ("montag", "dienstag", "mittwoch", "donnerstag", "freitag", "samstag", "sonntag")
+
+
 def build_notiz(kind: str, team: TeamConfig, dtstart) -> str:
-    if kind == "training" and team.treffpunkt_training_minuten is not None:
+    """Notiz für Trainings (SPEC.md Abschnitt 5): erst der Treffpunkt, falls
+    konfiguriert, darunter die feste Notiz für diesen Wochentag. Sonstige
+    Termine (Teamevent etc.) bekommen keine Notiz."""
+    if kind != "training":
+        return ""
+    zeilen = []
+    if team.treffpunkt_training_minuten is not None:
         treffpunkt = dtstart - timedelta(minutes=team.treffpunkt_training_minuten)
-        return f"Treffpunkt: {treffpunkt.strftime('%H:%M')}"
-    return ""
+        zeilen.append(f"Treffpunkt: {treffpunkt.strftime('%H:%M')}")
+    notizen = {tag.lower(): text for tag, text in (team.training_notizen or {}).items()}
+    # dtstart steht in Ortszeit (TZID der Quelle), der Wochentag stimmt also.
+    notiz = notizen.get(WOCHENTAGE[dtstart.weekday()])
+    if notiz:
+        zeilen.append(notiz)
+    return "\n".join(zeilen)
 
 
 def transform(

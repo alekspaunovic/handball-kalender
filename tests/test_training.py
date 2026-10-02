@@ -287,3 +287,45 @@ def test_only_training_and_event_uids_survive_a_mixed_feed(config, halls):
         is not None
     ]
     assert kept == ["training", "event"]
+
+
+# --- Feste Notiz je Wochentag (training_notizen) ----------------------------
+
+def _berlin(jahr, monat, tag, stunde, minute):
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    return datetime(jahr, monat, tag, stunde, minute, tzinfo=ZoneInfo("Europe/Berlin"))
+
+
+def test_mc_training_on_wednesday_gets_upper_hall_half(config):
+    # 30.09.2026 ist ein Mittwoch.
+    assert training.build_notiz("training", config.teams["mc"], _berlin(2026, 9, 30, 17, 45)) == "Obere Halle (Hälfte)"
+
+
+def test_mc_training_on_friday_gets_upper_hall_whole(config):
+    # 02.10.2026 ist ein Freitag.
+    assert training.build_notiz("training", config.teams["mc"], _berlin(2026, 10, 2, 19, 0)) == "Obere Halle (ganz)"
+
+
+def test_mc_training_on_other_days_has_no_notiz(config):
+    # 05.10.2026 ist ein Montag.
+    assert training.build_notiz("training", config.teams["mc"], _berlin(2026, 10, 5, 17, 45)) == ""
+
+
+def test_weekday_notiz_is_not_added_to_events(config):
+    assert training.build_notiz("event", config.teams["mc"], _berlin(2026, 9, 30, 17, 45)) == ""
+
+
+def test_weekday_notiz_follows_the_treffpunkt(config):
+    import dataclasses
+    team = dataclasses.replace(config.teams["m2"], training_notizen={"Mittwoch": "Obere Halle (Hälfte)"})
+
+    notiz = training.build_notiz("training", team, _berlin(2026, 9, 30, 20, 20))
+
+    assert notiz == "Treffpunkt: 20:10\nObere Halle (Hälfte)"
+
+
+def test_configured_weekdays_are_spelled_correctly(config):
+    for team in config.teams.values():
+        for tag in (team.training_notizen or {}):
+            assert tag.lower() in training.WOCHENTAGE, f"{team.key}: unbekannter Wochentag {tag!r}"
