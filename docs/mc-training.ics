@@ -58,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:ABGESAGT Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260629T173000
 DTEND;TZID=Europe/Berlin:20260629T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624159
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
@@ -72,8 +72,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260703T173000
 DTEND;TZID=Europe/Berlin:20260703T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624357
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.289115;7.031447
 LOCATION:Silberberger Weg 3\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=75624357
@@ -85,7 +86,7 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260706T173000
 DTEND;TZID=Europe/Berlin:20260706T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624160
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
@@ -99,8 +100,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260710T173000
 DTEND;TZID=Europe/Berlin:20260710T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624358
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.289115;7.031447
 LOCATION:Silberberger Weg 3\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=75624358
@@ -112,7 +114,7 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260713T173000
 DTEND;TZID=Europe/Berlin:20260713T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624161
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
@@ -126,8 +128,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260717T173000
 DTEND;TZID=Europe/Berlin:20260717T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-75624359
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.289115;7.031447
 LOCATION:Silberberger Weg 3\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=75624359
@@ -139,8 +142,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260923T174500
 DTEND;TZID=Europe/Berlin:20260923T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326307
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -153,8 +157,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260925T190000
 DTEND;TZID=Europe/Berlin:20260925T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326366
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -167,22 +172,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20260928T174500
 DTEND;TZID=Europe/Berlin:20260928T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326679
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326679
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20260930T174500
 DTEND;TZID=Europe/Berlin:20260930T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326308
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -195,8 +201,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261002T190000
 DTEND;TZID=Europe/Berlin:20261002T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326367
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -209,22 +216,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261005T174500
 DTEND;TZID=Europe/Berlin:20261005T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326680
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326680
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261007T174500
 DTEND;TZID=Europe/Berlin:20261007T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326309
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -237,8 +245,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261009T190000
 DTEND;TZID=Europe/Berlin:20261009T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326368
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -251,22 +260,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261012T174500
 DTEND;TZID=Europe/Berlin:20261012T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326681
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326681
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261014T174500
 DTEND;TZID=Europe/Berlin:20261014T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326310
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -279,8 +289,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261016T190000
 DTEND;TZID=Europe/Berlin:20261016T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326369
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -293,22 +304,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261019T174500
 DTEND;TZID=Europe/Berlin:20261019T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326682
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326682
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261021T174500
 DTEND;TZID=Europe/Berlin:20261021T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326311
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -321,8 +333,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261023T190000
 DTEND;TZID=Europe/Berlin:20261023T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326370
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -335,22 +348,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261026T174500
 DTEND;TZID=Europe/Berlin:20261026T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326683
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326683
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261028T174500
 DTEND;TZID=Europe/Berlin:20261028T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326312
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -363,8 +377,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261030T190000
 DTEND;TZID=Europe/Berlin:20261030T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326371
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -377,22 +392,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261102T174500
 DTEND;TZID=Europe/Berlin:20261102T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326684
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326684
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261104T174500
 DTEND;TZID=Europe/Berlin:20261104T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326313
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -405,8 +421,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261106T190000
 DTEND;TZID=Europe/Berlin:20261106T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326372
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -419,22 +436,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261109T174500
 DTEND;TZID=Europe/Berlin:20261109T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326685
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326685
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261111T174500
 DTEND;TZID=Europe/Berlin:20261111T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326314
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -447,8 +465,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261113T190000
 DTEND;TZID=Europe/Berlin:20261113T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326373
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -461,22 +480,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261116T174500
 DTEND;TZID=Europe/Berlin:20261116T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326686
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326686
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261118T174500
 DTEND;TZID=Europe/Berlin:20261118T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326315
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -489,8 +509,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261120T190000
 DTEND;TZID=Europe/Berlin:20261120T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326374
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -503,22 +524,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261123T174500
 DTEND;TZID=Europe/Berlin:20261123T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326687
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326687
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261125T174500
 DTEND;TZID=Europe/Berlin:20261125T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326316
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -531,8 +553,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261127T190000
 DTEND;TZID=Europe/Berlin:20261127T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326375
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -545,22 +568,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261130T174500
 DTEND;TZID=Europe/Berlin:20261130T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326688
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326688
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261202T174500
 DTEND;TZID=Europe/Berlin:20261202T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326317
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -573,8 +597,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261204T190000
 DTEND;TZID=Europe/Berlin:20261204T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326376
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -587,22 +612,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261207T174500
 DTEND;TZID=Europe/Berlin:20261207T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326689
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326689
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261209T174500
 DTEND;TZID=Europe/Berlin:20261209T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326318
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -615,8 +641,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261211T190000
 DTEND;TZID=Europe/Berlin:20261211T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326377
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -629,22 +656,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261214T174500
 DTEND;TZID=Europe/Berlin:20261214T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326690
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326690
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261216T174500
 DTEND;TZID=Europe/Berlin:20261216T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326319
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -657,8 +685,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261218T190000
 DTEND;TZID=Europe/Berlin:20261218T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326378
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -671,22 +700,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261221T174500
 DTEND;TZID=Europe/Berlin:20261221T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326691
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326691
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261223T174500
 DTEND;TZID=Europe/Berlin:20261223T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326320
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -699,8 +729,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261225T190000
 DTEND;TZID=Europe/Berlin:20261225T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326379
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -713,22 +744,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20261228T174500
 DTEND;TZID=Europe/Berlin:20261228T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326692
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326692
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20261230T174500
 DTEND;TZID=Europe/Berlin:20261230T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326321
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -741,8 +773,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270101T190000
 DTEND;TZID=Europe/Berlin:20270101T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326380
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -755,22 +788,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270104T174500
 DTEND;TZID=Europe/Berlin:20270104T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326693
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326693
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270106T174500
 DTEND;TZID=Europe/Berlin:20270106T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326322
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -783,8 +817,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270108T190000
 DTEND;TZID=Europe/Berlin:20270108T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326381
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -797,22 +832,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270111T174500
 DTEND;TZID=Europe/Berlin:20270111T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326694
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326694
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270113T174500
 DTEND;TZID=Europe/Berlin:20270113T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326323
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -825,8 +861,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270115T190000
 DTEND;TZID=Europe/Berlin:20270115T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326382
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -839,22 +876,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270118T174500
 DTEND;TZID=Europe/Berlin:20270118T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326695
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326695
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270120T174500
 DTEND;TZID=Europe/Berlin:20270120T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326324
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -867,8 +905,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270122T190000
 DTEND;TZID=Europe/Berlin:20270122T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326383
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -881,22 +920,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270125T174500
 DTEND;TZID=Europe/Berlin:20270125T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326696
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326696
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270127T174500
 DTEND;TZID=Europe/Berlin:20270127T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326325
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -909,8 +949,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270129T190000
 DTEND;TZID=Europe/Berlin:20270129T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326384
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -923,22 +964,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270201T174500
 DTEND;TZID=Europe/Berlin:20270201T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326697
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326697
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270203T174500
 DTEND;TZID=Europe/Berlin:20270203T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326326
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -951,8 +993,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270205T190000
 DTEND;TZID=Europe/Berlin:20270205T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326385
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -965,22 +1008,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270208T174500
 DTEND;TZID=Europe/Berlin:20270208T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326698
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326698
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270210T174500
 DTEND;TZID=Europe/Berlin:20270210T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326327
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -993,8 +1037,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270212T190000
 DTEND;TZID=Europe/Berlin:20270212T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326386
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1007,22 +1052,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270215T174500
 DTEND;TZID=Europe/Berlin:20270215T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326699
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326699
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270217T174500
 DTEND;TZID=Europe/Berlin:20270217T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326328
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1035,8 +1081,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270219T190000
 DTEND;TZID=Europe/Berlin:20270219T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326387
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1049,22 +1096,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270222T174500
 DTEND;TZID=Europe/Berlin:20270222T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326700
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326700
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270224T174500
 DTEND;TZID=Europe/Berlin:20270224T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326329
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1077,8 +1125,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270226T190000
 DTEND;TZID=Europe/Berlin:20270226T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326388
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1091,22 +1140,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270301T174500
 DTEND;TZID=Europe/Berlin:20270301T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326701
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326701
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270303T174500
 DTEND;TZID=Europe/Berlin:20270303T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326330
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1119,8 +1169,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270305T190000
 DTEND;TZID=Europe/Berlin:20270305T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326389
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1133,22 +1184,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270308T174500
 DTEND;TZID=Europe/Berlin:20270308T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326702
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326702
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270310T174500
 DTEND;TZID=Europe/Berlin:20270310T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326331
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1161,8 +1213,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270312T190000
 DTEND;TZID=Europe/Berlin:20270312T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326390
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1175,22 +1228,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270315T174500
 DTEND;TZID=Europe/Berlin:20270315T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326703
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326703
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270317T174500
 DTEND;TZID=Europe/Berlin:20270317T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326332
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1203,8 +1257,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270319T190000
 DTEND;TZID=Europe/Berlin:20270319T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326391
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1217,22 +1272,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270322T174500
 DTEND;TZID=Europe/Berlin:20270322T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326704
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326704
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270324T174500
 DTEND;TZID=Europe/Berlin:20270324T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326333
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1245,8 +1301,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270326T190000
 DTEND;TZID=Europe/Berlin:20270326T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326392
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1259,22 +1316,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270329T174500
 DTEND;TZID=Europe/Berlin:20270329T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326705
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326705
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270331T174500
 DTEND;TZID=Europe/Berlin:20270331T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326334
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1287,8 +1345,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270402T190000
 DTEND;TZID=Europe/Berlin:20270402T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326393
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1301,22 +1360,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270405T174500
 DTEND;TZID=Europe/Berlin:20270405T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326706
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326706
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270407T174500
 DTEND;TZID=Europe/Berlin:20270407T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326335
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1329,8 +1389,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270409T190000
 DTEND;TZID=Europe/Berlin:20270409T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326394
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1343,22 +1404,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270412T174500
 DTEND;TZID=Europe/Berlin:20270412T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326707
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326707
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270414T174500
 DTEND;TZID=Europe/Berlin:20270414T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326336
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1371,8 +1433,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270416T190000
 DTEND;TZID=Europe/Berlin:20270416T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326395
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1385,22 +1448,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270419T174500
 DTEND;TZID=Europe/Berlin:20270419T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326708
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326708
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270421T174500
 DTEND;TZID=Europe/Berlin:20270421T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326337
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1413,8 +1477,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270423T190000
 DTEND;TZID=Europe/Berlin:20270423T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326396
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1427,22 +1492,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270426T174500
 DTEND;TZID=Europe/Berlin:20270426T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326709
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326709
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270428T174500
 DTEND;TZID=Europe/Berlin:20270428T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326338
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1455,8 +1521,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270430T190000
 DTEND;TZID=Europe/Berlin:20270430T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326397
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1469,22 +1536,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270503T174500
 DTEND;TZID=Europe/Berlin:20270503T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326710
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326710
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270505T174500
 DTEND;TZID=Europe/Berlin:20270505T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326339
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1497,8 +1565,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270507T190000
 DTEND;TZID=Europe/Berlin:20270507T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326398
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1511,22 +1580,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270510T174500
 DTEND;TZID=Europe/Berlin:20270510T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326711
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326711
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270512T174500
 DTEND;TZID=Europe/Berlin:20270512T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326340
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1539,8 +1609,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270514T190000
 DTEND;TZID=Europe/Berlin:20270514T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326399
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1553,22 +1624,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270517T174500
 DTEND;TZID=Europe/Berlin:20270517T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326712
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326712
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270519T174500
 DTEND;TZID=Europe/Berlin:20270519T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326341
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1581,8 +1653,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270521T190000
 DTEND;TZID=Europe/Berlin:20270521T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326400
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1595,22 +1668,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270524T174500
 DTEND;TZID=Europe/Berlin:20270524T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326713
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326713
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270526T174500
 DTEND;TZID=Europe/Berlin:20270526T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326342
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1623,8 +1697,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270528T190000
 DTEND;TZID=Europe/Berlin:20270528T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326401
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1637,22 +1712,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270531T174500
 DTEND;TZID=Europe/Berlin:20270531T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326714
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326714
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270602T174500
 DTEND;TZID=Europe/Berlin:20270602T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326343
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1665,8 +1741,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270604T190000
 DTEND;TZID=Europe/Berlin:20270604T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326402
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1679,22 +1756,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270607T174500
 DTEND;TZID=Europe/Berlin:20270607T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326715
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326715
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270609T174500
 DTEND;TZID=Europe/Berlin:20270609T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326344
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1707,8 +1785,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270611T190000
 DTEND;TZID=Europe/Berlin:20270611T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326403
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1721,22 +1800,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270614T174500
 DTEND;TZID=Europe/Berlin:20270614T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326716
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326716
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270616T174500
 DTEND;TZID=Europe/Berlin:20270616T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326345
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1749,8 +1829,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270618T190000
 DTEND;TZID=Europe/Berlin:20270618T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326404
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1763,22 +1844,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270621T174500
 DTEND;TZID=Europe/Berlin:20270621T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326717
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326717
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270623T174500
 DTEND;TZID=Europe/Berlin:20270623T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326346
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1791,8 +1873,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270625T190000
 DTEND;TZID=Europe/Berlin:20270625T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326405
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1805,22 +1888,23 @@ BEGIN:VEVENT
 SUMMARY:C-Jugend: Lauftraining - Erbacher Berg
 DTSTART;TZID=Europe/Berlin:20270628T174500
 DTEND;TZID=Europe/Berlin:20270628T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326718
-GEO:51.2759225;7.0168646
-LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
- hland
+GEO:51.2883843;7.0312878
+LOCATION:Sportplatz Erbacher Berg (1. FC)\, Silberberger Weg 3\, Innenstad
+ t\, 42489 Wülfrath\, Deutschland
 URL:https://www.spielerplus.de/training/view?id=80326718
-X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sporthalle Fliethe, Fortu
- nastraße 30, 42489 Wülfrath, Deutschland";X-APPLE-RADIUS=49;X-TITLE="":g
- eo:51.2759225,7.0168646
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Sportplatz Erbacher Berg 
+ (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland";X-A
+ PPLE-RADIUS=49;X-TITLE="":geo:51.2883843,7.0312878
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270630T174500
 DTEND;TZID=Europe/Berlin:20270630T190000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326347
+DESCRIPTION:Obere Halle (Hälfte)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland
@@ -1833,8 +1917,9 @@ BEGIN:VEVENT
 SUMMARY:Training C-Jugend
 DTSTART;TZID=Europe/Berlin:20270702T190000
 DTEND;TZID=Europe/Berlin:20270702T203000
-DTSTAMP:20261002T121941Z
+DTSTAMP:20261002T124232Z
 UID:tbw-mc-training-80326406
+DESCRIPTION:Obere Halle (ganz)
 GEO:51.2759225;7.0168646
 LOCATION:Sporthalle Fliethe\, Fortunastraße 30\, 42489 Wülfrath\, Deutsc
  hland

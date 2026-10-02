@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T12:19:38.505658+00:00",
+  "generated": "2026-10-02T12:42:29.402037+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1426,7 +1426,7 @@
       "dtstart": "2026-09-28T17:45:00+02:00",
       "dtend": "2026-09-28T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -1582,7 +1582,7 @@
       "dtstart": "2026-10-05T17:45:00+02:00",
       "dtend": "2026-10-05T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -1751,7 +1751,7 @@
       "dtstart": "2026-10-12T17:45:00+02:00",
       "dtend": "2026-10-12T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -1894,7 +1894,7 @@
       "dtstart": "2026-10-19T17:45:00+02:00",
       "dtend": "2026-10-19T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -1985,7 +1985,7 @@
       "dtstart": "2026-10-26T17:45:00+01:00",
       "dtend": "2026-10-26T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2089,7 +2089,7 @@
       "dtstart": "2026-11-02T17:45:00+01:00",
       "dtend": "2026-11-02T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2271,7 +2271,7 @@
       "dtstart": "2026-11-09T17:45:00+01:00",
       "dtend": "2026-11-09T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2440,7 +2440,7 @@
       "dtstart": "2026-11-16T17:45:00+01:00",
       "dtend": "2026-11-16T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2583,7 +2583,7 @@
       "dtstart": "2026-11-23T17:45:00+01:00",
       "dtend": "2026-11-23T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2752,7 +2752,7 @@
       "dtstart": "2026-11-30T17:45:00+01:00",
       "dtend": "2026-11-30T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -2921,7 +2921,7 @@
       "dtstart": "2026-12-07T17:45:00+01:00",
       "dtend": "2026-12-07T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3103,7 +3103,7 @@
       "dtstart": "2026-12-14T17:45:00+01:00",
       "dtend": "2026-12-14T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3272,7 +3272,7 @@
       "dtstart": "2026-12-21T17:45:00+01:00",
       "dtend": "2026-12-21T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3324,7 +3324,7 @@
       "dtstart": "2026-12-28T17:45:00+01:00",
       "dtend": "2026-12-28T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3363,7 +3363,7 @@
       "dtstart": "2027-01-04T17:45:00+01:00",
       "dtend": "2027-01-04T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3454,7 +3454,7 @@
       "dtstart": "2027-01-11T17:45:00+01:00",
       "dtend": "2027-01-11T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3493,7 +3493,7 @@
       "dtstart": "2027-01-18T17:45:00+01:00",
       "dtend": "2027-01-18T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3610,7 +3610,7 @@
       "dtstart": "2027-01-25T17:45:00+01:00",
       "dtend": "2027-01-25T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3727,7 +3727,7 @@
       "dtstart": "2027-02-01T17:45:00+01:00",
       "dtend": "2027-02-01T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3779,7 +3779,7 @@
       "dtstart": "2027-02-08T17:45:00+01:00",
       "dtend": "2027-02-08T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -3896,7 +3896,7 @@
       "dtstart": "2027-02-15T17:45:00+01:00",
       "dtend": "2027-02-15T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4013,7 +4013,7 @@
       "dtstart": "2027-02-22T17:45:00+01:00",
       "dtend": "2027-02-22T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4130,7 +4130,7 @@
       "dtstart": "2027-03-01T17:45:00+01:00",
       "dtend": "2027-03-01T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4234,7 +4234,7 @@
       "dtstart": "2027-03-08T17:45:00+01:00",
       "dtend": "2027-03-08T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4351,7 +4351,7 @@
       "dtstart": "2027-03-15T17:45:00+01:00",
       "dtend": "2027-03-15T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4442,7 +4442,7 @@
       "dtstart": "2027-03-22T17:45:00+01:00",
       "dtend": "2027-03-22T19:00:00+01:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4481,7 +4481,7 @@
       "dtstart": "2027-03-29T17:45:00+02:00",
       "dtend": "2027-03-29T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4559,7 +4559,7 @@
       "dtstart": "2027-04-05T17:45:00+02:00",
       "dtend": "2027-04-05T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4624,7 +4624,7 @@
       "dtstart": "2027-04-12T17:45:00+02:00",
       "dtend": "2027-04-12T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4702,7 +4702,7 @@
       "dtstart": "2027-04-19T17:45:00+02:00",
       "dtend": "2027-04-19T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4767,7 +4767,7 @@
       "dtstart": "2027-04-26T17:45:00+02:00",
       "dtend": "2027-04-26T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4832,7 +4832,7 @@
       "dtstart": "2027-05-03T17:45:00+02:00",
       "dtend": "2027-05-03T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4897,7 +4897,7 @@
       "dtstart": "2027-05-10T17:45:00+02:00",
       "dtend": "2027-05-10T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4936,7 +4936,7 @@
       "dtstart": "2027-05-17T17:45:00+02:00",
       "dtend": "2027-05-17T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -4975,7 +4975,7 @@
       "dtstart": "2027-05-24T17:45:00+02:00",
       "dtend": "2027-05-24T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -5014,7 +5014,7 @@
       "dtstart": "2027-05-31T17:45:00+02:00",
       "dtend": "2027-05-31T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -5053,7 +5053,7 @@
       "dtstart": "2027-06-07T17:45:00+02:00",
       "dtend": "2027-06-07T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -5092,7 +5092,7 @@
       "dtstart": "2027-06-14T17:45:00+02:00",
       "dtend": "2027-06-14T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -5131,7 +5131,7 @@
       "dtstart": "2027-06-21T17:45:00+02:00",
       "dtend": "2027-06-21T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
@@ -5170,7 +5170,7 @@
       "dtstart": "2027-06-28T17:45:00+02:00",
       "dtend": "2027-06-28T19:00:00+02:00",
       "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     },
     {
