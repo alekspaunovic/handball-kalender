@@ -329,3 +329,35 @@ def test_configured_weekdays_are_spelled_correctly(config):
     for team in config.teams.values():
         for tag in (team.training_notizen or {}):
             assert tag.lower() in training.WOCHENTAGE, f"{team.key}: unbekannter Wochentag {tag!r}"
+
+
+# --- Ortszusatz in Titeln, die nicht mit „Training“ beginnen ---------------
+
+def _spielerplus_vevent(uid, summary):
+    from icalendar import Event as IEvent
+    vevent = IEvent()
+    vevent.add("UID", uid)
+    vevent.add("SUMMARY", summary)
+    vevent.add("DTSTART", _berlin(2026, 10, 5, 17, 45))
+    vevent.add("DTEND", _berlin(2026, 10, 5, 19, 0))
+    return vevent
+
+
+def test_lauftraining_with_known_place_gets_that_place(config, halls):
+    vevent = _spielerplus_vevent("training.77000001", "Lauftraining - Erbacher Berg")
+
+    event = training.transform(vevent, config.teams["mc"], halls, config.uid_prefix, config.spielerplus_uid_prefixes)
+
+    assert event.summary == "C-Jugend: Lauftraining - Erbacher Berg"
+    assert event.location.startswith("Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3")
+    assert event.geo == (51.2883843, 7.0312878)
+
+
+def test_unknown_suffix_in_other_titles_is_not_a_place(config, halls):
+    vevent = _spielerplus_vevent("event.77000002", "Teamevent - Bowling")
+
+    event = training.transform(vevent, config.teams["mc"], halls, config.uid_prefix, config.spielerplus_uid_prefixes)
+
+    assert event.summary == "C-Jugend: Teamevent - Bowling"
+    # Kein Ort „Bowling“: ohne LOCATION bleibt es bei der Standardhalle.
+    assert event.location.startswith("Sporthalle Fliethe")

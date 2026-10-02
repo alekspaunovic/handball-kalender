@@ -72,6 +72,18 @@ def build_title(anzeigename: str, raw_summary: str) -> tuple[str, str | None]:
     return f"{anzeigename}: {raw_summary}", None
 
 
+def bekannter_ortszusatz(raw_summary: str, halls: list[Hall]) -> str | None:
+    """Ortszusatz aus einem Titel, der nicht mit „Training“ beginnt, etwa
+    „Lauftraining - Erbacher Berg“. Anders als bei „Training - <Ort>“ zählt
+    der Teil nach dem letzten „ - “ nur, wenn er in der Hallentabelle steht --
+    sonst würde aus „Teamevent - Bowling“ ein Ort „Bowling“."""
+    _, trenner, rest = raw_summary.rpartition(" - ")
+    rest = rest.strip()
+    if trenner and rest and find_hall(halls, rest):
+        return rest
+    return None
+
+
 def _looks_like_plausible_address(text: str) -> bool:
     """Eine LOCATION, die zu keiner bekannten Halle passt, ist nur dann
     verlässlich genug, um unverändert übernommen zu werden, wenn sie eine
@@ -189,6 +201,8 @@ def transform(
 
     raw_summary = str(vevent["SUMMARY"])
     title, ortszusatz = build_title(team.anzeigename, raw_summary)
+    if ortszusatz is None:
+        ortszusatz = bekannter_ortszusatz(raw_summary, halls)
 
     location = extract_location(vevent)
     geo = extract_geo(vevent)

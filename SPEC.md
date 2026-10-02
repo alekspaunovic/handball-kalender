@@ -148,6 +148,13 @@ also `Training 3. Herren` statt `Training 3. Herren - Halle`.
 4. Unbekannter Ortszusatz im Titel und keine LOCATION: Ortszusatz als
    reinen Text setzen und im Log warnen
 
+Auch Titel, die nicht mit `Training` beginnen, können einen Ortszusatz nach
+` - ` tragen, etwa `Lauftraining - Erbacher Berg`. Dort zählt er nur, wenn
+er in der Hallentabelle steht (dann Fall 1); sonst bleibt alles wie ohne
+Ortszusatz, damit aus `Teamevent - Bowling` kein Ort `Bowling` wird. Der
+Titel bleibt in beiden Fällen unverändert
+(`C-Jugend: Lauftraining - Erbacher Berg`).
+
 In den Fällen, in denen die Adresse aus der Hallentabelle kommt (Fall 1,
 Fall 2 bei Treffer, Fall 3), wird sie als vollständiger String geschrieben:
 
