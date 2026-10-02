@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:16:44.744527+00:00",
+  "generated": "2026-10-02T12:19:38.505658+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1547,19 +1547,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687035",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Heim Niederbergischer HC",
-      "dtstart": "2026-10-04T15:30:00+02:00",
-      "dtend": "2026-10-04T16:45:00+02:00",
-      "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563616",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -2166,6 +2153,19 @@
       "summary": "Training C-Jugend",
       "dtstart": "2026-11-06T19:00:00+01:00",
       "dtend": "2026-11-06T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687035",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim Niederbergischer HC",
+      "dtstart": "2026-11-06T19:20:00+01:00",
+      "dtend": "2026-11-06T20:35:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
