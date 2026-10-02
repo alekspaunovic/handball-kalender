@@ -148,6 +148,13 @@ also `Training 3. Herren` statt `Training 3. Herren - Halle`.
 4. Unbekannter Ortszusatz im Titel und keine LOCATION: Ortszusatz als
    reinen Text setzen und im Log warnen
 
+Auch Titel, die nicht mit `Training` beginnen, können einen Ortszusatz nach
+` - ` tragen, etwa `Lauftraining - Erbacher Berg`. Dort zählt er nur, wenn
+er in der Hallentabelle steht (dann Fall 1); sonst bleibt alles wie ohne
+Ortszusatz, damit aus `Teamevent - Bowling` kein Ort `Bowling` wird. Der
+Titel bleibt in beiden Fällen unverändert
+(`C-Jugend: Lauftraining - Erbacher Berg`).
+
 In den Fällen, in denen die Adresse aus der Hallentabelle kommt (Fall 1,
 Fall 2 bei Treffer, Fall 3), wird sie als vollständiger String geschrieben:
 
@@ -161,8 +168,14 @@ setzen, damit Apple die Navigation direkt anbietet.
 ### Notizen
 
 - M2-Training: `Treffpunkt: HH:MM` mit Beginn minus 10 Minuten
-- M3 und MC: keine Notiz
+- MC-Training: mittwochs `Obere Halle (Hälfte)`, freitags `Obere Halle (ganz)`
+- M3 und MC an anderen Tagen: keine Notiz
 - sonstige Termine (Teamevent etc.): keine Notiz
+
+Die feste Notiz je Wochentag steht in `config.yaml` unter
+`training_notizen` des Teams (`montag` bis `sonntag`). Sie gilt für jeden
+Termin mit UID-Präfix `training` an diesem Tag und steht unter einem
+eventuellen Treffpunkt.
 
 Die Quell-DESCRIPTION enthält nur den SpielerPlus-Link und wird verworfen.
 

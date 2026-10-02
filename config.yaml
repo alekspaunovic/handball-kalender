@@ -68,6 +68,11 @@ teams:
     spielerplus_env: SPIELERPLUS_MC
     treffpunkt_spiel_minuten: 60
     treffpunkt_training_minuten: null
+    # Notiz je Wochentag in jedem Training (UID-Praefix "training"), unter
+    # einem eventuellen Treffpunkt. Wochentage klein und ausgeschrieben.
+    training_notizen:
+      mittwoch: "Obere Halle (Hälfte)"
+      freitag: "Obere Halle (ganz)"
     spieldauer_minuten: 75
 
   # Fremdteams (SPEC-ADMIN.md Abschnitt 3): reine Pool-Quellen. Sie landen
