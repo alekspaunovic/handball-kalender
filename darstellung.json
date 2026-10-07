@@ -2,7 +2,7 @@
   "version": 1,
   "farbstaerke": 65,
   "akzent": "schwarzweiss",
-  "anzeige": "schalter",
+  "anzeige": "kreis",
   "aufbau": "gruppen",
   "modus": "auto",
   "teamfarben": {
