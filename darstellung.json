@@ -2,7 +2,7 @@
   "version": 1,
   "farbstaerke": 65,
   "akzent": "schwarzweiss",
-  "anzeige": "kreis",
+  "anzeige": "haken",
   "aufbau": "gruppen",
   "modus": "auto",
   "teamfarben": {
