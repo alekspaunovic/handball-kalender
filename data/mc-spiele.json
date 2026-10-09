@@ -2,7 +2,7 @@
   {
     "all_day": false,
     "cancelled": false,
-    "description": "Treffpunkt: 10:40\nErgebnis: 20:10",
+    "description": "Treffpunkt: 10:40\nErgebnis: 20:10 (Verloren)",
     "dtend": "2026-09-19T12:55:00+02:00",
     "dtstart": "2026-09-19T11:40:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
@@ -17,7 +17,7 @@
   {
     "all_day": false,
     "cancelled": false,
-    "description": "Treffpunkt: 12:40\nErgebnis: 16:10",
+    "description": "Treffpunkt: 12:40\nErgebnis: 16:10 (Gewonnen)",
     "dtend": "2026-09-19T14:55:00+02:00",
     "dtstart": "2026-09-19T13:40:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
@@ -32,7 +32,7 @@
   {
     "all_day": false,
     "cancelled": false,
-    "description": "Treffpunkt: 14:40\nErgebnis: 10:11",
+    "description": "Treffpunkt: 14:40\nErgebnis: 10:11 (Gewonnen)",
     "dtend": "2026-09-19T16:55:00+02:00",
     "dtstart": "2026-09-19T15:40:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
@@ -47,7 +47,7 @@
   {
     "all_day": false,
     "cancelled": false,
-    "description": "Treffpunkt: 16:00\nErgebnis: 14:12",
+    "description": "Treffpunkt: 16:00\nErgebnis: 14:12 (Gewonnen)",
     "dtend": "2026-09-19T18:15:00+02:00",
     "dtstart": "2026-09-19T17:00:00+02:00",
     "first_seen": "2026-09-03T19:51:25.211663+00:00",
