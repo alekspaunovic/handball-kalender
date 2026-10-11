@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T15:19:42.109617+00:00",
+  "generated": "2026-10-11T16:07:40.758077+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1727,6 +1727,19 @@
       "all_day": false,
       "location": "Schützenstraße 44, 42659 Solingen, Deutschland",
       "cancelled": true
+    },
+    {
+      "uid": "tbw-watch-spiel-420212",
+      "team": "Gemerktes Spiel",
+      "team_key": "watch",
+      "own_team": false,
+      "type": "spiele",
+      "summary": "DJK Unitas Haan - TuS Lintorf 1m",
+      "dtstart": "2026-10-11T11:15:00+02:00",
+      "dtend": "2026-10-11T12:45:00+02:00",
+      "all_day": false,
+      "location": "Haan.Adlerstrasse, Adlerstrasse 3, 42781 Haan, Deutschland",
+      "cancelled": false
     },
     {
       "uid": "tbw-m2-spiel-380477",
