@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T21:45:01.901876+00:00",
+  "generated": "2026-10-12T05:36:48.930894+00:00",
   "teams": [
     {
       "key": "m2",
@@ -5288,6 +5288,19 @@
       "dtend": "2027-07-09T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326720",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "C-Jugend: Lauftraining - Erbacher Berg",
+      "dtstart": "2027-07-12T17:45:00+02:00",
+      "dtend": "2027-07-12T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
       "cancelled": false
     }
   ]
