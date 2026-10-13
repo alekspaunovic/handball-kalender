@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T14:00:15.633538+00:00",
+  "generated": "2026-10-13T22:33:30.123686+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1825,12 +1825,12 @@
       "team_key": "m2",
       "own_team": true,
       "type": "training",
-      "summary": "Training 2. Herren",
+      "summary": "ABGESAGT Training 2. Herren",
       "dtstart": "2026-10-13T20:20:00+02:00",
       "dtend": "2026-10-13T22:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m2-training-80688117",
@@ -5314,6 +5314,19 @@
       "dtend": "2027-07-12T19:00:00+02:00",
       "all_day": false,
       "location": "Sportplatz Erbacher Berg (1. FC), Silberberger Weg 3, Innenstadt, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326349",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-07-14T17:45:00+02:00",
+      "dtend": "2027-07-14T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
     }
   ]
