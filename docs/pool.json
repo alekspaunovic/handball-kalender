@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T15:07:44.244413+00:00",
+  "generated": "2026-10-13T00:29:19.514668+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2210,19 +2210,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-mc-spiel-687035",
-      "team": "C-Jugend",
-      "team_key": "mc",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "C-Jugend Heim Niederbergischer HC",
-      "dtstart": "2026-11-06T19:20:00+01:00",
-      "dtend": "2026-11-06T20:35:00+01:00",
-      "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
-    },
-    {
       "uid": "tbw-m3-training-79696959",
       "team": "3. Herren",
       "team_key": "m3",
@@ -2242,10 +2229,10 @@
       "own_team": false,
       "type": "spiele",
       "summary": "A-Jugend Auswärts SG Langenfeld",
-      "dtstart": "2026-11-07T17:00:00+01:00",
-      "dtend": "2026-11-07T18:15:00+01:00",
+      "dtstart": "2026-11-07T14:00:00+01:00",
+      "dtend": "2026-11-07T15:15:00+01:00",
       "all_day": false,
-      "location": "Langenfeld.Hinter Den Gärten, Hinter Den Gärten, 40764 Langenfeld, Deutschland",
+      "location": "Langenfeld.Konrad-Adenauer-Gymnasium Alt, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -2699,6 +2686,19 @@
       "summary": "Training C-Jugend",
       "dtstart": "2026-11-27T19:00:00+01:00",
       "dtend": "2026-11-27T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-spiel-687035",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "C-Jugend Heim Niederbergischer HC",
+      "dtstart": "2026-11-27T19:20:00+01:00",
+      "dtend": "2026-11-27T20:35:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
