@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T16:46:42.322715+00:00",
+  "generated": "2026-10-15T21:13:03.148193+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1878,8 +1878,8 @@
       "own_team": true,
       "type": "training",
       "summary": "Training C-Jugend",
-      "dtstart": "2026-10-16T19:00:00+02:00",
-      "dtend": "2026-10-16T20:30:00+02:00",
+      "dtstart": "2026-10-16T19:30:00+02:00",
+      "dtend": "2026-10-16T21:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
