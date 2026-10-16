@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T21:13:03.148193+00:00",
+  "generated": "2026-10-16T04:12:16.543276+00:00",
   "teams": [
     {
       "key": "m2",
@@ -5325,6 +5325,19 @@
       "summary": "Training C-Jugend",
       "dtstart": "2027-07-14T17:45:00+02:00",
       "dtend": "2027-07-14T19:00:00+02:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-mc-training-80326408",
+      "team": "C-Jugend",
+      "team_key": "mc",
+      "own_team": true,
+      "type": "training",
+      "summary": "Training C-Jugend",
+      "dtstart": "2027-07-16T19:00:00+02:00",
+      "dtend": "2027-07-16T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
