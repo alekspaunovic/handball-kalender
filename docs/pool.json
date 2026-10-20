@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T16:45:05.170862+00:00",
+  "generated": "2026-10-20T21:28:45.386276+00:00",
   "teams": [
     {
       "key": "m2",
@@ -1968,12 +1968,12 @@
       "team_key": "m3",
       "own_team": true,
       "type": "training",
-      "summary": "Training 3. Herren",
+      "summary": "ABGESAGT Training 3. Herren",
       "dtstart": "2026-10-20T19:00:00+02:00",
       "dtend": "2026-10-20T20:30:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m2-training-77639913",
@@ -1981,12 +1981,12 @@
       "team_key": "m2",
       "own_team": true,
       "type": "training",
-      "summary": "Training 2. Herren",
+      "summary": "ABGESAGT Training 2. Herren",
       "dtstart": "2026-10-20T20:20:00+02:00",
       "dtend": "2026-10-20T22:00:00+02:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-mc-training-80326311",
