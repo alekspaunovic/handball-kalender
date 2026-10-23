@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T11:24:36.566013+00:00",
+  "generated": "2026-10-23T16:53:05.142504+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2245,7 +2245,7 @@
       "dtstart": "2026-11-07T14:00:00+01:00",
       "dtend": "2026-11-07T15:15:00+01:00",
       "all_day": false,
-      "location": "Konrad-Adenauer-Gym Langenfeld, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Konrad-Adenauer-Gym Langenfeld Alt, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -2908,7 +2908,7 @@
       "dtstart": "2026-12-05T17:00:00+01:00",
       "dtend": "2026-12-05T18:15:00+01:00",
       "all_day": false,
-      "location": "Konrad-Adenauer-Gym Langenfeld, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Konrad-Adenauer Gym Langenfeld, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
@@ -3298,7 +3298,7 @@
       "dtstart": "2026-12-19T17:00:00+01:00",
       "dtend": "2026-12-19T18:30:00+01:00",
       "all_day": false,
-      "location": "Konrad-Adenauer-Gym Langenfeld, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Konrad-Adenauer-Gym Langenfeld Alt, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
