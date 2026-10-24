@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T15:46:02.793117+00:00",
+  "generated": "2026-10-24T20:34:21.243568+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2908,7 +2908,7 @@
       "dtstart": "2026-12-05T17:00:00+01:00",
       "dtend": "2026-12-05T18:15:00+01:00",
       "all_day": false,
-      "location": "Konrad-Adenauer Gym Langenfeld, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Konrad-Adenauer-Gym Langenfeld Neu, Lindberghstrasse, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
