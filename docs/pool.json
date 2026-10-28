@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T12:35:52.533433+00:00",
+  "generated": "2026-10-28T22:27:12.969098+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2085,12 +2085,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "training",
-      "summary": "Training C-Jugend",
+      "summary": "ABGESAGT Training C-Jugend",
       "dtstart": "2026-10-28T17:45:00+01:00",
       "dtend": "2026-10-28T19:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m2-training-77640020",
@@ -2463,8 +2463,8 @@
       "own_team": true,
       "type": "spiele",
       "summary": "2. Herren Auswärts LTV Wuppertal II",
-      "dtstart": "2026-11-15T12:30:00+01:00",
-      "dtend": "2026-11-15T14:00:00+01:00",
+      "dtstart": "2026-11-15T13:00:00+01:00",
+      "dtend": "2026-11-15T14:30:00+01:00",
       "all_day": false,
       "location": "Langerfeld-Buschenburg Wuppertal, Dieckerhoff Str.18, 42389 Wuppertal, Deutschland",
       "cancelled": false
