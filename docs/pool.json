@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T12:37:31.341037+00:00",
+  "generated": "2026-10-30T22:09:56.665010+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2111,12 +2111,12 @@
       "team_key": "mc",
       "own_team": true,
       "type": "training",
-      "summary": "Training C-Jugend",
+      "summary": "ABGESAGT Training C-Jugend",
       "dtstart": "2026-10-30T19:00:00+01:00",
       "dtend": "2026-10-30T20:30:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
+      "cancelled": true
     },
     {
       "uid": "tbw-m3-training-79696958",
