@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T14:58:52.247886+00:00",
+  "generated": "2026-11-12T23:27:12.009426+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2376,6 +2376,19 @@
       "dtend": "2026-11-11T22:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-m3-spiel-696225",
+      "team": "3. Herren",
+      "team_key": "m3",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "3. Herren Auswärts TB Wülfrath M4",
+      "dtstart": "2026-11-12",
+      "dtend": "2026-11-13",
+      "all_day": true,
+      "location": null,
       "cancelled": false
     },
     {
