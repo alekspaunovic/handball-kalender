@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T09:34:19.336855+00:00",
+  "generated": "2026-11-24T22:15:11.548778+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2921,7 +2921,7 @@
       "dtstart": "2026-12-05T17:00:00+01:00",
       "dtend": "2026-12-05T18:15:00+01:00",
       "all_day": false,
-      "location": "Konrad-Adenauer-Gym Langenfeld Neu, Lindberghstrasse, 40764 Langenfeld, Deutschland",
+      "location": "Langenfeld.Hinter Den Gärten, Hinter Den Gärten, 40764 Langenfeld, Deutschland",
       "cancelled": false
     },
     {
