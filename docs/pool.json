@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T08:05:34.014675+00:00",
+  "generated": "2026-11-25T21:31:12.700230+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2795,19 +2795,6 @@
       "cancelled": false
     },
     {
-      "uid": "tbw-m3-spiel-645443",
-      "team": "3. Herren",
-      "team_key": "m3",
-      "own_team": true,
-      "type": "spiele",
-      "summary": "3. Herren Heim HSG Am Hallo Essen",
-      "dtstart": "2026-11-29T14:00:00+01:00",
-      "dtend": "2026-11-29T15:30:00+01:00",
-      "all_day": false,
-      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
-      "cancelled": false
-    },
-    {
       "uid": "tbw-a-jugend-spiel-563655",
       "team": "A-Jugend",
       "team_key": "a-jugend",
@@ -3557,6 +3544,19 @@
       "summary": "Training C-Jugend",
       "dtstart": "2027-01-15T19:00:00+01:00",
       "dtend": "2027-01-15T20:30:00+01:00",
+      "all_day": false,
+      "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
+      "cancelled": false
+    },
+    {
+      "uid": "tbw-m3-spiel-645443",
+      "team": "3. Herren",
+      "team_key": "m3",
+      "own_team": true,
+      "type": "spiele",
+      "summary": "3. Herren Heim HSG Am Hallo Essen",
+      "dtstart": "2027-01-15T20:45:00+01:00",
+      "dtend": "2027-01-15T22:15:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
