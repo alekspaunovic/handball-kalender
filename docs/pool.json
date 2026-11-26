@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T21:31:12.700230+00:00",
+  "generated": "2026-11-26T07:55:35.097920+00:00",
   "teams": [
     {
       "key": "m2",
@@ -2827,8 +2827,8 @@
       "own_team": true,
       "type": "training",
       "summary": "Training 3. Herren",
-      "dtstart": "2026-12-01T19:00:00+01:00",
-      "dtend": "2026-12-01T20:30:00+01:00",
+      "dtstart": "2026-12-01T20:00:00+01:00",
+      "dtend": "2026-12-01T22:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -2996,8 +2996,8 @@
       "own_team": true,
       "type": "training",
       "summary": "Training 3. Herren",
-      "dtstart": "2026-12-08T19:00:00+01:00",
-      "dtend": "2026-12-08T20:30:00+01:00",
+      "dtstart": "2026-12-08T20:00:00+01:00",
+      "dtend": "2026-12-08T22:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -3178,8 +3178,8 @@
       "own_team": true,
       "type": "training",
       "summary": "Training 3. Herren",
-      "dtstart": "2026-12-15T19:00:00+01:00",
-      "dtend": "2026-12-15T20:30:00+01:00",
+      "dtstart": "2026-12-15T20:00:00+01:00",
+      "dtend": "2026-12-15T22:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
@@ -3347,8 +3347,8 @@
       "own_team": true,
       "type": "training",
       "summary": "Training 3. Herren",
-      "dtstart": "2026-12-22T19:00:00+01:00",
-      "dtend": "2026-12-22T20:30:00+01:00",
+      "dtstart": "2026-12-22T20:00:00+01:00",
+      "dtend": "2026-12-22T22:00:00+01:00",
       "all_day": false,
       "location": "Sporthalle Fliethe, Fortunastraße 30, 42489 Wülfrath, Deutschland",
       "cancelled": false
